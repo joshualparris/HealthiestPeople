@@ -50,6 +50,7 @@ jobs:
           test -f data.html
           test -f coverage.html
           test -f blue-zones.html
+          test -f healthy-countries.html
           test -f docs/blue-zones.md
           test -f styles.css
           test -f site-data.js
@@ -101,6 +102,7 @@ jobs:
               "data.html": ['styles.css', 'data-explorer.js', 'id="dataset-tabs"', 'id="data-search"'],
               "coverage.html": ['styles.css', 'coverage.js', 'nav.js', 'id="coverage"', 'id="backlog"', 'id="access"', 'id="research-docs"'],
               "blue-zones.html": ['styles.css', 'nav.js', 'id="lessons"', 'id="power-nine"', 'id="cautions"', 'id="sources"'],
+              "healthy-countries.html": ['styles.css', 'nav.js', 'id="countries"', 'id="shared"', 'id="josh"', 'id="sources"'],
               "people/bryan-johnson.html": ['../styles.css', '../site-data.js', '../resources-data.js', '../profile-data.js', '../person-page.js', '../nav.js', 'data-person-id="bryan-johnson"'],
               "people/oskar-svendsen.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="oskar-svendsen"'],
               "people/scott-kelly.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="scott-kelly"'],
@@ -275,4 +277,80 @@ jobs:
           if errors:
               raise SystemExit("Broken principle links:\n" + "\n".join(errors))
           print("Principle detail links OK")
+          PY
+
+
+      - name: Check evidence-grade provenance
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          rows = list(csv.DictReader(Path("data/metrics.csv").open()))
+          allowed_grades = {"A", "B", "C", "D", "derived"}
+          a_domains = {
+              "pubmed.ncbi.nlm.nih.gov",
+              "pmc.ncbi.nlm.nih.gov",
+              "doi.org",
+              "journals.physiology.org",
+              "www.nasa.gov",
+              "nasa.gov",
+              "www.genome.gov",
+              "genome.gov",
+          }
+          errors = []
+          required = ["person","date_context","metric","value","unit","evidence_grade","source_url"]
+
+          for i, row in enumerate(rows, 2):
+              missing = [k for k in required if not (row.get(k) or "").strip()]
+              if missing:
+                  errors.append(f"metrics.csv:{i}: missing {missing}")
+              grade = (row.get("evidence_grade") or "").strip()
+              if grade not in allowed_grades:
+                  errors.append(f"metrics.csv:{i}: invalid evidence grade {grade!r}")
+              if grade == "A":
+                  host = urlparse(row.get("source_url") or "").hostname or ""
+                  if host not in a_domains:
+                      errors.append(f"metrics.csv:{i}: A-grade source is not on the primary/institutional allow-list: {host}")
+
+          if errors:
+              raise SystemExit("Evidence provenance validation failed:\n" + "\n".join(errors))
+
+          print(f"Evidence provenance OK for {len(rows)} metric rows")
+          PY
+
+      - name: Check current Josh dashboard summaries
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+
+          rows = list(csv.DictReader(Path("data/josh-weekly-wearable-history.csv").open()))
+          google = [r for r in rows if r["source"] == "Google Health"]
+          latest = google[-6:]
+          if len(latest) != 6:
+              raise SystemExit("Need six recent Google Health weeks for dashboard summary")
+
+          avg_steps = round(sum(float(r["avg_steps_per_day"]) for r in latest) / 6)
+          sleep_minutes = []
+          for r in latest:
+              h, m = map(int, r["avg_restful_sleep_hhmm"].split(":"))
+              sleep_minutes.append(h * 60 + m)
+          avg_sleep = round(sum(sleep_minutes) / 6)
+          h, m = divmod(avg_sleep, 60)
+
+          site = Path("site-data.js").read_text()
+          expected_steps = f"{avg_steps:,}/day"
+          expected_sleep = f"{h} h {m:02d} m"
+          errors = []
+          if expected_steps not in site:
+              errors.append(f"site-data.js should contain recent steps {expected_steps}")
+          if expected_sleep not in site:
+              errors.append(f"site-data.js should contain recent sleep {expected_sleep}")
+
+          if errors:
+              raise SystemExit("Josh dashboard summary is stale:\n" + "\n".join(errors))
+
+          print(f"Josh dashboard summary matches latest six weeks: {expected_steps}, {expected_sleep}")
           PY
