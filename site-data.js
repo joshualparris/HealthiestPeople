@@ -254,7 +254,7 @@ window.JOSH_BASELINE = {
       action: "Protect the routine that produced this before adding more health interventions."
     },
     {
-      label: "Recent steps", value: "14,575/day", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
+      label: "Recent steps", value: "14,574/day", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
       meaning: "This already represents a high amount of everyday movement. More steps are not automatically better if they displace strength work, recovery or family life.",
       action: "Do not add a step target. Put the extra health effort into two short strength sessions and sustainable recovery."
     }
@@ -283,7 +283,7 @@ window.JOSH_BASELINE = {
     note: "Latest six Google Health weeks average ~8 h 01 min; Aug Health Connect 30-day Fitbit main session ~8.44 h."
   },
   activity: {
-    normal: "~14,575 steps/day across the latest six weeks",
+    normal: "~14,574 steps/day across the latest six weeks",
     high: "Monday Frisbee can be a hard interval-style session",
     note: "No extra step target is currently needed."
   },
