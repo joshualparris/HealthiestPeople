@@ -1,6 +1,8 @@
 (() => {
   const people = window.HEALTHIEST_PEOPLE || [];
   const podcasts = window.HEALTH_PODCASTS || [];
+  const resources = window.HEALTH_RESOURCES || [];
+  const resourceTypes = window.RESOURCE_TYPES || {};
   const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 
   function sydneyParts() {
@@ -77,6 +79,7 @@
         <p class="mini-head">Don't copy blindly</p>
         <ul>${skipItems}</ul>
         <div class="person-sources">${sources}</div>
+        <a class="person-media-link" href="#resources">Watch & read ↓</a>
       </article>
     `;
   }
@@ -105,6 +108,88 @@
     grid.innerHTML = podcasts.map(podcastCard).join("");
   }
 
+  function featuredVideoCard(resource) {
+    const type = resourceTypes[resource.type] || { label: resource.type, icon: "▶" };
+    return `
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/${resource.youtubeId}"
+            title="${resource.title}"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-copy">
+          <div class="resource-meta">
+            <span class="resource-type">${type.icon} ${type.label}</span>
+            <span>${resource.person}</span>
+            <span>${resource.duration}</span>
+          </div>
+          <h3>${resource.title}</h3>
+          <p>${resource.note}</p>
+          <div class="resource-foot">
+            <span>${resource.publisher}</span>
+            <span class="evidence-chip">${resource.evidence}</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function resourceCard(resource) {
+    const type = resourceTypes[resource.type] || { label: resource.type, icon: "↗" };
+    return `
+      <a class="resource-card" href="${resource.url}" target="_blank" rel="noreferrer">
+        <div class="resource-card-top">
+          <span class="resource-type">${type.icon} ${type.label}</span>
+          <span class="resource-person">${resource.person}</span>
+        </div>
+        <h3>${resource.title}</h3>
+        <p>${resource.note}</p>
+        <div class="resource-foot">
+          <span>${resource.publisher}${resource.duration ? " · " + resource.duration : ""}</span>
+          <span class="evidence-chip">${resource.evidence}</span>
+        </div>
+      </a>
+    `;
+  }
+
+  function renderResources(filter = "all") {
+    const usable = resources.filter(r => r.type !== "listen");
+    const featured = usable.filter(r => r.featured && r.youtubeId);
+    const featureArea = document.getElementById("featured-videos");
+    if (featureArea) {
+      if (filter === "all" || filter === "watch") {
+        featureArea.hidden = false;
+        featureArea.innerHTML = featured.map(featuredVideoCard).join("");
+      } else {
+        featureArea.hidden = true;
+        featureArea.innerHTML = "";
+      }
+    }
+
+    const visible = usable.filter(r => {
+      if (filter !== "all" && r.type !== filter) return false;
+      if ((filter === "all" || filter === "watch") && r.featured && r.youtubeId) return false;
+      return true;
+    });
+
+    const grid = document.getElementById("resources-grid");
+    if (grid) grid.innerHTML = visible.map(resourceCard).join("");
+  }
+
+  function wireResourceFilters() {
+    document.querySelectorAll(".resource-filter").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".resource-filter").forEach(b => b.classList.remove("active"));
+        button.classList.add("active");
+        renderResources(button.dataset.resourceFilter);
+      });
+    });
+  }
+
   function wireFilters() {
     document.querySelectorAll(".filter").forEach(button => {
       button.addEventListener("click", () => {
@@ -118,5 +203,7 @@
   renderToday();
   renderPeople();
   renderPodcasts();
+  renderResources();
   wireFilters();
+  wireResourceFilters();
 })();
