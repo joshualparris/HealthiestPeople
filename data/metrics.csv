@@ -173,3 +173,5 @@ Joshua Parris,2026-07-29,Peak exercise heart rate,195,bpm,C,docs/people/joshua-p
 Oskar Svendsen,repeated lab visits,Power at 4 mmol lactate,354;359;381;377;428;405;402;368,W,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight repeated lab tests; peak +20.9% from first test
 Oskar Svendsen,repeated lab visits,Power at 4 mmol lactate per kg,4.7;4.9;5.1;5.0;5.6;5.1;5.1;4.6,W/kg,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight repeated lab tests
 Oskar Svendsen,2012-2014 anti-doping controls,Haematocrit range,45.1-48.8,percent,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight controls all negative; mean haematocrit 47.0%
+Scott Kelly,2015-2016 mission,Cardiac output change,+10,percent,A,https://pubmed.ncbi.nlm.nih.gov/30975860/,Average of spaceflight measurements
+Scott Kelly,late inflight,APOB/APOA1 ratio,increased,qualitative,A,https://pubmed.ncbi.nlm.nih.gov/30975860/,Increased after flight day 180 vs pre/early inflight; ANOVA P=0.003; returned toward baseline postflight
