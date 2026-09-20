@@ -292,7 +292,7 @@ window.JOSH_PLAN = {
     "Monday-morning weight once weekly",
     "Waist once monthly",
     "Monthly Fitbit RHR/HRV/sleep/steps summary",
-    "One 7-day home-BP block every 3 months",
+    "Home blood pressure check: for 7 days, measure at about the same time each morning and evening. Each time, sit quietly first, then take 2 readings 1 minute apart and record them. Do one such 7-day check about every 3 months for trend tracking unless your GP recommends a different schedule.",
     "5 km benchmark + simple strength benchmark every 8 weeks"
   ],
   dontBuy: [
@@ -306,3 +306,137 @@ window.JOSH_PLAN = {
   ],
   principle: "You already move a lot and sleep is currently much better. Protect Frisbee, add two short strength sessions, use parkrun as family aerobic work, and track trends without turning health into another job."
 };
+
+
+window.HEALTH_GLOSSARY = [
+  {
+    match: ["home-BP", "home blood pressure", "blood-pressure", "blood pressure"],
+    term: "Blood pressure (BP)",
+    meaning: "The force of blood against your artery walls. A reading has two numbers: the top number is pressure while the heart squeezes; the bottom is pressure while it relaxes."
+  },
+  {
+    match: ["RHR", "resting heart rate"],
+    term: "Resting heart rate (RHR)",
+    meaning: "How many times your heart beats per minute while you are at rest. The useful part is your own long-term trend, not comparing yourself with someone else's lowest number."
+  },
+  {
+    match: ["HRV", "RMSSD"],
+    term: "Heart-rate variability (HRV)",
+    meaning: "Tiny variations in the time between heartbeats. Wearables estimate it as a recovery/stress trend. Higher is not automatically better; compare it mainly with your own usual baseline. RMSSD is one common way of calculating HRV."
+  },
+  {
+    match: ["HbA1c"],
+    term: "HbA1c",
+    meaning: "A blood test that roughly reflects your average blood-glucose exposure over the previous 2–3 months."
+  },
+  {
+    match: ["LDL-C", "LDL cholesterol"],
+    term: "LDL-C",
+    meaning: "The amount of cholesterol being carried inside LDL particles. Higher levels are generally associated with greater long-term artery-plaque risk."
+  },
+  {
+    match: ["HDL-C", "HDL cholesterol"],
+    term: "HDL-C",
+    meaning: "Cholesterol carried in HDL particles. It is one part of the lipid picture and should not be interpreted by itself."
+  },
+  {
+    match: ["Triglycerides"],
+    term: "Triglycerides",
+    meaning: "A type of fat circulating in the blood. Levels are influenced by food, alcohol, metabolism and other factors."
+  },
+  {
+    match: ["CRP", "hs-CRP"],
+    term: "C-reactive protein (CRP)",
+    meaning: "A blood marker that rises with inflammation. A low result is generally reassuring, but CRP does not tell you where inflammation is coming from."
+  },
+  {
+    match: ["Ferritin"],
+    term: "Ferritin",
+    meaning: "A blood marker used mainly as an estimate of your body's stored iron."
+  },
+  {
+    match: ["TSH"],
+    term: "TSH",
+    meaning: "Thyroid-stimulating hormone. It is one of the main blood tests used to assess how the thyroid system is being regulated."
+  },
+  {
+    match: ["Creatinine"],
+    term: "Creatinine",
+    meaning: "A waste product measured in blood that helps estimate kidney filtration."
+  },
+  {
+    match: ["eGFR"],
+    term: "eGFR",
+    meaning: "Estimated glomerular filtration rate: an estimate of how effectively the kidneys filter blood."
+  },
+  {
+    match: ["VO₂max", "VO2max", "VO2 max"],
+    term: "VO₂max",
+    meaning: "The maximum amount of oxygen your body can use during very hard exercise. It is a measure of aerobic fitness, not a complete health score."
+  },
+  {
+    match: ["DunedinPACE"],
+    term: "DunedinPACE",
+    meaning: "A DNA-methylation biomarker that estimates the pace of biological ageing. It is a research marker, not a literal countdown of years gained or lost."
+  },
+  {
+    match: ["biological-age", "biological age", "epigenetic"],
+    term: "Biological-age / epigenetic test",
+    meaning: "A test that estimates ageing-related biological patterns, often from DNA methylation. It can be interesting research data but does not directly tell you how long you will live."
+  },
+  {
+    match: ["ApoB"],
+    term: "ApoB",
+    meaning: "A blood test that approximates the number of artery-plaque-forming lipoprotein particles. It can add information beyond LDL cholesterol."
+  },
+  {
+    match: ["Lp(a)"],
+    term: "Lp(a)",
+    meaning: "Lipoprotein(a), a largely inherited blood particle associated with cardiovascular risk."
+  },
+  {
+    match: ["CAC"],
+    term: "CAC score",
+    meaning: "Coronary artery calcium score: a CT-based measure of calcified plaque in the heart arteries."
+  },
+  {
+    match: ["DEXA", "BMD"],
+    term: "DEXA / BMD",
+    meaning: "DEXA is a low-dose X-ray scan commonly used for bone density and sometimes body composition. BMD means bone mineral density."
+  },
+  {
+    match: ["CGM"],
+    term: "CGM",
+    meaning: "Continuous glucose monitor: a small sensor that repeatedly estimates glucose throughout the day and night."
+  },
+  {
+    match: ["MRI"],
+    term: "MRI",
+    meaning: "Magnetic resonance imaging: detailed imaging using magnets and radio waves rather than X-rays."
+  },
+  {
+    match: ["hyperbaric"],
+    term: "Hyperbaric oxygen",
+    meaning: "Breathing high-concentration oxygen inside a pressurised chamber. It has specific medical uses, but it is not a basic requirement for healthy ageing."
+  },
+  {
+    match: ["submaximal"],
+    term: "Submaximal",
+    meaning: "Hard enough to train, but not an all-out effort. In strength work, it means finishing with some good-quality repetitions still left in reserve."
+  },
+  {
+    match: ["conversational"],
+    term: "Conversational pace",
+    meaning: "Easy-to-moderate aerobic effort where you can still speak in normal sentences."
+  },
+  {
+    match: ["benchmark"],
+    term: "Benchmark",
+    meaning: "A repeatable test used to track progress over time, such as the same 5 km run or the same strength exercise under similar conditions."
+  },
+  {
+    match: ["pathology"],
+    term: "Pathology / labs",
+    meaning: "Ordinary medical laboratory tests, such as blood tests ordered by a GP."
+  }
+];
