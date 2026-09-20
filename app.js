@@ -109,7 +109,7 @@
         <p class="mini-head">Don't copy blindly</p>
         <ul>${skipItems}</ul>
         <div class="person-sources">${sources}</div>
-        <div class="person-card-actions"><a class="person-profile-link" href="people/${person.id}.html">Open detailed profile →</a><a class="person-media-link" href="resources.html">Media library</a></div>
+        <div class="person-card-actions"><a class="person-media-link" href="resources.html">Media library</a></div>
       </article>
     `;
   }
