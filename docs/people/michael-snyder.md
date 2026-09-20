@@ -33,6 +33,36 @@ The monitoring revealed dynamic changes across healthy and diseased states and i
 Peer-reviewed source:
 - Chen et al., Cell 2012: https://pubmed.ncbi.nlm.nih.gov/22424236/
 
+## Concrete metabolic timeline from the original iPOP era
+
+The early Snyderome work is unusually useful because several conventional clinical markers moved alongside the deeper omics data.
+
+Public scientific and institutional reporting documents:
+
+- baseline triglycerides: **321 mg/dL**
+- after starting simvastatin: approximately **81–116 mg/dL**
+- HbA1c during diabetes onset: **6.7%**
+- after substantial diet/exercise change: **below 5%**, reached over roughly six months
+- Snyder later described another period when HbA1c rose to about **7.0%**, again prompting increased exercise
+
+The first iPOP study followed him over about **14 months**, with roughly **20 blood samples**, and integrated genome, transcriptome, proteome, metabolome and autoantibody measurements.
+
+Snyder has described a respiratory viral infection as a plausible trigger for diabetes in someone genetically predisposed, but the single-person chronology **cannot prove that the infection caused the diabetes**.
+
+Sources:
+- Chen et al., *Cell* 2012 / PubMed: https://pubmed.ncbi.nlm.nih.gov/22424236/
+- NHGRI summary: https://www.genome.gov/27548552/genome-advance-of-the-month-harnessing-the-full-omics-potential-of-personalized-medicine
+- contemporary study reporting: https://www.sciencedaily.com/releases/2012/03/120315123020.htm
+- Snyder interview discussing HbA1c: https://www.jeffreybland.com/podcast/october-2013-issue-michael-snyder-phd-stanford-university/
+
+### Why this matters for an ordinary person
+
+The transferable lesson is not to order multi-omics.
+
+It is that **ordinary markers such as triglycerides, glucose and HbA1c become much more informative when you know your baseline and repeat them when clinically appropriate**.
+
+The expensive omics provided mechanistic detail; the actionable clinical changes were still visible in conventional measurements.
+
 ## Why the diabetes story matters
 
 Stanford reports that Snyder's genome showed elevated type 2 diabetes risk. Frequent biomarker testing later detected a sharp rise in blood glucose after a viral respiratory infection.
