@@ -98,6 +98,7 @@
       items: [
         ["principles.html", "Principles", "primary"],
         ["blue-zones.html", "Blue Zones", "primary"],
+        ["healthy-countries.html", "Healthy Countries", "primary"],
         ["resources.html", "Resources", "primary"],
         ["evidence.html", "Evidence Hub", "primary"]
       ]
