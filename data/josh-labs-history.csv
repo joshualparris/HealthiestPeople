@@ -1,5 +1,4 @@
 date,marker,value,unit,source_context,notes
-2022-07,HbA1c,5.0,percent,Previously shared pathology,Historical value
 2023-06,Total cholesterol,5.3,mmol/L,Previously shared pathology,
 2023-06,LDL-C,3.2,mmol/L,Previously shared pathology,
 2023-06,HDL-C,1.6,mmol/L,Previously shared pathology,
@@ -31,3 +30,52 @@ date,marker,value,unit,source_context,notes
 2026-02,Magnesium,0.82,mmol/L,Previously shared pathology,
 2026-02,Creatinine,80,umol/L,Previously shared pathology,
 2026-02,eGFR,>90,mL/min/1.73m2,Previously shared pathology,
+2022-04-14,Haemoglobin,157,g/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,RBC,5.20,x10^12/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Haematocrit,0.45,L/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,MCV,87,fL,Dorevitch pathology via Google Drive,FBC
+2022-04-14,MCH,30.2,pg,Dorevitch pathology via Google Drive,FBC
+2022-04-14,MCHC,347,g/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,RDW,12.4,percent,Dorevitch pathology via Google Drive,FBC
+2022-04-14,WBC,6.0,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Neutrophils,3.5,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Lymphocytes,1.7,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Monocytes,0.6,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Eosinophils,0.2,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Basophils,<0.1,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-04-14,Platelets,222,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,ECG rhythm,sinus rhythm,qualitative,Dorevitch ECG via Google Drive,Reported within normal limits
+2022-07-26,ECG heart rate,71,bpm,Dorevitch ECG via Google Drive,Sinus rhythm
+2022-07-26,Haemoglobin,148,g/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,WBC,6.3,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Platelets,277,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,RBC,4.94,x10^12/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Haematocrit,0.44,L/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,MCV,90,fL,Dorevitch pathology via Google Drive,FBC
+2022-07-26,MCH,30,pg,Dorevitch pathology via Google Drive,FBC
+2022-07-26,MCHC,335,g/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,RDW,12.7,percent,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Neutrophils,3.6,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Lymphocytes,2.1,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Monocytes,0.5,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Eosinophils,0.1,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Basophils,0.1,x10^9/L,Dorevitch pathology via Google Drive,FBC
+2022-07-26,Sodium,141,mmol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Potassium,4.4,mmol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Chloride,104,mmol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Bicarbonate,31,mmol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Urea,5.1,mmol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,eGFR,>90,mL/min/1.73m2,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Creatinine,83,umol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Bilirubin,9,umol/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,ALT,42,U/L,Dorevitch pathology via Google Drive,Lab reference 0-40 U/L
+2022-07-26,AST,23,U/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,ALP,60,U/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,GGT,23,U/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Total protein,68,g/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Albumin,41,g/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,Globulin,27,g/L,Dorevitch pathology via Google Drive,Biochemistry
+2022-07-26,HbA1c,5.0,percent,Dorevitch pathology via Google Drive,31 mmol/mol
+2022-07-26,Total cholesterol,5.2,mmol/L,Dorevitch pathology via Google Drive,Fasting lipid study
+2022-07-26,Triglycerides,1.6,mmol/L,Dorevitch pathology via Google Drive,Fasting lipid study
+2022-07-26,TSH,1.45,mIU/L,Dorevitch pathology via Google Drive,Siemens immunoassay
