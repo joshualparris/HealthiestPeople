@@ -4,6 +4,8 @@ A source-first research project studying **nine unusually well-documented public
 
 ## Website
 
+Live site: https://joshualparris.github.io/HealthiestPeople/
+
 The repository now includes a dependency-free website designed for a busy working parent. It provides:
 
 - a practical plan that changes with the day of the week
@@ -27,41 +29,41 @@ The same static site is prepared for **GitHub Pages** and **Vercel**.
 
 ### Real-world comparison baseline
 
-- [Joshua Parris](docs/people/joshua-parris.md) — real-world working-parent baseline with a detailed longitudinal Health Connect / Fitbit / Withings / pathology archive
-  - [Full Joshua health archive](docs/people/joshua-parris-full-health-archive.md)
-  - [Weekly wearable history](data/josh-weekly-wearable-history.csv)
-  - [Lab history](data/josh-labs-history.csv)
-  - [Body composition / BMI history](data/josh-body-composition-history.csv)
-  - [Monday frisbee history](data/josh-frisbee-history.csv)
+- [Joshua Parris](https://joshualparris.github.io/HealthiestPeople/people/joshua-parris.html) — real-world working-parent baseline with a detailed longitudinal Health Connect / Fitbit / Withings / pathology archive
+  - [Full Joshua health archive](https://joshualparris.github.io/HealthiestPeople/health-archive.html)
+  - [Weekly wearable history](https://joshualparris.github.io/HealthiestPeople/data.html#wearables)
+  - [Lab history](https://joshualparris.github.io/HealthiestPeople/data.html#labs)
+  - [Body composition / BMI history](https://joshualparris.github.io/HealthiestPeople/data.html#body)
+  - [Monday frisbee history](https://joshualparris.github.io/HealthiestPeople/data.html#frisbee)
 
 
 ### Health / physiology exemplars and high-value case studies
 
-- [Bryan Johnson](docs/people/bryan-johnson.md) — unusually broad current whole-body measurement
-- [Michael Lustgarten](docs/people/michael-lustgarten.md) — long-term low-cost biomarker and lifestyle tracking
-- [Oskar Svendsen](docs/people/oskar-svendsen.md) — peer-reviewed exceptional aerobic physiology
-- [Dave Pascoe](docs/people/dave-pascoe.md) — preserved multi-domain physical function in his 60s
-- [Scott Kelly](docs/people/scott-kelly.md) — exceptionally rigorous NASA whole-body research under extreme stress
-- [Julie Gibson Clark](docs/people/julie-gibson-clark.md) — unusually transferable working-parent longevity routine and a very low reported DunedinPACE
+- [Bryan Johnson](https://joshualparris.github.io/HealthiestPeople/people/bryan-johnson.html) — unusually broad current whole-body measurement
+- [Michael Lustgarten](https://joshualparris.github.io/HealthiestPeople/people/michael-lustgarten.html) — long-term low-cost biomarker and lifestyle tracking
+- [Oskar Svendsen](https://joshualparris.github.io/HealthiestPeople/people/oskar-svendsen.html) — peer-reviewed exceptional aerobic physiology
+- [Dave Pascoe](https://joshualparris.github.io/HealthiestPeople/people/dave-pascoe.html) — preserved multi-domain physical function in his 60s
+- [Scott Kelly](https://joshualparris.github.io/HealthiestPeople/people/scott-kelly.html) — exceptionally rigorous NASA whole-body research under extreme stress
+- [Julie Gibson Clark](https://joshualparris.github.io/HealthiestPeople/people/julie-gibson-clark.html) — unusually transferable working-parent longevity routine and a very low reported DunedinPACE
 
 ### Measurement / quantified-self case studies
 
-- [Bob Troia](docs/people/bob-troia.md) — years of practical N-of-1 tracking across body composition, sleep and glucose
-- [Michael Snyder](docs/people/michael-snyder.md) — peer-reviewed personal multi-omics and disease-detection research
-- [Larry Smarr](docs/people/larry-smarr.md) — long-term biomarker tracking that helped surface persistent inflammation before Crohn's diagnosis
+- [Bob Troia](https://joshualparris.github.io/HealthiestPeople/people/bob-troia.html) — years of practical N-of-1 tracking across body composition, sleep and glucose
+- [Michael Snyder](https://joshualparris.github.io/HealthiestPeople/people/michael-snyder.html) — peer-reviewed personal multi-omics and disease-detection research
+- [Larry Smarr](https://joshualparris.github.io/HealthiestPeople/people/larry-smarr.html) — long-term biomarker tracking that helped surface persistent inflammation before Crohn's diagnosis
 
 Snyder and Smarr are deliberately included as **measurement lessons, not "healthiest person" claims**. Being deeply measured and being disease-free are different things.
 
 ## Research documents
 
-- [Product roadmap](ROADMAP.md) — UX, health-literacy, accessibility, charts, evidence and maintenance plan
-- [Metric-by-metric comparison](docs/comparison.md)
-- [Low-cost working-family playbook](docs/practical-playbook.md)
-- [Time/cost/family transferability matrix](docs/transferability.md)
-- [Research backlog / known data gaps](docs/research-backlog.md)
-- [Evidence quality, conflicts and interpretation](docs/evidence-and-bias.md)
-- [Public data access audit](docs/data-access-audit.md)
-- [Normalised metrics dataset](data/metrics.csv)
+- [Product roadmap](https://joshualparris.github.io/HealthiestPeople/roadmap.html) — UX, health-literacy, accessibility, charts, evidence and maintenance plan
+- [Metric-by-metric comparison](https://joshualparris.github.io/HealthiestPeople/comparison.html)
+- [Low-cost working-family playbook](https://joshualparris.github.io/HealthiestPeople/playbook.html)
+- [Time/cost/family transferability matrix](https://joshualparris.github.io/HealthiestPeople/transferability.html)
+- [Research backlog / known data gaps](https://joshualparris.github.io/HealthiestPeople/document.html?doc=research-backlog)
+- [Evidence quality, conflicts and interpretation](https://joshualparris.github.io/HealthiestPeople/methodology.html)
+- [Public data access audit](https://joshualparris.github.io/HealthiestPeople/document.html?doc=data-access-audit)
+- [Normalised metrics dataset](https://joshualparris.github.io/HealthiestPeople/data.html#metrics)
 
 ## Purpose
 
