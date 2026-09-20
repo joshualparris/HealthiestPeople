@@ -62,3 +62,4 @@ date,test,metric,value,unit,evidence_grade,source,notes
 2026-03-16,24h09m Holter,Recorded weight,84,kg,B,Douglass Hanly Moir Holter report transcribed to repo,Monitor paperwork value
 2026-07-31,Post-hospital/cardiology email,Josh's contemporaneous report,Hospital tests all good; cardiology leading theory stress; physically fine,qualitative,D,Gmail self-report,This is Josh's report of the clinician discussion and is not a cardiology report
 2026-06 to 2026-07,HeartBug / longer ambulatory monitoring,Final specialist report,not located,unknown,unknown,Drive/Gmail/past-chat audit,Monitoring occurred but final primary report has not been located; do not infer a normal result
+2026-06-02,NT-proBNP,NT-proBNP,<50,ng/L,B,Douglass Hanly Moir pathology transcribed to repo,Requested for palpitations; age-related lab reference <450 ng/L
