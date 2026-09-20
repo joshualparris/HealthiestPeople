@@ -60,7 +60,7 @@ Bryan Johnson,2026 protocol,Armour Thyroid,60,mg/day,C,https://blueprint.bryanjo
 Bryan Johnson,2026 protocol,Metformin,500,mg,C,https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol,Reported six-week cycles on/off
 Bryan Johnson,2026 protocol,Empagliflozin (Jardiance),10,mg/day,C,https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol,Prescription disclosure
 Bryan Johnson,2026 protocol,Evolocumab (Repatha),140,mg every other week,C,https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol,Prescription disclosure
-Julie Gibson Clark,publicly reported result,DunedinPACE,0.665,pace ratio,C,https://www.juliegibsonclark.com/,Personal commercial biomarker result; do not translate directly into lifespan
+Julie Gibson Clark,historical best publicly reported result,DunedinPACE,0.665,pace ratio,C,https://www.juliegibsonclark.com/,Historical best commercial biomarker result; not a permanent current state and not a lifespan forecast
 Bob Troia,published archive,Body composition tracking duration,10+,years,C,https://www.quantifiedbob.com/body-composition-data-visualization/,Multiple methods over time; device/method changes limit direct comparability
 Michael Snyder,2012 iPOP study,Type 2 diabetes transition,detected,qualitative,A,https://pubmed.ncbi.nlm.nih.gov/22424236/,Peer-reviewed longitudinal personal-omics study
 Larry Smarr,pre-diagnosis public chronology,Persistent inflammatory signal,present,qualitative,B,https://cse.ucsd.edu/about/news/cse-professor-lecturer-team-with-uc-san-diego-health-to-bring-3d-visualization-to-abdomenal-surgery,Institutional account preceding Crohn disease workup
@@ -89,7 +89,8 @@ Julie Gibson Clark,current first-party routine,Sleep duration,8,h/night,D,https:
 Julie Gibson Clark,current first-party routine,Evening walk steps,6000-9000,steps,D,https://www.juliegibsonclark.com/,Described as typical evening walk; not a prescription
 Julie Gibson Clark,current first-party routine,Vegetable intake,454,g/day,D,https://www.juliegibsonclark.com/general-7,Published as 1 pound vegetables daily
 Julie Gibson Clark,current first-party routine,Cooked greens,113-227,g/day,D,https://www.juliegibsonclark.com/general-7,Converted from 4-8 oz
-Julie Gibson Clark,historical/current food page,Protein target,100+,g/day,D,https://www.juliegibsonclark.com/general-7,Self-selected target based on lean mass
+Julie Gibson Clark,historical food-page target,Historical protein target,100+,g/day,D,https://www.juliegibsonclark.com/general-7,Food page still displays this target; Clark reported in a May 2026 interview that she later stopped targeting 100 g every day
+Julie Gibson Clark,May 2026 self-report,Later DunedinPACE,0.77,pace ratio,D,https://podcasts.apple.com/us/podcast/55-how-to-live-longer-without-spending-a-fortune/id1793550910?i=1000768714518,Self-reported later score after protocol/hormone/sleep changes; does not establish causation
 Bob Troia,30-day fasting baseline,Fasting glucose range,78-107,mg/dL,C,https://www.quantifiedbob.com/hacking-tracking-glucose/,Finger-stick immediately after waking before food drink or exercise
 Bob Troia,30-day fasting baseline,Fasting glucose average,93.5,mg/dL,C,https://www.quantifiedbob.com/hacking-tracking-glucose/,First-party experiment
 Bob Troia,contemporary blood test,Fasting glucose,85,mg/dL,C,https://www.quantifiedbob.com/hacking-tracking-glucose/,Reported standard blood test value
