@@ -1,287 +1,267 @@
-# Josh Plan — minimum time, minimum cost, maximum useful health
-
-## Purpose
-
-This is the practical plan for Joshua Parris: a 32-year-old Australian working parent with two young children, limited evening time, household bills, a preference for low-cost routines, dairy-free eating, and a strong interest in healthy ageing without turning health into a second job.
-
-It is built from:
-
-- Joshua's current public baseline in this repository
-- the useful low-cost lessons from Bryan Johnson, Michael Lustgarten, Oskar Svendsen, Dave Pascoe, Scott Kelly, Julie Gibson Clark, Bob Troia, Michael Snyder and Larry Smarr
-- Australia's 2026 adult movement guidelines
-- Australian dietary guidance
-- current Australian sleep and heart-health guidance
-
-This is not a promise to make Joshua "as healthy" as another individual. Genetics, age, disease history, medications, environment and chance differ. The goal is to maximise **health benefit per dollar and per hour**.
-
-## The target
-
-For the next **8 weeks**, do the plan below and do not add more complexity.
-
-### Sleep
-
-- **8:30 pm:** start wind-down
-- **9:30 pm:** lights out
-- target **7 h 30 min asleep per night**
-- no health optimisation task is allowed to replace sleep after 8:30 pm
-
-Australia's current adult guidance recommends **7–9 hours of good-quality sleep with consistent bed and wake times**.
-
-## Weekly movement schedule
-
-The plan deliberately uses lunch/family time for most aerobic activity so evenings stay available for family and sleep.
-
-| Day | Exact plan |
-|---|---|
-| Monday | **1:15–1:35 pm:** brisk walk. **8:00–8:25 pm:** Strength A |
-| Tuesday | **1:15–1:35 pm:** brisk walk |
-| Wednesday | **1:15–1:35 pm:** brisk walk |
-| Thursday | **1:15–1:35 pm:** brisk walk. **8:00–8:25 pm:** Strength B |
-| Friday | **1:15–1:35 pm:** brisk walk |
-| Saturday | **45 min** conversational e-bike ride, bike ride or brisk walk with no all-out efforts |
-| Sunday | **30 min** easy family walk + **10 min mobility/balance** |
-
-This provides **175 minutes of planned aerobic activity/week**, plus two strength sessions, while only requiring **50 minutes/week of solo evening training**.
-
-If a workday lunch walk is impossible, replace it with **20 minutes of brisk walking while the children are active / after dinner on that same day** rather than trying to "make up" a giant workout later.
-
-Australia's 2026 guidelines recommend moderate-to-vigorous activity for 30 minutes or more on most days, strength on at least 2 days, functional mobility/balance on at least 3 days, several hours of light activity daily, and frequent breaks from sitting.
-
-## Strength A — 25 minutes
-
-Do **2 rounds**.
-
-1. Chair squat — **10 reps**
-2. Incline push-up on bench/table — **10 reps**
-3. One-arm kettlebell/dumbbell row with support — **12 each side**
-4. Glute bridge — **12 reps**
-5. Suitcase carry — **45 sec each side**
-6. Standing calf raise — **15 reps**
-
-Rest only as needed to maintain good technique.
-
-Use a comfortable, pain-free range. The goal for the first 8 weeks is consistency, not maximum weight.
-
-## Strength B — 25 minutes
-
-Do **2 rounds**.
-
-1. Sit-to-stand from chair — **12 reps**
-2. Dumbbell/kettlebell floor press — **10 reps**
-3. Supported one-arm row — **12 each side**
-4. Hip hinge with a light kettlebell/dumbbell — **10 reps**
-5. Farmer carry — **60 sec**
-6. Single-leg balance while lightly holding support — **30 sec each side**
-
-Again, no maximal lifting.
-
-## Daily movement
-
-On workdays:
-
-- stand/move for **2 minutes every hour**
-- take stairs when convenient
-- use walking for short internal trips
-- do not chase a perfect step number
-
-The target is a life that is habitually active, not an artificial 10,000-step streak.
-
-## Food target
-
-Joshua is already around his previous **78 kg** weight goal. The plan therefore prioritises **maintenance, muscle and cardiovascular health**, not aggressive weight loss.
-
-### Daily targets
-
-- body weight target: **78 kg**
-- protein: **85 g/day**
-- fibre: **30 g/day**
-- vegetables: **375 g/day minimum** (5 Australian serves)
-- fruit: **2 serves/day**
-- water as the default drink
-- no smoking
-- alcohol: keep low; zero is fine
-
-### Meal rule
-
-For lunch and dinner:
-
-- **half the plate:** vegetables / salad / legumes
-- **quarter:** protein
-- **quarter:** wholegrain rice/pasta/bread, potato or another minimally processed carbohydrate
-- add a small amount of unsaturated fat such as olive oil, nuts, seeds or avocado
-
-### Low-cost protein rotation
-
-Use ordinary foods Joshua already tolerates/preferences fit:
-
-- eggs
-- chicken
-- fish
-- lentils
-- chickpeas/beans
-- tofu
-- nuts/seeds
-- dairy-free fortified alternatives where useful
-
-There is no requirement to buy longevity-branded food, powders or specialised meal replacements.
-
-## What not to buy for the next 8 weeks
-
-Do **not** spend money on:
-
-- epigenetic clocks
-- telomere testing
-- CGM without a clinical reason
-- microbiome testing
-- full-body MRI
-- hyperbaric oxygen
-- red-light devices
-- cold-plunge equipment
-- longevity subscriptions
-- large supplement stacks
-- extra exercise equipment
-
-No new supplement is required for this 8-week plan. Continue clinician-directed treatments and anything medically indicated; do not copy medications or supplement protocols from people in this project.
-
-## Five numbers to track
-
-### 1. Sleep
-
-Record the **30-day average sleep duration**.
-
-Primary goal: move the average from roughly **6.5 h toward 7.5 h**.
-
-### 2. Weight
-
-Measure **Monday morning once per week**, after the toilet and before breakfast.
-
-Do not react to daily fluctuations.
-
-### 3. Waist
-
-Measure at the same place **once per month**.
-
-### 4. Blood pressure
-
-Complete one **7-day block** of home readings using a validated upper-arm monitor if available, at approximately the same time under calm conditions. Australian Heart Foundation guidance recommends 7 days (minimum 5) when doing home monitoring.
-
-Use the average, not the highest single reading, and review persistent elevation with a clinician.
-
-### 5. Fitness
-
-Every **8 weeks**, repeat the same aerobic benchmark:
-
-- preferred benchmark: **5 km run/walk time**
-- if running is not comfortable: use the same **30-minute e-bike/bike route** and record time/average effort
-
-Do not compare this with Oskar Svendsen. Compare it with the previous Joshua result.
-
-## What to ignore
-
-Do not set a fixed HRV target such as "65 ms" as a success/failure threshold.
-
-HRV differs by device, method, sleep and stress. Use the same device and watch the **30-day personal trend**.
-
-Also ignore:
-
-- biological-age leaderboard positions
-- one-off sleep scores
-- one unusually high or low resting HR
-- one poor meal
-- one missed workout
-- someone else's elite VO2max
-- supplement-count competitions
-
-## Priority order when life is difficult
-
-When family/work stress is high:
-
-1. **sleep**
-2. **20-minute walk**
-3. **normal nutritious meals**
-4. **one strength session**
-5. everything else
-
-Do not sacrifice sleep to complete an optional workout.
-
-## Why this should work better than copying the five
-
-### Bryan Johnson
-
-Copy:
-- consistent sleep
-- strength + aerobic work
-- plant-rich food pattern
-- persistent abnormal results deserve investigation
-
-Do not copy:
-- expensive morning routine
-- specialised devices
-- prescription stack
-- hundreds of measurements
-
-### Michael Lustgarten
-
-Copy:
-- longitudinal tracking
-- walking
-- strength
-- ordinary bloodwork
-- adjust only when a trend is real
-
-Do not copy:
-- frequent testing for its own sake
-- obsessing over biological-age calculations
-
-### Oskar Svendsen
-
-Copy:
-- most aerobic work can be comfortable
-- consistency matters
-
-Do not copy:
-- 10–15 hour elite training weeks
-- his peak VO2max as a target
-
-### Dave Pascoe
-
-Copy:
-- strength + cardio + mobility + balance
-- flexibility when life interrupts the routine
-
-Do not copy:
-- full-time biohacking
-- ~200-product supplement routine
-- high-cost testing/procedures
-
-### Scott Kelly
-
-Copy:
-- put exercise in the calendar
-- resilience means recovering after stressful periods
-
-Do not copy:
-- mission-level exercise volume or medical monitoring
-
-## How to know the plan is working after 8 weeks
-
-Success means:
-
-- average sleep is moving toward **7 h 30 min**
-- both strength sessions happen in at least **6 of 8 weeks**
-- aerobic activity averages about **175 min/week**
-- weight remains close to **78 kg**
-- 5 km / bike benchmark is stable or improving
-- the plan feels sustainable alongside work, children and bills
-
-If those are working, **do not add complexity just because a biohacker uses more tools**.
-
-## Evidence base
-
-- Australian Government, 2026 adult 24-hour movement recommendations: https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-adults-18-to-64-years
-- Healthdirect, sleep: https://www.healthdirect.gov.au/sleep
-- Australian Dietary Guidelines: https://www.eatforhealth.gov.au/guidelines/australian-dietary-guidelines-1-5
-- Eat For Health, vegetables and legumes: https://www.eatforhealth.gov.au/food-essentials/five-food-groups/vegetables-and-legumes-beans
-- Heart Foundation, blood pressure and home monitoring: https://www.heartfoundation.org.au/your-heart/blood-pressure-and-your-heart
+# Josh Plan — personalised low-cost version 2
 
 _Last updated: 20 September 2026._
+
+## What changed
+
+This plan replaces the earlier generic version.
+
+It now uses Joshua's recovered longitudinal context:
+- Monday-night Ultimate Frisbee is a real recurring **6–7 pm** session and can be vigorous.
+- Saturday **5 km Dubbo parkrun with Sylvie** is a recurring family-compatible aerobic session.
+- recent activity is already high: roughly **14,500 steps/day** across the latest six Google Health weeks.
+- recent sleep is now around **8 hours/night**, not the older ~6–6.5 h snapshot.
+- same-source Fitbit RHR/HRV are broadly stable long-term, with a short late-Aug/Sep RHR rise in illness/recovery context.
+- prior ACL injury, chronic back pain, chest-wall/costochondritis history and asthma matter for exercise selection.
+- work/family life means ordinary school-day exercise is generally after 8 pm, except Monday frisbee.
+
+The goal is **maximum health benefit with minimal extra time and zero required new equipment**.
+
+## Exact weekly schedule
+
+| Day | Plan |
+|---|---|
+| **Monday** | **6:00–7:00 pm Ultimate Frisbee.** This is the week's main hard cardiovascular session. No second workout. |
+| **Tuesday** | **8:05–8:25 pm Strength A.** |
+| **Wednesday** | **No required formal workout.** Normal daily movement only. |
+| **Thursday** | **8:05–8:25 pm Strength B.** |
+| **Friday** | **No required formal workout.** |
+| **Saturday** | **8:00 am 5 km parkrun/run-walk with Sylvie** when attending. Most weeks keep it conversational rather than racing. |
+| **Sunday** | **No required training.** Family movement is enough. If Saturday parkrun was missed, do **30 minutes easy e-bike/walk at 4:00 pm Sunday**. |
+
+### Extra training time added to existing life
+
+Only **40 minutes/week** of mandatory solo strength work.
+
+No lunch-walk prescription is needed because Joshua already accumulates high daily step counts and has said structured exercise generally needs to happen after 8 pm/weekends.
+
+## Strength A — Tuesday, 20 minutes
+
+Do **2 rounds**:
+
+1. chair or light goblet squat — **10 reps**
+2. incline push-up — **8 reps**
+3. supported one-arm row — **12 each side**
+4. glute bridge — **12 reps**
+5. suitcase carry — **45 sec each side**
+
+Keep **2–3 good reps in reserve**. No maximal lifting.
+
+## Strength B — Thursday, 20 minutes
+
+Do **2 rounds**:
+
+1. sit-to-stand — **12 reps**
+2. light dumbbell/kettlebell Romanian deadlift — **10 reps**
+3. supported one-arm row — **12 each side**
+4. floor press — **10 reps**
+5. standing calf raise — **15 reps**
+6. supported single-leg balance — **30 sec each side**
+
+Use a pain-free range.
+
+Because of the old ACL injury, chronic back-pain history and chest-wall/costochondritis history, technique and symptom response matter more than load. If a pressing movement clearly reproduces chest-wall pain, skip that pressing movement for that session rather than pushing through it.
+
+## Frisbee rule
+
+Protect Monday frisbee.
+
+A documented May session produced:
+- **310 kcal**
+- **124 bpm average HR**
+- **49 Active Zone Minutes**
+- **21 minutes vigorous/peak**
+
+A harder August session was about:
+- **69 min**
+- **149 bpm average HR**
+- ~**50 min vigorous**
+- cardio load **154**, about **204%** of the personalised target at that time
+
+So frisbee is not "just a bit of activity". On harder weeks it already supplies a large high-intensity stimulus.
+
+Do not schedule HIIT on top of it.
+
+## Running / parkrun rule
+
+Saturday parkrun is primarily:
+- family-compatible aerobic work;
+- a repeatable long-term benchmark;
+- enjoyable routine.
+
+Only **once every 8 weeks** treat the 5 km as the comparison benchmark.
+
+On the other Saturdays, run/walk it comfortably.
+
+Compare Joshua only with **Joshua's previous time**, not Oskar Svendsen.
+
+## Sleep
+
+Current data are much better than the earlier site suggested.
+
+Recent six Google Health weeks averaged about **8 h 01 min restful sleep/night**.
+
+Health Connect's August analysis also found:
+- 30-day Fitbit main sleep-session window: **8.44 h**
+- stage-derived asleep time: **7.73 h**
+
+So the goal is now **maintenance**, not "fix a 6.5-hour sleep problem".
+
+Exact anchor:
+- **8:30 pm** start winding down
+- **9:30 pm** target lights out
+- maintain **≥7 h 45 min average sleep**
+- do not add exercise, tracking or health research after 8:30 just to hit a target
+
+## Food
+
+Daily targets:
+- **85 g protein**
+- **30 g fibre**
+- **375 g vegetables minimum**
+- **2 serves fruit**
+- water as default drink
+- maintain body weight around the high-70-kg range rather than deliberately cutting further without a reason
+
+Diet style:
+- dairy-free
+- Mediterranean-ish / plant-forward
+- low saturated fat
+- legumes, eggs, chicken, fish, tofu, nuts/seeds and fortified dairy-free foods are useful
+- tuna is not required
+- ordinary groceries beat branded longevity food
+
+## What the longitudinal data say to prioritise
+
+### Already strong / do not over-optimise
+
+- daily movement / steps
+- recent sleep duration
+- triglycerides
+- fasting glucose / HbA1c
+- CRP at the Feb 2026 draw
+- kidney-function snapshot
+- regular high-intensity exposure through frisbee
+
+### Worth improving or measuring better
+
+1. **strength / muscle function**
+2. **validated home blood-pressure average**
+3. **repeatable 5 km performance trend**
+4. **waist/body-composition trend using one consistent method**
+5. **future LDL/ApoB-style cardiovascular-risk follow-up as clinically appropriate**
+6. **iron/ferritin follow-up in the context of blood donation**
+7. symptoms/rhythm capture if unexplained palpitations recur — wearable pulse alone cannot diagnose rhythm
+
+## Low-burden tracking system
+
+### Automatic — no extra work
+
+Keep Fitbit/Google Health collecting:
+- steps
+- sleep
+- RHR
+- HRV
+- exercise
+- respiratory rate
+
+Review **monthly**, not compulsively every morning.
+
+### Weekly
+
+**Monday morning**
+- weight once
+
+### Monthly
+
+**First Sunday**
+- waist circumference
+- note 30-day Fitbit:
+  - average RHR
+  - average HRV
+  - average sleep
+  - average steps
+
+### Every 8 weeks
+
+- one 5 km parkrun benchmark
+- one simple strength benchmark:
+  - maximum good-form incline push-ups stopping before form failure
+
+### Every 3 months
+
+- one **7-day home BP block** if a validated upper-arm cuff is available
+
+### Pathology
+
+Keep a dated copy of every clinically ordered blood test.
+
+Do not order frequent panels solely to make the dataset bigger.
+
+## What not to spend money on
+
+For this plan, do not buy:
+- epigenetic-age testing
+- telomere testing
+- CGM without clinical reason
+- microbiome tests
+- full-body MRI
+- HBOT
+- red-light equipment
+- cold-plunge equipment
+- large supplement stacks
+- new gym equipment merely because a public biohacker owns it
+
+The current equipment and activities are enough.
+
+## HRV rule
+
+Do **not** use 65 ms as a pass/fail target.
+
+The August source-aware analysis found:
+- Fitbit ~30-day mean **36.3 ms**
+- ~90-day mean **37.0 ms**
+- no robust sustained decline
+- Withings values sit about **14.5 ms higher** on average
+
+Track Fitbit against Fitbit.
+
+Harder exercise days were often followed by lower HRV, but the response was variable and often rebounded by Day +2. One low value is not a reason by itself to cancel clinician-cleared activity.
+
+## Weight/BMI rule
+
+Use height **175 cm** consistently.
+
+The cleaned long-term record:
+- 88.8 kg / BMI **29.0** in Jul 2024
+- 83.7 kg / BMI **27.3** in 2025
+- ~81 kg / BMI **26.4** in mid-2026
+- 77.4 kg / BMI **25.3** in Jul 2026
+
+Consumer body-fat trend also moved down, but exact percentages are less reliable than the direction.
+
+Do not chase a lower BMI for its own sake if energy, muscle and performance are good.
+
+## When life is overloaded
+
+Priority order:
+
+1. family / required responsibilities
+2. sleep
+3. Monday frisbee
+4. two 20-minute strength sessions
+5. Saturday parkrun
+6. everything else
+
+A missed optional session does not need to be repaid with a huge workout.
+
+## Data archive
+
+Detailed personal datasets:
+- [full health archive](people/joshua-parris-full-health-archive.md)
+- [weekly wearable history](../data/josh-weekly-wearable-history.csv)
+- [lab history](../data/josh-labs-history.csv)
+- [body composition / BMI history](../data/josh-body-composition-history.csv)
+- [frisbee history](../data/josh-frisbee-history.csv)
+
+The purpose of the archive is to compare years, not create more daily work.
