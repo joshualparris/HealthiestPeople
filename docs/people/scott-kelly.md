@@ -75,6 +75,25 @@ Researchers observed:
 
 The long-term significance of some vascular findings was uncertain at study completion.
 
+### Cardiac structure during prolonged microgravity
+
+A separate *Circulation* case study used Kelly's year-long mission to examine cardiac remodelling.
+
+During the 340-day mission:
+
+- left-ventricular mass declined approximately **0.74 g/week**
+- left-ventricular diastolic diameter initially fell from **5.3 cm to 4.6 cm**
+- left-ventricular ejection fraction and diastolic-function markers did **not consistently change**
+
+This occurred despite Kelly exercising six days per week for one to two hours per day.
+
+The finding should not be interpreted as ordinary exercise causing heart shrinkage. The study examined an extreme absence-of-gravity environment in which normal cardiac loading is fundamentally altered.
+
+Evidence grade: **A — independent peer-reviewed cardiovascular research / AHA reporting**.
+
+Source:
+- American Heart Association, *Long-term space travelers will need high-intensity exercise to protect heart health*: https://newsroom.heart.org/news/long-term-space-travelers-will-need-high-intensity-exercise-to-protect-heart-health
+
 ### Telomeres
 
 Scott's average white-blood-cell telomere length increased by about **14.5% during flight** in the peer-reviewed analysis.
