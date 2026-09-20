@@ -170,3 +170,6 @@ Joshua Parris,May 2026 Monday Frisbee,Frisbee vigorous/peak time,21,min,C,data/j
 Joshua Parris,2026-08-17 Monday Frisbee,Frisbee average heart rate,149,bpm,C,data/josh-frisbee-history.csv,Harder session
 Joshua Parris,2026-08-17 Monday Frisbee,Frisbee duration,69,min,C,data/josh-frisbee-history.csv,Harder session
 Joshua Parris,2026-07-29,Peak exercise heart rate,195,bpm,C,docs/people/joshua-parris-full-health-archive.md,Activity-linked running/walking peak; wrist PPG does not identify rhythm
+Oskar Svendsen,repeated lab visits,Power at 4 mmol lactate,354;359;381;377;428;405;402;368,W,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight repeated lab tests; peak +20.9% from first test
+Oskar Svendsen,repeated lab visits,Power at 4 mmol lactate per kg,4.7;4.9;5.1;5.0;5.6;5.1;5.1;4.6,W/kg,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight repeated lab tests
+Oskar Svendsen,2012-2014 anti-doping controls,Haematocrit range,45.1-48.8,percent,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight controls all negative; mean haematocrit 47.0%
