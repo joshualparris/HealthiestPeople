@@ -1,0 +1,50 @@
+name: Validate Static Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check site-data.js
+          node --check resources-data.js
+          node --check app.js
+
+      - name: Check required site files
+        run: |
+          test -f index.html
+          test -f styles.css
+          test -f site-data.js
+          test -f resources-data.js
+          test -f app.js
+          test -f vercel.json
+
+      - name: Check page wiring
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("index.html").read_text()
+          required = [
+              'href="styles.css"',
+              'src="site-data.js"',
+              'src="resources-data.js"',
+              'src="app.js"',
+              'id="today"',
+              'id="people"',
+              'id="evidence"',
+          ]
+          missing = [item for item in required if item not in html]
+          if missing:
+              raise SystemExit(f"Missing page wiring: {missing}")
+          print("Static page wiring OK")
+          PY
