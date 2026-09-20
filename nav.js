@@ -8,6 +8,7 @@
     "transferability.md": "transferability.html",
     "evidence-and-bias.md": "methodology.html",
     "josh-plan.md": "plan-rationale.html",
+    "josh-morning-routine.md": "morning.html",
     "josh-plan-evidence.md": "plan-evidence.html",
     "source-policy.md": "source-policy.html",
     "joshua-parris-full-health-archive.md": "health-archive.html"
@@ -78,6 +79,7 @@
       items: [
         ["index.html", "Home", "primary"],
         ["plan.html", "My Plan", "primary"],
+        ["morning.html", "Morning Routine", "primary"],
         ["people.html", "People", "primary"]
       ]
     },
@@ -85,7 +87,7 @@
       label: "My data",
       items: [
         ["data.html", "Data Explorer", "primary"],
-        ["health-archive.html", "Josh Health Archive", "mobile-extra"],
+        ["health-archive.html", "Josh Health Archive", "primary"],
         ["charts.html", "Charts", "primary"]
       ]
     },
@@ -98,14 +100,16 @@
       ]
     },
     {
-      label: "Deep research",
+      label: "Research & methods",
       items: [
         ["comparison.html", "Comparison", "mobile-extra"],
         ["playbook.html", "Practical Playbook", "mobile-extra"],
         ["transferability.html", "Transferability", "mobile-extra"],
         ["methodology.html", "Evidence & Bias", "mobile-extra"],
         ["plan-rationale.html", "Plan Rationale", "mobile-extra"],
-        ["plan-evidence.html", "Plan Evidence", "mobile-extra"]
+        ["plan-evidence.html", "Plan Evidence", "mobile-extra"],
+        ["source-policy.html", "Source Policy", "mobile-extra"],
+        ["roadmap.html", "Roadmap", "mobile-extra"]
       ]
     }
   ];
