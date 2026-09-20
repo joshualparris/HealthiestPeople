@@ -154,6 +154,29 @@ He describes avoiding or limiting heavily processed food and simple/refined carb
 
 The useful lesson is the **food pattern**, not the need to copy his exact foods.
 
+## Cost and time reality
+
+Pascoe is often presented publicly as a lower-cost alternative to billionaire-scale longevity programmes, but **lower-cost is not the same as cheap**.
+
+His own current pages describe:
+
+- monthly LabCorp/Life Extension blood draws
+- quarterly hormonal testing
+- repeated ageing tests
+- annual specialist panels
+- extensive supplements
+- a completed home gym and multiple recovery/biohacking devices
+
+His public appearances archive links to 2025 reporting that described his regimen as costing at least **US$30,000/year** at that stage and involving roughly **170 capsules per day**. Pascoe also wrote that, after retiring and completing major equipment/genetic-testing purchases, he expected his ongoing annual spend to fall to **less than half** of his earlier level.
+
+These figures are contextual estimates, not a validated accounting audit. They nonetheless make one thing clear: **the complete Pascoe protocol is not a normal middle-class household baseline**.
+
+The transferable value is in the inexpensive core — movement, strength, mobility, balance, whole foods, sleep/recovery and consistent habits — rather than the total testing/device/supplement stack.
+
+Sources:
+- Pascoe, **Online Appearances**: https://www.davepascoe.net/home/online-appearances
+- Pascoe, **My Supplement List**: https://sites.google.com/view/davepascoe/home/my-supplement-list
+
 ## Routine and psychological flexibility
 
 An unusually useful statement on his daily-routine page is that he does not catastrophise when life interrupts his schedule.
