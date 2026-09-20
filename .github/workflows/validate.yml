@@ -19,32 +19,48 @@ jobs:
           node --check site-data.js
           node --check resources-data.js
           node --check app.js
+          node --check nav.js
+          node --check charts.js
 
       - name: Check required site files
         run: |
           test -f index.html
+          test -f plan.html
+          test -f people.html
+          test -f charts.html
+          test -f resources.html
+          test -f evidence.html
           test -f styles.css
           test -f site-data.js
           test -f resources-data.js
           test -f app.js
+          test -f nav.js
+          test -f charts.js
           test -f vercel.json
 
       - name: Check page wiring
         run: |
           python - <<'PY'
           from pathlib import Path
-          html = Path("index.html").read_text()
-          required = [
-              'href="styles.css"',
-              'src="site-data.js"',
-              'src="resources-data.js"',
-              'src="app.js"',
-              'id="today"',
-              'id="people"',
-              'id="evidence"',
-          ]
-          missing = [item for item in required if item not in html]
-          if missing:
-              raise SystemExit(f"Missing page wiring: {missing}")
-          print("Static page wiring OK")
+
+          pages = {
+              "index.html": ['href="styles.css"', 'src="site-data.js"', 'src="app.js"', 'src="nav.js"', 'id="today"'],
+              "plan.html": ['href="styles.css"', 'src="site-data.js"', 'src="app.js"', 'src="nav.js"', 'id="plan"', 'id="baseline"', 'id="glossary"'],
+              "people.html": ['href="styles.css"', 'src="site-data.js"', 'src="app.js"', 'src="nav.js"', 'id="people"', 'id="principles"'],
+              "resources.html": ['href="styles.css"', 'src="site-data.js"', 'src="resources-data.js"', 'src="app.js"', 'src="nav.js"', 'id="listen"', 'id="watch-read"'],
+              "charts.html": ['href="styles.css"', 'src="charts.js"', 'src="nav.js"', 'id="charts"', 'id="diagrams"'],
+              "evidence.html": ['href="styles.css"', 'src="nav.js"', 'id="grades"', 'id="rules"', 'id="research"'],
+          }
+
+          errors = []
+          for filename, required in pages.items():
+              html = Path(filename).read_text()
+              missing = [item for item in required if item not in html]
+              if missing:
+                  errors.append(f"{filename}: {missing}")
+
+          if errors:
+              raise SystemExit("Missing page wiring:\n" + "\n".join(errors))
+
+          print("Multi-page static site wiring OK")
           PY
