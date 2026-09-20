@@ -17,7 +17,7 @@ The main comparison uses recent OECD / government data for Japan, Spain, Switzer
 | Country | Recent outcome signal | Important strength | Important caveat |
 |---|---|---|---|
 | **Switzerland** | Life expectancy **84.3 y**; treatable mortality **34/100,000** | Low obesity, relatively high activity, very low treatable mortality | Daily smoking **16.1%** |
-| **Japan** | Life expectancy **84.1 y**; preventable mortality **86/100,000** | Very low measured obesity; traditional diet evidence | Inactivity **51%**; smoking **15.7%** |
+| **Japan** | Life expectancy **84.1 y**; preventable mortality **86/100,000** | Traditional diet evidence; low avoidable mortality | OECD 2025 reports no comparable self-reported-obesity value; inactivity **51%**; smoking **15.7%** |
 | **Spain** | Life expectancy **84.0 y** | Mediterranean-diet evidence; lower-than-OECD obesity/inactivity | Smoking **19.8%**; alcohol **11.1 L/person** |
 | **Singapore** | Resident life expectancy **83.5 y** in 2024 | Prevention-focused primary care; strong multi-factor lifestyle evidence | Different data system from OECD; ageing population |
 | **South Korea** | Life expectancy **83.5 y** | Very low self-reported obesity; low treatable mortality | Inactivity **61%**; suicide **23/100,000** |
@@ -42,7 +42,7 @@ OECD 2025 reports:
 - preventable mortality: **86 per 100,000**
 - treatable mortality: **49 per 100,000**
 
-Japan also has extremely low measured obesity in OECD data, but **51% of adults were classified as insufficiently active** and daily smoking remained **15.7%**.
+OECD 2025 reports **no comparable self-reported-obesity value for Japan**. It does report that **51% of adults were classified as insufficiently active** and daily smoking remained **15.7%**. Other sources often describe Japan as having low obesity, but that claim should not be attributed to this OECD country note.
 
 ### Diet evidence
 
