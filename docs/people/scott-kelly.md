@@ -75,6 +75,22 @@ Researchers observed:
 
 The long-term significance of some vascular findings was uncertain at study completion.
 
+### Additional vascular and metabolic findings from the integrated Twins Study
+
+The integrated *Science* paper adds several subject-specific cardiovascular/metabolic details:
+
+- Scott's average **cardiac output increased by about 10% during spaceflight**.
+- Carotid intima-media thickness increased early in flight, then did not continue to thicken during the second half of the mission.
+- The **APOB/APOA1 ratio increased during the last six months in flight** compared with preflight/early-flight measurements (**ANOVA P=0.003**), then declined after landing and was no longer significantly different from preflight.
+- Scott lost approximately **7% of body mass** during flight.
+- His reported energy intake was about **66% of predicted requirements**.
+
+These findings are individually attributable to the flight twin in the integrated paper. They should not be interpreted as ordinary terrestrial targets: they describe adaptation to a highly abnormal environment.
+
+Primary peer-reviewed source:
+- Garrett-Bakelman et al., *Science* 2019: https://pubmed.ncbi.nlm.nih.gov/30975860/
+- Open manuscript: https://pmc.ncbi.nlm.nih.gov/articles/PMC7580864/
+
 ### Cardiac structure during prolonged microgravity
 
 A separate *Circulation* case study used Kelly's year-long mission to examine cardiac remodelling.
