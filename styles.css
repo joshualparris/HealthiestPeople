@@ -966,3 +966,40 @@ body{max-width:100%;overflow-x:hidden}
   .person-card-actions{align-items:stretch}
   .person-profile-link,.person-card-actions .person-media-link{justify-content:center;width:100%;text-align:center}
 }
+
+
+/* mobile7 hardening: prevent any content from widening the viewport */
+@media(max-width:760px){
+  html,body{max-width:100%;overflow-x:hidden}
+  main,.section,.wrap,.doc-layout,.doc-sidebar,.doc-sidebar-card,.doc-article{
+    min-width:0!important;
+    max-width:100%!important;
+  }
+  .doc-sidebar-card{overflow:hidden}
+  .doc-toc{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:auto!important;
+    overscroll-behavior-inline:contain;
+    scrollbar-width:none;
+  }
+  .doc-toc::-webkit-scrollbar{display:none}
+  .doc-article h2,.doc-article h3,.doc-article h4,
+  .doc-article p,.doc-article li,.doc-article a{
+    max-width:100%!important;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+  .page-tabs{
+    max-width:100%;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    scrollbar-width:none;
+  }
+  .page-tabs::-webkit-scrollbar{display:none}
+  .page-tabs a{white-space:nowrap;flex:0 0 auto}
+  .term-explainer>div,.metric-explainer .next-action,.measure-how{
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+}
