@@ -49,6 +49,7 @@ Snyder and Smarr are deliberately included as **measurement lessons, not "health
 - [Time/cost/family transferability matrix](docs/transferability.md)
 - [Research backlog / known data gaps](docs/research-backlog.md)
 - [Evidence quality, conflicts and interpretation](docs/evidence-and-bias.md)
+- [Public data access audit](docs/data-access-audit.md)
 - [Normalised metrics dataset](data/metrics.csv)
 
 ## Purpose
