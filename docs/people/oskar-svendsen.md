@@ -106,6 +106,38 @@ The current value was **not publicly disclosed** in the reporting available to t
 
 That is important: we should not pretend his teenage 96.7 result describes his current physiology at age 32.
 
+## 2026 status: current VO2max is deliberately unknown
+
+A March 2026 *Cycling Weekly* profile tracked Svendsen down roughly 12 years after leaving elite cycling.
+
+The article reports that:
+
+- he lives in Oslo
+- he works outside professional sport, in strategy/supply-chain work at indoor-growing company Auk
+- he still participates in sport recreationally
+- friends took him back to a laboratory during a stag-do event in 2025
+- he completed another VO2max test
+- he described the result as embarrassingly low relative to his former level and **declined to disclose the number**
+
+This is an important data-quality point.
+
+The public record therefore supports:
+
+- **historical peak VO2max: 96.7 mL/kg/min (peer-reviewed)**
+- **post-detraining VO2max: 77.0 mL/kg/min in 2015 (peer-reviewed)**
+- **2025/26 current retest: performed, numerical result not public**
+
+The repository should not substitute the old 96.7 value for a current measurement.
+
+Source:
+- Cycling Weekly, 25 March 2026: https://www.cyclingweekly.com/news/its-almost-12-years-since-i-quit-i-still-dont-regret-it-we-tracked-down-cyclings-lost-world-champion-and-vo2-max-record-holder
+
+### Life-context lesson
+
+Svendsen is also a useful reminder that maximising an extraordinary physiological talent is not automatically the best life choice.
+
+He left elite cycling young, pursued education/work and has said he does not regret the decision. For this project, that reinforces a broader definition of health: **physical metrics belong inside a life, rather than the life belonging to the metric**.
+
 ## What appears genuinely impressive
 
 ### 1. Exceptional intrinsic aerobic capacity
