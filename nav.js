@@ -92,6 +92,7 @@
     {
       label: "Learn",
       items: [
+        ["principles.html", "Principles", "primary"],
         ["resources.html", "Resources", "primary"],
         ["evidence.html", "Evidence Hub", "primary"]
       ]
