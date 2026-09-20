@@ -9,26 +9,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="HealthiestPeople home">
+      <a class="brand" href="index.html" aria-label="HealthiestPeople home">
         <span class="brand-mark">HP</span>
         <span>HealthiestPeople</span>
       </a>
-      <nav aria-label="Main navigation">
-        <a href="#today">Today</a>
-        <a href="#plan">My plan</a>
-        <a href="#baseline">My baseline</a>
-        <a href="#people">People</a>
-        <a href="#principles">Principles</a>
-        <a href="#listen">Listen</a>
-        <a href="#resources">Watch / Read</a>
-        <a href="#evidence">Evidence</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="plan.html">My Plan</a>
+        <a href="people.html">People</a>
+        <a href="charts.html">Charts</a>
+        <a href="resources.html">Resources</a>
+        <a href="evidence.html">Evidence</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main-content">
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
@@ -46,6 +48,26 @@
           <strong>Sleep. Move. Lift. Eat plants and enough protein. Track only what changes decisions. Stay connected. Repeat for years.</strong>
           <span>That is where the public case studies converge most strongly — and the new real-world baseline tests whether it fits ordinary family life.</span>
         </aside>
+      </div>
+    </section>
+
+    <section id="explore-site" class="section explore-home">
+      <div class="wrap">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Go straight to what you need</p>
+            <h2>Explore the site</h2>
+            <p class="section-intro">The homepage gives you the daily view. The deeper material now lives on focused pages so you do not have to scroll through everything at once.</p>
+          </div>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" href="plan.html"><span>Do</span><h3>My Plan</h3><p>This week, exact health actions, personal baseline and plain-English explanations.</p></a>
+          <a class="explore-card" href="people.html"><span>Learn</span><h3>People</h3><p>What each case study teaches, what is transferable and what not to copy blindly.</p></a>
+          <a class="explore-card" href="charts.html"><span>See</span><h3>Charts</h3><p>Visual trends and comparisons, with evidence dates and context rather than fake health scores.</p></a>
+          <a class="explore-card" href="resources.html"><span>Watch / listen / read</span><h3>Resources</h3><p>Curated podcasts, talks, videos and articles with a reason for including each one.</p></a>
+          <a class="explore-card" href="evidence.html"><span>Verify</span><h3>Evidence</h3><p>Source grades, limitations, conflicts, research rules and the underlying documents.</p></a>
+          <a class="explore-card" href="ROADMAP.md"><span>Build</span><h3>Roadmap</h3><p>What is being improved next and what “best possible” means for this project.</p></a>
+        </div>
       </div>
     </section>
 
@@ -351,5 +373,6 @@
   <script src="site-data.js"></script>
   <script src="resources-data.js"></script>
   <script src="app.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>
