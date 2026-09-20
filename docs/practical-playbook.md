@@ -2,7 +2,7 @@
 
 ## Goal
 
-Take the useful principles from Johnson, Lustgarten, Svendsen, Pascoe and Kelly **without copying their money, free time, occupations, equipment or experimental medicine**.
+Take the useful principles from Johnson, Lustgarten, Svendsen, Pascoe, Kelly, Gibson Clark, Troia, Snyder and Smarr **without copying their money, free time, occupations, equipment or experimental medicine**.
 
 This is a health-maintenance framework for a typical adult with:
 
@@ -16,7 +16,7 @@ It is general education, not individual medical advice.
 
 ## The striking result
 
-Once the expensive layers are stripped away, the five cases converge on a very ordinary foundation:
+Once the expensive layers are stripped away, the nine cases converge on a very ordinary foundation:
 
 1. move frequently
 2. maintain aerobic fitness
@@ -46,7 +46,7 @@ WHO also emphasises that activity done through transport, work, household tasks,
 Source:
 - WHO, Physical Activity: https://www.who.int/europe/news-room/fact-sheets/item/physical-activity
 
-## What the five cases add
+## What the nine cases add
 
 ### Svendsen
 Shows how powerful aerobic adaptation can be — but also how genetically exceptional elite VO2max can be.
@@ -393,3 +393,108 @@ That captures far more of the credible signal from these five cases than attempt
 - Heart Foundation, Keeping Your Heart Healthy: https://www.heartfoundation.org.au/healthy-living/keeping-your-heart-healthy
 - Australian Government, Alcohol: https://www.health.gov.au/topics/alcohol/about-alcohol/how-much-alcohol-is-safe-to-drink
 - Australian Government, Smoking: https://www.health.gov.au/give-up-for-good/smoking
+
+
+---
+
+# 11. The 2026 Australian baseline
+
+Australia's updated 24-hour movement guidance for adults aged 18–64 provides a useful floor beneath the case studies.
+
+The current guidance emphasises:
+
+- being physically active on most days
+- at least **30 minutes of moderate-to-vigorous physical activity on most days**
+- muscle-strengthening activities on **2 or more days each week**
+- functional activity that challenges balance, coordination or mobility on **3 or more days each week**
+- several hours of light activity across the day
+- breaking up prolonged sitting as often as possible
+- **7–9 hours of good-quality sleep**, with consistent bed and wake times
+
+Source:
+- Australian Government Department of Health, Disability and Ageing, 24-hour movement guidelines for adults 18–64:
+  https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-adults-18-to-64-years
+
+This is more useful as a starting point than any longevity influencer's exact timetable.
+
+## What the four added case studies contribute
+
+### Julie Gibson Clark — make the basics fit family life
+
+Clark's public routine strengthens the case for:
+
+- strength + aerobic work rather than choosing one
+- vegetables and adequate protein
+- walking
+- sleep protection
+- a short daily stress-management practice
+- allowing family connection to beat protocol perfection
+
+Her reported DunedinPACE is interesting but is **not** a licence to infer a fixed lifespan benefit.
+
+### Bob Troia — minimum effective measurement
+
+Troia's most useful idea is to shrink tracking until it is actually sustainable.
+
+Before measuring something, ask:
+
+> **What decision would change if this number moved?**
+
+If the answer is "none", the measurement may be interesting but is probably not a priority.
+
+### Michael Snyder — establish a personal baseline
+
+Snyder's peer-reviewed personal-omics work demonstrates the value of longitudinal change.
+
+For ordinary people, the principle can be much simpler:
+
+- know your usual blood pressure
+- keep copies of important pathology
+- know your broad resting-heart-rate/activity baseline if you track it
+- pay attention when a meaningful change persists
+
+### Larry Smarr — follow persistent abnormalities
+
+Smarr's story is a reminder that repeated abnormal inflammation signals can matter even before a person has a neat explanation for them.
+
+The ordinary-person version is not "order 100 tests". It is:
+
+1. notice a persistent signal
+2. keep the records
+3. take it to a clinician
+4. investigate appropriately
+5. stop self-experimenting when proper medical assessment is the next step
+
+---
+
+# 12. A low-friction weekday version
+
+For a person with work, children and limited evening bandwidth:
+
+| Moment | Default |
+|---|---|
+| Morning | Daylight + ordinary breakfast/protein; no optimisation ritual required |
+| Workday | Stand/move regularly; use stairs/walking where practical |
+| Lunch | Protein + plants + high-fibre carbohydrate |
+| After meals | 5–10 minute walk when convenient |
+| Two evenings/week | 25–30 minute full-body strength |
+| Two other days | 25–30 minute brisk walk/run/bike |
+| Weekend | One longer enjoyable family movement block |
+| Last 30 minutes before bed | Reduce work/screens where possible; protect wind-down |
+| Weekly | Look at consistency, not perfection |
+| Periodically | GP/preventive care and clinically appropriate measurements |
+
+The purpose is to minimise decision load. A healthy default that happens repeatedly is worth more than an elaborate plan that depends on ideal circumstances.
+
+# 13. The "bad week" protocol
+
+When sleep is broken, work is intense, a child is sick or everything is simply too much:
+
+- keep a **10-minute walk**
+- do **one short strength circuit** if able
+- keep **protein + plants** visible in easy meals
+- choose **sleep over a late optional workout**
+- do not compensate with extreme fasting, extra supplements or punishing exercise
+- resume the normal plan when the week settles
+
+Long-term consistency is not the absence of disrupted weeks. It is the ability to restart without drama.
