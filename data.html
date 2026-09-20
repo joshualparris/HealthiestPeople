@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1f1a">
+  <meta name="description" content="Search and browse the HealthiestPeople longitudinal datasets.">
+  <title>Data Explorer — HealthiestPeople</title>
+  <link rel="stylesheet" href="styles.css?v=20260920-mobile6">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand" href="index.html"><span class="brand-mark">HP</span><span>HealthiestPeople</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+  <nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="plan.html">My Plan</a><a href="people.html">People</a><a href="charts.html">Charts</a><a href="resources.html">Resources</a><a href="evidence.html">Evidence</a></nav>
+</div></header>
+<main id="main-content">
+<section class="page-hero"><div class="wrap"><p class="eyebrow">Auditable, but readable</p><h1>Data Explorer</h1><p class="lede">Browse the underlying longitudinal datasets without opening raw CSV files. Search, switch datasets and inspect source notes on any screen size.</p></div></section>
+<section class="section data-section"><div class="wrap">
+  <div class="dataset-controls">
+    <div id="dataset-tabs" class="dataset-tabs" role="tablist" aria-label="Datasets"></div>
+    <label class="data-search"><span>Search this dataset</span><input id="data-search" type="search" placeholder="e.g. ferritin, 2026, HRV…"></label>
+  </div>
+  <div class="data-summary"><div><span class="tag">Dataset</span><h2 id="dataset-title">Loading…</h2><p id="dataset-description"></p></div><div class="data-count"><strong id="data-count">0</strong><span>matching rows</span></div></div>
+  <div id="data-table" class="data-table-shell" aria-live="polite"></div>
+  <div id="data-cards" class="data-cards"></div>
+  <p class="fine">These are source records and tracking measurements, not diagnoses. Dates, devices and evidence quality matter when comparing values over time.</p>
+</div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><b>HealthiestPeople</b><p>Source-first health research translated into ordinary life.</p></div><div><a href="health-archive.html">Josh Health Archive</a><a href="evidence.html">Evidence</a></div></div></footer>
+<script src="data-explorer.js?v=20260920-mobile6"></script><script src="nav.js?v=20260920-mobile6"></script>
+</body></html>
