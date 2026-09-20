@@ -24,6 +24,67 @@ Bryan Johnson is one of the broadest publicly documented modern N-of-1 health ca
 | Diagnosed disease | **Autoimmune gastritis**, biopsy-confirmed after persistent low ferritin prompted investigation | Diagnosed May 2026; reported Jul 2026 | B — independently reported with clinical-expert discussion |
 | Diagnosed disease | History of autoimmune thyroid disease / hypothyroidism | Publicly reported | B/C |
 
+## 2026 protocol details: time, diet and prescriptions
+
+Johnson's January 2026 protocol gives a clearer picture of the resources and structure behind the headline biomarkers.
+
+### Exercise volume
+
+He prescribes/reports approximately **6 hours of exercise per week**, including:
+
+- **3 strength sessions**
+- **3 cardio sessions**
+- a target of **150 minutes moderate / Zone 2 activity**
+- **75 minutes vigorous activity**
+- flexibility, balance and mobility
+- brief movement after meals and regular movement breaks during desk work
+
+His example day includes a **60–90 minute morning workout**. He also says that for people who cannot do six hours, even **20 minutes per day** is worthwhile.
+
+The broad exercise pattern closely overlaps mainstream public-health guidance; the total time commitment is more than many working parents can reliably protect.
+
+### Food intake
+
+His published 2026 approximate daily intake is:
+
+- **2,250 kcal**
+- **130 g protein**
+- **206 g carbohydrate**
+- **101 g fat**
+
+He describes this as about 10% caloric restriction relative to his estimated requirement.
+
+His example meals prominently include lentils, broccoli, cauliflower, mushrooms, garlic, ginger, fermented vegetables, sweet potato, chickpeas, avocado, berries, nuts/seeds and olive oil.
+
+He currently reports finishing his final meal around **noon**. That is a personal protocol choice, not a requirement for ordinary health; elsewhere in the same protocol he gives the more practical advice of leaving at least roughly **two hours between the last meal and bedtime**.
+
+### Current disclosed prescription stack
+
+Johnson's 2026 protocol lists:
+
+- **Armour Thyroid 60 mg**
+- **levothyroxine 100 mcg** — with hypothyroidism diagnosed at age 21
+- **minoxidil 3.75 mg**
+- **metformin 500 mg**, cycled six weeks on/off
+- **tadalafil 5 mg**
+- **empagliflozin (Jardiance) 10 mg**
+- **acarbose 200 mg** in the daily-routine section (another protocol section lists 400 mg/day, so the current exact dose needs clarification)
+- **evolocumab (Repatha) 140 mg every other week**
+
+Evidence grade: **C — first-party protocol disclosure**.
+
+These medicines make causal interpretation difficult. Very low glucose or lipid risk markers cannot automatically be attributed to diet/exercise when pharmacological treatment may materially affect the same endpoints.
+
+None of these prescription medicines should be copied for longevity without an individual clinical indication and medical supervision.
+
+### Time/resource intensity
+
+His example morning also includes sauna, red/NIR light, shockwave therapy and either hyperbaric oxygen or intermittent hypoxic-hyperoxic training before beginning work.
+
+That schedule is important context: **Johnson's complete protocol is not designed around the constraints of a typical working parent**.
+
+The transferable question is therefore not "How do I reproduce his day?" but "Which inexpensive behaviours remain valuable when the medical-team and equipment layers are removed?"
+
 ## What appears genuinely impressive
 
 ### 1. Cardiovascular fitness
