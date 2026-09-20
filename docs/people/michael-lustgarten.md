@@ -29,6 +29,28 @@ Lustgarten reports:
 
 By September 2024 he described his sixth 2024 blood test as **test #54 since 2015**.
 
+## 2026 public tracking platform
+
+Lustgarten's 2026 data platform, **Conquer Aging or Die Trying**, gives a clearer summary of the scale of his self-tracking:
+
+- current age shown: **53**
+- best reported Levine PhenoAge: **27.8**
+- chronological age at that best result: **49.5**
+- best age gap: approximately **-22 years**
+- **40+ biomarkers tracked**
+- **13 biomarker categories**
+- tracking cadence described as **monthly**
+- imports/uses blood panels, Apple Health and Cronometer-style diet records
+
+Evidence grade: **C — first-party platform**.
+
+The platform also describes him as the **2025 Longevity World Cup Champion**. That is a competition based on algorithmic biological-age calculations, so this repository treats it as context rather than proof of superior health or lifespan.
+
+The useful signal is the **longitudinal measurement density and repeatability**, not the headline age number.
+
+Source:
+- https://conqueragingordietrying.ai/
+
 ## Cardiovascular / fitness measurements
 
 ### Resting heart rate and HRV
