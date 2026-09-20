@@ -2,7 +2,7 @@
 
 ## The short version
 
-These nine people are not nine versions of the same experiment.
+These ten profiles are not ten versions of the same experiment. Nine are external public case studies; **Joshua Parris is the real-world working-parent baseline**.
 
 - **Bryan Johnson** has the broadest current public-facing whole-body dataset.
 - **Michael Lustgarten** has unusually long, low-cost longitudinal self-tracking tied to ordinary bloodwork, diet and exercise.
@@ -10,7 +10,35 @@ These nine people are not nine versions of the same experiment.
 - **Dave Pascoe** has impressive self-reported function and strength in his early 60s, plus broad testing.
 - **Scott Kelly** has the highest-quality independent multidimensional research dataset, but it was designed to study spaceflight stress rather than longevity optimisation.
 
-Because their ages, test dates, methods and public-data coverage differ, this project does **not** manufacture a single numeric "health score".
+Because their ages, test dates, methods, life contexts and public-data coverage differ, this project does **not** manufacture a single numeric "health score".
+
+## Joshua Parris: real-world working-parent baseline
+
+Joshua is not included as a "healthiest person" claim. His role is to make the comparison practical.
+
+Current/latest public baseline includes:
+
+- age **32**
+- height **175 cm**
+- weight **77.4 kg** (Jul 2026)
+- calculated BMI **25.3**
+- sleeping resting HR historically **55–58 bpm**
+- clinic/donation BP range roughly **122–136 / 70–87 mmHg**
+- fasting glucose **5.0 mmol/L** (Feb 2026)
+- HbA1c **5.3%**
+- LDL-C **2.8 mmol/L**
+- HDL-C **1.3 mmol/L**
+- triglycerides **1.1 mmol/L**
+- CRP **<0.4 mg/L**
+- creatinine **80 µmol/L**, eGFR **>90**
+- average sleep snapshot roughly **6 h 26–31 min**, with **18% of nights under 5 h**
+- consumer HRV examples around **46–53.7 ms RMSSD**
+
+The most obvious comparison lesson is that **sleep and repeatable fitness/strength benchmarks offer more actionable upside than adding exotic longevity tests**.
+
+His profile deliberately excludes diagnoses and medications from the public repository.
+
+See: [Joshua Parris profile](people/joshua-parris.md).
 
 ## Evidence key
 
