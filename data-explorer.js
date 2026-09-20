@@ -5,7 +5,8 @@
     labs: {title:"Josh pathology history",description:"Date-stamped pathology and ECG values recovered from clinical records and prior reports.",file:"data/josh-labs-history.csv"},
     body: {title:"Josh body composition",description:"Cleaned weight, calculated BMI and consumer body-composition history.",file:"data/josh-body-composition-history.csv"},
     frisbee: {title:"Josh Monday Frisbee",description:"Documented and likely Monday-night Ultimate sessions with heart-rate and training-load context.",file:"data/josh-frisbee-history.csv"},
-    cardiac: {title:"Josh cardiac history",description:"Cardiac-test and symptom-history archive where dates and source quality are available.",file:"data/josh-cardiac-history.csv"}
+    cardiac: {title:"Josh cardiac history",description:"Cardiac-test and symptom-history archive where dates and source quality are available.",file:"data/josh-cardiac-history.csv"},
+    countries: {title:"Healthy-country outcomes",description:"Official population-health metrics used in the Japan / Spain / Switzerland / Iceland / Singapore / Korea / Australia comparison.",file:"data/country-health-lessons.csv"}
   };
 
   const tabs = document.getElementById("dataset-tabs");
