@@ -35,6 +35,33 @@ These are calculated ageing-model outputs. They do not mean that every organ is 
 
 Pascoe himself explicitly says that his N-of-1 experimentation should not be extrapolated to the general population.
 
+## September 2026 current-state update
+
+Pascoe's current homepage now describes:
+
+- age: **63**
+- height: **6 ft / 183 cm**
+- weight: **160 lb / 72.57 kg**
+- BMI: **21.7**
+- occupation: **retired**, now describing himself as a full-time biohacker/rejuvenation athlete
+- supplement programme: approximately **200 individual supplements/day**, comprising about **173 pill-type products plus 28 powder-form products**
+- daily capsule count: approximately **69–235 capsules/day**, depending on the day
+- testosterone: self-reported monthly range **808–1262**, without testosterone-replacement therapy
+- thyroid replacement: T3 + T4, after thyroid failure in his early 30s
+- low-dose statin use after latest CT imaging showed some new mild plaque formation
+
+Evidence grade: **C — current first-party homepage**.
+
+This update strengthens two interpretations:
+
+1. Pascoe appears to preserve substantial physical function in his 60s.
+2. His **complete current regimen is a full-time, high-complexity project**, not an ordinary low-cost health template.
+
+The practical translation should therefore continue to extract the inexpensive fundamentals rather than describing his total protocol as "budget longevity".
+
+Source:
+- https://www.davepascoe.net/
+
 ## Testing programme
 
 His public testing page describes:
