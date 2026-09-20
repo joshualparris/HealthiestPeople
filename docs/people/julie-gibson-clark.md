@@ -69,6 +69,50 @@ Her own site also makes the family trade-off explicit: dinner timing is not alwa
 Source:
 - https://www.juliegibsonclark.com/
 
+## More concrete current routine data
+
+Clark's own current site gives several useful behavioural quantities that are unusually relevant to this project's working-family focus.
+
+### Sleep
+
+She says:
+
+- **"I get my 8 every night"**
+- target lights-out time is about **9 pm**
+- she acknowledges previous bouts of insomnia
+
+Evidence grade: **D/C — first-party routine statement**.
+
+### Evening movement
+
+She describes a **7:30 pm evening walk** and says she usually walks about **6,000–9,000 steps** during that period.
+
+This should not be interpreted as a requirement to add 9,000 extra steps after a normal day; it is a first-party description of her own routine.
+
+### Food targets
+
+Her current food page states:
+
+- roughly **1 lb / 454 g vegetables daily**
+- **4–8 oz** of that as cooked greens
+- historically **100+ g protein/day**, based on her lean mass
+- a modest family dinner, with flexibility on weekends
+
+The protein target is an individual self-selected target, not a universal prescription.
+
+### Family realism
+
+Her site explicitly says that she prefers dinner several hours before bed but sometimes she and her son do not eat until **8 pm** because life/cooking runs late.
+
+Her stated priority is enjoying time with her son rather than maintaining perfect meal timing.
+
+That is one of the strongest transferability signals in the project: **the protocol bends around family life rather than requiring family life to bend around the protocol**.
+
+Sources:
+- Main routine: https://www.juliegibsonclark.com/
+- Food: https://www.juliegibsonclark.com/general-7
+- Sleep/rest: https://www.juliegibsonclark.com/general-1
+
 ## Why her case is useful
 
 Clark is valuable less because of a leaderboard position and more because she demonstrates a plausible **low-complexity architecture**:
