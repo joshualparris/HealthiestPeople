@@ -1,9 +1,16 @@
 (() => {
   const body = document.body;
-  const source = body.dataset.docSource;
+  const params = new URLSearchParams(window.location.search);
+  const querySource = params.get("src") || "";
+  const datasetSource = body.dataset.docSource || "";
+  const isSafeDoc = value => /^docs\/[A-Za-z0-9._\/-]+\.md$/i.test(value) && !value.includes("..");
+  const source = datasetSource || (isSafeDoc(querySource) ? querySource : "");
   const target = document.getElementById("doc-content");
   const toc = document.getElementById("doc-toc");
-  if (!source || !target) return;
+  if (!source || !target) {
+    if (target) target.innerHTML = '<div class="doc-error"><h2>Document not found</h2><p>This page needs a valid research document from the repository.</p></div>';
+    return;
+  }
 
   const escapeHtml = value => String(value)
     .replace(/&/g, "&amp;")
@@ -18,9 +25,32 @@
     .replace(/^-+|-+$/g, "")
     .slice(0, 80);
 
+  const normalisePath = path => {
+    const out = [];
+    String(path).split("/").forEach(part => {
+      if (!part || part === ".") return;
+      if (part === "..") out.pop();
+      else out.push(part);
+    });
+    return out.join("/");
+  };
+
+  const resolveMarkdownSource = hrefPath => {
+    const clean = hrefPath.replace(/^\//, "");
+    if (clean.startsWith("docs/")) return normalisePath(clean);
+    const base = source.split("/").slice(0, -1).join("/");
+    return normalisePath((base ? base + "/" : "") + clean);
+  };
+
   const rawRoute = href => {
-    const clean = href.replace(/^\.\//, "");
+    if (!href || href.startsWith("#") || /^(?:https?:|mailto:|tel:)/i.test(href)) return href;
+
+    const hashIndex = href.indexOf("#");
+    const rawPath = hashIndex >= 0 ? href.slice(0, hashIndex) : href;
+    const hash = hashIndex >= 0 ? href.slice(hashIndex) : "";
+    const clean = rawPath.replace(/^\.\//, "");
     const file = clean.split("/").pop() || clean;
+
     const map = {
       "comparison.md": "comparison.html",
       "practical-playbook.md": "playbook.html",
@@ -47,7 +77,18 @@
       "josh-cardiac-history.csv": "data.html#cardiac",
       "metrics.csv": "data.html#metrics"
     };
-    return map[file] || href;
+
+    if (map[file]) {
+      const routed = map[file];
+      return hash && !routed.includes("#") ? routed + hash : routed;
+    }
+
+    if (/\.md$/i.test(clean)) {
+      const resolved = resolveMarkdownSource(clean);
+      if (isSafeDoc(resolved)) return "document.html?src=" + encodeURIComponent(resolved) + hash;
+    }
+
+    return href;
   };
 
   const inline = input => {
@@ -84,6 +125,7 @@
     const lines = markdown.replace(/\r/g, "").split("\n");
     const out = [];
     const headings = [];
+    let firstHeading = "";
     let i = 0;
     let para = [];
     let listType = null;
@@ -132,6 +174,7 @@
         flushPara(); flushList();
         const level = heading[1].length;
         const text = heading[2].replace(/\*\*/g, "");
+        if (!firstHeading && level === 1) firstHeading = text;
         const id = slugify(text) || ("section-" + i);
         if (level >= 2) headings.push({ level, text, id });
         out.push('<h' + level + ' id="' + id + '">' + inline(heading[2]) + '</h' + level + '>');
@@ -174,7 +217,7 @@
     }
 
     flushPara(); flushList();
-    return { html: out.join("\n"), headings };
+    return { html: out.join("\n"), headings, firstHeading };
   };
 
   fetch(source, { cache: "no-store" })
@@ -185,12 +228,22 @@
     .then(markdown => {
       const rendered = parseMarkdown(markdown);
       target.innerHTML = rendered.html;
+
+      const pageTitle = document.getElementById("doc-page-title");
+      if (pageTitle) {
+        const fallback = source.split("/").pop().replace(/\.md$/i, "").replace(/[-_]+/g, " ");
+        const title = rendered.firstHeading || fallback;
+        pageTitle.textContent = title;
+        document.title = title + " — HealthiestPeople";
+      }
+
       if (toc && rendered.headings.length) {
         toc.innerHTML = rendered.headings
           .filter(h => h.level <= 3)
           .map(h => '<a class="toc-level-' + h.level + '" href="#' + h.id + '">' + escapeHtml(h.text) + '</a>')
           .join("");
       }
+
       document.querySelectorAll(".doc-article a").forEach(a => {
         const href = a.getAttribute("href") || "";
         if (/\.md(?:$|#)|\.csv(?:$|#)/i.test(href)) a.setAttribute("href", rawRoute(href));
