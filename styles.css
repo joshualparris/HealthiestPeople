@@ -392,3 +392,124 @@
   .page-hero{padding:42px 0 26px}
   .page-hero h1{font-size:clamp(2.25rem,12vw,3.4rem)}
 }
+
+
+/* Compact glossary explanations: tap to expand instead of rendering tall blocks */
+.term-explainer{
+  margin-top:10px;
+  border-top:1px solid var(--line);
+  padding-top:9px;
+}
+.term-explainer summary{
+  cursor:pointer;
+  list-style:none;
+  color:var(--green);
+  font-size:.78rem;
+  font-weight:850;
+}
+.term-explainer summary::-webkit-details-marker{display:none}
+.term-explainer summary::after{content:" +";font-weight:900}
+.term-explainer[open] summary::after{content:" −"}
+.term-explainer>div{
+  margin-top:9px;
+  padding:10px 12px;
+  border-radius:12px;
+  background:#eef5f0;
+  border-left:3px solid var(--sage-2);
+}
+.term-explainer p{
+  margin:0 0 8px;
+  color:#385149;
+  font-size:.84rem;
+  line-height:1.5;
+  font-weight:500;
+}
+.term-explainer p:last-child{margin-bottom:0}
+.term-explainer b{color:var(--green)}
+
+@media(max-width:650px){
+  /* Force every dense plan/baseline region into a single readable column. */
+  .plan-top,.plan-grid,.baseline-grid,.baseline-headline,.baseline-next{
+    grid-template-columns:1fr !important;
+  }
+  .plan-top>*,
+  .plan-grid>*,
+  .baseline-grid>*,
+  .baseline-headline>*,
+  .baseline-next>*{
+    min-width:0;
+    width:100%;
+  }
+
+  /* Never show the old expanded glossary blocks on phones if stale markup exists. */
+  .plain-english{display:none !important}
+
+  .term-explainer{
+    width:100%;
+    grid-column:1/-1;
+    margin-top:10px;
+  }
+  .term-explainer summary{
+    display:inline-flex;
+    align-items:center;
+    min-height:32px;
+    padding:5px 0;
+    font-size:.86rem;
+  }
+
+  /* Numbered plan items stay wide enough for real words. */
+  .questions li{
+    grid-template-columns:36px minmax(0,1fr) !important;
+    align-items:start;
+    min-width:0;
+  }
+  .questions li>span,
+  .questions li>div,
+  .questions li>details{
+    min-width:0;
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+
+  /* Metric cards: no inherited equal-height/column stretching. */
+  .baseline-metric{
+    min-height:0 !important;
+    height:auto !important;
+    display:block;
+  }
+  .baseline-metric strong{
+    display:block;
+    margin:7px 0 4px;
+  }
+  .baseline-metric small{
+    display:block;
+    margin-top:4px;
+  }
+
+  .baseline-list>div{
+    grid-template-columns:1fr auto !important;
+  }
+  .baseline-list b{
+    max-width:45vw;
+    overflow-wrap:anywhere;
+  }
+
+  .metric-explainer,.term-explainer{
+    max-width:100%;
+  }
+
+  /* Keep workout rows readable rather than squeezing dose/text together. */
+  .workout-list li{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:8px 12px;
+  }
+
+  .panel,.workout-card,.help-card,.baseline-metric{
+    overflow:hidden;
+  }
+
+  .section-heading .button{
+    width:100%;
+  }
+}
