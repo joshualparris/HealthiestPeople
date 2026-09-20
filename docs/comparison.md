@@ -31,12 +31,12 @@ Current/latest public baseline includes:
 - triglycerides **1.1 mmol/L**
 - CRP **<0.4 mg/L**
 - creatinine **80 µmol/L**, eGFR **>90**
-- average sleep snapshot roughly **6 h 26–31 min**, with **18% of nights under 5 h**
-- consumer HRV examples around **46–53.7 ms RMSSD**
+- recent six-week Google Health sleep average about **8 h 01 min/night**; an older 2026 snapshot was roughly **6 h 26–31 min**, so the older short-sleep period should not be presented as current
+- Fitbit HRV RMSSD about **36–37 ms** over recent 30-/90-day same-device windows; older 46–53.7 ms examples came from different devices/methods and are contextual only
 
-The most obvious comparison lesson is that **sleep and repeatable fitness/strength benchmarks offer more actionable upside than adding exotic longevity tests**.
+The clearest current comparison lesson is that **strength, a validated home blood-pressure baseline and repeatable fitness/function benchmarks offer more actionable upside than adding exotic longevity tests**. Recent sleep duration is something to protect, not an obvious current deficit.
 
-His profile deliberately excludes diagnoses and medications from the public repository.
+The public archive contains some health-history context where Joshua has explicitly chosen to include it. It should not be read as a complete medication list or a substitute for clinical records, and family members' private medical details remain outside this comparison.
 
 See: [Joshua Parris profile](people/joshua-parris.md).
 
@@ -57,7 +57,7 @@ See: [Joshua Parris profile](people/joshua-parris.md).
 | HRV | Not yet normalised | **76–86.3 ms** historical monthly averages (C) | Unknown | Not yet extracted | Not directly comparable from current dataset |
 | Coronary imaging | **CAC 0** (C) | No comparable public imaging found yet | Unknown | Periodic coronary CT reported; exact current result not yet extracted | Carotid wall thickening observed during/after spaceflight (A) |
 | Inflammation | **hs-CRP 0.1 mg/dL** (C) | Longitudinal blood markers available; current value not yet extracted | Unknown | Current value not yet extracted | Inflammatory changes documented during spaceflight (A) |
-| Glucose / metabolic | Blueprint reports excellent control; exact values still being extracted | Multiple longitudinal routine blood tests; exact current values still being extracted | Unknown | Exact current values not yet extracted | Spaceflight metabolomics available but not a simple "better/worse" comparison |
+| Glucose / metabolic | Apr 2025 first-party values include fasting glucose **103 mg/dL**, HbA1c **5.0%**, fasting insulin **2.8 µIU/mL**; medication context matters | Multiple longitudinal routine blood tests; exact current values still being extracted | Unknown | Exact current values not yet extracted | Spaceflight metabolomics available but not a simple "better/worse" comparison |
 | Body composition | Broad Blueprint measurements, exact current values still being extracted | Weight **68 kg** in 2022; current body-comp values not yet extracted | **76.5 kg** at peak test in 2012 | **72.57 kg, BMI 21.7** in 2026 (C) | Body mass fell about **7%** during mission (A), not automatically beneficial |
 | Strength / function | Grip reported top 5% of all ages (C); exact force still being extracted | **12 pull-ups**; **50 kg overhead press at 68 kg body mass** (C) | Elite cycling performance, but strength data sparse | Grip **52.1 kg left / 56.0 kg right** (C); active runner/hiker/stair climber | Maintained operational function through a 340-day space mission (A) |
 | Bone health | BMD reported **99th percentile** (C) | Not yet extracted | Unknown | Annual DEXA reported; exact values not yet extracted | Bone/musculoskeletal countermeasure data exist; values need extraction |
