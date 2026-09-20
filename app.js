@@ -22,9 +22,10 @@
   function explanationMarkup(text) {
     const matches = glossaryMatches(text);
     if (!matches.length) return "";
-    return matches.map(item =>
-      `<span class="plain-english"><b>${item.term}:</b> ${item.meaning}</span>`
+    const definitions = matches.map(item =>
+      `<p><b>${item.term}:</b> ${item.meaning}</p>`
     ).join("");
+    return `<details class="term-explainer"><summary>Plain English</summary><div>${definitions}</div></details>`;
   }
 
   function setExplainedText(id, text) {
