@@ -108,3 +108,35 @@ For a busy adult, that could mean:
 That captures the strongest part of the Quantified Bob philosophy without turning health into a second job.
 
 _Last reviewed: 20 September 2026._
+
+
+## Additional verified details
+
+### His own "minimum effective" target is deliberately tiny
+
+Troia's Minimum Effective Quantification talk says that **three tracked things can take less than 10 minutes per week**. That claim is his own framework rather than a clinical guideline, but it captures an important design principle for time-poor people: a measurement system is only useful if it survives ordinary weeks.
+
+Source:
+- https://www.quantifiedbob.com/minimum-effective-quantification-my-superhuman-summit-talk/
+
+### Cross-device comparisons need caution
+
+His 10+ year body-composition archive includes multiple measurement methods:
+
+- several Withings BIA scales
+- DEXA
+- Fit3D / 3D scanning
+- other scales and measurement contexts
+
+That makes the **long trend** interesting while also making small differences between devices or eras hard to interpret as real physiological change.
+
+Source:
+- https://www.quantifiedbob.com/body-composition-data-visualization/
+
+### A useful anti-biohacking lesson
+
+Troia's archive also contains many experiments that are much less transferable than the tracking method itself — fasting, supplement, device and emerging-technology experiments.
+
+For this project, the rule is:
+
+**Copy the disciplined question-and-trend approach before copying any intervention.**
