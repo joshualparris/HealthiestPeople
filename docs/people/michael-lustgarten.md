@@ -51,6 +51,29 @@ The useful signal is the **longitudinal measurement density and repeatability**,
 Source:
 - https://conqueragingordietrying.ai/
 
+## 2026 PhenoAge variability
+
+Biomarker Optimizers currently lists three 2026 Levine Phenotypic Age results for Lustgarten:
+
+| Test date | Calculated PhenoAge |
+|---|---:|
+| 18 Mar 2026 | **35.0 years** |
+| 17 Jun 2026 | **34.8 years** |
+| 9 Sep 2026 | **37.5 years** |
+
+At a chronological age of 53, all three are substantially below chronological age, but the roughly **2.7-year movement between June and September** is a useful reminder that these scores are sensitive to the laboratory inputs used by the algorithm.
+
+This repository therefore keeps:
+
+- best-ever calculated scores,
+- current/recent calculated scores,
+- and the raw clinical biomarkers
+
+as separate concepts.
+
+Source:
+- https://biomarkeroptimizers.com/
+
 ## Cardiovascular / fitness measurements
 
 ### Resting heart rate and HRV
