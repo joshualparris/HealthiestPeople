@@ -195,3 +195,53 @@ For every quantitative row in `data/metrics.csv`:
 - assume expensive interventions caused favourable outcomes
 - recommend prescription drugs, peptides or experimental treatments from influencer protocols
 - frame normal family/work constraints as a failure of discipline
+
+
+---
+
+## Added profiles — next extraction targets
+
+### Julie Gibson Clark
+- [ ] Locate the original laboratory report/provenance for the reported ~0.665 DunedinPACE result
+- [ ] Date each publicly reported DunedinPACE result rather than treating the best score as current
+- [ ] Current resting heart rate / HRV if publicly available
+- [ ] Current blood pressure
+- [ ] Current VO2max or validated field estimate
+- [ ] Current strength measurements
+- [ ] Current body composition
+- [ ] Current lipids / ApoB / glucose / HbA1c if voluntarily public
+- [ ] Weekly training volume by modality
+- [ ] Clarify supplement and hormone changes over time
+- [ ] Separate first-party statements from media paraphrases
+
+### Bob Troia
+- [ ] Build a chronological index of major Quantified Bob experiments
+- [ ] Extract longitudinal weight/body-fat ranges with device/method labels
+- [ ] Extract sleep measures from the Oura year analysis
+- [ ] Extract glucose experiment design, dates and outcomes without overgeneralising
+- [ ] Identify conventional blood biomarkers repeated over the longest period
+- [ ] Record device changes that make cross-year comparisons imperfect
+- [ ] Separate experiments that changed behaviour from experiments that were merely exploratory
+
+### Michael Snyder
+- [ ] Build a timeline from the 2012 iPOP paper through later personal monitoring studies
+- [ ] Extract the exact glucose/HbA1c chronology around the viral illness and diabetes transition
+- [ ] List which personal measurements were research-grade versus consumer wearables
+- [ ] Extract cohort sizes and outcomes from later multi-omics / wearable studies
+- [ ] Identify which findings have replicated outside Snyder's own case
+- [ ] Separate Snyder's personal data from results of the wider Stanford cohorts
+
+### Larry Smarr
+- [ ] Build a dated inflammation timeline: CRP, stool immune markers, symptoms and diagnostic workup
+- [ ] Verify units and reference ranges for the reported 125x stool-marker elevation
+- [ ] Extract which findings were available before versus after Crohn's diagnosis
+- [ ] Identify peer-reviewed publications using his personal microbiome/immune data
+- [ ] Document how clinical imaging/colonoscopy changed interpretation
+- [ ] Keep Crohn's disease status separate from general healthy-ageing comparisons
+
+## Website / translation research
+- [ ] Review all daily tips against the newest Australian physical-activity and sleep guidance annually
+- [ ] Add a source-date field to every website lesson
+- [ ] Add "evidence behind the habit" links for strength, aerobic training, sleep and dietary patterns
+- [ ] Add an explicit "why this is worth your time" estimate for busy-family recommendations
+- [ ] Keep recommendations device-agnostic unless a device changes a decision
