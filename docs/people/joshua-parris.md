@@ -10,7 +10,7 @@ It is to ask a more useful question:
 
 > What can an ordinary working parent realistically learn from highly measured people, and what does that look like against a real baseline?
 
-This profile intentionally excludes diagnoses, medications and other sensitive medical history from the public repository.
+This profile is now a concise public summary. Joshua has explicitly asked for a much fuller longitudinal publication; the detailed record is in [the comprehensive health archive](joshua-parris-full-health-archive.md). Family members' private medical details are not included.
 
 ## Evidence quality
 
@@ -35,9 +35,11 @@ No attempt is made to convert consumer data into a diagnosis.
 
 An older scale record listed a BMI of 21.3 at 83.7 kg and 175 cm. That combination is mathematically inconsistent, so this repository does **not** reuse that historical BMI value.
 
-### Historical body composition
+### Longitudinal body composition
 
-From a 2025 Withings measurement:
+The cleaned Health Connect trend runs from **88.8 kg (Jul 2024)** to **77.4 kg (Jul 2026)**. Consumer bioimpedance body-fat estimates moved from an early median around **19.8%** to a later median around **16.3%**, with a latest retained estimate around **14.2%**; exact percentages are less reliable than the direction.
+
+From a 2025 Withings snapshot:
 
 | Metric | Value |
 |---|---:|
@@ -53,11 +55,9 @@ These values are retained as historical consumer-scale measurements, not current
 
 ### Resting heart rate
 
-Historical sleeping resting heart rate:
+The strongest same-source Fitbit analysis through August 2026 found a stable multi-month baseline around **61 bpm** (30-day ~61.2; 90-day ~61.0). Late-August/September Google Health weeks rose temporarily from **61 → 63 → 64 → 66 bpm**, discussed in prior chats in illness/recovery context.
 
-- **55–58 bpm**
-
-This is favourable as a resting value, but it is not a direct measure of cardiovascular disease risk.
+Older sleeping-HR values in the high-50s remain historical context, not the current RHR definition.
 
 ### Blood pressure
 
@@ -143,15 +143,15 @@ This is a useful example of a simple marker where longitudinal follow-up is more
 
 ## Sleep
 
-A 2026 sleep-data snapshot showed:
+Sleep changed materially across 2026.
 
-- average sleep around **6 h 26–31 min/night**
-- about **18% of nights under 5 hours**
-- sleep latency around **44 min**
+March–May included several short-sleep weeks around **5.5–6.8 h/night**. By August/September, recent Google Health weeks were mostly around **7 h 42 min to 8 h 12 min**, averaging about **8 h 01 min** across the latest six weeks.
 
-That is a much more obvious real-world optimisation target than exotic biomarker testing.
+The August Health Connect master analysis found:
+- 30-day Fitbit main sleep-session window: **8.44 h**
+- stage-derived asleep time: **7.73 h**
 
-The aim is not to copy a billionaire's sleep score; it is to gradually increase sleep opportunity and consistency within normal family constraints.
+Current goal: **maintain** the improvement rather than treating old 6.5-hour data as the present baseline.
 
 ## HRV / autonomic tracking
 
@@ -165,27 +165,32 @@ Different apps/devices/methods can produce values that are not directly comparab
 
 ## Activity
 
-Historical examples show highly variable activity:
+Current activity is already high.
 
-- roughly **6,900–8,000 steps/day** in some periods
-- some weeks with substantially higher walking
-- a 2026 snapshot included **127,070 steps over seven days (~18,153/day)** and **84.13 km**
+The August source-aware analysis found:
+- 30-day Fitbit mean: **~14,691 steps/day**
+- 90-day mean: **~12,888/day**
 
-This variability is normal for a working parent and reinforces that weekly/monthly averages are more useful than one unusually active week.
+The latest six Google Health weeks averaged about **14,575/day**.
+
+Therefore the current plan does **not** prescribe extra walking simply to hit a step target.
 
 ## Exercise context
 
-Joshua has used:
+Current recurring activities matter more than generic exercise suggestions:
 
+- **Monday 6–7 pm Ultimate Frisbee in Dubbo** — sometimes a genuinely hard interval-style session
+- regular Saturday **5 km Dubbo parkrun with daughter Sylvie**
+- walking / high ordinary step volume
 - running
-- walking
 - cycling / e-bike
-- kettlebells / dumbbells
-- simple home strength work
+- kettlebells / dumbbells / simple home strength work
 
-He restarted a 5 km running routine in February 2026 after a long gap.
+A documented May frisbee session was **310 kcal, 124 bpm average HR, 49 Active Zone Minutes, 21 min vigorous/peak**. A harder August session was ~**69 min, 149 bpm average HR, ~50 min vigorous**, with cardio load **154**.
 
-The practical constraint is important: most structured exercise has to fit **after work/family responsibilities or on weekends**.
+He restarted 5 km running in February 2026 after a long gap.
+
+Most other structured exercise must fit **after 8 pm or on weekends** because of work, children and Dubbo heat.
 
 ## What currently looks strongest
 
@@ -215,31 +220,23 @@ The health meaning depends on how the change was achieved and whether lean mass 
 
 Based on the public data alone, the most obvious areas to improve or monitor are:
 
-### 1. Sleep duration and consistency
+### 1. Strength / muscle function
 
-Averages around 6.5 hours and frequent very short nights likely offer more room for improvement than most expensive biohacks.
+With cardio and daily movement already substantial, two short weekly strength sessions are now the clearest training gap.
 
 ### 2. Blood pressure trend
 
 Repeated systolic readings in the 120s–130s are worth continuing to monitor under consistent conditions.
 
-### 3. Aerobic fitness
+### 3. Repeatable aerobic fitness benchmark
 
 A current laboratory or field VO2max/fitness benchmark is missing.
 
 This does **not** require a lab. A repeatable 5 km time, submaximal running test, cycling test or validated wearable estimate can provide a useful trend.
 
-### 4. Strength
+### 4. Maintain current sleep improvement
 
-The profile currently lacks repeatable strength measures such as:
-
-- push-ups
-- pull-ups
-- grip strength
-- loaded carry
-- squat/hinge performance
-
-A simple repeatable home test would make comparison with Johnson, Lustgarten and Pascoe more meaningful.
+Recent sleep is now close to 8 hours rather than ~6.5; preserving that matters more than pushing it higher for its own sake.
 
 ### 5. Current body composition
 
@@ -291,11 +288,11 @@ A consistent scale/waist trend is more useful than chasing expensive DEXA scans 
 
 For Joshua's public comparison case, the most useful next data are deliberately ordinary:
 
-1. **average weekly sleep**
-2. **home blood-pressure trend**
-3. **current body weight + waist**
-4. **repeatable aerobic benchmark**
-5. **repeatable strength benchmark**
+1. **home blood-pressure trend**
+2. **current waist**
+3. **repeatable 5 km benchmark**
+4. **repeatable strength benchmark**
+5. **monthly same-source RHR/HRV/sleep/steps summaries**
 6. **annual / clinically appropriate standard pathology**
 
 Not currently necessary for this project:
@@ -320,8 +317,16 @@ Not currently necessary for this project:
 - current step average over 30 days
 - future repeat lipids / HbA1c / ferritin
 
-## Privacy note
+## Data archive
 
-This public profile intentionally excludes diagnoses, medications, mental-health history and other sensitive medical details. Only measurements and routines relevant to the project's self-tracking comparison are included.
+Joshua has explicitly asked to publish a much richer longitudinal personal record.
+
+- [Comprehensive health archive](joshua-parris-full-health-archive.md)
+- [Weekly wearable history](../../data/josh-weekly-wearable-history.csv)
+- [Lab history](../../data/josh-labs-history.csv)
+- [Body composition / BMI history](../../data/josh-body-composition-history.csv)
+- [Monday frisbee history](../../data/josh-frisbee-history.csv)
+
+The concise profile stays readable; the archive carries the deeper context.
 
 _Last updated: 20 September 2026._
