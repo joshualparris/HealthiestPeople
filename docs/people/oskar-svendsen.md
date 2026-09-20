@@ -50,9 +50,25 @@ That matters because VO2max is not the whole of endurance performance. Sustainab
 
 ## Training exposure
 
-The case study includes his monthly training volume and distribution among low-, moderate- and high-intensity zones.
+The peer-reviewed case study documented a steep increase in annual endurance-training volume:
 
-The researchers' central finding was that Svendsen began with an unusually high aerobic capacity even before specialising in cycling and then responded strongly to several years of dedicated endurance training.
+| Age / training year | Annual volume | Low intensity | Moderate intensity | High intensity |
+|---|---:|---:|---:|---:|
+| 16 | **496 h** | **77%** | **20%** | **3%** |
+| 17 | **694 h** | **81%** | **14%** | **5%** |
+| 18 | **759 h** | **78%** | **16%** | **6%** |
+
+Intensity zones in the paper were defined from peak heart rate:
+
+- low intensity: **60–82% HRpeak**
+- moderate intensity: **83–87% HRpeak**
+- high intensity: **88–100% HRpeak**
+
+The distribution remained broadly **pyramidal**: most of an enormous training load was low intensity, with a much smaller proportion at high intensity.
+
+This matters for translation. An ordinary adult should **not copy 500–759 training hours per year**, but can learn from the intensity pattern: building aerobic capacity does not require turning every session into a maximal effort.
+
+The researchers' central finding was that Svendsen began with unusually high aerobic capacity even before specialising in cycling and then responded strongly to several years of dedicated endurance training.
 
 ### Doping controls
 
