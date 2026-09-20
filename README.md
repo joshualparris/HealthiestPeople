@@ -10,6 +10,7 @@ The repository now includes a dependency-free website designed for a busy workin
 - a "minimum viable health" fallback for chaotic days
 - a rotating daily lesson from one of the nine people
 - evidence-aware "copy this / don't copy blindly" guidance
+- a curated podcast and talk library for hearing the case-study subjects explain their routines and reasoning
 - low-cost principles that work around full-time work, children, bills and limited time
 
 The same static site is configured for **GitHub Pages** and **Vercel**.
@@ -76,7 +77,7 @@ For each person, separate:
 
 - `index.html` — homepage and daily dashboard
 - `styles.css` — responsive design
-- `site-data.js` — nine-person evidence-aware lesson dataset and weekly routine
+- `site-data.js` — nine-person evidence-aware lesson dataset, curated listening library and weekly routine
 - `app.js` — Sydney-time daily rotation and filters
 - `vercel.json` — Vercel static-site configuration
 - `.github/workflows/pages.yml` — GitHub Pages deployment workflow
