@@ -256,3 +256,43 @@ window.JOSH_BASELINE = {
     "Repeatable strength benchmark (push-ups, grip or simple loaded carry)"
   ]
 };
+
+
+window.JOSH_PLAN = {
+  duration: "8 weeks",
+  sleep: { windDown:"8:30 pm", lightsOut:"9:30 pm", target:"7 h 30 min asleep/night" },
+  week: [
+    ["Monday","1:15–1:35 pm brisk walk","8:00–8:25 pm Strength A"],
+    ["Tuesday","1:15–1:35 pm brisk walk",""],
+    ["Wednesday","1:15–1:35 pm brisk walk",""],
+    ["Thursday","1:15–1:35 pm brisk walk","8:00–8:25 pm Strength B"],
+    ["Friday","1:15–1:35 pm brisk walk",""],
+    ["Saturday","45 min conversational e-bike / bike / brisk walk",""],
+    ["Sunday","30 min easy family walk + 10 min mobility/balance",""]
+  ],
+  nutrition: [
+    "85 g protein/day",
+    "30 g fibre/day",
+    "375 g vegetables/day minimum",
+    "2 serves fruit/day",
+    "Water as default drink",
+    "Maintain body weight around 78 kg"
+  ],
+  track: [
+    "30-day average sleep duration",
+    "Monday-morning weight once weekly",
+    "Waist once monthly",
+    "One 7-day blood-pressure block",
+    "Repeat the same 5 km or 30-minute bike benchmark every 8 weeks"
+  ],
+  dontBuy: [
+    "Epigenetic/telomere tests",
+    "CGM without a clinical reason",
+    "Microbiome testing",
+    "Full-body MRI",
+    "Hyperbaric oxygen or red-light gear",
+    "Large supplement stacks",
+    "Extra exercise equipment"
+  ],
+  principle: "Sleep first. Then movement, ordinary nutritious food, strength, and simple trends. Do not sacrifice family time or sleep to imitate a biohacker."
+};
