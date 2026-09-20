@@ -36,45 +36,322 @@
 .glossary-card p{margin:0;color:var(--muted);font-size:.92rem}
 @media(max-width:900px){.glossary-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.glossary-grid{grid-template-columns:1fr}}
+
+
+/* Navigation, page architecture and accessibility */
+.skip-link{
+  position:fixed;
+  left:12px;
+  top:10px;
+  z-index:1000;
+  transform:translateY(-150%);
+  background:var(--dark);
+  color:#fff;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:800;
+  text-decoration:none;
+}
+.skip-link:focus{transform:translateY(0)}
+:where(a,button,summary,[tabindex]):focus-visible{
+  outline:3px solid #d39a37;
+  outline-offset:3px;
+  border-radius:6px;
+}
+.site-nav{display:flex;align-items:center;gap:18px}
+.site-nav a{
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:700;
+  font-size:.91rem;
+  padding:8px 2px;
+  border-bottom:2px solid transparent;
+}
+.site-nav a:hover{color:var(--green)}
+.site-nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--green)}
+.menu-toggle{
+  display:none;
+  width:44px;
+  height:44px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  padding:10px;
+  cursor:pointer;
+}
+.menu-toggle span{
+  display:block;
+  height:2px;
+  margin:4px 0;
+  background:var(--ink);
+  border-radius:2px;
+  transition:transform .18s ease,opacity .18s ease;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.page-hero{
+  padding:64px 0 34px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,#f7f8f3 0%,#eef3ed 100%);
+}
+.page-hero h1{font-size:clamp(2.5rem,6vw,4.8rem);margin-bottom:18px}
+.page-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.page-tabs a{
+  text-decoration:none;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--muted);
+  font-weight:800;
+  font-size:.88rem;
+  padding:9px 13px;
+  border-radius:999px;
+}
+.page-tabs a:hover,.page-tabs a.active{background:var(--dark);color:#fff;border-color:var(--dark)}
+
+.explore-home{padding-top:22px}
+.explore-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.explore-card{
+  display:flex;
+  flex-direction:column;
+  min-height:220px;
+  padding:22px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  text-decoration:none;
+  box-shadow:0 8px 24px rgba(15,35,27,.035);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.explore-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--sage-2)}
+.explore-card>span{
+  color:var(--green);
+  text-transform:uppercase;
+  letter-spacing:.09em;
+  font-size:.7rem;
+  font-weight:900;
+  margin-bottom:30px;
+}
+.explore-card h3{font-size:1.35rem;margin-bottom:9px}
+.explore-card p{margin:auto 0 0;color:var(--muted);font-size:.92rem}
+
+.metric-explainer{
+  margin-top:12px;
+  border-top:1px solid var(--line);
+  padding-top:10px;
+}
+.metric-explainer summary{
+  cursor:pointer;
+  color:var(--green);
+  font-weight:850;
+  font-size:.78rem;
+  list-style:none;
+}
+.metric-explainer summary::-webkit-details-marker{display:none}
+.metric-explainer summary::after{content:" +";font-weight:900}
+.metric-explainer[open] summary::after{content:" −"}
+.metric-explainer p{margin:8px 0 0;color:var(--muted);font-size:.8rem;line-height:1.45}
+.metric-explainer .next-action{
+  padding:8px 10px;
+  background:var(--sage);
+  border-radius:10px;
+  color:var(--ink);
+}
+
+.measure-card{
+  padding:16px 0;
+  border-top:1px solid var(--line);
+}
+.measure-card:first-child{border-top:0}
+.measure-card h4{margin:0 0 7px;font-size:1rem}
+.measure-card p{margin:0;color:var(--muted);font-size:.9rem}
+.measure-how{
+  margin-top:9px;
+  padding:10px 12px;
+  border-radius:12px;
+  background:#eef5f0;
+  font-size:.86rem;
+}
+.measure-source{display:inline-block;margin-top:8px;color:var(--green);font-size:.78rem;font-weight:800}
+
+@media(max-width:900px){
+  .explore-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .nav{position:relative}
+  .menu-toggle{display:block;margin-left:auto}
+  .site-nav{
+    display:none;
+    position:absolute;
+    top:58px;
+    right:0;
+    left:0;
+    flex-direction:column;
+    align-items:stretch;
+    gap:2px;
+    padding:10px;
+    border:1px solid var(--line);
+    border-radius:16px;
+    background:#fff;
+    box-shadow:var(--shadow);
+  }
+  .site-nav.open{display:flex}
+  .site-nav a{padding:12px 13px;border-radius:10px;border-bottom:0}
+  .site-nav a[aria-current="page"]{background:var(--sage);color:var(--green)}
+}
+@media(max-width:650px){
+  .explore-grid{grid-template-columns:1fr}
+  .explore-card{min-height:180px}
+}
+@media(prefers-reduced-motion:reduce){
+  .menu-toggle span,.explore-card{transition:none}
+}
+
+
+/* Charts and diagrams */
+.home-core{background:#eef3ed;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.chart-grid,.diagram-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.chart-card,.diagram-card{background:white;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 8px 24px rgba(15,35,27,.035)}
+.chart-wide{grid-column:1/-1}
+.chart-heading{display:flex;align-items:start;justify-content:space-between;gap:20px}
+.chart-heading h2{font-size:clamp(1.7rem,3.2vw,2.6rem);margin-bottom:8px}
+.chart-note{color:var(--muted);max-width:850px;margin:0 0 22px}
+.chart-canvas{width:100%;overflow-x:auto}
+.line-svg{display:block;width:100%;min-width:620px;height:auto}
+.chart-gridline{stroke:var(--line);stroke-width:1}
+.chart-line{fill:none;stroke:var(--green);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.chart-point{fill:white;stroke:var(--green);stroke-width:4}
+.chart-axis-label{fill:var(--muted);font-size:12px;font-family:inherit}
+.chart-value-label{fill:var(--ink);font-size:12px;font-weight:800;font-family:inherit}
+.bar-chart{display:grid;gap:16px;margin-top:18px}
+.bar-row{display:grid;grid-template-columns:minmax(150px,1fr) minmax(180px,2.4fr) 58px;gap:12px;align-items:center}
+.bar-label{display:flex;flex-direction:column}
+.bar-label b{font-size:.9rem}
+.bar-label span{font-size:.72rem;color:var(--muted)}
+.bar-track{height:14px;border-radius:999px;background:#e8eee9;overflow:hidden}
+.bar-track span{display:block;height:100%;border-radius:inherit;background:var(--green-2)}
+.bar-row>strong{text-align:right;font-size:.88rem}
+.dark-link{color:var(--green)}
+.flow-diagram{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:22px 0}
+.flow-diagram span{padding:11px 13px;border-radius:14px;background:var(--sage);font-weight:780;color:var(--green)}
+.flow-diagram b{color:var(--muted)}
+.diagram-card>p{color:var(--muted);margin-bottom:0}
+.ladder{display:grid;gap:8px;margin:20px 0}
+.ladder div{display:grid;grid-template-columns:42px 1fr;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:14px}
+.ladder b{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--dark);color:white}
+.ladder span{font-size:.9rem}
+.family-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:22px 0}
+.family-flow div{padding:16px;border-radius:16px;background:var(--sage);min-height:120px}
+.family-flow b{display:block;color:var(--green);font-size:1.3rem;margin-bottom:10px}
+.family-flow span{font-size:.9rem;font-weight:700}
+.evidence-rules{grid-template-columns:repeat(5,1fr)}
+.evidence-rules article{min-height:250px}
+@media(max-width:900px){.evidence-rules{grid-template-columns:repeat(2,1fr)}.family-flow{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.chart-grid,.diagram-grid{grid-template-columns:1fr}.chart-wide{grid-column:auto}.bar-row{grid-template-columns:1fr 52px}.bar-label{grid-column:1/-1}.evidence-rules,.family-flow{grid-template-columns:1fr}.evidence-rules article{min-height:0}}
+
+
+/* Plan execution details */
+.plan-detail-block{margin-top:42px}
+.workout-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.workout-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 8px 24px rgba(15,35,27,.035);
+}
+.workout-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px}
+.workout-head h3{margin:10px 0 0}
+.workout-head>strong{white-space:nowrap;color:var(--green);font-size:.9rem}
+.workout-list{margin:0;padding:0;list-style:none}
+.workout-list li{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:10px 0;
+  border-top:1px solid var(--line);
+}
+.workout-list li:first-child{border-top:0}
+.workout-list span{color:var(--muted)}
+.workout-list b{text-align:right}
+.workout-note{
+  margin:16px 0 0;
+  padding:12px 14px;
+  border-radius:12px;
+  background:var(--sage);
+  color:var(--ink);
+  font-size:.9rem;
+}
+.help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.help-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px 18px;
+}
+.help-card summary{cursor:pointer;font-weight:850;color:var(--ink)}
+.help-card p{margin:12px 0 0;color:var(--muted);font-size:.9rem}
+.home-week-section{background:#eef3ed;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-week{padding:8px 22px}
+.home-week-row{
+  display:grid;
+  grid-template-columns:90px 1fr;
+  gap:4px 18px;
+  padding:14px 0;
+  border-top:1px solid var(--line);
+}
+.home-week-row:first-child{border-top:0}
+.home-week-row>b{grid-row:1/3;color:var(--green)}
+.home-week-row>span{font-weight:800}
+.home-week-row>small{color:var(--muted)}
+@media(max-width:760px){
+  .workout-grid,.help-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .home-week-row{grid-template-columns:1fr;gap:4px}
+  .home-week-row>b{grid-row:auto}
+}
 </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="HealthiestPeople home">
-        <span class="brand-mark">HP</span>
-        <span>HealthiestPeople</span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="#today">Today</a>
-        <a href="#plan">My plan</a>
-        <a href="#baseline">My baseline</a>
-        <a href="#people">People</a>
-        <a href="#principles">Principles</a>
-        <a href="#listen">Listen</a>
-        <a href="#resources">Watch / Read</a>
-        <a href="#evidence">Evidence</a>
+      <a class="brand" href="index.html" aria-label="HealthiestPeople home"><span class="brand-mark">HP</span><span>HealthiestPeople</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="plan.html">My Plan</a>
+        <a href="people.html">People</a>
+        <a href="charts.html">Charts</a>
+        <a href="resources.html">Resources</a>
+        <a href="evidence.html">Evidence</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main-content">
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Evidence first. Ordinary life second.</p>
-          <h1>Useful health lessons for a busy working parent — without a billionaire budget.</h1>
-          <p class="lede">This project studies unusually well-measured people, strips away the expensive noise, and keeps the habits that survive contact with work, kids, bills, tired evenings and imperfect weeks.</p>
+          <h1>Useful health lessons without turning health into a second job.</h1>
+          <p class="lede">Learn from unusually well-measured people, keep the habits that survive ordinary family life, and leave the expensive noise behind.</p>
           <div class="hero-actions">
             <a class="button primary" href="#today">Show me today</a>
-            <a class="button secondary" href="#people">Explore the people</a>
+            <a class="button secondary" href="plan.html">Open my plan</a>
           </div>
           <p class="fine">Educational only. It does not rank people as “healthiest alive”, diagnose disease, or replace a GP.</p>
         </div>
         <aside class="hero-card" aria-label="The core idea">
           <p class="card-kicker">The signal after the hype</p>
-          <strong>Sleep. Move. Lift. Eat plants and enough protein. Track only what changes decisions. Stay connected. Repeat for years.</strong>
-          <span>That is where the public case studies converge most strongly — and the new real-world baseline tests whether it fits ordinary family life.</span>
+          <strong>Sleep. Move. Lift. Eat plants and enough protein. Track only what changes decisions. Stay connected.</strong>
+          <span>Use the pages below when you want the detail; keep the homepage for what matters today.</span>
         </aside>
       </div>
     </section>
@@ -82,302 +359,70 @@
     <section id="today" class="section">
       <div class="wrap">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">Your everyday view</p>
-            <h2 id="today-title">Today</h2>
-          </div>
+          <div><p class="eyebrow">Your everyday view</p><h2 id="today-title">Today</h2></div>
           <div class="date-pill" id="today-date"></div>
         </div>
-
         <div class="today-grid">
           <article class="today-main panel">
-            <div class="panel-top">
-              <span class="tag">Today's theme</span>
-              <span class="evidence-dot" aria-hidden="true"></span>
-            </div>
+            <div class="panel-top"><span class="tag">Today's theme</span><span class="evidence-dot" aria-hidden="true"></span></div>
             <h3 id="daily-theme"></h3>
             <div class="task-list">
-              <div class="task">
-                <span class="task-icon">01</span>
-                <div><b>Move</b><p id="daily-movement"></p></div>
-              </div>
-              <div class="task">
-                <span class="task-icon">02</span>
-                <div><b>Eat</b><p id="daily-food"></p></div>
-              </div>
-              <div class="task">
-                <span class="task-icon">03</span>
-                <div><b>Recover</b><p id="daily-recovery"></p></div>
-              </div>
+              <div class="task"><span class="task-icon">01</span><div><b>Move</b><p id="daily-movement"></p></div></div>
+              <div class="task"><span class="task-icon">02</span><div><b>Eat</b><p id="daily-food"></p></div></div>
+              <div class="task"><span class="task-icon">03</span><div><b>Recover</b><p id="daily-recovery"></p></div></div>
             </div>
           </article>
-
-          <article class="panel minimum">
-            <span class="tag">If the day falls apart</span>
-            <h3>Minimum viable health</h3>
-            <p id="daily-tiny"></p>
-            <div class="minimum-rule">A reduced day still counts. Protect the long game.</div>
-          </article>
+          <article class="panel minimum"><span class="tag">If the day falls apart</span><h3>Minimum viable health</h3><p id="daily-tiny"></p><div class="minimum-rule">A reduced day still counts. Protect the long game.</div></article>
         </div>
-
         <article class="lesson-card" id="daily-lesson">
-          <div>
-            <p class="eyebrow">Today's person</p>
-            <h3 id="lesson-name"></h3>
-            <p class="lesson-lens" id="lesson-lens"></p>
-          </div>
-          <div>
-            <blockquote id="lesson-text"></blockquote>
-            <a id="lesson-link" class="text-link" href="#people">See their evidence and practical lessons →</a>
-          </div>
+          <div><p class="eyebrow">Today's person</p><h3 id="lesson-name"></h3><p class="lesson-lens" id="lesson-lens"></p></div>
+          <div><blockquote id="lesson-text"></blockquote><a id="lesson-link" class="text-link" href="people.html">See their evidence and practical lessons →</a></div>
         </article>
       </div>
     </section>
 
-    <section id="plan" class="section plan-section">
+    <section class="section home-week-section">
       <div class="wrap">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">The answer, not more research</p>
-            <h2>Exactly what Josh should do</h2>
-            <p class="section-intro">An 8-week, low-cost plan built around work, two young kids, limited evenings, a 9:30 sleep goal and the equipment/routines already available.</p>
+            <p class="eyebrow">This week's anchors</p>
+            <h2>Only the sessions that actually need remembering</h2>
+            <p class="section-intro">Rest days stay rest days. This list deliberately leaves out ordinary walking and family movement so the plan does not become another full-time job.</p>
           </div>
-          <a class="btn btn-secondary" href="https://github.com/joshualparris/HealthiestPeople/blob/main/docs/josh-plan.md">Read full rationale</a>
+          <a class="button secondary" href="plan.html">Open full plan</a>
         </div>
-
-        <div class="plan-top">
-          <article class="panel plan-sleep">
-            <span class="tag">Sleep anchor</span>
-            <div class="plan-big" id="plan-sleep"></div>
-          </article>
-          <article class="panel">
-            <span class="tag">Weekly time cost</span>
-            <div class="plan-big">40 min</div>
-            <p>of added solo strength work. Monday Frisbee and Saturday parkrun already provide most planned cardio.</p>
-          </article>
-          <article class="panel">
-            <span class="tag">Money rule</span>
-            <div class="plan-big">$0 new gear</div>
-            <p>for the first 8 weeks.</p>
-          </article>
-        </div>
-
-        <div class="plan-grid">
-          <article class="panel">
-            <span class="tag">This week</span>
-            <div id="plan-week" class="plan-week"></div>
-          </article>
-          <article class="panel">
-            <span class="tag">Eat this way</span>
-            <ul id="plan-nutrition" class="questions"></ul>
-          </article>
-          <article class="panel">
-            <span class="tag">Track only these</span>
-            <ol id="plan-track" class="questions"></ol>
-          </article>
-          <article class="panel plan-no">
-            <span class="tag">Don't spend money on</span>
-            <ul id="plan-dont-buy" class="questions"></ul>
-          </article>
-        </div>
-
-        <div class="plan-principle" id="plan-principle"></div>
+        <div id="home-week" class="home-week panel"></div>
       </div>
     </section>
 
-    <section id="baseline" class="section baseline-section">
+    <section class="section home-core">
       <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Real-world comparison case</p>
-            <h2>Josh's baseline</h2>
-            <p class="section-intro">Selected public measurements from ordinary pathology, wearables and home tracking — deliberately excluding diagnoses and medications. The goal is to improve the basics, not compete with longevity influencers.</p>
-          </div>
-          <div class="date-pill" id="baseline-updated"></div>
-        </div>
-
-        <div id="baseline-headline" class="baseline-headline"></div>
-
-        <div class="baseline-grid">
-          <article class="panel">
-            <span class="tag">Latest conventional labs</span>
-            <div id="baseline-labs" class="baseline-list"></div>
-          </article>
-
-          <article class="panel">
-            <span class="tag">Trends</span>
-            <div id="baseline-trends" class="baseline-trends"></div>
-          </article>
-
-          <article class="panel baseline-focus">
-            <span class="tag">Biggest low-cost opportunity</span>
-            <h3>Sleep before exotic testing</h3>
-            <p id="baseline-sleep"></p>
-            <p class="fine" id="baseline-privacy"></p>
-          </article>
-        </div>
-
-        <div class="baseline-next">
-          <div>
-            <p class="eyebrow">What to measure next</p>
-            <h3>Five simple numbers will make this comparison much stronger.</h3>
-          </div>
-          <ol id="baseline-next-list" class="questions"></ol>
-        </div>
-
-        <div class="baseline-next">
-          <div>
-            <p class="eyebrow">Longitudinal archive</p>
-            <h3>Years of Josh's own data, kept source-specific.</h3>
-          </div>
-          <div id="baseline-archive-links" class="questions"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="glossary" class="section jargon-section">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Plain English</p>
-            <h2>What the health jargon actually means</h2>
-            <p class="section-intro">You should not need a medical dictionary to understand your own plan. The site now explains technical terms beside the place they appear; this section collects them in one spot as well.</p>
-          </div>
-        </div>
-        <div id="glossary-grid" class="glossary-grid"></div>
-        <p class="fine">These are practical explanations, not diagnostic interpretations. For blood pressure and other clinical measurements, your GP's advice takes priority over a tracking schedule.</p>
-      </div>
-    </section>
-
-    <section id="principles" class="section section-tint">
-      <div class="wrap">
-        <div class="section-heading compact">
-          <div>
-            <p class="eyebrow">What survives across the case studies</p>
-            <h2>The ordinary-person stack</h2>
-          </div>
-        </div>
-        <div class="principle-grid">
-          <article><span>1</span><h3>Move most days</h3><p>Walking counts. So do family outings, cycling, running, chores and active transport.</p></article>
-          <article><span>2</span><h3>Strength twice a week</h3><p>Squat, hinge, push, pull and carry. Preserve useful capacity, not gym status.</p></article>
-          <article><span>3</span><h3>Build aerobic fitness</h3><p>Easy volume plus some harder work. Improve your own baseline rather than chasing elite numbers.</p></article>
-          <article><span>4</span><h3>Protect sleep</h3><p>Australian guidance now recommends 7–9 hours with consistent bed and wake times for adults.</p></article>
-          <article><span>5</span><h3>Eat mostly ordinary food</h3><p>Vegetables, fruit, wholegrains, legumes, nuts, seeds and practical protein beat branded longevity food.</p></article>
-          <article><span>6</span><h3>Measure with a question</h3><p>Blood pressure, routine pathology and a few trends can be useful. More data is not automatically better.</p></article>
-          <article><span>7</span><h3>Follow persistent signals</h3><p>A repeated abnormality deserves sensible clinical follow-up rather than endless self-experimentation.</p></article>
-          <article><span>8</span><h3>Keep relationships inside the plan</h3><p>A health protocol that regularly costs family connection, rest or peace is badly designed.</p></article>
-        </div>
-        <div class="guideline-note">
-          <b>Australian baseline:</b> adults should be active most days, do muscle-strengthening on 2+ days each week, break up long sitting, and aim for 7–9 hours of good-quality sleep with consistent timing.
-          <a href="https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-adults-18-to-64-years" target="_blank" rel="noreferrer">Department of Health ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="people" class="section">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Nine public case studies + one real-world baseline</p>
-            <h2>Learn from people, not personalities</h2>
-          </div>
-          <div class="filter-row" role="group" aria-label="Filter people">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="strong">Stronger evidence</button>
-            <button class="filter" data-filter="self">Self-tracking</button>
-          </div>
-        </div>
-        <div id="people-grid" class="people-grid"></div>
-      </div>
-    </section>
-
-    <section id="listen" class="section section-tint">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Podcasts & talks</p>
-            <h2>Listen to the people behind the data</h2>
-            <p class="section-intro">Start with practical conversations about sleep, movement, food, metabolic health and useful self-tracking. Interviews are valuable for understanding routines and reasoning, but they are still self-report — not proof that every claim or intervention works.</p>
-          </div>
-        </div>
-        <div id="podcast-grid" class="podcast-grid"></div>
-      </div>
-    </section>
-
-    <section id="resources" class="section section-tint">
-      <div class="wrap">
-        <div class="section-heading resource-heading">
-          <div>
-            <p class="eyebrow">Go deeper without doom-scrolling</p>
-            <h2>Watch and read</h2>
-            <p class="resource-intro">Curated video, articles and papers from the five main case studies. The podcast section above handles listening; this section gives you playable videos and stronger reading paths without sending you hunting through search results.</p>
-          </div>
-          <div class="filter-row" role="group" aria-label="Filter resources">
-            <button class="resource-filter active" data-resource-filter="all">All</button>
-            <button class="resource-filter" data-resource-filter="watch">▶ Watch</button>
-            <button class="resource-filter" data-resource-filter="read">↗ Read</button>
-          </div>
-        </div>
-
-        <div class="resource-callout">
-          <div>
-            <span class="tag">Best place to start</span>
-            <h3>One useful resource per person — not fifty open tabs.</h3>
-          </div>
-          <p>The featured picks prioritise useful context and depth. For the self-trackers, keep the site's evidence grades in mind; for Oskar Svendsen and Scott Kelly, the strongest material is independent scientific/institutional work.</p>
-        </div>
-
-        <div id="featured-videos" class="featured-videos" aria-label="Featured videos"></div>
-        <div id="resources-grid" class="resources-grid"></div>
-      </div>
-    </section>
-
-    <section id="evidence" class="section section-dark">
-      <div class="wrap evidence-grid">
-        <div>
-          <p class="eyebrow">Evidence rules</p>
-          <h2>Interesting is not the same as proven.</h2>
-          <p>The site deliberately separates peer-reviewed measurements, clinical reports, first-party data and self-report. Missing data stays missing rather than becoming an invented score.</p>
-        </div>
-        <div class="evidence-list">
-          <div><b>A</b><span>Independent peer-reviewed or institutional measurement</span></div>
-          <div><b>B</b><span>Independently reported clinical or laboratory result</span></div>
-          <div><b>C</b><span>First-party published measurement or protocol</span></div>
-          <div><b>D</b><span>Self-report or interview</span></div>
+        <div class="section-heading compact"><div><p class="eyebrow">Choose what you need</p><h2>The site is now split into clear pages</h2></div></div>
+        <div class="explore-grid">
+          <a class="explore-card" href="plan.html"><span>Do</span><h3>My Plan</h3><p>Your weekly routine, baseline, trends and plain-English glossary.</p></a>
+          <a class="explore-card" href="people.html"><span>Learn</span><h3>People</h3><p>Case studies, practical lessons and what not to copy blindly.</p></a>
+          <a class="explore-card" href="charts.html"><span>See</span><h3>Charts & diagrams</h3><p>VO₂max trends, evidence distribution, measurement density and decision diagrams.</p></a>
+          <a class="explore-card" href="resources.html"><span>Explore</span><h3>Resources</h3><p>Podcasts, videos, articles and research worth your time.</p></a>
+          <a class="explore-card" href="evidence.html"><span>Check</span><h3>Evidence</h3><p>How claims are graded, where uncertainty sits, and the underlying research docs.</p></a>
+          <a class="explore-card" href="data/metrics.csv"><span>Raw data</span><h3>Dataset</h3><p>Open the structured metric archive used by the project and charts.</p></a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap closing-grid">
-        <div>
-          <p class="eyebrow">A useful stopping rule</p>
-          <h2>Before buying another health thing, ask:</h2>
+      <div class="wrap">
+        <div class="section-heading compact"><div><p class="eyebrow">The short version</p><h2>The ordinary-person stack</h2></div><a class="button secondary" href="people.html#principles">See all principles</a></div>
+        <div class="principle-grid">
+          <article><span>1</span><h3>Move most days</h3><p>Walking, active transport and family movement all count.</p></article>
+          <article><span>2</span><h3>Strength twice a week</h3><p>Preserve useful capacity with simple repeatable training.</p></article>
+          <article><span>3</span><h3>Protect sleep</h3><p>Give yourself enough sleep opportunity before chasing exotic optimisation.</p></article>
+          <article><span>4</span><h3>Measure with a question</h3><p>Track only what can change a sensible decision.</p></article>
         </div>
-        <ol class="questions">
-          <li>What decision will this measurement change?</li>
-          <li>Have I already covered sleep, movement, strength, food and basic preventive care?</li>
-          <li>Will this make family life easier, neutral, or harder?</li>
-          <li>Can I sustain it for a year without turning health into a second job?</li>
-        </ol>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-grid">
-      <div>
-        <b>HealthiestPeople</b>
-        <p>Source-first longevity research translated into ordinary life.</p>
-      </div>
-      <div>
-        <a href="https://github.com/joshualparris/HealthiestPeople" target="_blank" rel="noreferrer">Research repository ↗</a>
-        <a href="https://github.com/joshualparris/HealthiestPeople/blob/main/docs/comparison.md">Full comparison</a>
-        <a href="https://github.com/joshualparris/HealthiestPeople/blob/main/docs/practical-playbook.md">Practical playbook</a>
-      </div>
-    </div>
-  </footer>
-
+  <footer><div class="wrap footer-grid"><div><b>HealthiestPeople</b><p>Source-first longevity research translated into ordinary life.</p></div><div><a href="https://github.com/joshualparris/HealthiestPeople" target="_blank" rel="noreferrer">Research repository ↗</a><a href="evidence.html">Evidence</a><a href="resources.html">Resources</a></div></div></footer>
   <script>window.HEALTHIEST_PEOPLE = [
   {
     id: "joshua-parris",
@@ -593,15 +638,51 @@ window.JOSH_BASELINE = {
   updated: "20 Sep 2026",
   privacy: "Joshua has explicitly asked for a detailed public longitudinal archive. Family members' private medical details remain excluded.",
   headline: [
-    { label: "Weight", value: "77.4 kg", note: "24 Jul 2026" },
-    { label: "Fitbit RHR", value: "~61 bpm", note: "stable Apr–Aug baseline" },
-    { label: "HbA1c", value: "5.3%", note: "Feb 2026" },
-    { label: "LDL-C", value: "2.8 mmol/L", note: "Feb 2026" },
-    { label: "Triglycerides", value: "1.1 mmol/L", note: "Feb 2026" },
-    { label: "CRP", value: "<0.4 mg/L", note: "Feb 2026" },
-    { label: "Fitbit HRV", value: "~37 ms", note: "90-day RMSSD baseline" },
-    { label: "Recent sleep", value: "8 h 01 m", note: "latest 6 Google Health weeks" },
-    { label: "Recent steps", value: "14,575/day", note: "latest 6 Google Health weeks" }
+    {
+      label: "Weight", value: "77.4 kg", note: "24 Jul 2026", source: "body-weight record",
+      meaning: "Body weight is useful as a long-term trend, but it cannot tell how much of your weight is fat, muscle or normal fluid variation.",
+      action: "Keep one repeatable weekly reading if it is useful. Pair it with waist and strength/function rather than chasing a lower number by itself."
+    },
+    {
+      label: "Fitbit RHR", value: "~61 bpm", note: "stable Apr–Aug baseline", source: "Fitbit wearable",
+      meaning: "Resting heart rate is most useful as your own baseline. A stable trend gives context if it later shifts with illness, heat, stress, sleep or training.",
+      action: "Do not try to force it lower. Look for sustained changes across several days and interpret them with how you actually feel."
+    },
+    {
+      label: "HbA1c", value: "5.3%", note: "Feb 2026", source: "pathology",
+      meaning: "HbA1c roughly reflects average blood-glucose exposure over the previous 2–3 months. It is more informative than one random glucose reading, but it is still only one part of metabolic health.",
+      action: "Keep it in ordinary GP/pathology follow-up rather than adding a continuous glucose monitor without a clinical reason."
+    },
+    {
+      label: "LDL-C", value: "2.8 mmol/L", note: "Feb 2026", source: "pathology",
+      meaning: "LDL-C measures cholesterol carried inside LDL particles. It contributes to cardiovascular-risk assessment but should be interpreted with the rest of the picture — blood pressure, other lipids, family history and overall risk.",
+      action: "Track the trend with your GP rather than treating this single number as a pass/fail score."
+    },
+    {
+      label: "Triglycerides", value: "1.1 mmol/L", note: "Feb 2026", source: "pathology",
+      meaning: "Triglycerides are fats circulating in the blood. Food, alcohol, metabolic health and whether the sample was fasting can affect the result.",
+      action: "Interpret this with the rest of the lipid panel and the conditions of the blood test."
+    },
+    {
+      label: "CRP", value: "<0.4 mg/L", note: "Feb 2026", source: "pathology",
+      meaning: "CRP is a non-specific inflammation marker. It can rise for many reasons and does not tell you where inflammation is coming from.",
+      action: "Use it as clinical context, not as a daily optimisation target or proof that every form of inflammation is absent."
+    },
+    {
+      label: "Fitbit HRV", value: "~37 ms", note: "90-day RMSSD baseline", source: "Fitbit wearable",
+      meaning: "HRV is the small variation in timing between heartbeats. Wearables use it as a rough recovery/stress signal, but individual baselines differ a lot.",
+      action: "Compare your trend with your own usual range. Do not compare your number directly with longevity influencers or react to one bad night."
+    },
+    {
+      label: "Recent sleep", value: "8 h 01 m", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
+      meaning: "This is the most encouraging recent change: average sleep opportunity is now around eight hours. Duration alone does not prove sleep quality, but it gives recovery a much better foundation.",
+      action: "Protect the routine that produced this before adding more health interventions."
+    },
+    {
+      label: "Recent steps", value: "14,575/day", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
+      meaning: "This already represents a high amount of everyday movement. More steps are not automatically better if they displace strength work, recovery or family life.",
+      action: "Do not add a step target. Put the extra health effort into two short strength sessions and sustainable recovery."
+    }
   ],
   labs: [
     ["Fasting glucose", "5.0 mmol/L"],
@@ -632,11 +713,40 @@ window.JOSH_BASELINE = {
     note: "No extra step target is currently needed."
   },
   next: [
-    "7-day home blood-pressure average",
-    "Current waist circumference",
-    "Repeatable 5 km/parkrun benchmark",
-    "Repeatable strength benchmark",
-    "Monthly Fitbit RHR/HRV/sleep/steps summary"
+    {
+      title: "Home blood pressure — 7-day average",
+      why: "Blood pressure moves around during the day. Repeated home readings give a more useful picture than one random reading.",
+      how: "Use a validated upper-arm monitor. For 7 days (minimum 5), measure at about the same time morning and evening. Sit quietly for 5 minutes first, feet flat, back and arm supported; take 2 readings 1 minute apart and record both. Avoid caffeine, smoking and vigorous exercise for 30 minutes beforehand.",
+      frequency: "The site's 'about every 3 months' repeat is a personal trend-tracking choice, not a medical guideline. Your GP's advice takes priority.",
+      sourceLabel: "Heart Foundation Australia — home BP",
+      sourceUrl: "https://www.heartfoundation.org.au/your-heart/blood-pressure-and-your-heart"
+    },
+    {
+      title: "Waist circumference",
+      why: "Waist adds information that body weight cannot: it is a simple proxy for fat carried around the abdomen and organs.",
+      how: "Measure halfway between the lowest rib and the top of the hipbone, roughly around belly-button level. Breathe out normally and keep the tape snug without squeezing the skin.",
+      frequency: "Once monthly is plenty for trend tracking; use the same technique each time.",
+      sourceLabel: "Healthdirect — waist circumference",
+      sourceUrl: "https://www.healthdirect.gov.au/body-mass-index-bmi-and-waist-circumference"
+    },
+    {
+      title: "Repeatable 5 km / parkrun benchmark",
+      why: "This gives a practical aerobic-fitness trend using something you already do, without buying a VO₂max test.",
+      how: "Use the same 5 km course where practical. Record time plus a simple effort note. Most parkruns can stay conversational; make only the scheduled benchmark an intentional test.",
+      frequency: "About once every 8 weeks — frequent enough to see change without turning every Saturday into a race."
+    },
+    {
+      title: "Simple strength benchmark",
+      why: "The current programme is adding strength because it is the clearest training gap. A repeatable benchmark tells you whether those two short sessions are actually working.",
+      how: "Use the same safe exercises, load and technique each time. Record clean reps or load without taking sets to ugly failure.",
+      frequency: "About once every 8 weeks. Day-to-day strength fluctuates, so the long trend matters more than one session."
+    },
+    {
+      title: "Monthly Fitbit summary",
+      why: "Monthly summaries reduce the temptation to overreact to one night's HRV, sleep or resting-heart-rate score.",
+      how: "Capture the same few trends each month: resting heart rate, HRV, sleep duration and steps. Add a short note for illness, travel or unusual stress.",
+      frequency: "Once per month. The aim is pattern recognition, not daily optimisation."
+    }
   ],
   archiveLinks: [
     ["Full longitudinal health archive","docs/people/joshua-parris-full-health-archive.md"],
@@ -660,19 +770,59 @@ window.JOSH_PLAN = {
     ["Saturday","8:00 am 5 km parkrun/run-walk with Sylvie","Most weeks conversational; benchmark once every 8 weeks"],
     ["Sunday","No required training","If Saturday parkrun was missed: 4:00 pm 30 min easy e-bike/walk"]
   ],
+  workouts: [
+    {
+      name: "Strength A", when: "Tuesday · 8:05–8:25 pm", rounds: "2 rounds",
+      exercises: [
+        ["Chair or light goblet squat","10 reps"],
+        ["Incline push-up","8 reps"],
+        ["Supported one-arm row","12 each side"],
+        ["Glute bridge","12 reps"],
+        ["Suitcase carry","45 sec each side"]
+      ],
+      note: "Keep 2–3 clean reps in reserve. The goal is useful strength with good technique, not maximal lifting."
+    },
+    {
+      name: "Strength B", when: "Thursday · 8:05–8:25 pm", rounds: "2 rounds",
+      exercises: [
+        ["Sit-to-stand","12 reps"],
+        ["Light dumbbell/kettlebell Romanian deadlift","10 reps"],
+        ["Supported one-arm row","12 each side"],
+        ["Floor press","10 reps"],
+        ["Standing calf raise","15 reps"],
+        ["Supported single-leg balance","30 sec each side"]
+      ],
+      note: "Use a comfortable range and stop or modify an exercise that clearly reproduces pain rather than pushing through it."
+    }
+  ],
   nutrition: [
-    "85 g protein/day",
+    "85 g protein/day — a practical personal target; the Australian RDI for men aged 31–50 is 64 g/day",
     "30 g fibre/day",
-    "375 g vegetables/day minimum",
+    "6 vegetable/legume serves/day — about 450 g if using the standard 75 g vegetable serve",
     "2 serves fruit/day",
     "Dairy-free Mediterranean-ish pattern",
-    "Maintain weight around the high-70-kg range"
+    "Water as the default drink",
+    "Maintain weight around the high-70-kg range rather than deliberately cutting further without a reason"
+  ],
+  nutritionHelp: [
+    {
+      title: "85 g protein does not require protein food all day",
+      text: "Spread it across ordinary meals. Eggs, chicken, fish, tofu, legumes, nuts/seeds and suitable dairy-free foods can all contribute. The target is deliberately practical rather than maximal."
+    },
+    {
+      title: "6 vegetable serves sounds bigger than it is",
+      text: "One standard vegetable serve is about 75 g — for example ½ cup cooked vegetables or legumes, 1 cup leafy/raw salad, or 1 medium tomato. Six serves is roughly 450 g across the whole day."
+    },
+    {
+      title: "30 g fibre is mostly a food-pattern target",
+      text: "Oats, wholegrains, beans/lentils, fruit, vegetables, nuts and seeds add up across the day. There is no need to chase a fibre supplement if ordinary food comfortably gets you there."
+    }
   ],
   track: [
     "Monday-morning weight once weekly",
     "Waist once monthly",
     "Monthly Fitbit RHR/HRV/sleep/steps summary",
-    "Home blood pressure check: for 7 days, measure at about the same time each morning and evening. Each time, sit quietly first, then take 2 readings 1 minute apart and record them. Do one such 7-day check about every 3 months for trend tracking unless your GP recommends a different schedule.",
+    "Home blood pressure baseline: do one proper 7-day block using a validated upper-arm monitor if available; repeat later if your clinician recommends it, readings materially change, or there is another clear reason — not simply because three months passed.",
     "5 km benchmark + simple strength benchmark every 8 weeks"
   ],
   dontBuy: [
@@ -941,261 +1091,6 @@ window.HEALTH_GLOSSARY = [
   }
 ];
 </script>
-  <script>window.HEALTH_RESOURCES = [
-  {
-    id: "bryan-hyman",
-    person: "Bryan Johnson",
-    personId: "bryan-johnson",
-    type: "watch",
-    featured: true,
-    title: "Bryan Johnson Is Trying to Reverse Death! Here's What He's Actually Found",
-    publisher: "Mark Hyman, MD",
-    duration: "1h 20m",
-    url: "https://www.youtube.com/watch?v=QyyG-PWk0T4",
-    youtubeId: "QyyG-PWk0T4",
-    note: "A long-form interview that covers diet, sleep, exercise, testing, supplements and the cost/accessibility question. Useful overview, but remember both participants work commercially in health/wellness.",
-    evidence: "Interview / first-party claims"
-  },
-  {
-    id: "bryan-evening-exercise",
-    person: "Bryan Johnson",
-    personId: "bryan-johnson",
-    type: "watch",
-    featured: false,
-    title: "Evening Exercise, Poor Sleep, and Resting Heart Rate",
-    publisher: "Bryan Johnson Podcast",
-    duration: "46m",
-    url: "https://www.youtube.com/watch?v=lKM9OB6qHCE",
-    youtubeId: "lKM9OB6qHCE",
-    note: "A practical discussion of exercise timing, sleep and resting heart rate. Best treated as an N-of-1 conversation rather than a universal prescription.",
-    evidence: "First-party discussion"
-  },
-  {
-    id: "bryan-abc",
-    person: "Bryan Johnson",
-    personId: "bryan-johnson",
-    type: "listen",
-    featured: false,
-    title: "Bryan Johnson and Kate Tolo want to live forever",
-    publisher: "ABC triple j Hack",
-    duration: "32m",
-    url: "https://www.abc.net.au/triplej/programs/hack/interview-kate-tolo-and-bryan-johnson/107080492",
-    note: "An Australian interview that includes harder questions and criticism, useful as a counterweight to Blueprint's own material.",
-    evidence: "Independent interview"
-  },
-  {
-    id: "bryan-protocol",
-    person: "Bryan Johnson",
-    personId: "bryan-johnson",
-    type: "read",
-    featured: false,
-    title: "Bryan Johnson's Protocol",
-    publisher: "Blueprint",
-    duration: "Reference",
-    url: "https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol",
-    note: "The primary source for his current routine, exercise volume, diet, prescriptions and testing. Detailed, but first-party and commercially connected.",
-    evidence: "Primary / first-party"
-  },
-
-  {
-    id: "lustgarten-epigenetics",
-    person: "Michael Lustgarten",
-    personId: "michael-lustgarten",
-    type: "watch",
-    featured: true,
-    title: "Tracking and Measuring Biomarkers to Maximize Longevity",
-    publisher: "Everything Epigenetics",
-    duration: "Long-form",
-    url: "https://www.youtube.com/watch?v=9NG_ekdfMU4",
-    youtubeId: "9NG_ekdfMU4",
-    note: "A clear introduction to Lustgarten's approach: repeated biomarkers, food/exercise tracking, epigenetic clocks and the strengths and limitations of N-of-1 experiments.",
-    evidence: "Interview with researcher"
-  },
-  {
-    id: "lustgarten-data-driven",
-    person: "Michael Lustgarten",
-    personId: "michael-lustgarten",
-    type: "watch",
-    featured: false,
-    title: "Inside Dr. Lustgarten's Data-Driven Blueprint for Longevity",
-    publisher: "MyVitalC",
-    duration: "57m",
-    url: "https://www.youtube.com/watch?v=agwnE_Z6edk",
-    youtubeId: "agwnE_Z6edk",
-    note: "A newer interview covering his long-term data, diet variability and use of AI to analyse his personal health records. Includes commercial sponsorship.",
-    evidence: "Interview / self-tracking"
-  },
-  {
-    id: "lustgarten-blog",
-    person: "Michael Lustgarten",
-    personId: "michael-lustgarten",
-    type: "read",
-    featured: false,
-    title: "Conquer Aging or Die Trying",
-    publisher: "Michael Lustgarten",
-    duration: "Ongoing",
-    url: "https://michaellustgarten.com/",
-    note: "His own archive of blood tests, diet experiments, exercise, HR/HRV and biological-age calculations. Best used for longitudinal raw context rather than headline age scores.",
-    evidence: "Primary / first-party"
-  },
-
-  {
-    id: "svendsen-current",
-    person: "Oskar Svendsen",
-    personId: "oskar-svendsen",
-    type: "read",
-    featured: true,
-    title: "We tracked down cycling's lost world champion and VO₂ max record holder",
-    publisher: "Cycling Weekly",
-    duration: "Feature",
-    url: "https://www.cyclingweekly.com/news/its-almost-12-years-since-i-quit-i-still-dont-regret-it-we-tracked-down-cyclings-lost-world-champion-and-vo2-max-record-holder",
-    note: "The best current profile I found: where Svendsen is now, why he left elite sport, and why an extraordinary VO₂max did not automatically make professional cycling the right life for him.",
-    evidence: "Independent interview"
-  },
-  {
-    id: "svendsen-paper",
-    person: "Oskar Svendsen",
-    personId: "oskar-svendsen",
-    type: "read",
-    featured: false,
-    title: "Temporal changes in determinants of aerobic performance",
-    publisher: "Journal of Applied Physiology",
-    duration: "Peer-reviewed paper",
-    url: "https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018",
-    note: "The primary scientific source for his VO₂max series, threshold development and training-volume/intensity distribution.",
-    evidence: "Peer-reviewed"
-  },
-
-  {
-    id: "pascoe-siim-2024",
-    person: "Dave Pascoe",
-    personId: "dave-pascoe",
-    type: "watch",
-    featured: true,
-    title: "Dave Pascoe Shares His Longevity Routine for Staying Fit In His 60s",
-    publisher: "Siim Land",
-    duration: "1h 4m",
-    url: "https://www.youtube.com/watch?v=K5KmAxnWX5o",
-    youtubeId: "K5KmAxnWX5o",
-    note: "A useful overview of Pascoe's fitness, diet and routine. Good for extracting the ordinary habits; less useful if copied as a full supplement/biohacking protocol.",
-    evidence: "Interview / first-party claims"
-  },
-  {
-    id: "pascoe-siim-2025",
-    person: "Dave Pascoe",
-    personId: "dave-pascoe",
-    type: "watch",
-    featured: false,
-    title: "Dave Pascoe's 2025 Routine for Staying Ripped at 62",
-    publisher: "Siim Land",
-    duration: "Interview",
-    url: "https://www.youtube.com/watch?v=omNItoJbjxU",
-    youtubeId: "omNItoJbjxU",
-    note: "A newer snapshot of his exercise and longevity routine. Compare it with the documented medication, testing and cost context in this site's research notes.",
-    evidence: "Interview / self-report"
-  },
-  {
-    id: "pascoe-know-your-physio",
-    person: "Dave Pascoe",
-    personId: "dave-pascoe",
-    type: "listen",
-    featured: false,
-    title: "How I Slowed My Aging with Labs, AI & Strategy",
-    publisher: "Know Your Physio",
-    duration: "1h 32m",
-    url: "https://podcasts.apple.com/au/podcast/dave-pascoe-how-i-slowed-my-aging-with-labs-ai-strategy/id1555295256?i=1000724037129",
-    note: "Long-form audio covering fitness, food, testing, AI, supplements and where Pascoe thinks the fundamentals matter more than hype.",
-    evidence: "Podcast interview"
-  },
-  {
-    id: "pascoe-appearances",
-    person: "Dave Pascoe",
-    personId: "dave-pascoe",
-    type: "read",
-    featured: false,
-    title: "Dave Pascoe — Online Appearances",
-    publisher: "Dave Pascoe",
-    duration: "Index",
-    url: "https://www.davepascoe.net/home/online-appearances",
-    note: "A large first-party index of interviews and videos. Useful for finding more material, but not an independent quality filter.",
-    evidence: "Primary index"
-  },
-
-  {
-    id: "kelly-nasa-video",
-    person: "Scott Kelly",
-    personId: "scott-kelly",
-    type: "watch",
-    featured: true,
-    title: "NASA Astronaut Scott Kelly Reflects on His Year in Space",
-    publisher: "NASA",
-    duration: "Interview",
-    url: "https://www.youtube.com/watch?v=pLuY4rDQUyI",
-    youtubeId: "pLuY4rDQUyI",
-    note: "Primary NASA interview near the end of his 340-day mission, including the biomedical purpose of the mission and the realities of long-duration spaceflight.",
-    evidence: "Institutional / primary"
-  },
-  {
-    id: "kelly-time-video",
-    person: "Scott Kelly",
-    personId: "scott-kelly",
-    type: "watch",
-    featured: false,
-    title: "Scott Kelly Prepares to Spend a Year in Space",
-    publisher: "TIME",
-    duration: "13m",
-    url: "https://www.youtube.com/watch?v=3YfyvA8AxLw",
-    youtubeId: "3YfyvA8AxLw",
-    note: "A short documentary-style entry point covering risk, family separation, Mars, and the twin-study concept.",
-    evidence: "Independent documentary"
-  },
-  {
-    id: "kelly-astroben",
-    person: "Scott Kelly",
-    personId: "scott-kelly",
-    type: "listen",
-    featured: false,
-    title: "Scott Kelly: NASA's Twin Study and a Year in Space",
-    publisher: "The Astro Ben Podcast",
-    duration: "Podcast",
-    url: "https://astroben.libsyn.com/scott-kelly-astronaut-nasas-twin-study-year-in-space",
-    note: "A conversational audio interview about life aboard the ISS, the Twins Study, isolation and the wider space programme.",
-    evidence: "Podcast interview"
-  },
-  {
-    id: "kelly-pbs",
-    person: "Scott Kelly",
-    personId: "scott-kelly",
-    type: "watch",
-    featured: false,
-    title: "A Year in Space / Beyond a Year in Space",
-    publisher: "PBS",
-    duration: "Documentary",
-    url: "https://www.pbs.org/show/year-space/",
-    note: "A two-part documentary project focused on the mission and the post-flight scientific question: what did a year in space do to Kelly's body?",
-    evidence: "Independent documentary"
-  },
-  {
-    id: "kelly-twins-study",
-    person: "Scott Kelly",
-    personId: "scott-kelly",
-    type: "read",
-    featured: false,
-    title: "NASA Twins Study",
-    publisher: "NASA",
-    duration: "Research hub",
-    url: "https://www.nasa.gov/humans-in-space/twins-study/",
-    note: "The best starting point for the institutional science behind the case, with links into the published findings.",
-    evidence: "Institutional / peer-reviewed context"
-  }
-];
-
-window.RESOURCE_TYPES = {
-  watch: { label: "Watch", icon: "▶" },
-  listen: { label: "Listen", icon: "◉" },
-  read: { label: "Read", icon: "↗" }
-};
-</script>
   <script>(() => {
   const people = window.HEALTHIEST_PEOPLE || [];
   const podcasts = window.HEALTH_PODCASTS || [];
@@ -1276,7 +1171,7 @@ window.RESOURCE_TYPES = {
     document.getElementById("lesson-lens").textContent = person.lens;
     document.getElementById("lesson-text").textContent = person.lesson;
     const link = document.getElementById("lesson-link");
-    link.href = "#person-" + person.id;
+    link.href = "people.html#person-" + person.id;
   }
 
   function evidenceGroup(person) {
@@ -1305,14 +1200,16 @@ window.RESOURCE_TYPES = {
         <p class="mini-head">Don't copy blindly</p>
         <ul>${skipItems}</ul>
         <div class="person-sources">${sources}</div>
-        <a class="person-media-link" href="#resources">Watch & read ↓</a>
+        <a class="person-media-link" href="resources.html">Watch & read →</a>
       </article>
     `;
   }
 
   function renderPeople(filter = "all") {
+    const grid = document.getElementById("people-grid");
+    if (!grid) return;
     const visible = people.filter(p => filter === "all" || evidenceGroup(p) === filter);
-    document.getElementById("people-grid").innerHTML = visible.map(personCard).join("");
+    grid.innerHTML = visible.map(personCard).join("");
   }
 
 
@@ -1345,8 +1242,43 @@ window.RESOURCE_TYPES = {
       <div class="plan-day"><b>${day}</b><span>${primary}</span>${secondary ? `<em>${secondary}</em>` : ""}${explanationMarkup(primary + " " + secondary)}</div>
     `).join("");
 
+    const homeWeek = document.getElementById("home-week");
+    if (homeWeek) {
+      const anchors = joshPlan.week.filter(([,primary]) => !primary.startsWith("No required")).map(([day,primary,secondary]) => `
+        <div class="home-week-row"><b>${day}</b><span>${primary}</span>${secondary ? `<small>${secondary}</small>` : ""}</div>
+      `).join("");
+      homeWeek.innerHTML = anchors;
+    }
+
+    const workouts = document.getElementById("plan-workouts");
+    if (workouts && joshPlan.workouts) {
+      workouts.innerHTML = joshPlan.workouts.map(workout => `
+        <article class="workout-card">
+          <div class="workout-head">
+            <div><span class="tag">${workout.when}</span><h3>${workout.name}</h3></div>
+            <strong>${workout.rounds}</strong>
+          </div>
+          <ol class="workout-list">
+            ${workout.exercises.map(([name,dose]) => `<li><span>${name}</span><b>${dose}</b></li>`).join("")}
+          </ol>
+          <p class="workout-note">${workout.note}</p>
+          ${explanationMarkup(workout.note)}
+        </article>
+      `).join("");
+    }
+
     const nutrition = document.getElementById("plan-nutrition");
     if (nutrition) nutrition.innerHTML = joshPlan.nutrition.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
+
+    const nutritionHelp = document.getElementById("plan-nutrition-help");
+    if (nutritionHelp && joshPlan.nutritionHelp) {
+      nutritionHelp.innerHTML = joshPlan.nutritionHelp.map(item => `
+        <details class="help-card">
+          <summary>${item.title}</summary>
+          <p>${item.text}</p>
+        </details>
+      `).join("");
+    }
 
     const track = document.getElementById("plan-track");
     if (track) track.innerHTML = joshPlan.track.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
@@ -1370,8 +1302,14 @@ window.RESOURCE_TYPES = {
         <article class="baseline-metric">
           <span>${item.label}</span>
           <strong>${item.value}</strong>
-          <small>${item.note}</small>
+          <small>${item.note}${item.source ? " · " + item.source : ""}</small>
           ${explanationMarkup(item.label + " " + item.value + " " + item.note)}
+          ${item.meaning ? `
+            <details class="metric-explainer">
+              <summary>What this means for me</summary>
+              <p>${item.meaning}</p>
+              ${item.action ? `<p class="next-action"><b>Practical takeaway:</b> ${item.action}</p>` : ""}
+            </details>` : ""}
         </article>
       `).join("");
     }
@@ -1404,7 +1342,20 @@ window.RESOURCE_TYPES = {
     if (privacy) privacy.textContent = baseline.privacy;
 
     const next = document.getElementById("baseline-next-list");
-    if (next) next.innerHTML = baseline.next.map(item => `<li><span>${item}</span>${explanationMarkup(item)}</li>`).join("");
+    if (next) next.innerHTML = baseline.next.map(item => {
+      if (typeof item === "string") return `<li><span>${item}</span>${explanationMarkup(item)}</li>`;
+      return `
+        <li>
+          <div class="measure-card">
+            <h4>${item.title}</h4>
+            <p><b>Why:</b> ${item.why}</p>
+            <div class="measure-how"><b>How:</b> ${item.how}</div>
+            ${item.frequency ? `<p><b>How often:</b> ${item.frequency}</p>` : ""}
+            ${item.sourceUrl ? `<a class="measure-source" href="${item.sourceUrl}" target="_blank" rel="noreferrer">${item.sourceLabel || "Source"} ↗</a>` : ""}
+            ${explanationMarkup(item.title + " " + item.why + " " + item.how)}
+          </div>
+        </li>`;
+    }).join("");
 
     const archive = document.getElementById("baseline-archive-links");
     if (archive && baseline.archiveLinks) {
@@ -1486,6 +1437,17 @@ window.RESOURCE_TYPES = {
     if (grid) grid.innerHTML = visible.map(resourceCard).join("");
   }
 
+  function renderGlossary() {
+    const grid = document.getElementById("glossary-grid");
+    if (!grid) return;
+    grid.innerHTML = glossary.map(item => `
+      <article class="glossary-card">
+        <h3>${item.term}</h3>
+        <p>${item.meaning}</p>
+      </article>
+    `).join("");
+  }
+
   function wireResourceFilters() {
     document.querySelectorAll(".resource-filter").forEach(button => {
       button.addEventListener("click", () => {
@@ -1506,14 +1468,44 @@ window.RESOURCE_TYPES = {
     });
   }
 
-  renderToday();
+  if (document.getElementById("today-title")) renderToday();
   renderJoshPlan();
   renderBaseline();
+  renderGlossary();
   renderPeople();
   renderPodcasts();
   renderResources();
   wireFilters();
   wireResourceFilters();
 })();</script>
+  <script>(() => {
+  const button = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".site-nav");
+  if (!button || !nav) return;
+
+  const close = () => {
+    nav.classList.remove("open");
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", "Open navigation");
+  };
+
+  button.addEventListener("click", () => {
+    const open = !nav.classList.contains("open");
+    nav.classList.toggle("open", open);
+    button.setAttribute("aria-expanded", String(open));
+    button.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  });
+
+  nav.querySelectorAll("a").forEach(link => link.addEventListener("click", close));
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") close();
+  });
+  document.addEventListener("click", event => {
+    if (!nav.classList.contains("open")) return;
+    if (nav.contains(event.target) || button.contains(event.target)) return;
+    close();
+  });
+})();
+</script>
 </body>
 </html>
