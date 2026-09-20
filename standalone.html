@@ -122,8 +122,8 @@
           </article>
           <article class="panel">
             <span class="tag">Weekly time cost</span>
-            <div class="plan-big">50 min</div>
-            <p>of solo evening exercise. Most cardio happens at lunch or with family.</p>
+            <div class="plan-big">40 min</div>
+            <p>of added solo strength work. Monday Frisbee and Saturday parkrun already provide most planned cardio.</p>
           </article>
           <article class="panel">
             <span class="tag">Money rule</span>
@@ -193,6 +193,14 @@
             <h3>Five simple numbers will make this comparison much stronger.</h3>
           </div>
           <ol id="baseline-next-list" class="questions"></ol>
+        </div>
+
+        <div class="baseline-next">
+          <div>
+            <p class="eyebrow">Longitudinal archive</p>
+            <h3>Years of Josh's own data, kept source-specific.</h3>
+          </div>
+          <div id="baseline-archive-links" class="questions"></div>
         </div>
       </div>
     </section>
@@ -332,9 +340,9 @@
     name: "Joshua Parris",
     lens: "Working-parent baseline",
     evidence: "Mostly B-C",
-    summary: "The project's real-world comparison case: a 32-year-old working parent using ordinary pathology, wearables, home exercise and family-compatible routines rather than a private medical team. Current strengths include favourable glucose/triglyceride/inflammation markers; the clearest opportunities are sleep, blood-pressure tracking and repeatable fitness/strength benchmarks.",
-    lesson: "Use ordinary measurements to improve the basics without turning health into a second job.",
-    do: ["Increase sleep opportunity and consistency", "Build a repeatable aerobic + strength baseline", "Keep ordinary pathology and blood-pressure trends"],
+    summary: "The project's real-world comparison case: a 32-year-old working parent with a two-year Health Connect archive, dense Fitbit data, ordinary pathology, Monday-night Ultimate Frisbee, Saturday parkrun and family/work constraints. Current activity and sleep are already strong; the clearest training gap is strength plus better BP/fitness benchmarking.",
+    lesson: "Use years of source-specific data to improve what is actually missing, not what a generic plan assumes is missing.",
+    do: ["Protect Monday Frisbee and Saturday parkrun", "Strength train twice weekly", "Keep ordinary pathology, BP and source-specific wearable trends"],
     skip: ["Chasing biological-age scores", "Expensive testing before the basics", "Comparing one unusually active week with elite athletes"],
     sources: [
       ["Joshua Parris public baseline profile", "https://github.com/joshualparris/HealthiestPeople/blob/main/docs/people/joshua-parris.md"],
@@ -484,15 +492,15 @@ window.HEALTH_PODCASTS = [
 
 window.DAILY_FOUNDATIONS = {
   monday: {
-    theme: "Strength + start steady",
-    movement: "25 minutes of full-body strength. Keep 2-3 reps in reserve; the goal is to finish capable, not wrecked.",
+    theme: "Frisbee + connection",
+    movement: "6–7 pm Ultimate Frisbee. This is already a meaningful interval-style cardiovascular session; do not add a second workout.",
     food: "Make lunch and dinner each contain a clear protein source plus at least two plant foods.",
     recovery: "Choose a consistent lights-out target tonight rather than trying to 'catch up' with optimisation.",
     tiny: "Minimum day: 10-minute walk + 1 set each of squat, push and pull."
   },
   tuesday: {
-    theme: "Aerobic base",
-    movement: "30 minutes of brisk walking, easy running or cycling at a pace where you can still speak in sentences.",
+    theme: "Strength + recover from Monday",
+    movement: "8:05–8:25 pm Strength A. Keep the load submaximal and technique clean.",
     food: "Add fibre before adding supplements: oats, legumes, wholegrains, fruit, veg, nuts or seeds.",
     recovery: "Take 5 quiet minutes after work or before dinner with slow breathing, prayer or stillness.",
     tiny: "Minimum day: three 5-minute walks, ideally after meals."
@@ -519,8 +527,8 @@ window.DAILY_FOUNDATIONS = {
     tiny: "Minimum day: 10 minutes walking with someone you care about."
   },
   saturday: {
-    theme: "Longer family movement",
-    movement: "Aim for 45-60 minutes of enjoyable movement: walk, bike, park, hike, swim or an active outing.",
+    theme: "Parrun + family aerobic base",
+    movement: "8:00 am 5 km Dubbo parkrun/run-walk with Sylvie when attending. Most weeks keep it conversational.",
     food: "Prepare one thing that makes the coming week easier: chopped veg, cooked protein, oats, legumes or lunch components.",
     recovery: "Get daylight and let some movement be play rather than training.",
     tiny: "Minimum day: one active family outing, however short."
@@ -539,14 +547,17 @@ window.EVIDENCE_NOTE = "A = independent peer-reviewed/institutional measurement;
 
 window.JOSH_BASELINE = {
   updated: "20 Sep 2026",
-  privacy: "Public profile includes selected measurements only. Diagnoses and medications are intentionally excluded.",
+  privacy: "Joshua has explicitly asked for a detailed public longitudinal archive. Family members' private medical details remain excluded.",
   headline: [
     { label: "Weight", value: "77.4 kg", note: "24 Jul 2026" },
-    { label: "Sleeping RHR", value: "55–58 bpm", note: "historical wearable range" },
+    { label: "Fitbit RHR", value: "~61 bpm", note: "stable Apr–Aug baseline" },
     { label: "HbA1c", value: "5.3%", note: "Feb 2026" },
     { label: "LDL-C", value: "2.8 mmol/L", note: "Feb 2026" },
     { label: "Triglycerides", value: "1.1 mmol/L", note: "Feb 2026" },
-    { label: "CRP", value: "<0.4 mg/L", note: "Feb 2026" }
+    { label: "CRP", value: "<0.4 mg/L", note: "Feb 2026" },
+    { label: "Fitbit HRV", value: "~37 ms", note: "90-day RMSSD baseline" },
+    { label: "Recent sleep", value: "8 h 01 m", note: "latest 6 Google Health weeks" },
+    { label: "Recent steps", value: "14,575/day", note: "latest 6 Google Health weeks" }
   ],
   labs: [
     ["Fasting glucose", "5.0 mmol/L"],
@@ -560,58 +571,65 @@ window.JOSH_BASELINE = {
     ["eGFR", ">90 mL/min/1.73m²"]
   ],
   trends: [
-    { label: "Weight", from: "~83–84 kg", to: "77.4 kg", period: "2025/early 2026 → Jul 2026" },
+    { label: "Weight", from: "88.8 kg", to: "77.4 kg", period: "Jul 2024 → Jul 2026 cleaned trend" },
     { label: "LDL-C", from: "3.2 mmol/L", to: "2.8 mmol/L", period: "2023 → Feb 2026" },
     { label: "Total cholesterol", from: "5.3 mmol/L", to: "4.6 mmol/L", period: "2023 → Feb 2026" },
     { label: "Ferritin", from: "35 µg/L", to: "41 µg/L", period: "Jan 2025 → Feb 2026" }
   ],
   sleep: {
-    average: "6 h 26–31 min",
-    shortNights: "18% under 5 h",
-    latency: "44 min",
-    note: "Historical 2026 snapshot; current 30-day average still needed."
+    average: "8 h 01 min",
+    shortNights: "Older Mar–May short-sleep period has improved",
+    latency: "Historical ~44 min snapshot",
+    note: "Latest six Google Health weeks average ~8 h 01 min; Aug Health Connect 30-day Fitbit main session ~8.44 h."
   },
   activity: {
-    normal: "~6,900–8,000 steps/day in lower-activity periods",
-    high: "18,153 steps/day across one high-activity 7-day snapshot",
-    note: "Use a 30-day average for a fair current baseline."
+    normal: "~14,575 steps/day across the latest six weeks",
+    high: "Monday Frisbee can be a hard interval-style session",
+    note: "No extra step target is currently needed."
   },
   next: [
-    "30-day average sleep duration + bedtime/wake consistency",
-    "7-day home blood-pressure average under consistent conditions",
-    "Current waist circumference + weight",
-    "Repeatable 5 km or other aerobic benchmark",
-    "Repeatable strength benchmark (push-ups, grip or simple loaded carry)"
+    "7-day home blood-pressure average",
+    "Current waist circumference",
+    "Repeatable 5 km/parkrun benchmark",
+    "Repeatable strength benchmark",
+    "Monthly Fitbit RHR/HRV/sleep/steps summary"
+  ],
+  archiveLinks: [
+    ["Full longitudinal health archive","docs/people/joshua-parris-full-health-archive.md"],
+    ["Weekly wearable CSV","data/josh-weekly-wearable-history.csv"],
+    ["Lab history CSV","data/josh-labs-history.csv"],
+    ["Body composition CSV","data/josh-body-composition-history.csv"],
+    ["Frisbee history CSV","data/josh-frisbee-history.csv"]
   ]
 };
 
 
 window.JOSH_PLAN = {
   duration: "8 weeks",
-  sleep: { windDown:"8:30 pm", lightsOut:"9:30 pm", target:"7 h 30 min asleep/night" },
+  sleep: { windDown:"8:30 pm", lightsOut:"9:30 pm", target:"maintain ≥7 h 45 min average" },
   week: [
-    ["Monday","1:15–1:35 pm brisk walk","8:00–8:25 pm Strength A"],
-    ["Tuesday","1:15–1:35 pm brisk walk",""],
-    ["Wednesday","1:15–1:35 pm brisk walk",""],
-    ["Thursday","1:15–1:35 pm brisk walk","8:00–8:25 pm Strength B"],
-    ["Friday","1:15–1:35 pm brisk walk",""],
-    ["Saturday","45 min conversational e-bike / bike / brisk walk",""],
-    ["Sunday","30 min easy family walk + 10 min mobility/balance",""]
+    ["Monday","6:00–7:00 pm Ultimate Frisbee","Main hard cardiovascular session; no second workout"],
+    ["Tuesday","8:05–8:25 pm Strength A",""],
+    ["Wednesday","No required formal workout","Normal daily movement only"],
+    ["Thursday","8:05–8:25 pm Strength B",""],
+    ["Friday","No required formal workout",""],
+    ["Saturday","8:00 am 5 km parkrun/run-walk with Sylvie","Most weeks conversational; benchmark once every 8 weeks"],
+    ["Sunday","No required training","If Saturday parkrun was missed: 4:00 pm 30 min easy e-bike/walk"]
   ],
   nutrition: [
     "85 g protein/day",
     "30 g fibre/day",
     "375 g vegetables/day minimum",
     "2 serves fruit/day",
-    "Water as default drink",
-    "Maintain body weight around 78 kg"
+    "Dairy-free Mediterranean-ish pattern",
+    "Maintain weight around the high-70-kg range"
   ],
   track: [
-    "30-day average sleep duration",
     "Monday-morning weight once weekly",
     "Waist once monthly",
-    "One 7-day blood-pressure block",
-    "Repeat the same 5 km or 30-minute bike benchmark every 8 weeks"
+    "Monthly Fitbit RHR/HRV/sleep/steps summary",
+    "One 7-day home-BP block every 3 months",
+    "5 km benchmark + simple strength benchmark every 8 weeks"
   ],
   dontBuy: [
     "Epigenetic/telomere tests",
@@ -622,7 +640,7 @@ window.JOSH_PLAN = {
     "Large supplement stacks",
     "Extra exercise equipment"
   ],
-  principle: "Sleep first. Then movement, ordinary nutritious food, strength, and simple trends. Do not sacrifice family time or sleep to imitate a biohacker."
+  principle: "You already move a lot and sleep is currently much better. Protect Frisbee, add two short strength sessions, use parkrun as family aerobic work, and track trends without turning health into another job."
 };
 </script>
   <script>window.HEALTH_RESOURCES = [
@@ -1054,7 +1072,7 @@ window.RESOURCE_TYPES = {
 
     const sleep = document.getElementById("baseline-sleep");
     if (sleep) {
-      sleep.textContent = `Historical sleep snapshot: ${baseline.sleep.average} average, ${baseline.sleep.shortNights}, latency ${baseline.sleep.latency}. ${baseline.sleep.note}`;
+      sleep.textContent = `Current sleep context: ${baseline.sleep.average} average. ${baseline.sleep.shortNights}. ${baseline.sleep.note}`;
     }
 
     const privacy = document.getElementById("baseline-privacy");
@@ -1062,6 +1080,13 @@ window.RESOURCE_TYPES = {
 
     const next = document.getElementById("baseline-next-list");
     if (next) next.innerHTML = baseline.next.map(item => `<li>${item}</li>`).join("");
+
+    const archive = document.getElementById("baseline-archive-links");
+    if (archive && baseline.archiveLinks) {
+      archive.innerHTML = baseline.archiveLinks.map(([label,url]) =>
+        `<p><a href="${url}">${label} ↗</a></p>`
+      ).join("");
+    }
   }
 
   function featuredVideoCard(resource) {
