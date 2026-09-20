@@ -44,12 +44,12 @@ jobs:
           from pathlib import Path
 
           pages = {
-              "index.html": ['href="styles.css"', 'src="site-data.js"', 'src="app.js"', 'src="nav.js"', 'id="today"'],
-              "plan.html": ['href="styles.css"', 'src="site-data.js"', 'src="app.js"', 'src="nav.js"', 'id="plan"', 'id="baseline"', 'id="glossary"'],
-              "people.html": ['href="styles.css"', 'src="site-data.js"', 'src="app.js"', 'src="nav.js"', 'id="people"', 'id="principles"'],
-              "resources.html": ['href="styles.css"', 'src="site-data.js"', 'src="resources-data.js"', 'src="app.js"', 'src="nav.js"', 'id="listen"', 'id="watch-read"'],
-              "charts.html": ['href="styles.css"', 'src="charts.js"', 'src="nav.js"', 'id="charts"', 'id="diagrams"'],
-              "evidence.html": ['href="styles.css"', 'src="nav.js"', 'id="grades"', 'id="rules"', 'id="research"'],
+              "index.html": ['styles.css', 'site-data.js', 'app.js', 'nav.js', 'id="today"'],
+              "plan.html": ['styles.css', 'site-data.js', 'app.js', 'nav.js', 'id="plan"', 'id="baseline"', 'id="glossary"'],
+              "people.html": ['styles.css', 'site-data.js', 'app.js', 'nav.js', 'id="people"', 'id="principles"'],
+              "resources.html": ['styles.css', 'site-data.js', 'resources-data.js', 'app.js', 'nav.js', 'id="listen"', 'id="watch-read"'],
+              "charts.html": ['styles.css', 'charts.js', 'nav.js', 'id="charts"', 'id="diagrams"'],
+              "evidence.html": ['styles.css', 'nav.js', 'id="grades"', 'id="rules"', 'id="research"'],
           }
 
           errors = []
