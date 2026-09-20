@@ -153,3 +153,20 @@ Joshua Parris,2023,LDL-C,3.2,mmol/L,B,docs/people/joshua-parris.md,Historical li
 Joshua Parris,2023,HDL-C,1.6,mmol/L,B,docs/people/joshua-parris.md,Historical lipid value
 Joshua Parris,2023,Triglycerides,1.1,mmol/L,B,docs/people/joshua-parris.md,Historical lipid value
 Joshua Parris,Jan 2025,Ferritin,35,ug/L,B,docs/people/joshua-parris.md,Historical pathology value
+Joshua Parris,Aug 2026 Health Connect master,Fitbit resting heart rate 30-day mean,61.2,bpm,C,docs/people/joshua-parris-full-health-archive.md,Same-source Fitbit baseline
+Joshua Parris,Aug 2026 Health Connect master,Fitbit resting heart rate 90-day mean,61.0,bpm,C,docs/people/joshua-parris-full-health-archive.md,Same-source Fitbit baseline
+Joshua Parris,Aug 2026 Health Connect master,Fitbit HRV RMSSD 30-day mean,36.3,ms,C,docs/people/joshua-parris-full-health-archive.md,Same-source trend; do not merge with Withings
+Joshua Parris,Aug 2026 Health Connect master,Fitbit HRV RMSSD 90-day mean,37.0,ms,C,docs/people/joshua-parris-full-health-archive.md,Same-source trend
+Joshua Parris,Aug 2026 Health Connect master,Fitbit steps 30-day mean,14691,steps/day,C,docs/people/joshua-parris-full-health-archive.md,Same-source recent activity
+Joshua Parris,Aug 2026 Health Connect master,Fitbit steps 90-day mean,12888,steps/day,C,docs/people/joshua-parris-full-health-archive.md,Same-source recent activity
+Joshua Parris,Aug 2026 Health Connect master,Fitbit main sleep session 30-day mean,8.44,h/night,C,docs/people/joshua-parris-full-health-archive.md,Session window
+Joshua Parris,Aug 2026 Health Connect master,Fitbit stage-derived asleep 30-day mean,7.73,h/night,C,docs/people/joshua-parris-full-health-archive.md,Wearable stage estimate
+Joshua Parris,2024-07-11,Cleaned weight,88.8,kg,C,docs/people/joshua-parris-full-health-archive.md,Earliest retained cleaned Health Connect weight
+Joshua Parris,2026-07-24,Cleaned weight,77.4,kg,C,docs/people/joshua-parris-full-health-archive.md,Latest retained cleaned Health Connect weight
+Joshua Parris,Aug 2026 Health Connect master,Latest retained body fat,14.2,percent,C,docs/people/joshua-parris-full-health-archive.md,Consumer bioimpedance estimate; direction more trustworthy than exact value
+Joshua Parris,May 2026 Monday Frisbee,Frisbee average heart rate,124,bpm,C,data/josh-frisbee-history.csv,One documented session
+Joshua Parris,May 2026 Monday Frisbee,Frisbee Active Zone Minutes,49,min,C,data/josh-frisbee-history.csv,One documented session
+Joshua Parris,May 2026 Monday Frisbee,Frisbee vigorous/peak time,21,min,C,data/josh-frisbee-history.csv,One documented session
+Joshua Parris,2026-08-17 Monday Frisbee,Frisbee average heart rate,149,bpm,C,data/josh-frisbee-history.csv,Harder session
+Joshua Parris,2026-08-17 Monday Frisbee,Frisbee duration,69,min,C,data/josh-frisbee-history.csv,Harder session
+Joshua Parris,2026-07-29,Peak exercise heart rate,195,bpm,C,docs/people/joshua-parris-full-health-archive.md,Activity-linked running/walking peak; wrist PPG does not identify rhythm
