@@ -1006,3 +1006,95 @@ body{max-width:100%;overflow-x:hidden}
 
 .person-profile-link-top{display:inline-flex;width:max-content;max-width:100%;margin:8px 0 18px;padding:10px 14px}
 @media(max-width:650px){.person-profile-link-top{width:100%;justify-content:center;text-align:center}}
+
+
+/* Canonical site navigation — 20 Sep 2026 */
+.site-nav .nav-group{display:contents}
+.site-nav .nav-group-label{display:none}
+.site-nav .nav-mobile-extra{display:none}
+
+@media(max-width:760px){
+  body.menu-open{overflow:hidden}
+  .site-nav.open{
+    display:flex!important;
+    max-height:calc(100dvh - 86px);
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    padding:10px 12px 18px;
+  }
+  .site-nav .nav-group{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    padding:5px 0 9px;
+    border-bottom:1px solid var(--line);
+  }
+  .site-nav .nav-group:last-child{border-bottom:0}
+  .site-nav .nav-group-label{
+    display:block;
+    padding:9px 13px 4px;
+    color:var(--muted);
+    font-size:.68rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+  }
+  .site-nav .nav-mobile-extra{display:block}
+  .site-nav .nav-link{
+    display:block;
+    width:100%;
+    padding:11px 13px;
+    border-radius:10px;
+  }
+
+  /* Hard mobile reset for expandable explanations: never become side columns. */
+  .questions li{
+    position:relative!important;
+    display:block!important;
+    width:100%!important;
+    min-width:0!important;
+    padding:18px 0 18px 50px!important;
+  }
+  .questions li>span,
+  .questions li>div,
+  .questions li>details,
+  .baseline-metric>details,
+  .baseline-list details,
+  .trend-row details,
+  .plan-day details{
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+  }
+  .term-explainer,
+  .metric-explainer{
+    display:block!important;
+    grid-column:1/-1!important;
+    clear:both!important;
+    margin-top:10px!important;
+  }
+  details.term-explainer:not([open])>div,
+  details.metric-explainer:not([open])>p,
+  details.metric-explainer:not([open])>.next-action{
+    display:none!important;
+  }
+  .term-explainer[open]>div,
+  .metric-explainer[open]>p,
+  .metric-explainer[open]>.next-action{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .term-explainer[open]>div{
+    padding:12px 13px!important;
+  }
+  .term-explainer p,
+  .metric-explainer p,
+  .measure-how{
+    width:auto!important;
+    max-width:none!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+    white-space:normal!important;
+  }
+}
