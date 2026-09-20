@@ -1,0 +1,32 @@
+report_date,period,source,total_steps,avg_steps_per_day,total_km,avg_calories_burned,active_zone_minutes,avg_restful_sleep_hhmm,hours_with_250plus_steps,avg_resting_hr_bpm,avg_weight_kg,best_day_steps,notes
+2022-01-18,"Jan 10-Jan 16",Fitbit,9021,1289,6.18,,,,,,,8287,"Sparse/incomplete-wear week; historical context only"
+2022-01-25,"Jan 17-Jan 23",Fitbit,11908,1701,8.05,,,,,,,6060,"Sparse/incomplete-wear week; historical context only"
+2022-05-03,"Apr 25-May 1",Fitbit,9922,1417,6.71,,,8:16,,,,8413,"Sparse/incomplete-wear week; historical context only"
+2022-06-28,"Jun 20-Jun 26",Fitbit,13817,1974,9.34,,43,,,,,7479,"Sparse/incomplete-wear week; historical context only"
+2026-03-17,"Mar 9-Mar 15",Fitbit,99369,14196,66.95,,53,7:10,7,,,18755,
+2026-03-24,"Mar 16-Mar 22",Fitbit,116301,16614,78.60,,31,6:48,9,,,18842,
+2026-03-31,"Mar 23-Mar 29",Fitbit,120058,17151,79.24,,44,6:29,9,,,18362,
+2026-04-07,"Mar 30-Apr 5",Fitbit,127070,18153,84.13,,15,6:26,8,,,27749,"Duplicate weekly email also received; stored once here"
+2026-04-14,"Apr 6-Apr 12",Fitbit,118336,16905,78.00,,2,6:18,8,,,25818,
+2026-04-21,"Apr 13-Apr 19",Fitbit,111705,15958,73.71,,32,5:28,8,,,19292,
+2026-04-28,"Apr 20-Apr 26",Fitbit,81193,11599,54.42,,152,6:27,6,,,18906,
+2026-05-05,"Apr 27-May 3",Fitbit,88266,12609,58.72,,16,5:58,7,,,19954,
+2026-05-12,"May 4-May 10",Fitbit,92187,13170,61.70,,79,6:01,5,,,19235,
+2026-05-19,"May 11-May 17",Fitbit,86719,12388,58.48,,73,6:05,7,,,17280,
+2026-05-26,"May 17-May 23",Google Health,91367,13052,,3045,62,7:45,,60,81.3,15862,
+2026-06-02,"May 23-May 29",Google Health,100333,14333,67.97,3145,136,8:53,7,60,81.0,21737,
+2026-06-09,"May 30-Jun 5",Google Health,82420,11774,55.27,2977,133,7:29,6,62,81.0,15517,
+2026-06-16,"Jun 6-Jun 12",Google Health,95995,13714,65.04,3231,170,8:03,8,60,81.0,17900,
+2026-06-23,"Jun 13-Jun 19",Google Health,74631,10662,49.66,2798,16,8:09,7,62,81.0,13213,
+2026-06-30,"Jun 20-Jun 26",Google Health,94441,13492,63.29,2969,27,8:31,7,60,81.0,19360,
+2026-07-07,"Jun 27-Jul 3",Google Health,103992,14856,69.52,3196,24,8:28,8,62,81.0,17727,
+2026-07-14,"Jul 4-Jul 10",Google Health,90132,12876,61.23,2904,4,8:25,7,60,81.0,20576,
+2026-07-21,"Jul 11-Jul 17",Google Health,51151,7307,37.78,2160,0,9:12,5,57,81.0,12446,"Low-activity week; interpret with illness/device context"
+2026-07-28,"Jul 18-Jul 24",Google Health,79412,11345,43.99,2489,18,6:56,6,61,77.4,19100,"Weight feed steps from 81.0 to 77.4 kg; individual scale readings/source should be reviewed"
+2026-08-04,"Jul 25-Jul 31",Google Health,115778,16540,78.47,3251,83,8:43,7,61,77.4,27123,
+2026-08-11,"Aug 1-Aug 7",Google Health,95805,13686,64.28,3084,39,8:05,7,61,77.4,17575,
+2026-08-18,"Aug 8-Aug 14",Google Health,104519,14931,71.92,3155,82,8:09,7,61,77.4,24832,
+2026-08-25,"Aug 15-Aug 21",Google Health,116479,16640,77.68,3252,141,7:51,7,61,77.4,23648,
+2026-09-01,"Aug 22-Aug 28",Google Health,87396,12485,58.35,2936,55,8:07,6,63,77.4,14274,
+2026-09-08,"Aug 29-Sep 4",Google Health,97507,13930,65.99,3002,123,7:42,7,64,77.4,19640,
+2026-09-15,"Sep 5-Sep 11",Google Health,110428,15775,73.65,3175,136,8:12,7,66,77.4,22974,"RHR elevation relative to earlier baseline; contemporaneous illness/stress context noted in prior chats"
