@@ -1,24 +1,39 @@
 # HealthiestPeople
 
-A source-first research project comparing five unusually well-documented people with exceptional health or physiology:
+A source-first research project studying **nine unusually well-documented people** and translating the useful parts of their health, physiology and self-tracking into ordinary life.
 
-- Bryan Johnson
-- Michael Lustgarten
-- Oskar Svendsen
-- Dave Pascoe
-- Scott Kelly
+## Live site
 
-## Research so far
+The repository now includes a dependency-free website designed for a busy working parent. It provides:
 
-### Individual profiles
+- a practical plan that changes with the day of the week
+- a "minimum viable health" fallback for chaotic days
+- a rotating daily lesson from one of the nine people
+- evidence-aware "copy this / don't copy blindly" guidance
+- low-cost principles that work around full-time work, children, bills and limited time
 
-- [Bryan Johnson](docs/people/bryan-johnson.md)
-- [Michael Lustgarten](docs/people/michael-lustgarten.md)
-- [Oskar Svendsen](docs/people/oskar-svendsen.md)
-- [Dave Pascoe](docs/people/dave-pascoe.md)
-- [Scott Kelly](docs/people/scott-kelly.md)
+The same static site is configured for **GitHub Pages** and **Vercel**.
 
-### Cross-person work
+## People in the project
+
+### Health / physiology exemplars and high-value case studies
+
+- [Bryan Johnson](docs/people/bryan-johnson.md) — unusually broad current whole-body measurement
+- [Michael Lustgarten](docs/people/michael-lustgarten.md) — long-term low-cost biomarker and lifestyle tracking
+- [Oskar Svendsen](docs/people/oskar-svendsen.md) — peer-reviewed exceptional aerobic physiology
+- [Dave Pascoe](docs/people/dave-pascoe.md) — preserved multi-domain physical function in his 60s
+- [Scott Kelly](docs/people/scott-kelly.md) — exceptionally rigorous NASA whole-body research under extreme stress
+- [Julie Gibson Clark](docs/people/julie-gibson-clark.md) — unusually transferable working-parent longevity routine and a very low reported DunedinPACE
+
+### Measurement / quantified-self case studies
+
+- [Bob Troia](docs/people/bob-troia.md) — years of practical N-of-1 tracking across body composition, sleep and glucose
+- [Michael Snyder](docs/people/michael-snyder.md) — peer-reviewed personal multi-omics and disease-detection research
+- [Larry Smarr](docs/people/larry-smarr.md) — long-term biomarker tracking that helped surface persistent inflammation before Crohn's diagnosis
+
+Snyder and Smarr are deliberately included as **measurement lessons, not "healthiest person" claims**. Being deeply measured and being disease-free are different things.
+
+## Research documents
 
 - [Metric-by-metric comparison](docs/comparison.md)
 - [Low-cost working-family playbook](docs/practical-playbook.md)
@@ -27,18 +42,15 @@ A source-first research project comparing five unusually well-documented people 
 - [Evidence quality, conflicts and interpretation](docs/evidence-and-bias.md)
 - [Normalised metrics dataset](data/metrics.csv)
 
-### Current status
-
-All five first-pass profiles are complete. The next research phase is **deep extraction**: current lipids, glucose, blood pressure, body composition, sleep, exercise volume, medications/disease burden and other comparable values, with missing values left explicitly unknown.
-
 ## Purpose
 
-This project asks two separate questions:
+This project asks three separate questions:
 
-1. What does the best publicly available evidence actually show about each person's health?
-2. Which parts of their success are realistically transferable to an ordinary middle-class adult who works five days a week, has children, bills, stress, limited time, and no access to a private medical team?
+1. What does the best publicly available evidence actually show about each person's health or physiology?
+2. What does their measurement strategy teach us, even when they are not disease-free?
+3. Which parts are realistically transferable to an ordinary middle-class adult who works five days a week, has children, bills, stress, limited time, and no private medical team?
 
-The project does **not** assume these are literally the five healthiest humans alive. Public datasets are incomplete, collected at different ages and dates, and often use different methods.
+The project does **not** claim these are literally the nine healthiest humans alive. Public datasets are incomplete, collected at different ages and dates, and often use different methods.
 
 ## Evidence rules
 
@@ -52,29 +64,6 @@ Every specific health claim should be classified by source quality:
 
 We prefer current measurements over historical peak values, but preserve both when useful.
 
-## Comparison domains
-
-- Age and basic anthropometrics
-- Cardiovascular health
-- Aerobic fitness / VO2max
-- Resting heart rate and HRV
-- Blood pressure
-- Lipids / ApoB / Lp(a)
-- Glucose / insulin / HbA1c
-- Inflammation
-- Body composition and visceral fat
-- Strength and functional capacity
-- Bone health
-- Sleep
-- Diet
-- Exercise
-- Diagnosed diseases and important medical limitations
-- Medicines and supplements
-- Imaging
-- Biological-age / epigenetic tests (with methodological caveats)
-- Longitudinal change
-- Lifestyle context and feasibility
-
 ## Practical translation
 
 For each person, separate:
@@ -82,6 +71,17 @@ For each person, separate:
 - **High-value / low-cost:** behaviours an ordinary family can realistically copy.
 - **Useful but optional:** measurements or equipment that may help but are not necessary.
 - **Expensive / low-transferability:** concierge medicine, frequent imaging, experimental therapies, elaborate testing and other interventions that should not be presented as prerequisites for good health.
+
+## Website files
+
+- `index.html` — homepage and daily dashboard
+- `styles.css` — responsive design
+- `site-data.js` — nine-person evidence-aware lesson dataset and weekly routine
+- `app.js` — Sydney-time daily rotation and filters
+- `vercel.json` — Vercel static-site configuration
+- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
+
+No framework, database, tracking script or paid API is required.
 
 ## Safety and interpretation
 
