@@ -170,6 +170,31 @@ The stronger case is:
 
 That is evidence of **high physiological resilience**, not perfect health.
 
+## Recovery was real, not effortless
+
+NASA describes the post-flight phase as including an organised **rehabilitation and reconditioning programme**.
+
+Kelly's own immediate post-landing reports make clear that "resilience" did not mean an absence of symptoms. In the first days back on Earth he described:
+
+- sore muscles
+- joint pain
+- weakness / difficulty with ordinary physical tasks
+- fatigue
+- unusually sensitive skin, including a burning sensation with sustained contact
+
+These symptoms occurred while his body readapted to full gravity after 340 days in microgravity.
+
+The longer Twins Study likewise found that some cognitive speed/accuracy changes appeared **after landing** and persisted for months, even though cognition had been largely stable during flight.
+
+This distinction matters for the project's definition of health:
+
+> **Resilience includes the capacity to recover after stress; it does not mean the stress caused no impairment.**
+
+Sources:
+- NASA Twins Study About: https://www.nasa.gov/humans-in-space/twins-study/about/
+- ABC News, 5 Mar 2016: https://www.abc.net.au/news/2016-03-05/scott-kelly-spaceflight-leaves-astronaut-feeling-sore/7223312
+- Space.com post-flight interview: https://www.space.com/32166-kelly-would-go-back-to-space.html
+
 ## What the study also shows was *not* healthy about the environment
 
 Spaceflight produced or was associated with:
