@@ -14,7 +14,7 @@ Public academic biography:
 - BS, Biochemistry — Queens College, 2003
 - BA, English Textual Studies — Syracuse University, 1994
 
-In late 2022 he reported that he was about to turn 50, placing his birth around early 1973. An exact date of birth has not yet been verified for this repository.
+His Biomarker Optimizers profile gives his date of birth as **27 January 1973**. Evidence grade: **C — first-party profile**. The same profile says his daily RHR, HRV, sleep and detailed diet updates are published through Patreon, so current day-level data may be publicly described but not freely accessible.
 
 ## Longitudinal tracking
 
