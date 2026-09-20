@@ -1,0 +1,7 @@
+date_context,weight_kg,calculated_bmi,body_fat_percent,muscle_mass_kg,bone_mass_kg,visceral_fat_index,source,notes
+2024-07-11,88.8,29.0,,,,,Health Connect cleaned trend,"Earliest retained weight in Aug 2026 master analysis"
+2024 first 90d median,87.8,28.7,,,,,Health Connect cleaned trend,"Median after continuity filtering"
+2025 Withings snapshot,83.7,27.3,17.7,65.8,3.5,10,Withings consumer scale,"Historical snapshot; exact bioimpedance values hydration-sensitive"
+2026-05-21,81.0,26.4,16.3,,,,Health Connect/scale,"Approx latest body-fat record in June analysis"
+2026 final 90d median,79.8,26.1,16.3,,,,Health Connect cleaned trend,"Median values in Aug 2026 master analysis"
+2026-07-24,77.4,25.3,14.2,,,,Health Connect cleaned trend,"Latest retained weight; 14.2% latest retained bioimpedance estimate in Aug analysis; treat exact BF cautiously"
