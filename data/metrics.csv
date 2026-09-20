@@ -1,0 +1,40 @@
+person,date_context,metric,value,unit,evidence_grade,source_url,notes
+Bryan Johnson,2025 publication,VO2max,58.7,mL/kg/min,C,https://blueprint.bryanjohnson.com/blogs/news/i-am-the-healthiest-person-on-the-planet,First-party published measurement
+Bryan Johnson,2025 publication,Resting heart rate,42,bpm,C,https://blueprint.bryanjohnson.com/blogs/news/i-am-the-healthiest-person-on-the-planet,First-party
+Bryan Johnson,2026 evening routine,Pre-sleep heart rate,39-44,bpm,C,https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-evening-routine,Range associated by Johnson with best sleep
+Bryan Johnson,2025 publication,Coronary artery calcium score,0,Agatston,C,https://blueprint.bryanjohnson.com/blogs/news/i-am-the-healthiest-person-on-the-planet,First-party reported imaging result
+Bryan Johnson,2025 publication,hs-CRP,0.1,mg/dL,C,https://blueprint.bryanjohnson.com/blogs/news/i-am-the-healthiest-person-on-the-planet,First-party
+Bryan Johnson,May 2026,Autoimmune gastritis,confirmed,diagnosis,B,https://www.statnews.com/2026/07/08/bryan-johnson-autoimmune-gastritis-diagnosis-explained/,Reported as biopsy-confirmed after persistent low ferritin
+Michael Lustgarten,Dec 2019,Resting heart rate,47.5,bpm,C,https://michaellustgarten.com/2020/01/01/resting-heart-rate-heart-rate-variability-december-2019-update/,Monthly average
+Michael Lustgarten,Dec 2019,HRV,86.3,ms,C,https://michaellustgarten.com/2020/01/01/resting-heart-rate-heart-rate-variability-december-2019-update/,Self-published wearable average
+Michael Lustgarten,Jan 2020,Resting heart rate,46.9,bpm,C,https://michaellustgarten.com/2020/02/,Monthly average
+Michael Lustgarten,Jan 2020,HRV,76,ms,C,https://michaellustgarten.com/2020/02/,Monthly average
+Michael Lustgarten,Dec 2022,Body weight,68,kg,C,https://michaellustgarten.com/category/fitness/,Reported with overhead-press performance
+Michael Lustgarten,Dec 2022,Overhead press,50,kg,C,https://michaellustgarten.com/category/fitness/,Single reported lift
+Michael Lustgarten,2019,Pull-ups,12,repetitions,C,https://michaellustgarten.com/2019/12/05/resting-heart-rate-heart-rate-variability-still-making-progress/,Self-published video-linked claim
+Michael Lustgarten,2019 exercise routine,Walking,24-32,km/week,C,https://michaellustgarten.com/2020/01/01/resting-heart-rate-heart-rate-variability-december-2019-update/,Converted from 15-20 miles/week
+Michael Lustgarten,2019 exercise routine,Structured exercise,3-4,sessions/week,C,https://michaellustgarten.com/2020/01/01/resting-heart-rate-heart-rate-variability-december-2019-update/,About one hour each
+Oskar Svendsen,Mar 2010,VO2max,74.6,mL/kg/min,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,Pre-bike-specific training
+Oskar Svendsen,Aug 2012,VO2max,96.7,mL/kg/min,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,Peer-reviewed peak
+Oskar Svendsen,Aug 2012,Absolute VO2max,7397,mL/min,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,At 76.5 kg
+Oskar Svendsen,Aug 2012,Body weight,76.5,kg,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,At peak VO2max test
+Oskar Svendsen,2012-2014,Haematocrit,45.1-48.8,percent,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,Eight anti-doping controls; mean 47.0
+Oskar Svendsen,Oct 2015,VO2max,77.0,mL/kg/min,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,After ~15 months almost no structured exercise
+Dave Pascoe,2026,Age,63,years,C,https://www.davepascoe.net/,First-party
+Dave Pascoe,2026,Height,183,cm,C,https://www.davepascoe.net/,Published as 6 feet
+Dave Pascoe,2026,Body weight,72.57,kg,C,https://www.davepascoe.net/,Published as 160 lb
+Dave Pascoe,2026,BMI,21.7,kg/m2,C,https://www.davepascoe.net/,First-party
+Dave Pascoe,published testing page,Beta-2 microglobulin,1.51,unspecified,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Unit not present in parsed page; do not infer
+Dave Pascoe,published testing page,BUN,22,unspecified,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Unit not present in parsed page
+Dave Pascoe,published testing page,Cystatin C,0.82,unspecified,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Unit not present in parsed page
+Dave Pascoe,published testing page,Homocysteine,7.9,unspecified,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Unit not present in parsed page
+Dave Pascoe,published testing page,RDW,12.6,unspecified,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Unit not present in parsed page
+Dave Pascoe,published testing page,Left grip strength,52.1,kg-force equivalent,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Converted from 114.8 lb
+Dave Pascoe,published testing page,Right grip strength,56.0,kg-force equivalent,C,https://sites.google.com/view/davepascoe/home/my-testing-results,Converted from 123.4 lb
+Scott Kelly,2015-2016 mission,Body mass change,-7,percent,A,https://www.nasa.gov/humans-in-space/nasas-twins-study-results-published-in-science-journal/,During 340-day ISS mission
+Scott Kelly,2015-2016 mission,Energy intake vs anticipated,-30,percent,A,https://www.nasa.gov/humans-in-space/nasas-twins-study-results-published-in-science-journal/,NASA summary
+Scott Kelly,2015-2016 mission,Average telomere length change,+14.5,percent,A,https://pmc.ncbi.nlm.nih.gov/articles/PMC7580864/,During flight; rapidly shortened after return
+Scott Kelly,postflight 6 months,Gene expression returned to baseline,91.3,percent,A,https://www.nasa.gov/humans-in-space/twins-study/about/,NASA summary
+Scott Kelly,2015-2016 mission,Flu vaccine immune response,appropriate,qualitative,A,https://www.nasa.gov/humans-in-space/nasas-twins-study-results-published-in-science-journal/,Immune system responded appropriately in flight
+Scott Kelly,2015-2016 mission,Carotid artery wall thickening,present,qualitative,A,https://www.nasa.gov/humans-in-space/nasas-twins-study-results-published-in-science-journal/,Observed during/immediately after mission
+Scott Kelly,2015-2016 mission,Cognitive performance during flight,largely stable,qualitative,A,https://www.nasa.gov/humans-in-space/nasas-twins-study-results-published-in-science-journal/,Post-landing speed/accuracy decline also observed
