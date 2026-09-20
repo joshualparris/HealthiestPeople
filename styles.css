@@ -1550,3 +1550,24 @@ body{max-width:100%;overflow-x:hidden}
   .source-links a{width:100%;justify-content:center;text-align:center}
   .morning-bottom-line{padding:20px}
 }
+
+
+.morning-plan-callout{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin:0 0 18px;
+  padding:20px 22px;
+  border:1px solid var(--sage-2);
+  border-radius:22px;
+  background:#f3f8f4;
+  text-decoration:none;
+}
+.morning-plan-callout h3{margin:12px 0 7px;font-size:1.35rem}
+.morning-plan-callout p{margin:0;color:var(--muted);max-width:760px}
+.morning-plan-callout>b{color:var(--green);white-space:nowrap}
+@media(max-width:760px){
+  .morning-plan-callout{display:block;padding:16px}
+  .morning-plan-callout>b{display:block;margin-top:14px;white-space:normal}
+}
