@@ -5,7 +5,33 @@
   const resourceTypes = window.RESOURCE_TYPES || {};
   const baseline = window.JOSH_BASELINE || null;
   const joshPlan = window.JOSH_PLAN || null;
+  const glossary = window.HEALTH_GLOSSARY || [];
   const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+
+  function glossaryMatches(text) {
+    const haystack = String(text || "").toLowerCase();
+    const seen = new Set();
+    return glossary.filter(item => {
+      const hit = (item.match || []).some(term => haystack.includes(String(term).toLowerCase()));
+      if (!hit || seen.has(item.term)) return false;
+      seen.add(item.term);
+      return true;
+    });
+  }
+
+  function explanationMarkup(text) {
+    const matches = glossaryMatches(text);
+    if (!matches.length) return "";
+    return matches.map(item =>
+      `<span class="plain-english"><b>${item.term}:</b> ${item.meaning}</span>`
+    ).join("");
+  }
+
+  function setExplainedText(id, text) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = `<span>${text}</span>${explanationMarkup(text)}`;
+  }
 
   function sydneyParts() {
     const fmt = new Intl.DateTimeFormat("en-AU", {
@@ -42,10 +68,10 @@
     document.getElementById("today-title").textContent = weekday;
     document.getElementById("today-date").textContent = label.replace(weekday + ", ", "");
     document.getElementById("daily-theme").textContent = day.theme;
-    document.getElementById("daily-movement").textContent = day.movement;
-    document.getElementById("daily-food").textContent = day.food;
-    document.getElementById("daily-recovery").textContent = day.recovery;
-    document.getElementById("daily-tiny").textContent = day.tiny;
+    setExplainedText("daily-movement", day.movement);
+    setExplainedText("daily-food", day.food);
+    setExplainedText("daily-recovery", day.recovery);
+    setExplainedText("daily-tiny", day.tiny);
 
     const person = people[stableIndex(dateKey, people.length)];
     document.getElementById("lesson-name").textContent = person.name;
@@ -64,8 +90,8 @@
       `<a href="${url}" target="_blank" rel="noreferrer">${label} ↗</a>`
     ).join("");
 
-    const doItems = person.do.map(x => `<li>${x}</li>`).join("");
-    const skipItems = person.skip.map(x => `<li>${x}</li>`).join("");
+    const doItems = person.do.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
+    const skipItems = person.skip.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
 
     return `
       <article class="person-card" id="person-${person.id}" data-group="${evidenceGroup(person)}">
@@ -74,8 +100,8 @@
           <span class="person-badge">${person.evidence}</span>
         </div>
         <p class="lens">${person.lens}</p>
-        <p class="summary">${person.summary}</p>
-        <p class="person-lesson">${person.lesson}</p>
+        <p class="summary">${person.summary}${explanationMarkup(person.summary)}</p>
+        <p class="person-lesson">${person.lesson}${explanationMarkup(person.lesson)}</p>
         <p class="mini-head">Copy this</p>
         <ul>${doItems}</ul>
         <p class="mini-head">Don't copy blindly</p>
@@ -118,17 +144,17 @@
 
     const week = document.getElementById("plan-week");
     if (week) week.innerHTML = joshPlan.week.map(([day,primary,secondary]) => `
-      <div class="plan-day"><b>${day}</b><span>${primary}</span>${secondary ? `<em>${secondary}</em>` : ""}</div>
+      <div class="plan-day"><b>${day}</b><span>${primary}</span>${secondary ? `<em>${secondary}</em>` : ""}${explanationMarkup(primary + " " + secondary)}</div>
     `).join("");
 
     const nutrition = document.getElementById("plan-nutrition");
-    if (nutrition) nutrition.innerHTML = joshPlan.nutrition.map(x => `<li>${x}</li>`).join("");
+    if (nutrition) nutrition.innerHTML = joshPlan.nutrition.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
 
     const track = document.getElementById("plan-track");
-    if (track) track.innerHTML = joshPlan.track.map(x => `<li>${x}</li>`).join("");
+    if (track) track.innerHTML = joshPlan.track.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
 
     const no = document.getElementById("plan-dont-buy");
-    if (no) no.innerHTML = joshPlan.dontBuy.map(x => `<li>${x}</li>`).join("");
+    if (no) no.innerHTML = joshPlan.dontBuy.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
 
     const principle = document.getElementById("plan-principle");
     if (principle) principle.textContent = joshPlan.principle;
@@ -147,6 +173,7 @@
           <span>${item.label}</span>
           <strong>${item.value}</strong>
           <small>${item.note}</small>
+          ${explanationMarkup(item.label + " " + item.value + " " + item.note)}
         </article>
       `).join("");
     }
@@ -154,7 +181,7 @@
     const labs = document.getElementById("baseline-labs");
     if (labs) {
       labs.innerHTML = baseline.labs.map(([label,value]) =>
-        `<div><span>${label}</span><b>${value}</b></div>`
+        `<div><span>${label}</span><b>${value}</b>${explanationMarkup(label + " " + value)}</div>`
       ).join("");
     }
 
@@ -162,7 +189,7 @@
     if (trends) {
       trends.innerHTML = baseline.trends.map(item => `
         <div class="trend-row">
-          <div><b>${item.label}</b><small>${item.period}</small></div>
+          <div><b>${item.label}</b><small>${item.period}</small>${explanationMarkup(item.label)}</div>
           <span>${item.from}</span>
           <span class="trend-arrow">→</span>
           <strong>${item.to}</strong>
@@ -179,7 +206,7 @@
     if (privacy) privacy.textContent = baseline.privacy;
 
     const next = document.getElementById("baseline-next-list");
-    if (next) next.innerHTML = baseline.next.map(item => `<li>${item}</li>`).join("");
+    if (next) next.innerHTML = baseline.next.map(item => `<li><span>${item}</span>${explanationMarkup(item)}</li>`).join("");
 
     const archive = document.getElementById("baseline-archive-links");
     if (archive && baseline.archiveLinks) {
