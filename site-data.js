@@ -345,19 +345,59 @@ window.JOSH_PLAN = {
     ["Saturday","8:00 am 5 km parkrun/run-walk with Sylvie","Most weeks conversational; benchmark once every 8 weeks"],
     ["Sunday","No required training","If Saturday parkrun was missed: 4:00 pm 30 min easy e-bike/walk"]
   ],
+  workouts: [
+    {
+      name: "Strength A", when: "Tuesday · 8:05–8:25 pm", rounds: "2 rounds",
+      exercises: [
+        ["Chair or light goblet squat","10 reps"],
+        ["Incline push-up","8 reps"],
+        ["Supported one-arm row","12 each side"],
+        ["Glute bridge","12 reps"],
+        ["Suitcase carry","45 sec each side"]
+      ],
+      note: "Keep 2–3 clean reps in reserve. The goal is useful strength with good technique, not maximal lifting."
+    },
+    {
+      name: "Strength B", when: "Thursday · 8:05–8:25 pm", rounds: "2 rounds",
+      exercises: [
+        ["Sit-to-stand","12 reps"],
+        ["Light dumbbell/kettlebell Romanian deadlift","10 reps"],
+        ["Supported one-arm row","12 each side"],
+        ["Floor press","10 reps"],
+        ["Standing calf raise","15 reps"],
+        ["Supported single-leg balance","30 sec each side"]
+      ],
+      note: "Use a comfortable range and stop or modify an exercise that clearly reproduces pain rather than pushing through it."
+    }
+  ],
   nutrition: [
-    "85 g protein/day",
+    "85 g protein/day — a practical personal target; the Australian RDI for men aged 31–50 is 64 g/day",
     "30 g fibre/day",
-    "375 g vegetables/day minimum",
+    "6 vegetable/legume serves/day — about 450 g if using the standard 75 g vegetable serve",
     "2 serves fruit/day",
     "Dairy-free Mediterranean-ish pattern",
-    "Maintain weight around the high-70-kg range"
+    "Water as the default drink",
+    "Maintain weight around the high-70-kg range rather than deliberately cutting further without a reason"
+  ],
+  nutritionHelp: [
+    {
+      title: "85 g protein does not require protein food all day",
+      text: "Spread it across ordinary meals. Eggs, chicken, fish, tofu, legumes, nuts/seeds and suitable dairy-free foods can all contribute. The target is deliberately practical rather than maximal."
+    },
+    {
+      title: "6 vegetable serves sounds bigger than it is",
+      text: "One standard vegetable serve is about 75 g — for example ½ cup cooked vegetables or legumes, 1 cup leafy/raw salad, or 1 medium tomato. Six serves is roughly 450 g across the whole day."
+    },
+    {
+      title: "30 g fibre is mostly a food-pattern target",
+      text: "Oats, wholegrains, beans/lentils, fruit, vegetables, nuts and seeds add up across the day. There is no need to chase a fibre supplement if ordinary food comfortably gets you there."
+    }
   ],
   track: [
     "Monday-morning weight once weekly",
     "Waist once monthly",
     "Monthly Fitbit RHR/HRV/sleep/steps summary",
-    "Home blood pressure check: for 7 days, measure at about the same time each morning and evening. Each time, sit quietly first, then take 2 readings 1 minute apart and record them. Do one such 7-day check about every 3 months for trend tracking unless your GP recommends a different schedule.",
+    "Home blood pressure baseline: do one proper 7-day block using a validated upper-arm monitor if available; repeat later if your clinician recommends it, readings materially change, or there is another clear reason — not simply because three months passed.",
     "5 km benchmark + simple strength benchmark every 8 weeks"
   ],
   dontBuy: [
