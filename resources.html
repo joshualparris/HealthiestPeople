@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d1f1a"><meta name="description" content="Curated health podcasts, videos, articles and papers from the HealthiestPeople project."><title>Resources — HealthiestPeople</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="HealthiestPeople home">
+      <span class="brand-mark">HP</span><span>HealthiestPeople</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="plan.html">My Plan</a>
+      <a href="people.html">People</a>
+      <a href="charts.html">Charts</a>
+      <a href="resources.html" aria-current="page">Resources</a>
+      <a href="evidence.html">Evidence</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero"><div class="wrap"><p class="eyebrow">Curated library</p><h1>Listen, watch & read</h1><p class="lede">Useful long-form material without opening fifty tabs. Interviews help explain routines and reasoning; papers and institutional sources carry more evidential weight.</p>
+    <div class="page-tabs"><a class="active" href="#listen">Listen</a><a href="#watch-read">Watch / Read</a></div>
+  </div></section>
+  <section id="listen" class="section section-tint"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">Podcasts & talks</p><h2>Hear the people behind the data</h2><p class="section-intro">Start with the cards marked “Start here”, then go deeper only if the topic is useful.</p></div></div>
+    <div id="podcast-grid" class="podcast-grid"></div>
+  </div></section>
+  <section id="watch-read" class="section"><div class="wrap">
+    <div class="section-heading resource-heading"><div><p class="eyebrow">Go deeper</p><h2>Watch and read</h2><p class="resource-intro">Videos, articles and papers selected for context, practical value and source quality.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter resources"><button class="resource-filter active" data-resource-filter="all">All</button><button class="resource-filter" data-resource-filter="watch">▶ Watch</button><button class="resource-filter" data-resource-filter="read">↗ Read</button></div>
+    </div>
+    <div class="resource-callout"><div><span class="tag">Best place to start</span><h3>One useful resource per person — not fifty open tabs.</h3></div><p>Featured picks prioritise context and depth. Self-tracker interviews remain self-report; independent scientific and institutional material gets more evidential weight.</p></div>
+    <div id="featured-videos" class="featured-videos" aria-label="Featured videos"></div><div id="resources-grid" class="resources-grid"></div>
+  </div></section>
+</main><footer><div class="wrap footer-grid"><div><b>HealthiestPeople</b><p>Source-first longevity research translated into ordinary life.</p></div><div><a href="index.html">Home</a><a href="https://github.com/joshualparris/HealthiestPeople" target="_blank" rel="noreferrer">Research repository ↗</a></div></div></footer><script src="site-data.js"></script><script src="resources-data.js"></script><script src="app.js"></script><script src="nav.js"></script></body></html>
