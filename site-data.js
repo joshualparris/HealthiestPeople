@@ -213,15 +213,51 @@ window.JOSH_BASELINE = {
   updated: "20 Sep 2026",
   privacy: "Joshua has explicitly asked for a detailed public longitudinal archive. Family members' private medical details remain excluded.",
   headline: [
-    { label: "Weight", value: "77.4 kg", note: "24 Jul 2026" },
-    { label: "Fitbit RHR", value: "~61 bpm", note: "stable Apr–Aug baseline" },
-    { label: "HbA1c", value: "5.3%", note: "Feb 2026" },
-    { label: "LDL-C", value: "2.8 mmol/L", note: "Feb 2026" },
-    { label: "Triglycerides", value: "1.1 mmol/L", note: "Feb 2026" },
-    { label: "CRP", value: "<0.4 mg/L", note: "Feb 2026" },
-    { label: "Fitbit HRV", value: "~37 ms", note: "90-day RMSSD baseline" },
-    { label: "Recent sleep", value: "8 h 01 m", note: "latest 6 Google Health weeks" },
-    { label: "Recent steps", value: "14,575/day", note: "latest 6 Google Health weeks" }
+    {
+      label: "Weight", value: "77.4 kg", note: "24 Jul 2026", source: "body-weight record",
+      meaning: "Body weight is useful as a long-term trend, but it cannot tell how much of your weight is fat, muscle or normal fluid variation.",
+      action: "Keep one repeatable weekly reading if it is useful. Pair it with waist and strength/function rather than chasing a lower number by itself."
+    },
+    {
+      label: "Fitbit RHR", value: "~61 bpm", note: "stable Apr–Aug baseline", source: "Fitbit wearable",
+      meaning: "Resting heart rate is most useful as your own baseline. A stable trend gives context if it later shifts with illness, heat, stress, sleep or training.",
+      action: "Do not try to force it lower. Look for sustained changes across several days and interpret them with how you actually feel."
+    },
+    {
+      label: "HbA1c", value: "5.3%", note: "Feb 2026", source: "pathology",
+      meaning: "HbA1c roughly reflects average blood-glucose exposure over the previous 2–3 months. It is more informative than one random glucose reading, but it is still only one part of metabolic health.",
+      action: "Keep it in ordinary GP/pathology follow-up rather than adding a continuous glucose monitor without a clinical reason."
+    },
+    {
+      label: "LDL-C", value: "2.8 mmol/L", note: "Feb 2026", source: "pathology",
+      meaning: "LDL-C measures cholesterol carried inside LDL particles. It contributes to cardiovascular-risk assessment but should be interpreted with the rest of the picture — blood pressure, other lipids, family history and overall risk.",
+      action: "Track the trend with your GP rather than treating this single number as a pass/fail score."
+    },
+    {
+      label: "Triglycerides", value: "1.1 mmol/L", note: "Feb 2026", source: "pathology",
+      meaning: "Triglycerides are fats circulating in the blood. Food, alcohol, metabolic health and whether the sample was fasting can affect the result.",
+      action: "Interpret this with the rest of the lipid panel and the conditions of the blood test."
+    },
+    {
+      label: "CRP", value: "<0.4 mg/L", note: "Feb 2026", source: "pathology",
+      meaning: "CRP is a non-specific inflammation marker. It can rise for many reasons and does not tell you where inflammation is coming from.",
+      action: "Use it as clinical context, not as a daily optimisation target or proof that every form of inflammation is absent."
+    },
+    {
+      label: "Fitbit HRV", value: "~37 ms", note: "90-day RMSSD baseline", source: "Fitbit wearable",
+      meaning: "HRV is the small variation in timing between heartbeats. Wearables use it as a rough recovery/stress signal, but individual baselines differ a lot.",
+      action: "Compare your trend with your own usual range. Do not compare your number directly with longevity influencers or react to one bad night."
+    },
+    {
+      label: "Recent sleep", value: "8 h 01 m", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
+      meaning: "This is the most encouraging recent change: average sleep opportunity is now around eight hours. Duration alone does not prove sleep quality, but it gives recovery a much better foundation.",
+      action: "Protect the routine that produced this before adding more health interventions."
+    },
+    {
+      label: "Recent steps", value: "14,575/day", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
+      meaning: "This already represents a high amount of everyday movement. More steps are not automatically better if they displace strength work, recovery or family life.",
+      action: "Do not add a step target. Put the extra health effort into two short strength sessions and sustainable recovery."
+    }
   ],
   labs: [
     ["Fasting glucose", "5.0 mmol/L"],
@@ -252,11 +288,40 @@ window.JOSH_BASELINE = {
     note: "No extra step target is currently needed."
   },
   next: [
-    "7-day home blood-pressure average",
-    "Current waist circumference",
-    "Repeatable 5 km/parkrun benchmark",
-    "Repeatable strength benchmark",
-    "Monthly Fitbit RHR/HRV/sleep/steps summary"
+    {
+      title: "Home blood pressure — 7-day average",
+      why: "Blood pressure moves around during the day. Repeated home readings give a more useful picture than one random reading.",
+      how: "Use a validated upper-arm monitor. For 7 days (minimum 5), measure at about the same time morning and evening. Sit quietly for 5 minutes first, feet flat, back and arm supported; take 2 readings 1 minute apart and record both. Avoid caffeine, smoking and vigorous exercise for 30 minutes beforehand.",
+      frequency: "The site's 'about every 3 months' repeat is a personal trend-tracking choice, not a medical guideline. Your GP's advice takes priority.",
+      sourceLabel: "Heart Foundation Australia — home BP",
+      sourceUrl: "https://www.heartfoundation.org.au/your-heart/blood-pressure-and-your-heart"
+    },
+    {
+      title: "Waist circumference",
+      why: "Waist adds information that body weight cannot: it is a simple proxy for fat carried around the abdomen and organs.",
+      how: "Measure halfway between the lowest rib and the top of the hipbone, roughly around belly-button level. Breathe out normally and keep the tape snug without squeezing the skin.",
+      frequency: "Once monthly is plenty for trend tracking; use the same technique each time.",
+      sourceLabel: "Healthdirect — waist circumference",
+      sourceUrl: "https://www.healthdirect.gov.au/body-mass-index-bmi-and-waist-circumference"
+    },
+    {
+      title: "Repeatable 5 km / parkrun benchmark",
+      why: "This gives a practical aerobic-fitness trend using something you already do, without buying a VO₂max test.",
+      how: "Use the same 5 km course where practical. Record time plus a simple effort note. Most parkruns can stay conversational; make only the scheduled benchmark an intentional test.",
+      frequency: "About once every 8 weeks — frequent enough to see change without turning every Saturday into a race."
+    },
+    {
+      title: "Simple strength benchmark",
+      why: "The current programme is adding strength because it is the clearest training gap. A repeatable benchmark tells you whether those two short sessions are actually working.",
+      how: "Use the same safe exercises, load and technique each time. Record clean reps or load without taking sets to ugly failure.",
+      frequency: "About once every 8 weeks. Day-to-day strength fluctuates, so the long trend matters more than one session."
+    },
+    {
+      title: "Monthly Fitbit summary",
+      why: "Monthly summaries reduce the temptation to overreact to one night's HRV, sleep or resting-heart-rate score.",
+      how: "Capture the same few trends each month: resting heart rate, HRV, sleep duration and steps. Add a short note for illness, travel or unusual stress.",
+      frequency: "Once per month. The aim is pattern recognition, not daily optimisation."
+    }
   ],
   archiveLinks: [
     ["Full longitudinal health archive","docs/people/joshua-parris-full-health-archive.md"],
