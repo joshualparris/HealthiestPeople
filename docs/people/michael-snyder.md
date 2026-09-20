@@ -41,8 +41,8 @@ Public scientific and institutional reporting documents:
 
 - baseline triglycerides: **321 mg/dL**
 - after starting simvastatin: approximately **81–116 mg/dL**
-- HbA1c during diabetes onset: **6.7%**
-- after substantial diet/exercise change: **below 5%**, reached over roughly six months
+- HbA1c in the 2012 iPOP timeline: **6.7% at day 369**
+- after the lifestyle-change period: **4.9% at day 496**
 - Snyder later described another period when HbA1c rose to about **7.0%**, again prompting increased exercise
 
 The first iPOP study followed him over about **14 months**, with roughly **20 blood samples**, and integrated genome, transcriptome, proteome, metabolome and autoantibody measurements.
@@ -53,7 +53,8 @@ Sources:
 - Chen et al., *Cell* 2012 / PubMed: https://pubmed.ncbi.nlm.nih.gov/22424236/
 - NHGRI summary: https://www.genome.gov/27548552/genome-advance-of-the-month-harnessing-the-full-omics-potential-of-personalized-medicine
 - contemporary study reporting: https://www.sciencedaily.com/releases/2012/03/120315123020.htm
-- Snyder interview discussing HbA1c: https://www.jeffreybland.com/podcast/october-2013-issue-michael-snyder-phd-stanford-university/
+- Primary open-access Cell paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3341616/
+- Snyder later interview for subsequent recurrence context: https://www.newhope.com/industry-insights/figuring-it-out
 
 ### Why this matters for an ordinary person
 
@@ -131,7 +132,7 @@ That is not a failure of measurement. It is arguably the point: good measurement
 
 **The best health data are not the most impressive data. They are the data that help you notice a meaningful change and make a better decision.**
 
-_Last reviewed: 20 September 2026._
+_Last reviewed: 21 September 2026._
 
 
 ## Additional verified detail
