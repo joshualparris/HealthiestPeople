@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d1f1a"><meta name="description" content="Charts and diagrams that make the HealthiestPeople evidence and case studies easier to understand."><title>Charts & Diagrams — HealthiestPeople</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="HealthiestPeople home">
+      <span class="brand-mark">HP</span><span>HealthiestPeople</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="plan.html">My Plan</a>
+      <a href="people.html">People</a>
+      <a href="charts.html" aria-current="page">Charts</a>
+      <a href="resources.html">Resources</a>
+      <a href="evidence.html">Evidence</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero"><div class="wrap"><p class="eyebrow">Visualise the research</p><h1>Charts & diagrams</h1><p class="lede">A visual layer for the project: trends, measurement density, evidence quality and the practical decision path from “interesting number” to “useful action”.</p>
+    <div class="page-tabs"><a class="active" href="#charts">Charts</a><a href="#diagrams">Diagrams</a></div>
+  </div></section>
+  <section id="charts" class="section"><div class="wrap">
+    <div class="chart-grid">
+      <article class="chart-card chart-wide"><div class="chart-heading"><div><p class="eyebrow">Longitudinal example</p><h2>Oskar Svendsen’s VO₂max over time</h2></div><span class="evidence-chip">Evidence A</span></div><p class="chart-note">Peer-reviewed measurements from 2010, his 2012 peak, and 2015 after roughly 15 months with almost no structured exercise. This shows adaptation and detraining; it is not a target for ordinary adults.</p><div id="oskar-line" class="chart-canvas"></div><a class="text-link dark-link" href="data/metrics.csv">See source data →</a></article>
+      <article class="chart-card"><div class="chart-heading"><div><p class="eyebrow">Snapshot</p><h2>Published VO₂max examples</h2></div></div><p class="chart-note">Different ages, dates and contexts. Useful for scale, not for ranking who is “healthiest”.</p><div id="vo2-bars" class="bar-chart"></div></article>
+      <article class="chart-card"><div class="chart-heading"><div><p class="eyebrow">Dataset</p><h2>Evidence grades in the metric archive</h2></div></div><p class="chart-note">176 rows currently sit in <code>metrics.csv</code>. Most are first-party C-grade measurements, so volume should never be mistaken for certainty.</p><div id="evidence-bars" class="bar-chart"></div></article>
+      <article class="chart-card chart-wide"><div class="chart-heading"><div><p class="eyebrow">Measurement density</p><h2>How many metric rows each public case has</h2></div></div><p class="chart-note">This chart measures how much structured data the project has collected — not how healthy each person is.</p><div id="measurement-bars" class="bar-chart"></div></article>
+    </div>
+  </div></section>
+  <section id="diagrams" class="section section-tint"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">Decision aids</p><h2>Diagrams that explain what to do with health data</h2></div></div>
+    <div class="diagram-grid">
+      <article class="diagram-card"><h3>The useful-data loop</h3><div class="flow-diagram"><span>Measure</span><b>→</b><span>Notice a trend</span><b>→</b><span>Ask what decision changes</span><b>→</b><span>Act or ignore</span><b>→</b><span>Re-check later</span></div><p>If a measurement cannot change a sensible decision, it may not deserve ongoing attention.</p></article>
+      <article class="diagram-card"><h3>The evidence ladder</h3><div class="ladder"><div><b>A</b><span>Independent peer-reviewed / institutional</span></div><div><b>B</b><span>Independently reported clinical / lab result</span></div><div><b>C</b><span>First-party published measurement</span></div><div><b>D</b><span>Self-report / interview</span></div></div><p>Lower letters do not make information useless; they change how confidently it should be interpreted.</p></article>
+      <article class="diagram-card chart-wide"><h3>The ordinary-family filter</h3><div class="family-flow"><div><b>1</b><span>Does it have plausible benefit?</span></div><div><b>2</b><span>Can it fit work and family?</span></div><div><b>3</b><span>Is the cost reasonable?</span></div><div><b>4</b><span>Does it need medical supervision?</span></div><div><b>5</b><span>Is the likely benefit big enough to matter?</span></div></div><p>That filter is why sleep, movement, strength, food and basic preventive care stay ahead of expensive longevity extras.</p></article>
+    </div>
+  </div></section>
+</main><footer><div class="wrap footer-grid"><div><b>HealthiestPeople</b><p>Source-first longevity research translated into ordinary life.</p></div><div><a href="index.html">Home</a><a href="https://github.com/joshualparris/HealthiestPeople" target="_blank" rel="noreferrer">Research repository ↗</a></div></div></footer><script src="charts.js"></script><script src="nav.js"></script></body></html>
