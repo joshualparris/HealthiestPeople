@@ -174,6 +174,30 @@ Kelly's health maintenance therefore depended in part on **consistent physical t
 
 The transferable principle is not astronaut equipment; it is that exercise is treated as non-negotiable maintenance when the environment would otherwise drive physical decline.
 
+## Exercise dose during the year-long mission
+
+Independent reporting on Kelly's 2015–2016 mission describes him exercising **six days per week for roughly 1–2 hours per day**, using:
+
+- treadmill running/walking
+- stationary cycling
+- resistance exercise
+
+NASA's ISS exercise system uses the T2 treadmill, CEVIS cycle ergometer and ARED resistance device to counter microgravity-driven loss of muscle, bone and cardiovascular conditioning.
+
+This exercise dose should be interpreted in context:
+
+- exercise was an **occupational countermeasure built into astronaut work**
+- the environment itself removes normal gravitational loading
+- substantial specialist equipment and mission support were available
+- the goal was preventing deconditioning, not establishing a general-population longevity prescription
+
+For an ordinary working parent, the transferable principle is **scheduled consistency across aerobic and resistance exercise**, not 1–2 hours a day.
+
+Sources:
+- American Heart Association summary of Scott Kelly cardiac study: https://www.heart.org/en/news/2021/03/29/low-intensity-exercise-isnt-enough-to-keep-the-heart-from-shrinking-in-space
+- NASA, Astronaut Exercise: https://www.nasa.gov/general/astronaut-exercise/
+- NASA Sprint Study / ISS exercise methods: https://www.nature.com/articles/s41526-020-00111-x
+
 ## Nutrition
 
 NASA noted that Scott's folate status was relatively low before flight and improved during the mission, likely reflecting better food choices in the controlled space-food environment.
