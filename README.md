@@ -22,6 +22,7 @@ A source-first research project comparing five unusually well-documented people 
 
 - [Metric-by-metric comparison](docs/comparison.md)
 - [Low-cost working-family playbook](docs/practical-playbook.md)
+- [Time/cost/family transferability matrix](docs/transferability.md)
 - [Research backlog / known data gaps](docs/research-backlog.md)
 - [Normalised metrics dataset](data/metrics.csv)
 
