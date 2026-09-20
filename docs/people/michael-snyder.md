@@ -102,3 +102,15 @@ That is not a failure of measurement. It is arguably the point: good measurement
 **The best health data are not the most impressive data. They are the data that help you notice a meaningful change and make a better decision.**
 
 _Last reviewed: 20 September 2026._
+
+
+## Additional verified detail
+
+The original 2012 *Cell* iPOP paper followed the individual for **14 months** and integrated genomic, transcriptomic, proteomic, metabolomic and autoantibody profiles. The authors reported that the longitudinal profile revealed medical risks including type 2 diabetes and dynamic molecular changes across healthy and diseased states.
+
+Peer-reviewed source:
+- https://pubmed.ncbi.nlm.nih.gov/22424236/
+
+This matters methodologically: a snapshot asks "where am I now?", while a longitudinal baseline can ask "what has changed from normal for me?"
+
+For a normal family, the cheap analogue is not omics. It is maintaining enough continuity in ordinary measurements that a clinician can see the direction of travel.
