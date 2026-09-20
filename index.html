@@ -8,17 +8,11 @@
   <title>HealthiestPeople — Everyday Health Playbook</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+<body>\n  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="index.html" aria-label="HealthiestPeople home">
-        <span class="brand-mark">HP</span>
-        <span>HealthiestPeople</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="brand" href="index.html" aria-label="HealthiestPeople home"><span class="brand-mark">HP</span><span>HealthiestPeople</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="index.html" aria-current="page">Home</a>
         <a href="plan.html">My Plan</a>
@@ -35,343 +29,76 @@
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Evidence first. Ordinary life second.</p>
-          <h1>Useful health lessons for a busy working parent — without a billionaire budget.</h1>
-          <p class="lede">This project studies unusually well-measured people, strips away the expensive noise, and keeps the habits that survive contact with work, kids, bills, tired evenings and imperfect weeks.</p>
+          <h1>Useful health lessons without turning health into a second job.</h1>
+          <p class="lede">Learn from unusually well-measured people, keep the habits that survive ordinary family life, and leave the expensive noise behind.</p>
           <div class="hero-actions">
             <a class="button primary" href="#today">Show me today</a>
-            <a class="button secondary" href="#people">Explore the people</a>
+            <a class="button secondary" href="plan.html">Open my plan</a>
           </div>
           <p class="fine">Educational only. It does not rank people as “healthiest alive”, diagnose disease, or replace a GP.</p>
         </div>
         <aside class="hero-card" aria-label="The core idea">
           <p class="card-kicker">The signal after the hype</p>
-          <strong>Sleep. Move. Lift. Eat plants and enough protein. Track only what changes decisions. Stay connected. Repeat for years.</strong>
-          <span>That is where the public case studies converge most strongly — and the new real-world baseline tests whether it fits ordinary family life.</span>
+          <strong>Sleep. Move. Lift. Eat plants and enough protein. Track only what changes decisions. Stay connected.</strong>
+          <span>Use the pages below when you want the detail; keep the homepage for what matters today.</span>
         </aside>
-      </div>
-    </section>
-
-    <section id="explore-site" class="section explore-home">
-      <div class="wrap">
-        <div class="section-heading compact">
-          <div>
-            <p class="eyebrow">Go straight to what you need</p>
-            <h2>Explore the site</h2>
-            <p class="section-intro">The homepage gives you the daily view. The deeper material now lives on focused pages so you do not have to scroll through everything at once.</p>
-          </div>
-        </div>
-        <div class="explore-grid">
-          <a class="explore-card" href="plan.html"><span>Do</span><h3>My Plan</h3><p>This week, exact health actions, personal baseline and plain-English explanations.</p></a>
-          <a class="explore-card" href="people.html"><span>Learn</span><h3>People</h3><p>What each case study teaches, what is transferable and what not to copy blindly.</p></a>
-          <a class="explore-card" href="charts.html"><span>See</span><h3>Charts</h3><p>Visual trends and comparisons, with evidence dates and context rather than fake health scores.</p></a>
-          <a class="explore-card" href="resources.html"><span>Watch / listen / read</span><h3>Resources</h3><p>Curated podcasts, talks, videos and articles with a reason for including each one.</p></a>
-          <a class="explore-card" href="evidence.html"><span>Verify</span><h3>Evidence</h3><p>Source grades, limitations, conflicts, research rules and the underlying documents.</p></a>
-          <a class="explore-card" href="ROADMAP.md"><span>Build</span><h3>Roadmap</h3><p>What is being improved next and what “best possible” means for this project.</p></a>
-        </div>
       </div>
     </section>
 
     <section id="today" class="section">
       <div class="wrap">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">Your everyday view</p>
-            <h2 id="today-title">Today</h2>
-          </div>
+          <div><p class="eyebrow">Your everyday view</p><h2 id="today-title">Today</h2></div>
           <div class="date-pill" id="today-date"></div>
         </div>
-
         <div class="today-grid">
           <article class="today-main panel">
-            <div class="panel-top">
-              <span class="tag">Today's theme</span>
-              <span class="evidence-dot" aria-hidden="true"></span>
-            </div>
+            <div class="panel-top"><span class="tag">Today's theme</span><span class="evidence-dot" aria-hidden="true"></span></div>
             <h3 id="daily-theme"></h3>
             <div class="task-list">
-              <div class="task">
-                <span class="task-icon">01</span>
-                <div><b>Move</b><p id="daily-movement"></p></div>
-              </div>
-              <div class="task">
-                <span class="task-icon">02</span>
-                <div><b>Eat</b><p id="daily-food"></p></div>
-              </div>
-              <div class="task">
-                <span class="task-icon">03</span>
-                <div><b>Recover</b><p id="daily-recovery"></p></div>
-              </div>
+              <div class="task"><span class="task-icon">01</span><div><b>Move</b><p id="daily-movement"></p></div></div>
+              <div class="task"><span class="task-icon">02</span><div><b>Eat</b><p id="daily-food"></p></div></div>
+              <div class="task"><span class="task-icon">03</span><div><b>Recover</b><p id="daily-recovery"></p></div></div>
             </div>
           </article>
-
-          <article class="panel minimum">
-            <span class="tag">If the day falls apart</span>
-            <h3>Minimum viable health</h3>
-            <p id="daily-tiny"></p>
-            <div class="minimum-rule">A reduced day still counts. Protect the long game.</div>
-          </article>
+          <article class="panel minimum"><span class="tag">If the day falls apart</span><h3>Minimum viable health</h3><p id="daily-tiny"></p><div class="minimum-rule">A reduced day still counts. Protect the long game.</div></article>
         </div>
-
         <article class="lesson-card" id="daily-lesson">
-          <div>
-            <p class="eyebrow">Today's person</p>
-            <h3 id="lesson-name"></h3>
-            <p class="lesson-lens" id="lesson-lens"></p>
-          </div>
-          <div>
-            <blockquote id="lesson-text"></blockquote>
-            <a id="lesson-link" class="text-link" href="#people">See their evidence and practical lessons →</a>
-          </div>
+          <div><p class="eyebrow">Today's person</p><h3 id="lesson-name"></h3><p class="lesson-lens" id="lesson-lens"></p></div>
+          <div><blockquote id="lesson-text"></blockquote><a id="lesson-link" class="text-link" href="people.html">See their evidence and practical lessons →</a></div>
         </article>
       </div>
     </section>
 
-    <section id="plan" class="section plan-section">
+    <section class="section home-core">
       <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">The answer, not more research</p>
-            <h2>Exactly what Josh should do</h2>
-            <p class="section-intro">An 8-week, low-cost plan built around work, two young kids, limited evenings, a 9:30 sleep goal and the equipment/routines already available.</p>
-          </div>
-          <a class="btn btn-secondary" href="docs/josh-plan.md">Read full rationale</a>
-        </div>
-
-        <div class="plan-top">
-          <article class="panel plan-sleep">
-            <span class="tag">Sleep anchor</span>
-            <div class="plan-big" id="plan-sleep"></div>
-          </article>
-          <article class="panel">
-            <span class="tag">Weekly time cost</span>
-            <div class="plan-big">40 min</div>
-            <p>of added solo strength work. Monday Frisbee and Saturday parkrun already provide most planned cardio.</p>
-          </article>
-          <article class="panel">
-            <span class="tag">Money rule</span>
-            <div class="plan-big">$0 new gear</div>
-            <p>for the first 8 weeks.</p>
-          </article>
-        </div>
-
-        <div class="plan-grid">
-          <article class="panel">
-            <span class="tag">This week</span>
-            <div id="plan-week" class="plan-week"></div>
-          </article>
-          <article class="panel">
-            <span class="tag">Eat this way</span>
-            <ul id="plan-nutrition" class="questions"></ul>
-          </article>
-          <article class="panel">
-            <span class="tag">Track only these</span>
-            <ol id="plan-track" class="questions"></ol>
-          </article>
-          <article class="panel plan-no">
-            <span class="tag">Don't spend money on</span>
-            <ul id="plan-dont-buy" class="questions"></ul>
-          </article>
-        </div>
-
-        <div class="plan-principle" id="plan-principle"></div>
-      </div>
-    </section>
-
-    <section id="baseline" class="section baseline-section">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Real-world comparison case</p>
-            <h2>Josh's baseline</h2>
-            <p class="section-intro">Selected public measurements from ordinary pathology, wearables and home tracking — deliberately excluding diagnoses and medications. The goal is to improve the basics, not compete with longevity influencers.</p>
-          </div>
-          <div class="date-pill" id="baseline-updated"></div>
-        </div>
-
-        <div id="baseline-headline" class="baseline-headline"></div>
-
-        <div class="baseline-grid">
-          <article class="panel">
-            <span class="tag">Latest conventional labs</span>
-            <div id="baseline-labs" class="baseline-list"></div>
-          </article>
-
-          <article class="panel">
-            <span class="tag">Trends</span>
-            <div id="baseline-trends" class="baseline-trends"></div>
-          </article>
-
-          <article class="panel baseline-focus">
-            <span class="tag">Biggest low-cost opportunity</span>
-            <h3>Sleep before exotic testing</h3>
-            <p id="baseline-sleep"></p>
-            <p class="fine" id="baseline-privacy"></p>
-          </article>
-        </div>
-
-        <div class="baseline-next">
-          <div>
-            <p class="eyebrow">What to measure next</p>
-            <h3>Five simple numbers will make this comparison much stronger.</h3>
-          </div>
-          <ol id="baseline-next-list" class="questions"></ol>
-        </div>
-
-        <div class="baseline-next">
-          <div>
-            <p class="eyebrow">Longitudinal archive</p>
-            <h3>Years of Josh's own data, kept source-specific.</h3>
-          </div>
-          <div id="baseline-archive-links" class="questions"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="glossary" class="section jargon-section">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Plain English</p>
-            <h2>What the health jargon actually means</h2>
-            <p class="section-intro">You should not need a medical dictionary to understand your own plan. The site now explains technical terms beside the place they appear; this section collects them in one spot as well.</p>
-          </div>
-        </div>
-        <div id="glossary-grid" class="glossary-grid"></div>
-        <p class="fine">These are practical explanations, not diagnostic interpretations. For blood pressure and other clinical measurements, your GP's advice takes priority over a tracking schedule.</p>
-      </div>
-    </section>
-
-    <section id="principles" class="section section-tint">
-      <div class="wrap">
-        <div class="section-heading compact">
-          <div>
-            <p class="eyebrow">What survives across the case studies</p>
-            <h2>The ordinary-person stack</h2>
-          </div>
-        </div>
-        <div class="principle-grid">
-          <article><span>1</span><h3>Move most days</h3><p>Walking counts. So do family outings, cycling, running, chores and active transport.</p></article>
-          <article><span>2</span><h3>Strength twice a week</h3><p>Squat, hinge, push, pull and carry. Preserve useful capacity, not gym status.</p></article>
-          <article><span>3</span><h3>Build aerobic fitness</h3><p>Easy volume plus some harder work. Improve your own baseline rather than chasing elite numbers.</p></article>
-          <article><span>4</span><h3>Protect sleep</h3><p>Australian guidance now recommends 7–9 hours with consistent bed and wake times for adults.</p></article>
-          <article><span>5</span><h3>Eat mostly ordinary food</h3><p>Vegetables, fruit, wholegrains, legumes, nuts, seeds and practical protein beat branded longevity food.</p></article>
-          <article><span>6</span><h3>Measure with a question</h3><p>Blood pressure, routine pathology and a few trends can be useful. More data is not automatically better.</p></article>
-          <article><span>7</span><h3>Follow persistent signals</h3><p>A repeated abnormality deserves sensible clinical follow-up rather than endless self-experimentation.</p></article>
-          <article><span>8</span><h3>Keep relationships inside the plan</h3><p>A health protocol that regularly costs family connection, rest or peace is badly designed.</p></article>
-        </div>
-        <div class="guideline-note">
-          <b>Australian baseline:</b> adults should be active most days, do muscle-strengthening on 2+ days each week, break up long sitting, and aim for 7–9 hours of good-quality sleep with consistent timing.
-          <a href="https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-adults-18-to-64-years" target="_blank" rel="noreferrer">Department of Health ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="people" class="section">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Nine public case studies + one real-world baseline</p>
-            <h2>Learn from people, not personalities</h2>
-          </div>
-          <div class="filter-row" role="group" aria-label="Filter people">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="strong">Stronger evidence</button>
-            <button class="filter" data-filter="self">Self-tracking</button>
-          </div>
-        </div>
-        <div id="people-grid" class="people-grid"></div>
-      </div>
-    </section>
-
-    <section id="listen" class="section section-tint">
-      <div class="wrap">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Podcasts & talks</p>
-            <h2>Listen to the people behind the data</h2>
-            <p class="section-intro">Start with practical conversations about sleep, movement, food, metabolic health and useful self-tracking. Interviews are valuable for understanding routines and reasoning, but they are still self-report — not proof that every claim or intervention works.</p>
-          </div>
-        </div>
-        <div id="podcast-grid" class="podcast-grid"></div>
-      </div>
-    </section>
-
-    <section id="resources" class="section section-tint">
-      <div class="wrap">
-        <div class="section-heading resource-heading">
-          <div>
-            <p class="eyebrow">Go deeper without doom-scrolling</p>
-            <h2>Watch and read</h2>
-            <p class="resource-intro">Curated video, articles and papers from the five main case studies. The podcast section above handles listening; this section gives you playable videos and stronger reading paths without sending you hunting through search results.</p>
-          </div>
-          <div class="filter-row" role="group" aria-label="Filter resources">
-            <button class="resource-filter active" data-resource-filter="all">All</button>
-            <button class="resource-filter" data-resource-filter="watch">▶ Watch</button>
-            <button class="resource-filter" data-resource-filter="read">↗ Read</button>
-          </div>
-        </div>
-
-        <div class="resource-callout">
-          <div>
-            <span class="tag">Best place to start</span>
-            <h3>One useful resource per person — not fifty open tabs.</h3>
-          </div>
-          <p>The featured picks prioritise useful context and depth. For the self-trackers, keep the site's evidence grades in mind; for Oskar Svendsen and Scott Kelly, the strongest material is independent scientific/institutional work.</p>
-        </div>
-
-        <div id="featured-videos" class="featured-videos" aria-label="Featured videos"></div>
-        <div id="resources-grid" class="resources-grid"></div>
-      </div>
-    </section>
-
-    <section id="evidence" class="section section-dark">
-      <div class="wrap evidence-grid">
-        <div>
-          <p class="eyebrow">Evidence rules</p>
-          <h2>Interesting is not the same as proven.</h2>
-          <p>The site deliberately separates peer-reviewed measurements, clinical reports, first-party data and self-report. Missing data stays missing rather than becoming an invented score.</p>
-        </div>
-        <div class="evidence-list">
-          <div><b>A</b><span>Independent peer-reviewed or institutional measurement</span></div>
-          <div><b>B</b><span>Independently reported clinical or laboratory result</span></div>
-          <div><b>C</b><span>First-party published measurement or protocol</span></div>
-          <div><b>D</b><span>Self-report or interview</span></div>
+        <div class="section-heading compact"><div><p class="eyebrow">Choose what you need</p><h2>The site is now split into clear pages</h2></div></div>
+        <div class="explore-grid">
+          <a class="explore-card" href="plan.html"><span>Do</span><h3>My Plan</h3><p>Your weekly routine, baseline, trends and plain-English glossary.</p></a>
+          <a class="explore-card" href="people.html"><span>Learn</span><h3>People</h3><p>Case studies, practical lessons and what not to copy blindly.</p></a>
+          <a class="explore-card" href="charts.html"><span>See</span><h3>Charts & diagrams</h3><p>VO₂max trends, evidence distribution, measurement density and decision diagrams.</p></a>
+          <a class="explore-card" href="resources.html"><span>Explore</span><h3>Resources</h3><p>Podcasts, videos, articles and research worth your time.</p></a>
+          <a class="explore-card" href="evidence.html"><span>Check</span><h3>Evidence</h3><p>How claims are graded, where uncertainty sits, and the underlying research docs.</p></a>
+          <a class="explore-card" href="data/metrics.csv"><span>Raw data</span><h3>Dataset</h3><p>Open the structured metric archive used by the project and charts.</p></a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap closing-grid">
-        <div>
-          <p class="eyebrow">A useful stopping rule</p>
-          <h2>Before buying another health thing, ask:</h2>
+      <div class="wrap">
+        <div class="section-heading compact"><div><p class="eyebrow">The short version</p><h2>The ordinary-person stack</h2></div><a class="button secondary" href="people.html#principles">See all principles</a></div>
+        <div class="principle-grid">
+          <article><span>1</span><h3>Move most days</h3><p>Walking, active transport and family movement all count.</p></article>
+          <article><span>2</span><h3>Strength twice a week</h3><p>Preserve useful capacity with simple repeatable training.</p></article>
+          <article><span>3</span><h3>Protect sleep</h3><p>Give yourself enough sleep opportunity before chasing exotic optimisation.</p></article>
+          <article><span>4</span><h3>Measure with a question</h3><p>Track only what can change a sensible decision.</p></article>
         </div>
-        <ol class="questions">
-          <li>What decision will this measurement change?</li>
-          <li>Have I already covered sleep, movement, strength, food and basic preventive care?</li>
-          <li>Will this make family life easier, neutral, or harder?</li>
-          <li>Can I sustain it for a year without turning health into a second job?</li>
-        </ol>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-grid">
-      <div>
-        <b>HealthiestPeople</b>
-        <p>Source-first longevity research translated into ordinary life.</p>
-      </div>
-      <div>
-        <a href="https://github.com/joshualparris/HealthiestPeople" target="_blank" rel="noreferrer">Research repository ↗</a>
-        <a href="docs/comparison.md">Full comparison</a>
-        <a href="docs/practical-playbook.md">Practical playbook</a>
-      </div>
-    </div>
-  </footer>
-
+  <footer><div class="wrap footer-grid"><div><b>HealthiestPeople</b><p>Source-first longevity research translated into ordinary life.</p></div><div><a href="https://github.com/joshualparris/HealthiestPeople" target="_blank" rel="noreferrer">Research repository ↗</a><a href="evidence.html">Evidence</a><a href="resources.html">Resources</a></div></div></footer>
   <script src="site-data.js"></script>
-  <script src="resources-data.js"></script>
   <script src="app.js"></script>
   <script src="nav.js"></script>
 </body>
