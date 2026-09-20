@@ -61,6 +61,7 @@
       "josh-plan.md": "plan-rationale.html",
       "josh-plan-evidence.md": "plan-evidence.html",
       "source-policy.md": "source-policy.html",
+      "blue-zones.md": "blue-zones.html",
       "joshua-parris-full-health-archive.md": "health-archive.html",
       "joshua-parris.md": "people/joshua-parris.html",
       "bryan-johnson.md": "people/bryan-johnson.html",
