@@ -115,11 +115,11 @@ window.PROFILE_CONFIG = {
     why: "Clark is useful because her public routine is much closer to ordinary family life: strength, aerobic work, walking, vegetables, protein, sleep and stress management rather than a laboratory-sized protocol.",
     researchNote: "../document.html?doc=people/julie-gibson-clark",
     spotlights: [
-      {metric:"DunedinPACE"},{metric:"Sleep duration"},{metric:"Evening walk steps"},{metric:"Vegetable intake"},{metric:"Cooked greens"},{metric:"Protein target"}
+      {metric:"DunedinPACE"},{metric:"Later DunedinPACE"},{metric:"Sleep duration"},{metric:"Evening walk steps"},{metric:"Vegetable intake"},{metric:"Historical protein target"}
     ],
     chart: {
-      type:"referenceBar", title:"Reported DunedinPACE result", subtitle:"Her first-party commercial result is shown against a 1.0 pace reference. It is a biomarker model, not a promise of lifespan or literal calendar ageing.", unit:"pace ratio",
-      points:[{label:"Julie reported",value:0.665},{label:"1.0 reference",value:1.0}]
+      type:"referenceBar", title:"DunedinPACE: historical best vs later self-report", subtitle:"0.665 was a historical best, not a permanent state. Clark later reported 0.77 in 2026. Both are self-reported/commercial biomarker results, not lifespan predictions.", unit:"pace ratio",
+      points:[{label:"Historical best",value:0.665},{label:"Later self-report",value:0.77},{label:"1.0 reference",value:1.0}]
     },
     library: [
       {kind:"Peer-reviewed paper",title:"DunedinPACE validation paper — eLife",url:"https://elifesciences.org/articles/73420",note:"Peer-reviewed paper explaining the biomarker used in Clark's headline result."},
