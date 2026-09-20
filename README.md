@@ -8,6 +8,27 @@ A source-first research project comparing five unusually well-documented people 
 - Dave Pascoe
 - Scott Kelly
 
+## Research so far
+
+### Individual profiles
+
+- [Bryan Johnson](docs/people/bryan-johnson.md)
+- [Michael Lustgarten](docs/people/michael-lustgarten.md)
+- [Oskar Svendsen](docs/people/oskar-svendsen.md)
+- [Dave Pascoe](docs/people/dave-pascoe.md)
+- [Scott Kelly](docs/people/scott-kelly.md)
+
+### Cross-person work
+
+- [Metric-by-metric comparison](docs/comparison.md)
+- [Low-cost working-family playbook](docs/practical-playbook.md)
+- [Research backlog / known data gaps](docs/research-backlog.md)
+- [Normalised metrics dataset](data/metrics.csv)
+
+### Current status
+
+All five first-pass profiles are complete. The next research phase is **deep extraction**: current lipids, glucose, blood pressure, body composition, sleep, exercise volume, medications/disease burden and other comparable values, with missing values left explicitly unknown.
+
 ## Purpose
 
 This project asks two separate questions:
