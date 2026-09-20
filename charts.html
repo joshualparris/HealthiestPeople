@@ -18,9 +18,95 @@
 </header>
 <main id="main-content">
   <section class="page-hero"><div class="wrap"><p class="eyebrow">Visualise the research</p><h1>Charts & diagrams</h1><p class="lede">A visual layer for the project: trends, measurement density, evidence quality and the practical decision path from “interesting number” to “useful action”.</p>
-    <div class="page-tabs"><a class="active" href="#charts">Charts</a><a href="#diagrams">Diagrams</a></div>
+    <div class="page-tabs"><a class="active" href="#personal-charts">My trends</a><a href="#public-charts">Public cases</a><a href="#diagrams">Diagrams</a></div>
   </div></section>
-  <section id="charts" class="section"><div class="wrap">
+  <section id="personal-charts" class="section"><div class="wrap">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Your data, interpreted carefully</p>
+        <h2>Josh's longitudinal trends</h2>
+        <p class="section-intro">These charts prioritise same-source or clearly labelled comparisons. Each one says what changed, what could muddy the comparison, and what the number is actually useful for.</p>
+      </div>
+      <a class="button secondary" href="plan.html#baseline">Open baseline</a>
+    </div>
+
+    <div class="chart-reading-guide" aria-label="How to read these charts">
+      <div><b>1. Trend first</b><span>Repeated direction matters more than one isolated reading.</span></div>
+      <div><b>2. Source matters</b><span>Fitbit, pathology and consumer scales are not interchangeable measurement systems.</span></div>
+      <div><b>3. Context matters</b><span>Illness, sleep, hydration, fasting status and device changes can move the number.</span></div>
+      <div><b>4. Action matters</b><span>If a chart does not change a sensible decision, it should not become another thing to obsess over.</span></div>
+    </div>
+
+    <div class="chart-grid personal-chart-grid">
+      <article class="chart-card chart-wide">
+        <div class="chart-heading">
+          <div><p class="eyebrow">Body-weight trend</p><h2>88.8 kg → 77.4 kg</h2></div>
+          <span class="evidence-chip">Health Connect + scale</span>
+        </div>
+        <p class="chart-note">The retained long-term record shows an 11.4 kg fall from July 2024 to July 2026. The direction is clear; exact consumer body-fat percentages are much less reliable than the weight trend.</p>
+        <div id="josh-weight-line" class="chart-canvas"></div>
+        <div class="chart-interpretation">
+          <b>What this means</b>
+          <p>The useful conclusion is not “keep losing weight”. Your current plan is deliberately about maintaining around the high-70-kg range while building strength and function.</p>
+        </div>
+        <details class="chart-data-details"><summary>Show the underlying measurements</summary><div id="josh-weight-table"></div></details>
+      </article>
+
+      <article class="chart-card">
+        <div class="chart-heading"><div><p class="eyebrow">Blood lipids</p><h2>LDL-C and total cholesterol</h2></div><span class="evidence-chip">Pathology</span></div>
+        <div id="josh-lipids-changes" class="change-grid"></div>
+        <div class="chart-interpretation">
+          <b>Interpretation</b>
+          <p>Both recorded trends moved down between 2023 and February 2026. That is useful context, but cholesterol is only one part of cardiovascular risk and the site should not turn a single lab value into a pass/fail grade.</p>
+        </div>
+        <a class="text-link dark-link" href="data/josh-labs-history.csv">Open lab history →</a>
+      </article>
+
+      <article class="chart-card">
+        <div class="chart-heading"><div><p class="eyebrow">Iron-storage trend</p><h2>Ferritin</h2></div><span class="evidence-chip">Pathology</span></div>
+        <div id="josh-ferritin-line" class="chart-canvas"></div>
+        <div class="chart-interpretation">
+          <b>Interpretation</b>
+          <p>The recorded ferritin value rose from 35 to 41 µg/L between January 2025 and February 2026. That is a small trend, not a diagnosis or proof that iron stores are “optimal”; future interpretation belongs with the broader iron studies and clinical context.</p>
+        </div>
+      </article>
+
+      <article class="chart-card chart-wide">
+        <div class="chart-heading">
+          <div><p class="eyebrow">Sleep trend</p><h2>Weekly restful sleep</h2></div>
+          <span class="evidence-chip">Fitbit / Google Health</span>
+        </div>
+        <p class="chart-note">The early-2026 record contains several short-sleep weeks, followed by a much stronger run of roughly 7½–9 hours in the later Google Health weeks. The data source changes, so the chart marks that transition rather than pretending every point is perfectly equivalent.</p>
+        <div id="josh-sleep-line" class="chart-canvas"></div>
+        <div class="chart-interpretation positive">
+          <b>What changed</b>
+          <p>Recent sleep duration is no longer the obvious weak point it was earlier in the year. The plan now says <strong>protect this improvement</strong> rather than piling on more sleep optimisation.</p>
+        </div>
+        <details class="chart-data-details"><summary>Show weekly sleep data</summary><div id="josh-sleep-table"></div></details>
+      </article>
+
+      <article class="chart-card">
+        <div class="chart-heading"><div><p class="eyebrow">Everyday movement</p><h2>Weekly average steps</h2></div><span class="evidence-chip">Fitbit / Google Health</span></div>
+        <div id="josh-steps-line" class="chart-canvas"></div>
+        <div class="chart-interpretation">
+          <b>Practical takeaway</b>
+          <p>Recent movement is already high enough that an extra step target is unlikely to be the best use of effort. Strength, recovery and maintaining enjoyable cardio are more useful priorities.</p>
+        </div>
+      </article>
+
+      <article class="chart-card">
+        <div class="chart-heading"><div><p class="eyebrow">Wearable context</p><h2>Resting heart rate</h2></div><span class="evidence-chip">Google Health / Fitbit</span></div>
+        <div id="josh-rhr-line" class="chart-canvas"></div>
+        <div class="chart-interpretation caution">
+          <b>Do not over-read this</b>
+          <p>The later rise from the earlier ~60–62 bpm baseline occurred in a period already documented with illness/stress context. Wearable resting heart rate is useful as a trend signal, not a diagnosis.</p>
+        </div>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="public-charts" class="section section-tint"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">Public case studies</p><h2>Research charts without a fake leaderboard</h2><p class="section-intro">These visualisations show scale, evidence quality and measurement density. They do not score or rank people by overall health.</p></div></div>
     <div class="chart-grid">
       <article class="chart-card chart-wide"><div class="chart-heading"><div><p class="eyebrow">Longitudinal example</p><h2>Oskar Svendsen’s VO₂max over time</h2></div><span class="evidence-chip">Evidence A</span></div><p class="chart-note">Peer-reviewed measurements from 2010, his 2012 peak, and 2015 after roughly 15 months with almost no structured exercise. This shows adaptation and detraining; it is not a target for ordinary adults.</p><div id="oskar-line" class="chart-canvas"></div><a class="text-link dark-link" href="data/metrics.csv">See source data →</a></article>
       <article class="chart-card"><div class="chart-heading"><div><p class="eyebrow">Snapshot</p><h2>Published VO₂max examples</h2></div></div><p class="chart-note">Different ages, dates and contexts. Useful for scale, not for ranking who is “healthiest”.</p><div id="vo2-bars" class="bar-chart"></div></article>
@@ -28,7 +114,7 @@
       <article class="chart-card chart-wide"><div class="chart-heading"><div><p class="eyebrow">Measurement density</p><h2>How many metric rows each public case has</h2></div></div><p class="chart-note">This chart measures how much structured data the project has collected — not how healthy each person is.</p><div id="measurement-bars" class="bar-chart"></div></article>
     </div>
   </div></section>
-  <section id="diagrams" class="section section-tint"><div class="wrap">
+  <section id="diagrams" class="section"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">Decision aids</p><h2>Diagrams that explain what to do with health data</h2></div></div>
     <div class="diagram-grid">
       <article class="diagram-card"><h3>The useful-data loop</h3><div class="flow-diagram"><span>Measure</span><b>→</b><span>Notice a trend</span><b>→</b><span>Ask what decision changes</span><b>→</b><span>Act or ignore</span><b>→</b><span>Re-check later</span></div><p>If a measurement cannot change a sensible decision, it may not deserve ongoing attention.</p></article>
