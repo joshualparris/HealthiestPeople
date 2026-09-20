@@ -46,6 +46,8 @@ jobs:
           test -f source-policy.html
           test -f data.html
           test -f coverage.html
+          test -f blue-zones.html
+          test -f docs/blue-zones.md
           test -f styles.css
           test -f site-data.js
           test -f resources-data.js
@@ -94,6 +96,7 @@ jobs:
               "source-policy.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/source-policy.md"'],
               "data.html": ['styles.css', 'data-explorer.js', 'id="dataset-tabs"', 'id="data-search"'],
               "coverage.html": ['styles.css', 'coverage.js', 'nav.js', 'id="coverage"', 'id="backlog"', 'id="access"', 'id="research-docs"'],
+              "blue-zones.html": ['styles.css', 'nav.js', 'id="lessons"', 'id="power-nine"', 'id="cautions"', 'id="sources"'],
               "people/bryan-johnson.html": ['../styles.css', '../site-data.js', '../resources-data.js', '../profile-data.js', '../person-page.js', '../nav.js', 'data-person-id="bryan-johnson"'],
               "people/oskar-svendsen.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="oskar-svendsen"'],
               "people/scott-kelly.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="scott-kelly"'],
