@@ -70,6 +70,27 @@ From his testing page:
 
 He notes that his BUN of 22 is higher than his own preferred target.
 
+## Diagnosed conditions and cardiovascular treatment
+
+Pascoe's current supplement/medication page adds important context that should not be lost behind his fitness and ageing-clock results.
+
+He reports:
+
+- **autoimmune hypothyroidism**, treated with thyroid hormone for more than 30 years
+- **levothyroxine 137 mcg**
+- **liothyronine 25 mcg**
+- recent addition by his cardiologist of **rosuvastatin 5 mg** and **ezetimibe 10 mg**
+- the lipid-lowering medicines were added after what he describes as a **minor increase in plaque formation** on coronary calcium/Cleerly CT imaging and difficulty getting LDL into the desired range through diet and supplementation alone
+
+Evidence grade: **C — first-party disclosure of diagnoses, prescriptions and imaging interpretation**.
+
+This materially changes how his case should be interpreted. Pascoe may be exceptionally fit and functional for his age while also having treated thyroid disease and measurable coronary atherosclerotic burden. Those facts are not contradictory: health is multidimensional, and effective medical treatment is part of health management.
+
+It also reinforces a practical lesson: **prescribed evidence-based treatment can be more important than trying to "biohack" an abnormal risk factor indefinitely**.
+
+Source:
+- Pascoe, **My Supplement List**: https://sites.google.com/view/davepascoe/home/my-supplement-list
+
 ## Exercise
 
 Pascoe currently lists:
