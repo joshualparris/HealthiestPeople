@@ -59,6 +59,35 @@ Sources:
 - https://www.quantifiedbob.com/glucose-tracking-experiment-my-quantified-self-talk/
 - https://www.quantifiedbob.com/measuring-glycemic-glucose-response-foods/
 
+### Glucose — exact baseline and a failed replication
+
+Troia's glucose experiment is unusually valuable because he published both the initial apparent result **and the later failure to reproduce it**.
+
+His protocol:
+
+- finger-stick fasting glucose immediately after waking, before food/drink/exercise
+- 30-day baseline before the intervention
+- baseline range: **78–107 mg/dL**
+- baseline average: **93.5 mg/dL**
+- a separate recent blood test at the time had shown fasting glucose of **85 mg/dL**
+
+He initially reported lower/more stable fasting glucose after adding oxaloacetate.
+
+However, when he repeated the experiment months later, he **could not reproduce the same benefit**.
+
+On reviewing context, he realised that his outdoor soccer leagues had been cancelled during winter and he was also working from home, meaning his intense intermittent exercise and daily movement had changed substantially.
+
+This is a stronger scientific lesson than the original supplement result:
+
+> **An intervention can look effective in an N-of-1 experiment because another behaviour changed at the same time.**
+
+Troia also noted that consumer glucose meters have meaningful measurement error and sometimes repeated readings when a value looked implausible.
+
+Evidence grade: **C — first-party experiment with openly described methods and limitations**.
+
+Source:
+- https://www.quantifiedbob.com/hacking-tracking-glucose/
+
 ### Blood biomarkers
 
 He has used conventional blood testing and commercial biomarker dashboards to view results longitudinally.
