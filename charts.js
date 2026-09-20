@@ -89,100 +89,151 @@
     }).join("");
   }
 
-  const weight = [
-    {label:"Jul 2024", value:88.8, display:"88.8 kg", note:"Health Connect cleaned trend"},
-    {label:"2025", value:83.7, display:"83.7 kg", note:"Withings snapshot"},
-    {label:"May 2026", value:81.0, display:"81.0 kg", note:"Health Connect / scale"},
-    {label:"Jul 2026", value:77.4, display:"77.4 kg", note:"Health Connect cleaned trend"}
-  ];
+  function parseCsv(text) {
+    const rows = [];
+    let row = [], cell = "", quoted = false;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i], next = text[i + 1];
+      if (ch === '"' && quoted && next === '"') { cell += '"'; i++; continue; }
+      if (ch === '"') { quoted = !quoted; continue; }
+      if (ch === "," && !quoted) { row.push(cell); cell = ""; continue; }
+      if ((ch === "\n" || ch === "\r") && !quoted) {
+        if (ch === "\r" && next === "\n") i++;
+        row.push(cell); cell = "";
+        if (row.some(v => v !== "")) rows.push(row);
+        row = [];
+        continue;
+      }
+      cell += ch;
+    }
+    if (cell || row.length) { row.push(cell); rows.push(row); }
+    if (!rows.length) return [];
+    const headers = rows[0].map(h => h.trim());
+    return rows.slice(1).map(values => Object.fromEntries(headers.map((h,i) => [h, values[i] ?? ""])));
+  }
 
-  lineChart("josh-weight-line", weight, {
-    unit:"kg", decimals:1, ariaLabel:"Josh body weight trend from July 2024 to July 2026",
-    formatY:v=>Number(v).toFixed(0)
-  });
-  dataTable("josh-weight-table",
-    ["Date","Weight","Source/context","Interpretation note"],
-    [
-      ["11 Jul 2024","88.8 kg","Health Connect cleaned trend","Earliest retained weight in the cleaned trend"],
-      ["2025 snapshot","83.7 kg","Withings consumer scale","Body-fat and muscle estimates are hydration-sensitive"],
-      ["21 May 2026","81.0 kg","Health Connect / scale","Approximate later trend point"],
-      ["24 Jul 2026","77.4 kg","Health Connect cleaned trend","Latest retained weight in the dataset"]
-    ]
-  );
+  async function loadCsv(path) {
+    const response = await fetch(path, {cache:"no-cache"});
+    if (!response.ok) throw new Error("Could not load " + path);
+    return parseCsv(await response.text());
+  }
 
-  changeCards("josh-lipids-changes", [
-    {label:"LDL-C", from:3.2, to:2.8, unit:"mmol/L", period:"Jun 2023 → Feb 2026"},
-    {label:"Total cholesterol", from:5.3, to:4.6, unit:"mmol/L", period:"Jun 2023 → Feb 2026"}
-  ]);
+  function numberValue(value) {
+    const n = Number(String(value ?? "").replace(/[^0-9.+-]/g, ""));
+    return Number.isFinite(n) ? n : null;
+  }
 
-  lineChart("josh-ferritin-line", [
-    {label:"Jan 2025", value:35, display:"35 µg/L"},
-    {label:"Feb 2026", value:41, display:"41 µg/L"}
-  ], {
-    unit:"µg/L", yMin:25, yMax:50, ariaLabel:"Josh ferritin trend from January 2025 to February 2026"
-  });
+  function sleepHours(hhmm) {
+    if (!hhmm) return null;
+    const match = String(hhmm).match(/^(\d+):(\d{2})$/);
+    if (!match) return null;
+    return Number(match[1]) + Number(match[2]) / 60;
+  }
 
-  const weekly = [
-    ["Mar 9",7.17,14196,null,"Fitbit"],
-    ["Mar 16",6.80,16614,null,"Fitbit"],
-    ["Mar 23",6.48,17151,null,"Fitbit"],
-    ["Mar 30",6.43,18153,null,"Fitbit"],
-    ["Apr 6",6.30,16905,null,"Fitbit"],
-    ["Apr 13",5.47,15958,null,"Fitbit"],
-    ["Apr 20",6.45,11599,null,"Fitbit"],
-    ["Apr 27",5.97,12609,null,"Fitbit"],
-    ["May 4",6.02,13170,null,"Fitbit"],
-    ["May 11",6.08,12388,null,"Fitbit"],
-    ["May 17",7.75,13052,60,"Google Health"],
-    ["May 23",8.88,14333,60,"Google Health"],
-    ["May 30",7.48,11774,62,"Google Health"],
-    ["Jun 6",8.05,13714,60,"Google Health"],
-    ["Jun 13",8.15,10662,62,"Google Health"],
-    ["Jun 20",8.52,13492,60,"Google Health"],
-    ["Jun 27",8.47,14856,62,"Google Health"],
-    ["Jul 4",8.42,12876,60,"Google Health"],
-    ["Jul 11",9.20,7307,57,"Google Health"],
-    ["Jul 18",6.93,11345,61,"Google Health"],
-    ["Jul 25",8.72,16540,61,"Google Health"],
-    ["Aug 1",8.08,13686,61,"Google Health"],
-    ["Aug 8",8.15,14931,61,"Google Health"],
-    ["Aug 15",7.85,16640,61,"Google Health"],
-    ["Aug 22",8.12,12485,63,"Google Health"],
-    ["Aug 29",7.70,13930,64,"Google Health"],
-    ["Sep 5",8.20,15775,66,"Google Health"]
-  ];
+  function shortDate(dateOrContext) {
+    const s = String(dateOrContext || "");
+    const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (m) return new Intl.DateTimeFormat("en-AU",{month:"short",year:"numeric"}).format(new Date(Number(m[1]),Number(m[2])-1,Number(m[3])));
+    return s.replace(" snapshot","").replace(" final 90d median"," median").replace(" first 90d median"," median");
+  }
 
-  const sleepPoints = weekly.map(row => ({
-    label:row[0], value:row[1],
-    display:(Math.floor(row[1])+"h "+String(Math.round((row[1]%1)*60)).padStart(2,"0")+"m"),
-    note:row[4]
-  }));
-  lineChart("josh-sleep-line", sleepPoints, {
-    yMin:5, yMax:10, labelEvery:3, showValues:false,
-    formatY:v=>Number(v).toFixed(1)+"h",
-    ariaLabel:"Weekly average restful sleep from March to September 2026",
-    sourceBreakAfter:9, sourceBreakLabel:"data source changes"
-  });
-  dataTable("josh-sleep-table",
-    ["Week","Average restful sleep","Source"],
-    sleepPoints.map((p,i)=>[p.label,p.display,weekly[i][4]])
-  );
+  function showChartError(ids) {
+    ids.forEach(id => {
+      const root = document.getElementById(id);
+      if (root) root.innerHTML = '<p class="chart-load-error">This chart could not load its source dataset. The CSV remains available from the repository.</p>';
+    });
+  }
 
-  lineChart("josh-steps-line", weekly.slice(10).map(row => ({
-    label:row[0], value:row[2], display:Math.round(row[2]).toLocaleString("en-AU")
-  })), {
-    yMin:6000, yMax:18000, labelEvery:2, showValues:false,
-    formatY:v=>Math.round(v/1000)+"k",
-    ariaLabel:"Weekly average steps per day from May to September 2026"
-  });
+  async function renderPersonalCharts() {
+    try {
+      const [body, labs, wearable] = await Promise.all([
+        loadCsv("data/josh-body-composition-history.csv"),
+        loadCsv("data/josh-labs-history.csv"),
+        loadCsv("data/josh-weekly-wearable-history.csv")
+      ]);
 
-  lineChart("josh-rhr-line", weekly.filter(row => row[3] !== null).map(row => ({
-    label:row[0], value:row[3], display:row[3]+" bpm"
-  })), {
-    yMin:54, yMax:68, labelEvery:2, showValues:false,
-    formatY:v=>Math.round(v),
-    ariaLabel:"Weekly resting heart rate from May to September 2026"
-  });
+      const weightRows = body.filter(row => numberValue(row.weight_kg) !== null && !row.date_context.includes("median"));
+      const weightPoints = weightRows.map(row => ({
+        label:shortDate(row.date_context),
+        value:numberValue(row.weight_kg),
+        display:Number(row.weight_kg).toFixed(1)+" kg",
+        note:row.source
+      }));
+      lineChart("josh-weight-line", weightPoints, {
+        unit:"kg", decimals:1, ariaLabel:"Josh body weight trend from the retained body composition dataset",
+        formatY:v=>Number(v).toFixed(0)
+      });
+      dataTable("josh-weight-table",
+        ["Date/context","Weight","Source","Interpretation note"],
+        weightRows.map(row => [row.date_context,row.weight_kg+" kg",row.source,row.notes || ""])
+      );
+
+      const latestLab = (marker, datePrefix) => labs.find(row => row.marker === marker && row.date.startsWith(datePrefix));
+      const ldl2023 = latestLab("LDL-C","2023-06");
+      const ldl2026 = latestLab("LDL-C","2026-02");
+      const chol2023 = latestLab("Total cholesterol","2023-06");
+      const chol2026 = latestLab("Total cholesterol","2026-02");
+      const lipidItems = [];
+      if (ldl2023 && ldl2026) lipidItems.push({label:"LDL-C",from:Number(ldl2023.value),to:Number(ldl2026.value),unit:"mmol/L",period:"Jun 2023 → Feb 2026"});
+      if (chol2023 && chol2026) lipidItems.push({label:"Total cholesterol",from:Number(chol2023.value),to:Number(chol2026.value),unit:"mmol/L",period:"Jun 2023 → Feb 2026"});
+      changeCards("josh-lipids-changes", lipidItems);
+
+      const ferritin = labs.filter(row => row.marker === "Ferritin" && numberValue(row.value) !== null)
+        .sort((a,b) => String(a.date).localeCompare(String(b.date)));
+      lineChart("josh-ferritin-line", ferritin.map(row => ({
+        label:shortDate(row.date), value:numberValue(row.value), display:row.value+" µg/L"
+      })), {
+        unit:"µg/L", yMin:25, yMax:50, ariaLabel:"Josh ferritin trend from the pathology dataset"
+      });
+
+      const usefulWearable = wearable.filter(row => row.period && row.report_date >= "2026-03-17");
+      const sleepRows = usefulWearable.filter(row => sleepHours(row.avg_restful_sleep_hhmm) !== null);
+      const sourceBreakIndex = sleepRows.findIndex((row,i) => i < sleepRows.length-1 && row.source !== sleepRows[i+1].source);
+      const sleepPoints = sleepRows.map(row => ({
+        label:row.period.split("-")[0].trim().replace("Mar ","Mar ").replace("Apr ","Apr ").replace("May ","May "),
+        value:sleepHours(row.avg_restful_sleep_hhmm),
+        display:row.avg_restful_sleep_hhmm.replace(":","h ")+"m",
+        note:row.source
+      }));
+      lineChart("josh-sleep-line", sleepPoints, {
+        yMin:5, yMax:10, labelEvery:3, showValues:false,
+        formatY:v=>Number(v).toFixed(1)+"h",
+        ariaLabel:"Weekly average restful sleep from the wearable history dataset",
+        sourceBreakAfter:sourceBreakIndex >= 0 ? sourceBreakIndex : undefined,
+        sourceBreakLabel:"data source changes"
+      });
+      dataTable("josh-sleep-table",
+        ["Week","Average restful sleep","Source","Context"],
+        sleepRows.map(row => [row.period,row.avg_restful_sleep_hhmm,row.source,row.notes || ""])
+      );
+
+      const recent = usefulWearable.filter(row => row.source === "Google Health");
+      lineChart("josh-steps-line", recent.filter(row => numberValue(row.avg_steps_per_day) !== null).map(row => ({
+        label:row.period.split("-")[0].trim(),
+        value:numberValue(row.avg_steps_per_day),
+        display:Number(row.avg_steps_per_day).toLocaleString("en-AU")
+      })), {
+        yMin:6000, yMax:18000, labelEvery:2, showValues:false,
+        formatY:v=>Math.round(v/1000)+"k",
+        ariaLabel:"Weekly average steps per day from the Google Health history"
+      });
+
+      lineChart("josh-rhr-line", recent.filter(row => numberValue(row.avg_resting_hr_bpm) !== null).map(row => ({
+        label:row.period.split("-")[0].trim(),
+        value:numberValue(row.avg_resting_hr_bpm),
+        display:row.avg_resting_hr_bpm+" bpm",
+        note:row.notes || ""
+      })), {
+        yMin:54, yMax:68, labelEvery:2, showValues:false,
+        formatY:v=>Math.round(v),
+        ariaLabel:"Weekly resting heart rate from the Google Health history"
+      });
+    } catch (error) {
+      showChartError(["josh-weight-line","josh-lipids-changes","josh-ferritin-line","josh-sleep-line","josh-steps-line","josh-rhr-line"]);
+    }
+  }
+
+  renderPersonalCharts();
 
   // Public case-study charts.
   bars("vo2-bars", [
