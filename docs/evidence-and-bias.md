@@ -240,3 +240,89 @@ A practice gets promoted into the practical playbook only when:
 5. it can coexist with ordinary family/work responsibilities.
 
 This is why exercise, sleep, whole-food dietary patterns, not smoking, sensible alcohol limits and primary-care risk-factor management outrank epigenetic clocks, supplement stacks and experimental procedures.
+
+
+---
+
+# Evidence notes for the four added profiles
+
+## Julie Gibson Clark
+
+Two different claims must stay separate:
+
+1. **DunedinPACE is a scientifically published biomarker.** Belsky and colleagues validated DunedinPACE against healthspan-related outcomes in multiple cohorts.
+2. **Clark's personal result and routine are not a randomised trial.** Her reported ~0.665 result does not prove that her routine caused the score or that the score predicts a fixed percentage extension in her lifespan.
+
+Potential conflicts/selective-reporting issues:
+- longevity media often frame leaderboard positions competitively
+- commercial biological-age testing encourages repeat testing
+- later intervention changes can make the personal protocol a moving target
+
+Project rule: report the measurement, explain the biomarker, and **do not translate it into guaranteed years of life**.
+
+## Bob Troia
+
+Troia is a classic N-of-1 source.
+
+Strengths:
+- long time horizon
+- unusually transparent experiments
+- emphasis on raw data and trends
+- often explicitly frames conclusions as personal experiments
+
+Limitations:
+- no control group
+- many variables change across years
+- device accuracy changes
+- self-selection and publication bias
+- an intervention that changes his glucose/sleep/body composition may not generalise
+
+Project rule: learn from the **experimental method and tracking discipline** more than from any single intervention result.
+
+## Michael Snyder
+
+Snyder's central personal-omics work has high scientific provenance because it was published in peer-reviewed research and embedded in a broader research programme.
+
+Strengths:
+- multi-layer longitudinal measurement
+- documented methods
+- clinically meaningful disease-transition example
+- later work expanded into larger cohorts
+
+Limitations:
+- the original personal profile is still one individual
+- research infrastructure is radically unlike ordinary primary care
+- intensive measurement increases incidental findings and interpretation burden
+
+Project rule: translate the principle of **personal baseline + meaningful deviation**, not the laboratory stack.
+
+## Larry Smarr
+
+Smarr's public story combines institutional reporting, self-tracking and a diagnosed inflammatory bowel disease.
+
+Strengths:
+- unusually long longitudinal record
+- persistent inflammatory signal linked to subsequent clinical investigation
+- valuable example of moving from self-tracking to formal medical assessment
+
+Limitations:
+- retrospective storytelling can overstate how obvious the signal was in real time
+- extensive testing raises false-positive/incidental-finding risk
+- microbiome interpretation remains complex and context dependent
+
+Project rule: treat Smarr as a **disease-detection / longitudinal-follow-up case**, not as evidence that broad untargeted testing is beneficial for healthy people.
+
+# Biological-age leaderboard caution
+
+Leaderboard positions are especially vulnerable to overinterpretation.
+
+Reasons include:
+
+- different clocks measure different constructs
+- technical/lab variation
+- regression to the mean
+- selective timing or publication
+- uncertain clinical meaning for an individual
+- a biomarker can be associated with outcomes without being a validated surrogate endpoint for treatment
+
+Therefore this repository never converts an ageing-clock result directly into "years added", "years younger" or a certainty about future lifespan.
