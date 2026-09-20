@@ -36,6 +36,8 @@ jobs:
           test -f charts.html
           test -f resources.html
           test -f evidence.html
+          test -f fact-check.html
+          test -f docs/fact-check-audit.md
           test -f playbook.html
           test -f comparison.html
           test -f transferability.html
@@ -95,7 +97,7 @@ jobs:
               "plan-rationale.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/josh-plan.md"'],
               "plan-evidence.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/josh-plan-evidence.md"'],
               "source-policy.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/source-policy.md"'],
-              "fact-check.html": ['styles.css', 'nav.js', 'id="checked"', 'id="rules"', 'id="limits"'],
+              "fact-check.html": ['styles.css', 'doc-renderer.js', 'nav.js', 'data-doc-source="docs/fact-check-audit.md"', 'id="doc-content"', 'id="doc-toc"'],
               "data.html": ['styles.css', 'data-explorer.js', 'id="dataset-tabs"', 'id="data-search"'],
               "coverage.html": ['styles.css', 'coverage.js', 'nav.js', 'id="coverage"', 'id="backlog"', 'id="access"', 'id="research-docs"'],
               "blue-zones.html": ['styles.css', 'nav.js', 'id="lessons"', 'id="power-nine"', 'id="cautions"', 'id="sources"'],
