@@ -79,7 +79,7 @@
     document.getElementById("lesson-lens").textContent = person.lens;
     document.getElementById("lesson-text").textContent = person.lesson;
     const link = document.getElementById("lesson-link");
-    link.href = "people.html#person-" + person.id;
+    link.href = "people/" + person.id + ".html";
   }
 
   function evidenceGroup(person) {
@@ -108,7 +108,7 @@
         <p class="mini-head">Don't copy blindly</p>
         <ul>${skipItems}</ul>
         <div class="person-sources">${sources}</div>
-        <a class="person-media-link" href="resources.html">Watch & read →</a>
+        <div class="person-card-actions"><a class="person-profile-link" href="people/${person.id}.html">Open detailed profile →</a><a class="person-media-link" href="resources.html">Media library</a></div>
       </article>
     `;
   }
