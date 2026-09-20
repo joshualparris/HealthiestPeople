@@ -1,5 +1,6 @@
 (() => {
   const people = window.HEALTHIEST_PEOPLE || [];
+  const podcasts = window.HEALTH_PODCASTS || [];
   const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 
   function sydneyParts() {
@@ -85,6 +86,25 @@
     document.getElementById("people-grid").innerHTML = visible.map(personCard).join("");
   }
 
+
+  function podcastCard(item) {
+    const featured = item.featured ? '<span class="podcast-pick">Start here</span>' : "";
+    return '<article class="podcast-card">' +
+      '<div class="podcast-meta"><span class="podcast-person">' + item.person + '</span>' + featured + '</div>' +
+      '<h3>' + item.title + '</h3>' +
+      '<p class="podcast-show">' + item.show + '</p>' +
+      '<p class="podcast-focus">' + item.focus + '</p>' +
+      '<div class="podcast-bottom"><span>' + item.duration + ' · ' + item.platform + '</span>' +
+      '<a href="' + item.url + '" target="_blank" rel="noreferrer">Listen ↗</a></div>' +
+      '</article>';
+  }
+
+  function renderPodcasts() {
+    const grid = document.getElementById("podcast-grid");
+    if (!grid) return;
+    grid.innerHTML = podcasts.map(podcastCard).join("");
+  }
+
   function wireFilters() {
     document.querySelectorAll(".filter").forEach(button => {
       button.addEventListener("click", () => {
@@ -97,5 +117,6 @@
 
   renderToday();
   renderPeople();
+  renderPodcasts();
   wireFilters();
 })();
