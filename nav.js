@@ -109,6 +109,7 @@
         ["plan-rationale.html", "Plan Rationale", "mobile-extra"],
         ["plan-evidence.html", "Plan Evidence", "mobile-extra"],
         ["source-policy.html", "Source Policy", "mobile-extra"],
+        ["coverage.html", "Research Coverage", "mobile-extra"],
         ["roadmap.html", "Roadmap", "mobile-extra"]
       ]
     }
