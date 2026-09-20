@@ -1,10 +1,12 @@
 (() => {
   const body = document.body;
   const params = new URLSearchParams(window.location.search);
-  const querySource = params.get("src") || "";
+  const queryDoc = params.get("doc") || "";
+  const legacySource = params.get("src") || "";
   const datasetSource = body.dataset.docSource || "";
   const isSafeDoc = value => /^docs\/[A-Za-z0-9._\/-]+\.md$/i.test(value) && !value.includes("..");
-  const source = datasetSource || (isSafeDoc(querySource) ? querySource : "");
+  const isSafeSlug = value => /^[A-Za-z0-9._\/-]+$/i.test(value) && !value.includes("..");
+  const source = datasetSource || (isSafeSlug(queryDoc) ? "docs/" + queryDoc.replace(/^docs\//, "").replace(/\.md$/i, "") + ".md" : "") || (isSafeDoc(legacySource) ? legacySource : "");
   const target = document.getElementById("doc-content");
   const toc = document.getElementById("doc-toc");
   if (!source || !target) {
@@ -85,7 +87,10 @@
 
     if (/\.md$/i.test(clean)) {
       const resolved = resolveMarkdownSource(clean);
-      if (isSafeDoc(resolved)) return "document.html?src=" + encodeURIComponent(resolved) + hash;
+      if (isSafeDoc(resolved)) {
+        const slug = resolved.replace(/^docs\//, "").replace(/\.md$/i, "");
+        return "document.html?doc=" + encodeURIComponent(slug) + hash;
+      }
     }
 
     return href;
