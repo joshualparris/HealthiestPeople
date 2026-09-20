@@ -2,7 +2,7 @@
 
 ## The short version
 
-These five people are not five versions of the same experiment.
+These nine people are not nine versions of the same experiment.
 
 - **Bryan Johnson** has the broadest current public-facing whole-body dataset.
 - **Michael Lustgarten** has unusually long, low-cost longitudinal self-tracking tied to ordinary bloodwork, diet and exercise.
@@ -20,7 +20,7 @@ Because their ages, test dates, methods and public-data coverage differ, this pr
 - **D** — self-report / interview
 - **?** — not enough public evidence yet
 
-## Current comparison matrix
+## Original five: current comparison matrix
 
 | Domain | Bryan Johnson | Michael Lustgarten | Oskar Svendsen | Dave Pascoe | Scott Kelly |
 |---|---|---|---|---|---|
@@ -39,7 +39,7 @@ Because their ages, test dates, methods and public-data coverage differ, this pr
 | Evidence breadth | **Very high** | High longitudinal breadth | Narrow | High self-published breadth | **Very high**, research-focused |
 | Currentness | High | Mixed; many useful historical series | Low for peak physiology | High | Mostly 2015–2016 Twins Study |
 
-## Who has the strongest evidence in each area?
+## What the original five contribute
 
 ### Broadest current whole-health picture: Bryan Johnson
 
@@ -133,3 +133,88 @@ Priority extractions:
 5. Exact pre-flight baseline values and current post-retirement health information for Kelly.
 
 See `data/metrics.csv` for the normalised values already extracted.
+
+
+---
+
+# Expanded synthesis: four additional case studies
+
+The project now includes four additional people because they answer questions the original five do not.
+
+| Person | Why included | Strongest useful signal | Main limitation |
+|---|---|---|---|
+| **Julie Gibson Clark** | A working-parent example with a striking reported DunedinPACE | A sustainable, relatively low-cost routine built around strength, aerobic fitness, plants/protein, sleep and stress reduction | The ageing-rate result is a biomarker, not proof of extra lifespan; routine is largely self-reported |
+| **Bob Troia** | Long-running quantified-self practitioner | Minimum-effective tracking and multi-year trend analysis | Mostly N-of-1, first-party evidence |
+| **Michael Snyder** | Peer-reviewed personal multi-omics pioneer | Longitudinal baselines can reveal meaningful deviation and disease transition | Research-grade measurement burden is not transferable or necessary for most people |
+| **Larry Smarr** | Longitudinal biomarker/microbiome self-tracker | Persistent abnormal inflammation signals can justify clinical follow-up | His Crohn's story is a disease-detection case, not a health exemplar |
+
+## Julie Gibson Clark: the strongest ordinary-life translation
+
+Clark's public routine is unusually relevant to a full-time working parent. Public descriptions centre on:
+
+- regular strength training
+- aerobic/VO2-focused work
+- walking
+- vegetables and adequate protein
+- protecting sleep
+- a daily meditation/stress-management practice
+- family flexibility rather than rigid meal timing
+
+Her reported DunedinPACE has been around **0.665**. DunedinPACE is a peer-reviewed DNA-methylation biomarker associated with morbidity, disability and mortality risk across cohorts, but it does **not** mean that a score of 0.665 guarantees 35% slower calendar ageing or a fixed extension of lifespan.
+
+Sources:
+- Julie Gibson Clark: https://www.juliegibsonclark.com/
+- Belsky et al., *eLife* 2022: https://pubmed.ncbi.nlm.nih.gov/35029144/
+- Full paper: https://elifesciences.org/articles/73420
+
+**Transferable lesson:** design health around the life you actually have. Consistency in ordinary behaviours is more useful than a perfect protocol that competes with family life.
+
+## Bob Troia: measure less, learn more
+
+Troia has published more than a decade of body-composition tracking along with sleep, glucose and other N-of-1 experiments.
+
+The strongest idea for ordinary people is his concept of **minimum effective quantification**: use a small number of measures that can change a decision rather than trying to instrument every biological system.
+
+Sources:
+- https://www.quantifiedbob.com/minimum-effective-quantification-my-superhuman-summit-talk/
+- https://www.quantifiedbob.com/body-composition-data-visualization/
+- https://www.quantifiedbob.com/sleep-tracking-analysis-oura/
+- https://www.quantifiedbob.com/glucose-tracking-experiment-my-quantified-self-talk/
+
+**Transferable lesson:** a phone step count, simple training log, sleep opportunity, body-weight/waist trend where relevant, and routine clinical measurements can be enough.
+
+## Michael Snyder: know your baseline
+
+Snyder and colleagues published an integrative personal omics profile in *Cell* in 2012, following genome, transcriptome, proteome, metabolome and autoantibody data longitudinally. The work captured movement from a healthy baseline toward type 2 diabetes risk.
+
+Sources:
+- Chen et al., *Cell* 2012: https://pubmed.ncbi.nlm.nih.gov/22424236/
+- Snyder Lab research: https://med.stanford.edu/snyderlab/research
+
+**Transferable lesson:** the value of longitudinal data is detecting meaningful change. Ordinary people do not need multi-omics to use the principle.
+
+## Larry Smarr: persistent abnormality deserves follow-up
+
+Smarr built a long time-series of more than 100 blood biomarkers and gut data. UC San Diego describes persistent inflammatory signals preceding clinical investigation and Crohn's diagnosis.
+
+Sources:
+- https://today.ucsd.edu/story/uc-san-diegos-larry-smarr-elevated-to-ieee-fellow
+- https://cse.ucsd.edu/about/news/cse-professor-lecturer-team-with-uc-san-diego-health-to-bring-3d-visualization-to-abdomenal-surgery
+
+**Transferable lesson:** repeated abnormal findings deserve appropriate clinical follow-up. More tracking is not the endpoint.
+
+# Convergence across all nine
+
+Despite wildly different resources and measurement intensity, the most defensible low-cost lessons converge:
+
+1. **Move most days.**
+2. **Train both aerobic capacity and strength.**
+3. **Protect adequate, regular sleep.**
+4. **Eat mostly minimally processed, nutrient-dense food with plenty of plants and sufficient protein.**
+5. **Know basic cardiovascular and metabolic risk factors.**
+6. **Track only measures that can change a decision.**
+7. **Pay attention to trends, not isolated app scores.**
+8. **Escalate persistent abnormal findings to proper clinical care.**
+9. **Preserve relationships and sustainability rather than chasing protocol perfection.**
+
+The strongest evidence for these principles comes from mainstream exercise, sleep, nutrition and preventive-health literature — not from the fact that any one of these nine people practises them.
