@@ -1,5 +1,19 @@
 window.HEALTHIEST_PEOPLE = [
   {
+    id: "joshua-parris",
+    name: "Joshua Parris",
+    lens: "Working-parent baseline",
+    evidence: "Mostly B-C",
+    summary: "The project's real-world comparison case: a 32-year-old working parent using ordinary pathology, wearables, home exercise and family-compatible routines rather than a private medical team. Current strengths include favourable glucose/triglyceride/inflammation markers; the clearest opportunities are sleep, blood-pressure tracking and repeatable fitness/strength benchmarks.",
+    lesson: "Use ordinary measurements to improve the basics without turning health into a second job.",
+    do: ["Increase sleep opportunity and consistency", "Build a repeatable aerobic + strength baseline", "Keep ordinary pathology and blood-pressure trends"],
+    skip: ["Chasing biological-age scores", "Expensive testing before the basics", "Comparing one unusually active week with elite athletes"],
+    sources: [
+      ["Joshua Parris public baseline profile", "https://github.com/joshualparris/HealthiestPeople/blob/main/docs/people/joshua-parris.md"],
+      ["Normalised metrics dataset", "https://github.com/joshualparris/HealthiestPeople/blob/main/data/metrics.csv"]
+    ]
+  },
+  {
     id: "bryan-johnson",
     name: "Bryan Johnson",
     lens: "Breadth + consistency",
