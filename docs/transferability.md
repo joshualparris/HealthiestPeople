@@ -13,7 +13,7 @@ We score transferability by asking:
 5. **Does it require medical supervision?**
 6. **Is the benefit likely to be large enough to matter?**
 
-The point is not to reproduce these five lives. It is to identify the **highest-value common denominator**.
+The point is not to reproduce these nine lives. It is to identify the **highest-value common denominator**.
 
 ## Cost/time key
 
@@ -245,3 +245,93 @@ They do **not** prove that:
 - a person with fewer public measurements is less healthy.
 
 The ordinary-family goal is **high-probability health benefit per dollar and per hour**, not maximum measurement density.
+
+
+---
+
+# Added case studies
+
+## Julie Gibson Clark
+
+| Practice | Published context | Cost | Family compatibility | Project view |
+|---|---|---|---|---|
+| Strength training | regular weekly practice | Free–low | Medium–high | **Copy/adapt** |
+| Aerobic / VO2-focused training | regular practice | Free–low | Medium | **Copy/adapt** |
+| Walking | routine movement | Free | High | **Strong transferable signal** |
+| Vegetable-rich meals + protein | daily pattern | Ordinary food cost | High | **Copy pattern** |
+| Consistent sleep | prioritised | Free | High principle / variable execution | **Copy principle** |
+| Meditation / stress practice | short daily practice | Free | High | **Copy/adapt** |
+| Sauna / cold showers | optional parts of routine | Low–moderate if already available | Medium | Optional |
+| Repeated DunedinPACE testing | commercial ageing biomarker | Moderate | High time-wise | Interesting, **not required** |
+| Supplements / hormone experimentation | individual | Variable / medical | Low–medium | Do not copy blindly |
+
+### The 80/20 extraction
+
+Clark's biggest contribution is not the leaderboard. It is that a relatively simple strength + cardio + plants/protein + sleep + stress routine can coexist with work and parenting.
+
+---
+
+## Bob Troia
+
+| Practice | Published context | Cost | Family compatibility | Project view |
+|---|---|---|---|---|
+| Longitudinal body-weight/body-composition tracking | 10+ years | Free–low | High | Useful if it changes behaviour |
+| Sleep trend analysis | wearable exports | Low–moderate | High | Optional |
+| Glucose self-experiments | repeated N-of-1 work | Moderate | Medium | Usually unnecessary without a question |
+| Minimum effective quantification | a few useful measures | Free–low | **High** | **Strong transferable signal** |
+| Large gadget ecosystem | many sensors/devices | High | Low | Skip unless a specific tool solves a problem |
+
+### The 80/20 extraction
+
+Pick two or three measures, record context, look over months and stop measuring things that never change a decision.
+
+---
+
+## Michael Snyder
+
+| Practice | Research context | Cost | Family compatibility | Project view |
+|---|---|---|---|---|
+| Longitudinal personal baseline | repeated measurements | Low if using basics | High | **Copy principle** |
+| Routine blood/pathology history | repeated | Low–moderate | High | **Copy with GP guidance** |
+| Wearables | multiple devices in research | Low–high | High | One device may be enough |
+| Multi-omics | genome/transcriptome/proteome/metabolome etc | Very high | Low | Research, not routine self-care |
+| Repeated whole-body MRI | research/intensive monitoring | Very high | Low | Not foundational |
+
+### The 80/20 extraction
+
+Know a few normal values for yourself and notice sustained departures. You do not need research-grade omics to benefit from a baseline.
+
+---
+
+## Larry Smarr
+
+| Practice | Published context | Cost | Family compatibility | Project view |
+|---|---|---|---|---|
+| Keep longitudinal pathology results | multi-year | Free–low | High | **Copy** |
+| Follow persistent abnormal inflammation | led to clinical investigation | Normal medical pathway | High | **Strong transferable signal** |
+| 100+ biomarker tracking | research/self-experiment | High | Low | Usually skip |
+| Repeated microbiome analysis | research/self-experiment | High | Low | Usually skip |
+| Clinical escalation | colonoscopy/imaging after concerning signals | Medical | N/A | **Use when clinically indicated** |
+
+### The 80/20 extraction
+
+Do not ignore a persistent abnormal trend, but do not respond by ordering everything. Bring the pattern to a clinician and ask the next useful question.
+
+---
+
+# All-nine priority order for a normal family
+
+If time and money are constrained, spend them roughly in this order:
+
+1. **Enough sleep opportunity and a repeatable sleep schedule**
+2. **Daily movement and less prolonged sitting**
+3. **Two weekly strength sessions**
+4. **Regular aerobic work, including some higher intensity if appropriate**
+5. **Ordinary minimally processed food: plants, fibre and enough protein**
+6. **Relationships, recovery and a sustainable weekly rhythm**
+7. **Basic preventive care, blood pressure and indicated routine pathology**
+8. **A small number of useful trends**
+9. **Optional wearables or tests with a specific question**
+10. **Only then consider expensive longevity extras**
+
+This ordering is deliberately different from what is most visually impressive on social media.
