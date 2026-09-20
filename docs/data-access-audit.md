@@ -26,6 +26,7 @@ A person may have thousands of tests while publishing only selected summaries. C
 | **Bob Troia** | **High for a self-tracker** — blog tables and calculated annual summaries | High | Little formal gating in core archive | Device/method changes across years complicate direct comparison |
 | **Michael Snyder** | **High in peer-reviewed literature** | Moderate | Large omics datasets may require repositories/controlled access depending on layer | Personal data and cohort research must be kept separate |
 | **Larry Smarr** | Moderate–high through talks, institutional reports and papers | High | Some research datasets are not direct personal downloads | Disease-focused data are richer than general healthy-ageing metrics |
+| **Joshua Parris** | High for the deliberately published baseline metrics | Low | Sensitive diagnoses/medications intentionally excluded | Ordinary clinical + wearable data; not an externally audited research subject |
 
 ## Bryan Johnson
 
@@ -187,3 +188,24 @@ When a person explicitly withholds a result:
 **mark it withheld.**
 
 This protects the project from a subtle but serious error: treating the *number of tests someone has taken* as the *amount of evidence the public actually possesses*.
+
+
+## Joshua Parris
+
+Joshua's profile is intentionally different from the external case studies.
+
+The repository openly publishes selected:
+
+- ordinary pathology results
+- weight/body-composition history
+- blood-pressure range
+- sleep summaries
+- RHR/HRV examples
+- activity measurements
+
+It intentionally does **not** publish diagnoses, medications or other sensitive medical history.
+
+The purpose is not maximal openness. It is to test whether the project's lessons can improve an ordinary working parent's health using a **minimum useful dataset**.
+
+Source:
+- https://github.com/joshualparris/HealthiestPeople/blob/main/docs/people/joshua-parris.md
