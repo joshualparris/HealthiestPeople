@@ -20,7 +20,7 @@ Oskar Svendsen,Aug 2012,Absolute VO2max,7397,mL/min,A,https://journals.physiolog
 Oskar Svendsen,Aug 2012,Body weight,76.5,kg,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,At peak VO2max test
 Oskar Svendsen,2012-2014,Haematocrit,45.1-48.8,percent,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,Eight anti-doping controls; mean 47.0
 Oskar Svendsen,Oct 2015,VO2max,77.0,mL/kg/min,A,https://journals.physiology.org/doi/full/10.1152/japplphysiol.00798.2018,After ~15 months almost no structured exercise
-Dave Pascoe,2026,Age,63,years,C,https://www.davepascoe.net/,First-party
+Dave Pascoe,homepage age field,Age,63,years,C,https://www.davepascoe.net/,First-party homepage says "63 (as of August)" without clearly dating that age field; do not assume it is an independently verified current chronological age
 Dave Pascoe,2026,Height,183,cm,C,https://www.davepascoe.net/,Published as 6 feet
 Dave Pascoe,2026,Body weight,72.57,kg,C,https://www.davepascoe.net/,Published as 160 lb
 Dave Pascoe,2026,BMI,21.7,kg/m2,C,https://www.davepascoe.net/,First-party
