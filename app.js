@@ -3,6 +3,7 @@
   const podcasts = window.HEALTH_PODCASTS || [];
   const resources = window.HEALTH_RESOURCES || [];
   const resourceTypes = window.RESOURCE_TYPES || {};
+  const baseline = window.JOSH_BASELINE || null;
   const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 
   function sydneyParts() {
@@ -108,6 +109,54 @@
     grid.innerHTML = podcasts.map(podcastCard).join("");
   }
 
+  function renderBaseline() {
+    if (!baseline) return;
+
+    const updated = document.getElementById("baseline-updated");
+    if (updated) updated.textContent = "Updated " + baseline.updated;
+
+    const headline = document.getElementById("baseline-headline");
+    if (headline) {
+      headline.innerHTML = baseline.headline.map(item => `
+        <article class="baseline-metric">
+          <span>${item.label}</span>
+          <strong>${item.value}</strong>
+          <small>${item.note}</small>
+        </article>
+      `).join("");
+    }
+
+    const labs = document.getElementById("baseline-labs");
+    if (labs) {
+      labs.innerHTML = baseline.labs.map(([label,value]) =>
+        `<div><span>${label}</span><b>${value}</b></div>`
+      ).join("");
+    }
+
+    const trends = document.getElementById("baseline-trends");
+    if (trends) {
+      trends.innerHTML = baseline.trends.map(item => `
+        <div class="trend-row">
+          <div><b>${item.label}</b><small>${item.period}</small></div>
+          <span>${item.from}</span>
+          <span class="trend-arrow">→</span>
+          <strong>${item.to}</strong>
+        </div>
+      `).join("");
+    }
+
+    const sleep = document.getElementById("baseline-sleep");
+    if (sleep) {
+      sleep.textContent = `Historical sleep snapshot: ${baseline.sleep.average} average, ${baseline.sleep.shortNights}, latency ${baseline.sleep.latency}. ${baseline.sleep.note}`;
+    }
+
+    const privacy = document.getElementById("baseline-privacy");
+    if (privacy) privacy.textContent = baseline.privacy;
+
+    const next = document.getElementById("baseline-next-list");
+    if (next) next.innerHTML = baseline.next.map(item => `<li>${item}</li>`).join("");
+  }
+
   function featuredVideoCard(resource) {
     const type = resourceTypes[resource.type] || { label: resource.type, icon: "▶" };
     return `
@@ -201,6 +250,7 @@
   }
 
   renderToday();
+  renderBaseline();
   renderPeople();
   renderPodcasts();
   renderResources();
