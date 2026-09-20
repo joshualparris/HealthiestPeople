@@ -411,6 +411,91 @@ Frisbee, family movement, church/community and time with family are not distract
 
 They fit the broader evidence that social isolation/loneliness are associated with higher mortality.
 
+# Recommendation validation
+
+The practical recommendations above are not based only on country comparisons. They are cross-checked against **official Australian guidance plus multiple peer-reviewed studies**.
+
+## Movement
+
+Official:
+- Australian 24-hour movement guidelines (adults 18–64): https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-adults-18-to-64-years
+- Evidence report behind the 2026 guidelines: https://www.health.gov.au/sites/default/files/2026-03/australian-24-hour-movement-guidelines-for-adults-18-to-64-years-and-older-adults-65-years.pdf
+
+Peer-reviewed:
+- Dose-response meta-analysis, >30 million participants: https://pubmed.ncbi.nlm.nih.gov/36854652/
+- Accelerometer cohort, 76,074 participants: https://pubmed.ncbi.nlm.nih.gov/39389333/
+- Harmonised accelerometer meta-analysis: https://pubmed.ncbi.nlm.nih.gov/39089430/
+- Daily steps umbrella review/meta-analysis: https://pubmed.ncbi.nlm.nih.gov/38901742/
+
+## Strength
+
+Official:
+- Australian adult guidelines recommend muscle strengthening on **2 or more days/week**: https://www.health.gov.au/topics/physical-activity/24-hour-movement-guidelines-for-all-australians/recommendations-for-adults-18-to-64-years
+
+Peer-reviewed:
+- Muscle-strengthening activity and mortality/non-communicable disease meta-analysis: https://pubmed.ncbi.nlm.nih.gov/35228201/
+
+## Food pattern
+
+Official:
+- Australian Dietary Guidelines: https://www.eatforhealth.gov.au/guidelines/australian-dietary-guidelines-1-5
+- Australian Guide to Healthy Eating: https://www.eatforhealth.gov.au/guidelines/australian-guide-healthy-eating/description
+
+Peer-reviewed:
+- Corrected PREDIMED trial: https://pubmed.ncbi.nlm.nih.gov/29897866/
+- Japanese-style diet cardiovascular mortality meta-analysis: https://pubmed.ncbi.nlm.nih.gov/35631146/
+- Japanese diet / mortality / disability / dementia review: https://pubmed.ncbi.nlm.nih.gov/35631172/
+
+## Salt / sodium
+
+Official:
+- Heart Foundation Australia: adults should generally keep salt to no more than **5 g/day (~2,000 mg sodium)**: https://www.heartfoundation.org.au/sodium-and-salt-converter
+- Australian Dietary Guidelines advise limiting added salt: https://www.eatforhealth.gov.au/guidelines/australian-dietary-guidelines-1-5
+
+Peer-reviewed:
+- Japanese sodium/potassium cohort: https://pubmed.ncbi.nlm.nih.gov/18614741/
+- Korean national sodium/mortality analysis: https://pubmed.ncbi.nlm.nih.gov/33029290/
+- Reduced-salt Japanese dietary pattern and mortality: https://pubmed.ncbi.nlm.nih.gov/19021919/
+
+## Ultra-processed food
+
+Peer-reviewed:
+- BMJ umbrella review: https://pubmed.ncbi.nlm.nih.gov/38418082/
+- 2025 umbrella review: https://pubmed.ncbi.nlm.nih.gov/38363072/
+- Updated all-cause mortality dose-response meta-analysis: https://pubmed.ncbi.nlm.nih.gov/40033461/
+- Singapore Chinese Health Study: https://pubmed.ncbi.nlm.nih.gov/41024211/
+
+## Smoking
+
+Official:
+- Australian Government: there is no safe smoking option: https://www.health.gov.au/topics/smoking-vaping-and-tobacco/about-smoking/no-safe-options
+
+Country-level peer-reviewed support:
+- Iceland coronary-mortality analysis: https://pubmed.ncbi.nlm.nih.gov/21103050/
+
+## Alcohol
+
+Official:
+- Australian Government / NHMRC: less alcohol means lower risk; if drinking, no more than 10 standard drinks/week and no more than 4 on any day: https://www.health.gov.au/topics/alcohol/about-alcohol/how-much-alcohol-is-safe-to-drink
+
+This project **does not** recommend starting alcohol for longevity even when historical Mediterranean/Singapore observational scores include moderate alcohol.
+
+## Social connection
+
+Peer-reviewed:
+- 148-study meta-analysis: https://pubmed.ncbi.nlm.nih.gov/20668659/
+- 90-cohort / 2.2-million-participant meta-analysis: https://pubmed.ncbi.nlm.nih.gov/37337095/
+
+## How this evidence is used
+
+A country observation is **not** promoted into Josh's plan merely because the country has long life expectancy.
+
+It must also:
+1. fit the person's context;
+2. have independent evidence beyond the country;
+3. have acceptable risk/cost/time;
+4. not conflict with current Australian guidance or clinician advice.
+
 # Project conclusion
 
 The strongest country-level lesson is **convergence**.
