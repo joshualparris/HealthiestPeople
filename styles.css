@@ -245,3 +245,66 @@
 .evidence-rules article{min-height:250px}
 @media(max-width:900px){.evidence-rules{grid-template-columns:repeat(2,1fr)}.family-flow{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.chart-grid,.diagram-grid{grid-template-columns:1fr}.chart-wide{grid-column:auto}.bar-row{grid-template-columns:1fr 52px}.bar-label{grid-column:1/-1}.evidence-rules,.family-flow{grid-template-columns:1fr}.evidence-rules article{min-height:0}}
+
+
+/* Plan execution details */
+.plan-detail-block{margin-top:42px}
+.workout-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.workout-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 8px 24px rgba(15,35,27,.035);
+}
+.workout-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px}
+.workout-head h3{margin:10px 0 0}
+.workout-head>strong{white-space:nowrap;color:var(--green);font-size:.9rem}
+.workout-list{margin:0;padding:0;list-style:none}
+.workout-list li{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:10px 0;
+  border-top:1px solid var(--line);
+}
+.workout-list li:first-child{border-top:0}
+.workout-list span{color:var(--muted)}
+.workout-list b{text-align:right}
+.workout-note{
+  margin:16px 0 0;
+  padding:12px 14px;
+  border-radius:12px;
+  background:var(--sage);
+  color:var(--ink);
+  font-size:.9rem;
+}
+.help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.help-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px 18px;
+}
+.help-card summary{cursor:pointer;font-weight:850;color:var(--ink)}
+.help-card p{margin:12px 0 0;color:var(--muted);font-size:.9rem}
+.home-week-section{background:#eef3ed;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-week{padding:8px 22px}
+.home-week-row{
+  display:grid;
+  grid-template-columns:90px 1fr;
+  gap:4px 18px;
+  padding:14px 0;
+  border-top:1px solid var(--line);
+}
+.home-week-row:first-child{border-top:0}
+.home-week-row>b{grid-row:1/3;color:var(--green)}
+.home-week-row>span{font-weight:800}
+.home-week-row>small{color:var(--muted)}
+@media(max-width:760px){
+  .workout-grid,.help-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .home-week-row{grid-template-columns:1fr;gap:4px}
+  .home-week-row>b{grid-row:auto}
+}
