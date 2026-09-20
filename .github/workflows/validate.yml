@@ -31,6 +31,7 @@ jobs:
           test -f index.html
           test -f plan.html
           test -f people.html
+          test -f principles.html
           test -f charts.html
           test -f resources.html
           test -f evidence.html
@@ -74,6 +75,7 @@ jobs:
               "index.html": ['styles.css', 'site-data.js', 'app.js', 'nav.js', 'id="today"'],
               "plan.html": ['styles.css', 'site-data.js', 'app.js', 'nav.js', 'id="plan"', 'id="baseline"', 'id="glossary"'],
               "people.html": ['styles.css', 'site-data.js', 'app.js', 'nav.js', 'id="people"', 'id="principles"'],
+              "principles.html": ['styles.css', 'nav.js', 'id="move-most-days"', 'id="strength-twice-weekly"', 'id="aerobic-fitness"', 'id="protect-sleep"', 'id="ordinary-food"', 'id="measure-with-a-question"', 'id="persistent-signals"', 'id="relationships"'],
               "resources.html": ['styles.css', 'site-data.js', 'resources-data.js', 'app.js', 'nav.js', 'id="listen"', 'id="watch-read"'],
               "charts.html": ['styles.css', 'charts.js', 'nav.js', 'id="personal-charts"', 'id="public-charts"', 'id="diagrams"'],
               "evidence.html": ['styles.css', 'nav.js', 'id="grades"', 'id="rules"', 'id="research"'],
@@ -237,4 +239,29 @@ jobs:
               raise SystemExit("Raw Markdown website links found:\n" + "\n".join(errors))
 
           print("No raw Markdown website links")
+          PY
+
+
+      - name: Check principle links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          detail = Path("principles.html").read_text()
+          ids = set(re.findall(r'id="([^"]+)"', detail))
+          errors = []
+
+          for filename in ["index.html", "people.html"]:
+              html = Path(filename).read_text()
+              links = re.findall(r'href="principles\.html#([^"]+)"', html)
+              if not links:
+                  errors.append(f"{filename}: no principle detail links found")
+              for anchor in links:
+                  if anchor not in ids:
+                      errors.append(f"{filename}: missing principles.html#{anchor}")
+
+          if errors:
+              raise SystemExit("Broken principle links:\n" + "\n".join(errors))
+          print("Principle detail links OK")
           PY
