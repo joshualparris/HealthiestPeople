@@ -174,8 +174,14 @@
         <article class="baseline-metric">
           <span>${item.label}</span>
           <strong>${item.value}</strong>
-          <small>${item.note}</small>
+          <small>${item.note}${item.source ? " · " + item.source : ""}</small>
           ${explanationMarkup(item.label + " " + item.value + " " + item.note)}
+          ${item.meaning ? `
+            <details class="metric-explainer">
+              <summary>What this means for me</summary>
+              <p>${item.meaning}</p>
+              ${item.action ? `<p class="next-action"><b>Practical takeaway:</b> ${item.action}</p>` : ""}
+            </details>` : ""}
         </article>
       `).join("");
     }
@@ -208,7 +214,20 @@
     if (privacy) privacy.textContent = baseline.privacy;
 
     const next = document.getElementById("baseline-next-list");
-    if (next) next.innerHTML = baseline.next.map(item => `<li><span>${item}</span>${explanationMarkup(item)}</li>`).join("");
+    if (next) next.innerHTML = baseline.next.map(item => {
+      if (typeof item === "string") return `<li><span>${item}</span>${explanationMarkup(item)}</li>`;
+      return `
+        <li>
+          <div class="measure-card">
+            <h4>${item.title}</h4>
+            <p><b>Why:</b> ${item.why}</p>
+            <div class="measure-how"><b>How:</b> ${item.how}</div>
+            ${item.frequency ? `<p><b>How often:</b> ${item.frequency}</p>` : ""}
+            ${item.sourceUrl ? `<a class="measure-source" href="${item.sourceUrl}" target="_blank" rel="noreferrer">${item.sourceLabel || "Source"} ↗</a>` : ""}
+            ${explanationMarkup(item.title + " " + item.why + " " + item.how)}
+          </div>
+        </li>`;
+    }).join("");
 
     const archive = document.getElementById("baseline-archive-links");
     if (archive && baseline.archiveLinks) {
