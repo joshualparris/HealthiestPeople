@@ -9,8 +9,8 @@ window.HEALTHIEST_PEOPLE = [
     do: ["Protect Monday Frisbee and Saturday parkrun", "Strength train twice weekly", "Keep ordinary pathology, BP and source-specific wearable trends"],
     skip: ["Chasing biological-age scores", "Expensive testing before the basics", "Comparing one unusually active week with elite athletes"],
     sources: [
-      ["Joshua Parris public baseline profile", "https://github.com/joshualparris/HealthiestPeople/blob/main/docs/people/joshua-parris.md"],
-      ["Normalised metrics dataset", "https://github.com/joshualparris/HealthiestPeople/blob/main/data/metrics.csv"]
+      ["Joshua Parris public baseline profile", "health-archive.html"],
+      ["Normalised metrics dataset", "data.html#metrics"]
     ]
   },
   {
@@ -324,11 +324,11 @@ window.JOSH_BASELINE = {
     }
   ],
   archiveLinks: [
-    ["Full longitudinal health archive","docs/people/joshua-parris-full-health-archive.md"],
-    ["Weekly wearable CSV","data/josh-weekly-wearable-history.csv"],
-    ["Lab history CSV","data/josh-labs-history.csv"],
-    ["Body composition CSV","data/josh-body-composition-history.csv"],
-    ["Frisbee history CSV","data/josh-frisbee-history.csv"]
+    ["Full longitudinal health archive","health-archive.html"],
+    ["Weekly wearable history","data.html#wearables"],
+    ["Lab history","data.html#labs"],
+    ["Body composition history","data.html#body"],
+    ["Frisbee history","data.html#frisbee"]
   ]
 };
 
