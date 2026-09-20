@@ -172,7 +172,7 @@
 
     const sleep = document.getElementById("baseline-sleep");
     if (sleep) {
-      sleep.textContent = `Historical sleep snapshot: ${baseline.sleep.average} average, ${baseline.sleep.shortNights}, latency ${baseline.sleep.latency}. ${baseline.sleep.note}`;
+      sleep.textContent = `Current sleep context: ${baseline.sleep.average} average. ${baseline.sleep.shortNights}. ${baseline.sleep.note}`;
     }
 
     const privacy = document.getElementById("baseline-privacy");
@@ -180,6 +180,13 @@
 
     const next = document.getElementById("baseline-next-list");
     if (next) next.innerHTML = baseline.next.map(item => `<li>${item}</li>`).join("");
+
+    const archive = document.getElementById("baseline-archive-links");
+    if (archive && baseline.archiveLinks) {
+      archive.innerHTML = baseline.archiveLinks.map(([label,url]) =>
+        `<p><a href="${url}">${label} ↗</a></p>`
+      ).join("");
+    }
   }
 
   function featuredVideoCard(resource) {
