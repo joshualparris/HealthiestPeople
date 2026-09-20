@@ -21,6 +21,8 @@ jobs:
           node --check app.js
           node --check nav.js
           node --check charts.js
+          node --check profile-data.js
+          node --check person-page.js
 
       - name: Check required site files
         run: |
@@ -36,6 +38,18 @@ jobs:
           test -f app.js
           test -f nav.js
           test -f charts.js
+          test -f profile-data.js
+          test -f person-page.js
+          test -f people/joshua-parris.html
+          test -f people/bryan-johnson.html
+          test -f people/michael-lustgarten.html
+          test -f people/oskar-svendsen.html
+          test -f people/dave-pascoe.html
+          test -f people/scott-kelly.html
+          test -f people/julie-gibson-clark.html
+          test -f people/bob-troia.html
+          test -f people/michael-snyder.html
+          test -f people/larry-smarr.html
           test -f vercel.json
 
       - name: Check page wiring
@@ -50,6 +64,9 @@ jobs:
               "resources.html": ['styles.css', 'site-data.js', 'resources-data.js', 'app.js', 'nav.js', 'id="listen"', 'id="watch-read"'],
               "charts.html": ['styles.css', 'charts.js', 'nav.js', 'id="personal-charts"', 'id="public-charts"', 'id="diagrams"'],
               "evidence.html": ['styles.css', 'nav.js', 'id="grades"', 'id="rules"', 'id="research"'],
+              "people/bryan-johnson.html": ['../styles.css', '../site-data.js', '../resources-data.js', '../profile-data.js', '../person-page.js', '../nav.js', 'data-person-id="bryan-johnson"'],
+              "people/oskar-svendsen.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="oskar-svendsen"'],
+              "people/scott-kelly.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="scott-kelly"'],
           }
 
           errors = []
