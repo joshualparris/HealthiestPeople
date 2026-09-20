@@ -1275,3 +1275,216 @@ body{max-width:100%;overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){
   .principle-grid .principle-card{transition:none}
 }
+
+
+/* === Mobile layout canonical override — 21 Sep 2026 ===
+   Last rule wins. This deliberately neutralises older desktop-grid rules
+   that could squeeze explanatory text into unusably narrow columns. */
+@media (max-width: 760px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .wrap {
+    width: calc(100% - 24px) !important;
+    max-width: none !important;
+    margin-inline: 12px !important;
+  }
+
+  .section { padding: 38px 0 !important; }
+  .page-hero { padding: 34px 0 22px !important; }
+
+  .plan-top,
+  .plan-grid,
+  .baseline-grid,
+  .baseline-headline,
+  .baseline-next,
+  .workout-grid,
+  .help-grid,
+  .glossary-grid,
+  .profile-metrics-grid,
+  .chart-grid,
+  .diagram-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .panel,
+  .baseline-metric,
+  .workout-card,
+  .help-card,
+  .glossary-card,
+  .chart-card,
+  .diagram-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 16px !important;
+    overflow: visible !important;
+  }
+
+  .baseline-metric {
+    display: block !important;
+  }
+  .baseline-metric strong {
+    display: block !important;
+    margin: 8px 0 4px !important;
+    font-size: 1.6rem !important;
+  }
+  .baseline-metric small {
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .baseline-list > div,
+  .trend-row {
+    display: grid !important;
+    grid-template-columns: minmax(0,1fr) auto !important;
+    gap: 6px 12px !important;
+    width: 100% !important;
+  }
+  .baseline-list > div > details,
+  .trend-row > details {
+    grid-column: 1 / -1 !important;
+  }
+  .trend-row > div {
+    grid-column: 1 / -1 !important;
+  }
+  .trend-row .trend-arrow {
+    display: none !important;
+  }
+  .trend-row > span,
+  .trend-row > strong {
+    text-align: left !important;
+  }
+
+  .questions {
+    display: block !important;
+    width: 100% !important;
+  }
+  .questions li {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 16px 0 16px 48px !important;
+    font-size: 1rem !important;
+    line-height: 1.45 !important;
+  }
+  .questions li::before {
+    position: absolute !important;
+    left: 0 !important;
+    top: 14px !important;
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .questions li > span,
+  .questions li > div,
+  .questions li > details {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .plan-day {
+    display: block !important;
+    width: 100% !important;
+    padding: 12px 0 !important;
+  }
+  .plan-day b,
+  .plan-day span,
+  .plan-day em {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .plan-day b { margin-bottom: 4px !important; }
+  .plan-day em { margin-top: 4px !important; }
+
+  /* Never render duplicate legacy definitions on phones. */
+  .plain-english {
+    display: none !important;
+  }
+
+  /* Explanations are collapsed by default and become full-width only when tapped. */
+  details.term-explainer,
+  details.metric-explainer {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 10px 0 0 !important;
+    padding-top: 8px !important;
+    clear: both !important;
+  }
+  details.term-explainer summary,
+  details.metric-explainer summary {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 38px !important;
+    align-items: center !important;
+    font-size: .9rem !important;
+    line-height: 1.35 !important;
+  }
+  details.term-explainer:not([open]) > div,
+  details.metric-explainer:not([open]) > p,
+  details.metric-explainer:not([open]) > .next-action {
+    display: none !important;
+  }
+  details.term-explainer[open] > div,
+  details.metric-explainer[open] > p,
+  details.metric-explainer[open] > .next-action {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  details.term-explainer[open] > div {
+    padding: 12px !important;
+  }
+  details.term-explainer p,
+  details.metric-explainer p,
+  .measure-how,
+  .help-card p {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    white-space: normal !important;
+    font-size: .9rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .workout-list li {
+    display: grid !important;
+    grid-template-columns: minmax(0,1fr) auto !important;
+    gap: 8px !important;
+  }
+
+  .section-heading {
+    display: block !important;
+  }
+  .section-heading .button {
+    width: 100% !important;
+    margin-top: 14px !important;
+  }
+
+  h1 { font-size: clamp(2.1rem, 11vw, 3.2rem) !important; }
+  h2 { font-size: clamp(1.7rem, 8vw, 2.35rem) !important; }
+  h3 { overflow-wrap: break-word !important; }
+}
+
+/* Small-phone tightening */
+@media (max-width: 420px) {
+  .wrap { width: calc(100% - 20px) !important; margin-inline: 10px !important; }
+  .panel,
+  .baseline-metric,
+  .workout-card,
+  .help-card { padding: 14px !important; }
+  .brand { font-size: 1rem !important; }
+}
