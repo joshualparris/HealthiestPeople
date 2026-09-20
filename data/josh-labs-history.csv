@@ -79,3 +79,41 @@ date,marker,value,unit,source_context,notes
 2022-07-26,Total cholesterol,5.2,mmol/L,Dorevitch pathology via Google Drive,Fasting lipid study
 2022-07-26,Triglycerides,1.6,mmol/L,Dorevitch pathology via Google Drive,Fasting lipid study
 2022-07-26,TSH,1.45,mIU/L,Dorevitch pathology via Google Drive,Siemens immunoassay
+2026-02-04,RBC,5.2,x10^12/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Haematocrit,0.46,L/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,MCV,89,fL,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,MCH,30.3,pg,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,MCHC,342,g/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,RDW,12.1,percent,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,WBC,6.4,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Neutrophils,3.38,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Lymphocytes,2.41,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Monocytes,0.50,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Eosinophils,0.09,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Basophils,0.05,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Platelets,216,x10^9/L,Douglass Hanly Moir pathology via Google Drive,FBC
+2026-02-04,Sodium,141,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Potassium,4.1,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Chloride,105,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Bicarbonate,27,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Urea,6.3,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Calcium,2.29,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Phosphate,0.98,mmol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Bilirubin,12,umol/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,ALP,66,U/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,GGT,15,U/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,LDH,188,U/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,AST,18,U/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,ALT,25,U/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Total protein,65,g/L,Douglass Hanly Moir pathology via Google Drive,Flagged low vs 68-85
+2026-02-04,Albumin,43,g/L,Douglass Hanly Moir pathology via Google Drive,Biochemistry
+2026-02-04,Globulin,22,g/L,Douglass Hanly Moir pathology via Google Drive,Flagged low vs 23-39
+2026-02-04,Non-HDL cholesterol,3.3,mmol/L,Douglass Hanly Moir pathology via Google Drive,Fasting lipid panel
+2026-02-04,Transferrin,2.6,g/L,Douglass Hanly Moir pathology via Google Drive,Iron studies
+2026-02-04,TIBC,58,umol/L,Douglass Hanly Moir pathology via Google Drive,Calculated
+2026-02-04,Urine albumin/creatinine ratio,<1.0,mg/mmol,Douglass Hanly Moir pathology via Google Drive,Random urine; lab ref <2.5
+2026-02-04,Total IgE,29,IU/mL,Douglass Hanly Moir pathology via Google Drive,Lab ref <100
+2026-02-04,Deamidated gliadin IgA,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
+2026-02-04,Deamidated gliadin IgG,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
+2026-02-04,Tissue transglutaminase IgA,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
+2026-02-04,Tissue transglutaminase IgG,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
