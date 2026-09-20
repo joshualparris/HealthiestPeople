@@ -513,3 +513,78 @@
     width:100%;
   }
 }
+
+
+/* Personal trend chart interpretation */
+.chart-reading-guide{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:0 0 24px;
+}
+.chart-reading-guide>div{
+  padding:16px;
+  border-radius:16px;
+  background:var(--sage);
+}
+.chart-reading-guide b{display:block;color:var(--green);margin-bottom:5px}
+.chart-reading-guide span{font-size:.84rem;color:#385149}
+.personal-chart-grid{align-items:start}
+.chart-interpretation{
+  margin-top:18px;
+  padding:14px 16px;
+  border-radius:15px;
+  border-left:4px solid var(--sage-2);
+  background:#f3f6f1;
+}
+.chart-interpretation b{display:block;color:var(--green);margin-bottom:5px}
+.chart-interpretation p{margin:0;color:var(--muted);font-size:.91rem}
+.chart-interpretation.positive{background:#eef5f0}
+.chart-interpretation.caution{background:#fff8eb;border-left-color:#d9ae58}
+.chart-data-details{
+  margin-top:16px;
+  border-top:1px solid var(--line);
+  padding-top:13px;
+}
+.chart-data-details summary{
+  cursor:pointer;
+  color:var(--green);
+  font-size:.84rem;
+  font-weight:850;
+}
+.table-scroll{overflow-x:auto;margin-top:12px}
+.data-table{width:100%;border-collapse:collapse;font-size:.82rem}
+.data-table th,.data-table td{
+  padding:9px 10px;
+  text-align:left;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+.data-table th{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.change-grid{display:grid;gap:12px;margin:18px 0}
+.change-card{
+  padding:15px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fbfcf9;
+}
+.change-card>span{display:block;color:var(--muted);font-size:.76rem;font-weight:850;text-transform:uppercase;letter-spacing:.06em}
+.change-values{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin:7px 0 3px}
+.change-values b{font-size:1.1rem}
+.change-values strong{font-size:.8rem;color:var(--green)}
+.change-card small{color:var(--muted)}
+.chart-source-break{stroke:#a4afa8;stroke-width:2;stroke-dasharray:5 5}
+.chart-source-label{fill:#64736d;font-size:11px;font-family:inherit}
+.personal-line-svg{min-width:0}
+.personal-chart-grid .chart-canvas{overflow:visible}
+@media(max-width:900px){
+  .chart-reading-guide{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .chart-reading-guide{grid-template-columns:1fr}
+  .personal-line-svg{width:100%;min-width:0}
+  .personal-chart-grid .chart-canvas{overflow:hidden}
+  .chart-card{padding:18px}
+  .chart-heading{gap:10px;flex-direction:column}
+  .change-values{align-items:flex-start;flex-direction:column;gap:4px}
+}
