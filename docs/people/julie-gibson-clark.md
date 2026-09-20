@@ -10,9 +10,9 @@ That result is interesting, but it is not proof that she will live 35% longer or
 
 ## Evidence quality
 
-- Her DunedinPACE result is best treated as **B/C** depending on provenance available for the specific test result: commercially measured but publicly reported largely through first-party/media sources.
+- Her personal reported DunedinPACE results are **C when taken from her own published site** and **D when a value is available only through an interview/self-report**. The original laboratory report has not been independently verified by this project, so the personal score is not A/B evidence.
 - Her daily routine is **D — self-report**.
-- DunedinPACE itself has **A-level peer-reviewed validation as a biomarker**, but a validated biomarker is not the same thing as a validated treatment protocol.
+- The DunedinPACE method itself has **A-level peer-reviewed validation as a biomarker**, but validation of the method does not upgrade Clark's personal score or validate her treatment routine.
 
 ## The standout metric
 
@@ -69,9 +69,9 @@ Her own site also makes the family trade-off explicit: dinner timing is not alwa
 Source:
 - https://www.juliegibsonclark.com/
 
-## More concrete current routine data
+## Published routine data — currentness varies
 
-Clark's own current site gives several useful behavioural quantities that are unusually relevant to this project's working-family focus.
+Clark's own site gives several useful behavioural quantities that are unusually relevant to this project's working-family focus. Some pages appear to preserve older targets even when later interviews describe changes, so each number below should be read with its source date/context rather than assumed to be her current prescription.
 
 ### Sleep
 
@@ -95,10 +95,10 @@ Her current food page states:
 
 - roughly **1 lb / 454 g vegetables daily**
 - **4–8 oz** of that as cooked greens
-- historically **100+ g protein/day**, based on her lean mass
+- a food-page target of **100+ g protein/day**, based on her lean mass
 - a modest family dinner, with flexibility on weekends
 
-The protein target is an individual self-selected target, not a universal prescription.
+The protein number is an individual self-selected historical/published target, not a universal prescription. In a May 2026 interview Clark said she had moved away from deliberately targeting 100 g every day, so the food page should not be treated as a perfectly current protocol.
 
 ### Family realism
 
@@ -168,7 +168,7 @@ Source:
 
 Clark's strongest contribution is not "beat billionaires at ageing". It is that the fundamentals can be organised into an ordinary day without a private medical team.
 
-_Last reviewed: 20 September 2026._
+_Last reviewed: 21 September 2026._
 
 
 ## Additional verified context
