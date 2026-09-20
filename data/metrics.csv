@@ -112,64 +112,64 @@ Dave Pascoe,Sep 2026 current homepage,Individual supplements,~200,products/day,C
 Dave Pascoe,Sep 2026 current homepage,Capsules,69-235,capsules/day,C,https://www.davepascoe.net/,Varies by day
 Dave Pascoe,current monthly testing,Testosterone,808-1262,unspecified,C,https://www.davepascoe.net/,Self-reported monthly range; states no testosterone-replacement therapy
 Dave Pascoe,current status,Occupation,retired full-time biohacker,qualitative,C,https://www.davepascoe.net/,Important transferability context
-Joshua Parris,Sep 2026,Age,32,years,C,docs/people/joshua-parris.md,Project-owner public comparison profile
-Joshua Parris,current corrected height,Height,175,cm,D,docs/people/joshua-parris.md,Corrected height used for calculations
-Joshua Parris,2026-07-24,Body weight,77.4,kg,C,docs/people/joshua-parris.md,Home scale
-Joshua Parris,2026-07-24,Calculated BMI,25.3,kg/m2,derived,docs/people/joshua-parris.md,Calculated from 77.4 kg and 1.75 m; old scale BMI discarded as inconsistent
-Joshua Parris,2025 historical Withings,Body fat,17.7,percent,C,docs/people/joshua-parris.md,Historical consumer-scale estimate
-Joshua Parris,2025 historical Withings,Muscle mass,65.8,kg,C,docs/people/joshua-parris.md,Historical consumer-scale estimate
-Joshua Parris,2025 historical Withings,Bone mass,3.5,kg,C,docs/people/joshua-parris.md,Historical consumer-scale estimate
-Joshua Parris,2025 historical Withings,Visceral fat,10,index,C,docs/people/joshua-parris.md,Historical consumer-scale index
-Joshua Parris,historical sleep measurements,Sleeping resting heart rate,55-58,bpm,C,docs/people/joshua-parris.md,Wearable/sleep measurement range
-Joshua Parris,clinic/donation history,Systolic blood pressure,122-136,mmHg,B,docs/people/joshua-parris.md,Range across recorded clinic/donation readings
-Joshua Parris,clinic/donation history,Diastolic blood pressure,70-87,mmHg,B,docs/people/joshua-parris.md,Range across recorded clinic/donation readings
-Joshua Parris,Feb 2026,Fasting glucose,5.0,mmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,HbA1c,5.3,percent,B,docs/people/joshua-parris.md,34 mmol/mol
-Joshua Parris,Feb 2026,Total cholesterol,4.6,mmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,LDL-C,2.8,mmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,HDL-C,1.3,mmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Triglycerides,1.1,mmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Ferritin,41,ug/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Iron,26.0,umol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Transferrin saturation,45,percent,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Haemoglobin,158,g/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,CRP,<0.4,mg/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,TSH,0.99,mIU/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Vitamin D,78,nmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Vitamin B12,338,pmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Magnesium,0.82,mmol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,Creatinine,80,umol/L,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,Feb 2026,eGFR,>90,mL/min/1.73m2,B,docs/people/joshua-parris.md,Ordinary clinical pathology
-Joshua Parris,2026 sleep snapshot,Average sleep,6.43-6.52,h/night,C,docs/people/joshua-parris.md,Approximately 6h26-6h31
-Joshua Parris,2026 sleep snapshot,Nights under 5h,18,percent,C,docs/people/joshua-parris.md,Historical sleep-data snapshot
-Joshua Parris,2026 sleep snapshot,Sleep latency,44,min,C,docs/people/joshua-parris.md,Historical sleep-data snapshot
-Joshua Parris,May 2025,HRV RMSSD,46,ms,C,docs/people/joshua-parris.md,Historical app/device measurement
-Joshua Parris,historical sample,HRV RMSSD,53.7,ms,C,docs/people/joshua-parris.md,Device/method differs; trend only
-Joshua Parris,historical sample,HRV SDNN,113,ms,C,docs/people/joshua-parris.md,Device/method differs; trend only
-Joshua Parris,2026 activity snapshot,Steps,18153,steps/day,C,docs/people/joshua-parris.md,127070 steps across seven-day snapshot
-Joshua Parris,2026 activity snapshot,Distance,84.13,km/week,C,docs/people/joshua-parris.md,High-activity snapshot not long-term average
-Joshua Parris,2023,Total cholesterol,5.3,mmol/L,B,docs/people/joshua-parris.md,Historical lipid value
-Joshua Parris,2023,LDL-C,3.2,mmol/L,B,docs/people/joshua-parris.md,Historical lipid value
-Joshua Parris,2023,HDL-C,1.6,mmol/L,B,docs/people/joshua-parris.md,Historical lipid value
-Joshua Parris,2023,Triglycerides,1.1,mmol/L,B,docs/people/joshua-parris.md,Historical lipid value
-Joshua Parris,Jan 2025,Ferritin,35,ug/L,B,docs/people/joshua-parris.md,Historical pathology value
-Joshua Parris,Aug 2026 Health Connect master,Fitbit resting heart rate 30-day mean,61.2,bpm,C,docs/people/joshua-parris-full-health-archive.md,Same-source Fitbit baseline
-Joshua Parris,Aug 2026 Health Connect master,Fitbit resting heart rate 90-day mean,61.0,bpm,C,docs/people/joshua-parris-full-health-archive.md,Same-source Fitbit baseline
-Joshua Parris,Aug 2026 Health Connect master,Fitbit HRV RMSSD 30-day mean,36.3,ms,C,docs/people/joshua-parris-full-health-archive.md,Same-source trend; do not merge with Withings
-Joshua Parris,Aug 2026 Health Connect master,Fitbit HRV RMSSD 90-day mean,37.0,ms,C,docs/people/joshua-parris-full-health-archive.md,Same-source trend
-Joshua Parris,Aug 2026 Health Connect master,Fitbit steps 30-day mean,14691,steps/day,C,docs/people/joshua-parris-full-health-archive.md,Same-source recent activity
-Joshua Parris,Aug 2026 Health Connect master,Fitbit steps 90-day mean,12888,steps/day,C,docs/people/joshua-parris-full-health-archive.md,Same-source recent activity
-Joshua Parris,Aug 2026 Health Connect master,Fitbit main sleep session 30-day mean,8.44,h/night,C,docs/people/joshua-parris-full-health-archive.md,Session window
-Joshua Parris,Aug 2026 Health Connect master,Fitbit stage-derived asleep 30-day mean,7.73,h/night,C,docs/people/joshua-parris-full-health-archive.md,Wearable stage estimate
-Joshua Parris,2024-07-11,Cleaned weight,88.8,kg,C,docs/people/joshua-parris-full-health-archive.md,Earliest retained cleaned Health Connect weight
-Joshua Parris,2026-07-24,Cleaned weight,77.4,kg,C,docs/people/joshua-parris-full-health-archive.md,Latest retained cleaned Health Connect weight
-Joshua Parris,Aug 2026 Health Connect master,Latest retained body fat,14.2,percent,C,docs/people/joshua-parris-full-health-archive.md,Consumer bioimpedance estimate; direction more trustworthy than exact value
+Joshua Parris,Sep 2026,Age,32,years,C,document.html?src=docs/people/joshua-parris.md,Project-owner public comparison profile
+Joshua Parris,current corrected height,Height,175,cm,D,document.html?src=docs/people/joshua-parris.md,Corrected height used for calculations
+Joshua Parris,2026-07-24,Body weight,77.4,kg,C,document.html?src=docs/people/joshua-parris.md,Home scale
+Joshua Parris,2026-07-24,Calculated BMI,25.3,kg/m2,derived,document.html?src=docs/people/joshua-parris.md,Calculated from 77.4 kg and 1.75 m; old scale BMI discarded as inconsistent
+Joshua Parris,2025 historical Withings,Body fat,17.7,percent,C,document.html?src=docs/people/joshua-parris.md,Historical consumer-scale estimate
+Joshua Parris,2025 historical Withings,Muscle mass,65.8,kg,C,document.html?src=docs/people/joshua-parris.md,Historical consumer-scale estimate
+Joshua Parris,2025 historical Withings,Bone mass,3.5,kg,C,document.html?src=docs/people/joshua-parris.md,Historical consumer-scale estimate
+Joshua Parris,2025 historical Withings,Visceral fat,10,index,C,document.html?src=docs/people/joshua-parris.md,Historical consumer-scale index
+Joshua Parris,historical sleep measurements,Sleeping resting heart rate,55-58,bpm,C,document.html?src=docs/people/joshua-parris.md,Wearable/sleep measurement range
+Joshua Parris,clinic/donation history,Systolic blood pressure,122-136,mmHg,B,document.html?src=docs/people/joshua-parris.md,Range across recorded clinic/donation readings
+Joshua Parris,clinic/donation history,Diastolic blood pressure,70-87,mmHg,B,document.html?src=docs/people/joshua-parris.md,Range across recorded clinic/donation readings
+Joshua Parris,Feb 2026,Fasting glucose,5.0,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,HbA1c,5.3,percent,B,document.html?src=docs/people/joshua-parris.md,34 mmol/mol
+Joshua Parris,Feb 2026,Total cholesterol,4.6,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,LDL-C,2.8,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,HDL-C,1.3,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Triglycerides,1.1,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Ferritin,41,ug/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Iron,26.0,umol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Transferrin saturation,45,percent,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Haemoglobin,158,g/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,CRP,<0.4,mg/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,TSH,0.99,mIU/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Vitamin D,78,nmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Vitamin B12,338,pmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Magnesium,0.82,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,Creatinine,80,umol/L,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,Feb 2026,eGFR,>90,mL/min/1.73m2,B,document.html?src=docs/people/joshua-parris.md,Ordinary clinical pathology
+Joshua Parris,2026 sleep snapshot,Average sleep,6.43-6.52,h/night,C,document.html?src=docs/people/joshua-parris.md,Approximately 6h26-6h31
+Joshua Parris,2026 sleep snapshot,Nights under 5h,18,percent,C,document.html?src=docs/people/joshua-parris.md,Historical sleep-data snapshot
+Joshua Parris,2026 sleep snapshot,Sleep latency,44,min,C,document.html?src=docs/people/joshua-parris.md,Historical sleep-data snapshot
+Joshua Parris,May 2025,HRV RMSSD,46,ms,C,document.html?src=docs/people/joshua-parris.md,Historical app/device measurement
+Joshua Parris,historical sample,HRV RMSSD,53.7,ms,C,document.html?src=docs/people/joshua-parris.md,Device/method differs; trend only
+Joshua Parris,historical sample,HRV SDNN,113,ms,C,document.html?src=docs/people/joshua-parris.md,Device/method differs; trend only
+Joshua Parris,2026 activity snapshot,Steps,18153,steps/day,C,document.html?src=docs/people/joshua-parris.md,127070 steps across seven-day snapshot
+Joshua Parris,2026 activity snapshot,Distance,84.13,km/week,C,document.html?src=docs/people/joshua-parris.md,High-activity snapshot not long-term average
+Joshua Parris,2023,Total cholesterol,5.3,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Historical lipid value
+Joshua Parris,2023,LDL-C,3.2,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Historical lipid value
+Joshua Parris,2023,HDL-C,1.6,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Historical lipid value
+Joshua Parris,2023,Triglycerides,1.1,mmol/L,B,document.html?src=docs/people/joshua-parris.md,Historical lipid value
+Joshua Parris,Jan 2025,Ferritin,35,ug/L,B,document.html?src=docs/people/joshua-parris.md,Historical pathology value
+Joshua Parris,Aug 2026 Health Connect master,Fitbit resting heart rate 30-day mean,61.2,bpm,C,health-archive.html,Same-source Fitbit baseline
+Joshua Parris,Aug 2026 Health Connect master,Fitbit resting heart rate 90-day mean,61.0,bpm,C,health-archive.html,Same-source Fitbit baseline
+Joshua Parris,Aug 2026 Health Connect master,Fitbit HRV RMSSD 30-day mean,36.3,ms,C,health-archive.html,Same-source trend; do not merge with Withings
+Joshua Parris,Aug 2026 Health Connect master,Fitbit HRV RMSSD 90-day mean,37.0,ms,C,health-archive.html,Same-source trend
+Joshua Parris,Aug 2026 Health Connect master,Fitbit steps 30-day mean,14691,steps/day,C,health-archive.html,Same-source recent activity
+Joshua Parris,Aug 2026 Health Connect master,Fitbit steps 90-day mean,12888,steps/day,C,health-archive.html,Same-source recent activity
+Joshua Parris,Aug 2026 Health Connect master,Fitbit main sleep session 30-day mean,8.44,h/night,C,health-archive.html,Session window
+Joshua Parris,Aug 2026 Health Connect master,Fitbit stage-derived asleep 30-day mean,7.73,h/night,C,health-archive.html,Wearable stage estimate
+Joshua Parris,2024-07-11,Cleaned weight,88.8,kg,C,health-archive.html,Earliest retained cleaned Health Connect weight
+Joshua Parris,2026-07-24,Cleaned weight,77.4,kg,C,health-archive.html,Latest retained cleaned Health Connect weight
+Joshua Parris,Aug 2026 Health Connect master,Latest retained body fat,14.2,percent,C,health-archive.html,Consumer bioimpedance estimate; direction more trustworthy than exact value
 Joshua Parris,May 2026 Monday Frisbee,Frisbee average heart rate,124,bpm,C,data/josh-frisbee-history.csv,One documented session
 Joshua Parris,May 2026 Monday Frisbee,Frisbee Active Zone Minutes,49,min,C,data/josh-frisbee-history.csv,One documented session
 Joshua Parris,May 2026 Monday Frisbee,Frisbee vigorous/peak time,21,min,C,data/josh-frisbee-history.csv,One documented session
 Joshua Parris,2026-08-17 Monday Frisbee,Frisbee average heart rate,149,bpm,C,data/josh-frisbee-history.csv,Harder session
 Joshua Parris,2026-08-17 Monday Frisbee,Frisbee duration,69,min,C,data/josh-frisbee-history.csv,Harder session
-Joshua Parris,2026-07-29,Peak exercise heart rate,195,bpm,C,docs/people/joshua-parris-full-health-archive.md,Activity-linked running/walking peak; wrist PPG does not identify rhythm
+Joshua Parris,2026-07-29,Peak exercise heart rate,195,bpm,C,health-archive.html,Activity-linked running/walking peak; wrist PPG does not identify rhythm
 Oskar Svendsen,repeated lab visits,Power at 4 mmol lactate,354;359;381;377;428;405;402;368,W,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight repeated lab tests; peak +20.9% from first test
 Oskar Svendsen,repeated lab visits,Power at 4 mmol lactate per kg,4.7;4.9;5.1;5.0;5.6;5.1;5.1;4.6,W/kg,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight repeated lab tests
 Oskar Svendsen,2012-2014 anti-doping controls,Haematocrit range,45.1-48.8,percent,A,https://doi.org/10.1152/japplphysiol.00798.2018,Eight controls all negative; mean haematocrit 47.0%
