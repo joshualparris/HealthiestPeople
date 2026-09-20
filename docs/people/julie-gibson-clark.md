@@ -31,6 +31,25 @@ DunedinPACE validation:
 
 The peer-reviewed DunedinPACE paper found that faster scores were associated with morbidity, disability and mortality across validation datasets. It does **not** establish that a score of 0.665 means a person will live a fixed percentage longer.
 
+## Longitudinal ageing-score context
+
+A useful 2026 update makes Clark's case more informative than a single best leaderboard score.
+
+In a May 2026 interview, she described:
+
+- a best reported DunedinPACE around **0.665**
+- a later result around **0.77**
+- the worse score occurring during a period when she had added more interventions, altered hormone/supplement variables and was sleeping poorly
+
+This is **self-reported chronology**, not proof that any one supplement, hormone change or sleep disruption caused the score change.
+
+However, it materially improves how this repository should present her result: **0.665 is a historical best, not a permanent current state**.
+
+The same interview also says she had previously targeted roughly **100 g protein/day**, but later changed that approach. That reinforces the repository's policy of date-stamping protocols rather than presenting influencer routines as fixed forever.
+
+Source:
+- Thrive on Plants episode #55, 20 May 2026: https://podcasts.apple.com/nz/podcast/55-how-to-live-longer-without-spending-a-fortune/id1793550910?i=1000768714518
+
 ## Her publicly described routine
 
 Across her own site and interviews, Clark's routine centres on:
