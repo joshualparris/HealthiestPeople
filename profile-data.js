@@ -152,8 +152,8 @@ window.PROFILE_CONFIG = {
       {metric:"Type 2 diabetes transition"},{metric:"Triglycerides",context:"2012 iPOP baseline"},{metric:"Triglycerides",context:"2012 after simvastatin"},{metric:"HbA1c",context:"diabetes onset"},{metric:"HbA1c",context:"~6 months after lifestyle change"},{metric:"Longitudinal blood samples"}
     ],
     chart: {
-      type:"line", title:"Reported HbA1c chronology", subtitle:"The middle value was reported as below 5%; 4.9 is plotted only to show the direction and is labelled as <5 on the page.", unit:"%",
-      points:[{label:"Onset",value:6.7,display:"6.7"},{label:"~6 months",value:4.9,display:"<5"},{label:"Later",value:7.0,display:"7.0"}]
+      type:"line", title:"HbA1c chronology", subtitle:"The 2012 Cell paper reports 6.7% at day 369 and 4.9% at day 496. A later 7.0% value comes from Snyder's subsequent self-report and is therefore weaker evidence.", unit:"%",
+      points:[{label:"2012 day 369",value:6.7,display:"6.7"},{label:"2012 day 496",value:4.9,display:"4.9"},{label:"Later self-report",value:7.0,display:"7.0"}]
     },
     library: [
       {kind:"Peer-reviewed paper",title:"Personal omics profiling — Cell 2012",url:"https://pubmed.ncbi.nlm.nih.gov/22424236/",note:"The original peer-reviewed iPOP study."},
