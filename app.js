@@ -102,6 +102,7 @@
         </div>
         <p class="lens">${person.lens}</p>
         <p class="summary">${person.summary}${explanationMarkup(person.summary)}</p>
+        <a class="person-profile-link person-profile-link-top" href="people/${person.id}.html">Open detailed profile →</a>
         <p class="person-lesson">${person.lesson}${explanationMarkup(person.lesson)}</p>
         <p class="mini-head">Copy this</p>
         <ul>${doItems}</ul>
