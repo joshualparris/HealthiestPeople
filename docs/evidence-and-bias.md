@@ -186,7 +186,30 @@ A trend is strongest when:
 
 Epigenetic and clinical biological-age algorithms can be useful research tools, but a result of "age 38" does not mean every organ belongs to a typical 38-year-old or that remaining lifespan is known.
 
-This project records those values but does not use them as literal age.
+A 2025 *Physiological Reviews* review notes that:
+
+- there is currently **no consensus ageing clock that serves as a standard human ageing biomarker**
+- physiological/functional relevance is unclear for many clocks
+- different clock types can disagree
+- even technical replicates from the same samples can differ materially; the review cites one study with median deviation around **3 years** and maximum deviation around **8 years**
+- another comparison of six epigenetic clocks on the same samples found differences up to **9 years**
+
+A 2024 *Aging Cell* perspective similarly argues that scientists should describe the output by the specific clock rather than casually treating it as whole-body "biological age", because ageing is tissue-specific and multidimensional.
+
+Clinical PhenoAge is itself a **mortality-risk model derived from routine biomarkers and chronological age**. It is not a direct measurement of ageing tissue.
+
+This project therefore:
+
+- names the specific clock/method;
+- date-stamps each result;
+- keeps best-ever and current results separate;
+- shows repeat-test variability;
+- and does not translate a clock result directly into promised lifespan.
+
+Sources:
+- Furrer & Handschin, *Physiological Reviews* 2025: https://doi.org/10.1152/physrev.00045.2024
+- Johnson et al., *Aging Cell* 2024: https://onlinelibrary.wiley.com/doi/10.1111/acel.14377
+- BioAge toolkit / PhenoAge method: https://pmc.ncbi.nlm.nih.gov/articles/PMC8602613/
 
 ### 7. Athletic-performance overreach
 
