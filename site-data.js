@@ -207,3 +207,52 @@ window.DAILY_FOUNDATIONS = {
 };
 
 window.EVIDENCE_NOTE = "A = independent peer-reviewed/institutional measurement; B = independently reported clinical/lab result; C = first-party published measurement/protocol; D = self-report/interview.";
+
+
+window.JOSH_BASELINE = {
+  updated: "20 Sep 2026",
+  privacy: "Public profile includes selected measurements only. Diagnoses and medications are intentionally excluded.",
+  headline: [
+    { label: "Weight", value: "77.4 kg", note: "24 Jul 2026" },
+    { label: "Sleeping RHR", value: "55–58 bpm", note: "historical wearable range" },
+    { label: "HbA1c", value: "5.3%", note: "Feb 2026" },
+    { label: "LDL-C", value: "2.8 mmol/L", note: "Feb 2026" },
+    { label: "Triglycerides", value: "1.1 mmol/L", note: "Feb 2026" },
+    { label: "CRP", value: "<0.4 mg/L", note: "Feb 2026" }
+  ],
+  labs: [
+    ["Fasting glucose", "5.0 mmol/L"],
+    ["HDL-C", "1.3 mmol/L"],
+    ["Ferritin", "41 µg/L"],
+    ["Haemoglobin", "158 g/L"],
+    ["TSH", "0.99 mIU/L"],
+    ["Vitamin D", "78 nmol/L"],
+    ["Vitamin B12", "338 pmol/L"],
+    ["Creatinine", "80 µmol/L"],
+    ["eGFR", ">90 mL/min/1.73m²"]
+  ],
+  trends: [
+    { label: "Weight", from: "~83–84 kg", to: "77.4 kg", period: "2025/early 2026 → Jul 2026" },
+    { label: "LDL-C", from: "3.2 mmol/L", to: "2.8 mmol/L", period: "2023 → Feb 2026" },
+    { label: "Total cholesterol", from: "5.3 mmol/L", to: "4.6 mmol/L", period: "2023 → Feb 2026" },
+    { label: "Ferritin", from: "35 µg/L", to: "41 µg/L", period: "Jan 2025 → Feb 2026" }
+  ],
+  sleep: {
+    average: "6 h 26–31 min",
+    shortNights: "18% under 5 h",
+    latency: "44 min",
+    note: "Historical 2026 snapshot; current 30-day average still needed."
+  },
+  activity: {
+    normal: "~6,900–8,000 steps/day in lower-activity periods",
+    high: "18,153 steps/day across one high-activity 7-day snapshot",
+    note: "Use a 30-day average for a fair current baseline."
+  },
+  next: [
+    "30-day average sleep duration + bedtime/wake consistency",
+    "7-day home blood-pressure average under consistent conditions",
+    "Current waist circumference + weight",
+    "Repeatable 5 km or other aerobic benchmark",
+    "Repeatable strength benchmark (push-ups, grip or simple loaded carry)"
+  ]
+};
