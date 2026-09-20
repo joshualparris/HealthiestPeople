@@ -58,7 +58,7 @@ Implemented in the first roadmap pass:
 - [x] Make the homepage use the same global navigation.
 - [x] Reduce the homepage's role from “everything” to **daily dashboard + clear routes into deeper pages**.
 - [x] Add an “Explore” panel showing where to go for Plan / People / Charts / Resources / Evidence.
-- [ ] Add consistent current-page highlighting and page-level tabs where helpful.
+- [x] Add consistent current-page highlighting and page-level tabs where helpful.
 
 ### Health literacy
 - [x] Plain-English glossary.
@@ -77,7 +77,7 @@ Implemented in the first roadmap pass:
 - [x] Strong visible keyboard focus.
 - [ ] Ensure interactive elements have clear accessible names/states.
 - [ ] Review colour contrast and text size.
-- [ ] Ensure charts have meaningful text alternatives.
+- [x] Ensure charts have meaningful text alternatives.
 
 **Definition of done:** a first-time visitor can understand the site on mobile without already knowing health jargon.
 
@@ -88,8 +88,8 @@ Implemented in the first roadmap pass:
 **Priority: next**
 
 ### Daily dashboard
-- [ ] Make “Today” the primary homepage experience.
-- [ ] Add a compact “This week” preview.
+- [x] Make “Today” the primary homepage experience.
+- [x] Add a compact “This week” preview.
 - [ ] Show the minimum version beside each planned behaviour.
 - [ ] Add “why this is in your plan” under each action.
 - [ ] Show time cost and equipment needed.
@@ -113,6 +113,22 @@ Implemented in the first roadmap pass:
 
 ---
 
+## Progress update — personal trends and diagrams
+
+Implemented in the second roadmap pass:
+
+- personal charts now read the repository CSV datasets directly, so future data updates flow into the visualisations
+- weight, LDL/total cholesterol, ferritin, sleep, steps and resting-heart-rate trends added
+- each chart includes interpretation rather than only a line
+- source changes are called out instead of silently joining incompatible data
+- mixed Fitbit/Withings HRV is intentionally **not** merged into a misleading chart
+- underlying-data tables are available for key charts
+- chart SVGs have meaningful accessible labels
+- mobile charts no longer require a desktop-width canvas
+- new diagrams explain the measurement ladder, N-of-1 evidence, clinical handoff and the aerobic/strength/sleep foundation
+
+---
+
 # Phase 3 — Turn personal data into useful interpretation
 
 **Priority: high**
@@ -129,8 +145,8 @@ Each metric should show:
 - confidence / limitations
 
 ### Trends
-- [ ] Separate data from different devices or methods.
-- [ ] Never imply a change is meaningful when measurement error could explain it.
+- [x] Separate data from different devices or methods.
+- [x] Never imply a change is meaningful when measurement error could explain it.
 - [ ] Mark “historical peak”, “current”, and “single measurement” clearly.
 - [ ] Add clinician/lab reference ranges only when sourced and appropriate.
 - [ ] Never substitute a generic range for personalised medical interpretation.
@@ -149,24 +165,24 @@ Each metric should show:
 **Priority: high**
 
 ### Personal charts
-- [ ] Weight trend over time.
-- [ ] Lipids over time.
-- [ ] Ferritin / iron trend.
-- [ ] Resting heart rate / HRV / sleep trend.
+- [x] Weight trend over time.
+- [x] Lipids over time.
+- [x] Ferritin / iron trend.
+- [x] Resting heart rate + sleep trends; HRV intentionally withheld until a clean same-device series exists.
 - [ ] Weekly activity and exercise mix.
 - [ ] 5 km benchmark progress once enough comparable data exists.
 
 ### Case-study charts
 - [ ] Separate historical elite peaks from current measures.
 - [ ] Show evidence grade and measurement date directly on charts.
-- [ ] Add “apples vs oranges” warnings when methods differ.
-- [ ] Avoid pseudo-precision and fake composite “health scores”.
+- [x] Add “apples vs oranges” warnings when methods differ.
+- [x] Avoid pseudo-precision and fake composite “health scores”.
 
 ### Explanatory diagrams
-- [ ] What aerobic + strength + sleep each contribute.
-- [ ] Measurement ladder: free → useful → optional → research-grade.
-- [ ] “Signal → repeat/context → clinician” pathway.
-- [ ] How an N-of-1 experiment differs from a clinical trial.
+- [x] What aerobic + strength + sleep each contribute.
+- [x] Measurement ladder: free → useful → optional → research-grade.
+- [x] “Signal → repeat/context → clinician” pathway.
+- [x] How an N-of-1 experiment differs from a clinical trial.
 
 **Definition of done:** every chart communicates a conclusion correctly without requiring the accompanying prose.
 
@@ -254,7 +270,7 @@ Each metric should show:
 
 **Ongoing**
 
-- [ ] Automated static validation.
+- [x] Automated static validation.
 - [ ] Broken-link checker.
 - [ ] Source freshness checker.
 - [ ] Dataset-schema validation.
