@@ -4,6 +4,7 @@
   const resources = window.HEALTH_RESOURCES || [];
   const resourceTypes = window.RESOURCE_TYPES || {};
   const baseline = window.JOSH_BASELINE || null;
+  const joshPlan = window.JOSH_PLAN || null;
   const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 
   function sydneyParts() {
@@ -107,6 +108,30 @@
     const grid = document.getElementById("podcast-grid");
     if (!grid) return;
     grid.innerHTML = podcasts.map(podcastCard).join("");
+  }
+
+  function renderJoshPlan() {
+    if (!joshPlan) return;
+
+    const sleep = document.getElementById("plan-sleep");
+    if (sleep) sleep.innerHTML = `<strong>${joshPlan.sleep.windDown}</strong><small>wind-down</small><strong>${joshPlan.sleep.lightsOut}</strong><small>lights out · target ${joshPlan.sleep.target}</small>`;
+
+    const week = document.getElementById("plan-week");
+    if (week) week.innerHTML = joshPlan.week.map(([day,primary,secondary]) => `
+      <div class="plan-day"><b>${day}</b><span>${primary}</span>${secondary ? `<em>${secondary}</em>` : ""}</div>
+    `).join("");
+
+    const nutrition = document.getElementById("plan-nutrition");
+    if (nutrition) nutrition.innerHTML = joshPlan.nutrition.map(x => `<li>${x}</li>`).join("");
+
+    const track = document.getElementById("plan-track");
+    if (track) track.innerHTML = joshPlan.track.map(x => `<li>${x}</li>`).join("");
+
+    const no = document.getElementById("plan-dont-buy");
+    if (no) no.innerHTML = joshPlan.dontBuy.map(x => `<li>${x}</li>`).join("");
+
+    const principle = document.getElementById("plan-principle");
+    if (principle) principle.textContent = joshPlan.principle;
   }
 
   function renderBaseline() {
@@ -250,6 +275,7 @@
   }
 
   renderToday();
+  renderJoshPlan();
   renderBaseline();
   renderPeople();
   renderPodcasts();
