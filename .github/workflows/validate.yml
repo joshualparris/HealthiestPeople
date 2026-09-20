@@ -78,6 +78,7 @@ jobs:
               "charts.html": ['styles.css', 'charts.js', 'nav.js', 'id="personal-charts"', 'id="public-charts"', 'id="diagrams"'],
               "evidence.html": ['styles.css', 'nav.js', 'id="grades"', 'id="rules"', 'id="research"'],
               "document.html": ['styles.css', 'doc-renderer.js', 'nav.js', 'id="doc-content"', 'id="doc-toc"'],
+              "roadmap.html": ['styles.css', 'doc-renderer.js', 'nav.js', 'id="doc-content"', 'id="doc-toc"'],
               "playbook.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/practical-playbook.md"'],
               "comparison.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/comparison.md"'],
               "transferability.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/transferability.md"'],
