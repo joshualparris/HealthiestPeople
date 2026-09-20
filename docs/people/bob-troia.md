@@ -32,6 +32,25 @@ He has published analysis of a full year of Oura sleep data and discusses export
 Source:
 - https://www.quantifiedbob.com/sleep-tracking-analysis-oura/
 
+### Sleep — a useful counterexample
+
+Troia's 2019 Oura analysis included **303 usable nights** after excluding nights with obvious data gaps.
+
+Adjusted annual averages:
+
+- total sleep: **6.32 hours/night**
+- deep sleep: **55.79 min (11.5%)**
+- REM sleep: **48.95 min (10.1%)**
+- light sleep: **274.42 min (56.4%)**
+- awake time while in bed: **106.94 min (22.0%)**
+
+He explicitly wrote that he wanted to reach **7–8 hours** of sleep per night.
+
+This is important for the project: Troia is exceptionally well measured, but his own data reveal a clear area that he considered suboptimal. **Measurement density is not the same thing as excellent health.**
+
+Source:
+- https://www.quantifiedbob.com/sleep-tracking-analysis-oura/
+
 ### Glucose
 
 Troia has run multi-month glucose experiments, including a reported seven-month self-experiment looking at relationships among fasting glucose, diet, exercise, supplements, stress and travel. He later published food-response guidance based on years of glucose tracking.
