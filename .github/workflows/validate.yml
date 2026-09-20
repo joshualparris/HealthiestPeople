@@ -25,6 +25,7 @@ jobs:
           node --check data-explorer.js
           node --check profile-data.js
           node --check person-page.js
+          node --check coverage.js
 
       - name: Check required site files
         run: |
@@ -44,6 +45,7 @@ jobs:
           test -f plan-evidence.html
           test -f source-policy.html
           test -f data.html
+          test -f coverage.html
           test -f styles.css
           test -f site-data.js
           test -f resources-data.js
@@ -52,6 +54,7 @@ jobs:
           test -f charts.js
           test -f doc-renderer.js
           test -f data-explorer.js
+          test -f coverage.js
           test -f profile-data.js
           test -f person-page.js
           test -f people/joshua-parris.html
@@ -90,6 +93,7 @@ jobs:
               "plan-evidence.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/josh-plan-evidence.md"'],
               "source-policy.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/source-policy.md"'],
               "data.html": ['styles.css', 'data-explorer.js', 'id="dataset-tabs"', 'id="data-search"'],
+              "coverage.html": ['styles.css', 'coverage.js', 'nav.js', 'id="coverage"', 'id="backlog"', 'id="access"', 'id="research-docs"'],
               "people/bryan-johnson.html": ['../styles.css', '../site-data.js', '../resources-data.js', '../profile-data.js', '../person-page.js', '../nav.js', 'data-person-id="bryan-johnson"'],
               "people/oskar-svendsen.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="oskar-svendsen"'],
               "people/scott-kelly.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="scott-kelly"'],
