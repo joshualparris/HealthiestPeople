@@ -442,21 +442,125 @@ A proper repeated home average remains more useful than one reading.
 
 ## Cardiovascular investigation history
 
-Previously shared records/history include:
-- normal ECG/troponin/bloodwork during a 2022 chest-pain episode, with costochondritis considered
-- prior normal ECG / chest imaging
-- historical echocardiogram reported **LVEF 69%**
-- historical QTc reported **414 ms**
-- prior Holter reported as normal
+The cardiovascular record is now sufficiently detailed to separate **clinical ECG/echo/Holter testing** from consumer wearable observations.
 
-2026 included:
-- recurrent chest discomfort assessed clinically as costochondritis
-- episodes of palpitations / rapid heart rate
-- prolonged tachycardia episode in mid-May that was not adequately captured by the wearable export
-- late-July/ED tachycardia context discussed in prior chats
-- later cardiology advice reportedly allowed return to/maximal exercise
+### 2022 ECG
 
-The public archive should distinguish clinician records from consumer wearable observations and avoid treating a Fitbit rate as a rhythm diagnosis.
+A July 2022 clinical ECG documented:
+
+- sinus rhythm
+- heart rate **71 bpm**
+- reported **within normal limits**
+
+### March 2024 cardiology work-up
+
+#### 19 March 2024 ECG
+
+Australian Clinical Labs reported:
+
+- sinus rhythm
+- heart rate **81 bpm**
+- QRS **96 ms**
+- QT **378 ms**
+- QTc **414 ms**
+- reported within normal limits
+
+#### 21 March 2024 Central Victorian Cardiology ECG
+
+- normal sinus rhythm
+- rate **76 bpm**
+- PR **116 ms**
+- QRS **84 ms**
+- QT/QTc **382/429 ms**
+
+#### 21 March 2024 echocardiogram
+
+Central Victorian Cardiology documented:
+
+- height recorded **175 cm**
+- weight **85 kg**
+- BMI **27.8 kg/m²**
+- heart rate **80 bpm**
+- normal LV wall thickness and cavity size
+- normal LV systolic function
+- biplane LVEF **69%**
+- M-mode EF **67%**
+- normal LV diastolic function
+- normal RV size and systolic function
+- normal indexed atrial volumes
+- no haemodynamically significant valvular pathology
+- estimated RVSP **22 mmHg**
+- LV mass **152 g**
+- LV mass index **74.9 g/m²**
+- LV EDV **130 mL**
+- LV ESV **40 mL**
+- stroke volume **90 mL**
+- cardiac output **7 L/min**
+- TAPSE **2.4 cm**
+- average E/e' **4.25**
+
+The report conclusion was normal LV size/systolic/diastolic function, no haemodynamically significant valvular disease and normal estimated pulmonary artery systolic pressure.
+
+#### 21 March 2024 Holter
+
+A **23 h 24 min** Holter recorded:
+
+- mean HR **76 bpm**
+- maximum 1-minute HR **125 bpm**
+- minimum 1-minute HR **53 bpm**
+- rare isolated unifocal ventricular ectopic beats
+- **nil supraventricular ectopic beats**
+- no pauses >3 seconds
+- symptoms labelled "palpitations" / "stronger beats" corresponded to sinus rhythm with periods of sinus arrhythmia rather than ectopy
+
+### December 2024 chest imaging
+
+A Bendigo Health PA/lateral chest X-ray on **11 Dec 2024** reported:
+
+- clear lungs and pleural recesses
+- no pneumothorax
+- normal heart size
+- normal cardiomediastinal contour
+
+### March 2026 Holter
+
+A Douglass Hanly Moir **24 h 09 min** Holter beginning 16 Mar 2026 recorded:
+
+- **103,221 beats**
+- sinus rhythm **42–126 bpm**
+- average HR **71 bpm**
+- 4 ventricular ectopic beats
+- 3 supraventricular ectopic beats
+- no atrial fibrillation
+- no atrial flutter
+- no VT / NSVT
+- no PSVT
+- no significant pauses
+- no arrhythmia evident when reported palpitations were captured
+
+The report paperwork listed height **179 cm** and weight **84 kg**. Because Joshua's canonical corrected height is 175 cm and the monitor height conflicts with other clinical measurements, the 179-cm entry is preserved as a source value but **not used for BMI calculations**.
+
+### June 2026 NT-proBNP
+
+A Douglass Hanly Moir pathology result collected **2 Jun 2026** for palpitations reported:
+
+- NT-proBNP **<50 ng/L**
+- laboratory age-related reference for <50 years: **<450 ng/L**
+
+This is a clinical biomarker result, not proof against every possible cardiac disorder.
+
+### Longer ambulatory monitoring / HeartBug
+
+Longer ambulatory monitoring occurred in May–June 2026.
+
+The **final specialist HeartBug / longer-monitor report has not been located** in the retrievable Drive/Gmail/past-chat audit.
+
+This archive therefore does **not** call that study normal.
+
+A contemporaneous email written by Joshua on **31 Jul 2026**, after hospital testing and cardiology review, said the hospital tests had "come back all good" and that the leading theory was stress, with him "physically ... fine". That is retained as a **first-party report of the clinician discussion**, not a substitute for the missing specialist report.
+
+Structured cardiovascular dataset:
+- [data/josh-cardiac-history.csv](../../data/josh-cardiac-history.csv)
 
 ## Medical / functional context affecting health planning
 
