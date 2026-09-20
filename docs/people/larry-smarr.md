@@ -76,3 +76,18 @@ The transferable rule is narrower:
 Smarr is a reminder that the purpose of health tracking is not to win a dashboard. It is to identify useful signals early enough to act sensibly.
 
 _Last reviewed: 20 September 2026._
+
+
+## Additional verified detail
+
+UC San Diego describes Smarr's self-tracking as a **multi-year time series of more than 100 biomarkers plus gut-microbiome genomics**.
+
+In the institutional chronology, by summer 2011 one stool immune biomarker had risen to **125 times the normal healthy upper limit**. That did not itself become the diagnosis: specialist review, colonoscopy and CT abdominal imaging followed, after which colonic Crohn's disease was considered likely.
+
+Sources:
+- https://cse.ucsd.edu/about/news/pioneering-scientist-and-innovator-larry-smarr-retires
+- https://cse.ucsd.edu/about/news/cse-professor-lecturer-team-uc-san-diego-health-bring-3d-visualization-abdomenal-surgery
+
+That sequence is the practical lesson:
+
+**signal → repeat/context → clinician → appropriate diagnostic test**, rather than **signal → buy more wellness tests**.
