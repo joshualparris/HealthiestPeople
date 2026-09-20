@@ -106,3 +106,20 @@ Source:
 Clark's strongest contribution is not "beat billionaires at ageing". It is that the fundamentals can be organised into an ordinary day without a private medical team.
 
 _Last reviewed: 20 September 2026._
+
+
+## Additional verified context
+
+Clark's own site describes her as a **former structural engineer turned recruiter**, a **single mother**, and says her biohacking budget is **under US$150 per month**. It also describes a DNA-methylation result as roughly **65 biological days per 100 chronological days**.
+
+Source:
+- https://www.juliegibsonclark.com/about-gibson-girl
+
+Those details are useful because they make her case unusually close to this project's "ordinary working adult with family responsibilities" question. But they are still **first-party claims**. The budget should not be assumed to include every normal cost of healthy food, gym access, medical care, prescribed hormones or time.
+
+Her public supplement page currently includes NR or NMN, vitamin D/K2, magnesium, B vitamins, omega-3, a commercial longevity mix, and prescribed HRT/progesterone, among other optional products.
+
+Source:
+- https://www.juliegibsonclark.com/s-projects-side-by-side
+
+That does **not** change the project's practical extraction. The strongest transferable parts of her routine remain the non-product fundamentals: exercise, food pattern, sleep, stress regulation and sustainable family fit.
