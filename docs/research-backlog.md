@@ -6,12 +6,12 @@ This file tracks **known gaps**. A missing value means "not yet verified/publicl
 
 ### Bryan Johnson
 - [ ] Exact current systolic/diastolic blood pressure
-- [ ] ApoB
+- [x] ApoB — 52 mg/dL in Apr 2025, first-party bloodwork; Repatha confounding documented
 - [ ] LDL-C / HDL-C / triglycerides
 - [ ] Lp(a)
-- [ ] fasting glucose
-- [ ] HbA1c
-- [ ] fasting insulin
+- [x] fasting glucose — 103 mg/dL in Apr 2025; single fasting draw
+- [x] HbA1c — 5.0% in Apr 2025
+- [x] fasting insulin — 2.8 µIU/mL in Apr 2025
 - [ ] body-fat percentage
 - [ ] visceral-fat measurement
 - [ ] lean mass
