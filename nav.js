@@ -35,7 +35,8 @@
 
     if (/^docs\/[A-Za-z0-9._\/-]+\.md$/i.test(relativePath) && !relativePath.includes("..")) {
       const pretty = new URL("document.html", siteRoot);
-      pretty.searchParams.set("src", relativePath);
+      const slug = relativePath.replace(/^docs\//, "").replace(/\.md$/i, "");
+      pretty.searchParams.set("doc", slug);
       pretty.hash = hash;
       return pretty.href;
     }
