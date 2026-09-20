@@ -42,7 +42,7 @@ This file tracks **known gaps**. A missing value means "not yet verified/publicl
 - [ ] current sleep measurements
 
 ### Oskar Svendsen
-- [ ] Locate any published result from 2025/26 VO2max retest
+- [x] Determine 2025/26 VO2max retest publication status — retest occurred, but Svendsen explicitly declined to disclose the number
 - [ ] Current body mass/body composition
 - [ ] Current resting HR / HRV
 - [ ] Current BP
