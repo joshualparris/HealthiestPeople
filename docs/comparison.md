@@ -122,6 +122,120 @@ If the question is **"whose data are most independently rigorous across many bio
 
 Dave Pascoe is valuable chiefly as a case of preserved multi-domain physical function in the early 60s, with the important caveat that the majority of his public dataset is self-published.
 
+## Deep-pass update — 20 September 2026
+
+Further extraction materially changed several interpretations.
+
+### Bryan Johnson: strong markers, but medication context is inseparable
+
+An April 2025 public bloodwork set gives:
+
+- fasting glucose **103 mg/dL**
+- HbA1c **5.0%**
+- fasting insulin **2.8 µIU/mL**
+- ApoB **52 mg/dL**
+- HDL-C **53 mg/dL**
+- ferritin **20 ng/mL**
+
+Johnson explicitly attributes lower ApoB/LDL-related values to adding **Repatha**. He also uses Jardiance, which changes glucose handling.
+
+Therefore, Johnson still has the broadest current health dataset, but the project should describe it as **lifestyle + medical treatment + intensive monitoring**, not as a pure lifestyle result.
+
+### Michael Lustgarten: repeatability is more informative than his best score
+
+Recent listed Levine PhenoAge results:
+
+- **35.0** — 18 Mar 2026
+- **34.8** — 17 Jun 2026
+- **37.5** — 9 Sep 2026
+
+His best historical result is much lower.
+
+The variability itself is useful: an ageing-clock score can move substantially between tests and should not define a person's literal age.
+
+### Oskar Svendsen: historical physiology remains extraordinary; current value is unknown
+
+A 2025 lab retest occurred, but Svendsen declined to publish the number.
+
+The correct comparison is therefore:
+
+- 96.7 mL/kg/min — historical peer-reviewed peak
+- 77.0 — 2015 after major detraining
+- current — **unknown / withheld**
+
+### Dave Pascoe: exceptional function does not make the full protocol transferable
+
+Current first-party information says he is:
+
+- retired/full-time biohacker
+- using around **200 individual supplements/day**
+- taking thyroid replacement
+- using low-dose lipid-lowering medication after mild new plaque was seen
+- undergoing very frequent testing
+
+His physical function remains interesting; his full routine should not be presented as a cheap template.
+
+### Julie Gibson Clark: strongest family-life fit
+
+Her current first-party routine includes:
+
+- self-reported **8 h sleep/night**
+- evening walks of roughly **6,000–9,000 steps**
+- about **1 lb / 454 g vegetables/day**
+- historically **100+ g protein/day**
+- deliberate flexibility around family dinner with her son
+
+Her best DunedinPACE (~0.665) later worsened to a self-reported ~0.77 during a period of poorer sleep and intervention changes.
+
+The strongest lesson is sustainable behaviour, not the leaderboard.
+
+### Bob Troia: measurement exposed weaknesses as well as strengths
+
+His 2019 Oura dataset averaged only **6.32 h sleep/night** across 303 usable nights.
+
+His fasting-glucose experiment began with a 30-day average of **93.5 mg/dL** (range 78–107). An apparent supplement effect later **failed to replicate** when his exercise/activity context changed.
+
+That makes Troia particularly useful for teaching honest N-of-1 methodology.
+
+### Michael Snyder: conventional markers carried the actionable signal
+
+During the original iPOP period:
+
+- triglycerides **321 mg/dL**, later **81–116** after simvastatin
+- HbA1c reached **6.7%** during diabetes onset
+- later fell **below 5%** after major diet/exercise change at that time
+
+The omics added scientific depth; the clinically actionable changes were visible in ordinary biomarkers.
+
+### Larry Smarr: strongest clinical-escalation example
+
+Public records describe:
+
+- CRP reaching about **27×** the healthy upper limit
+- stool lactoferrin reaching about **124–125×** the healthy upper limit
+- subsequent colonoscopy/imaging supporting Crohn's disease
+- sigmoid colon resection in **November 2016**
+
+His case is not "test everything". It is **persistent meaningful abnormality → clinical investigation**.
+
+## Revised project emphasis
+
+The people now fall more naturally into roles than a single health ranking:
+
+| Role | Strongest case |
+|---|---|
+| Broad current measured physiology | Bryan Johnson |
+| Low-cost longitudinal self-tracking method | Michael Lustgarten |
+| Independently verified extreme aerobic physiology | Oskar Svendsen |
+| Functional ageing in early 60s | Dave Pascoe |
+| Independent multidimensional stress/resilience science | Scott Kelly |
+| Working-parent transferability | Julie Gibson Clark |
+| Transparent N-of-1 methods and failed replications | Bob Troia |
+| Research-grade longitudinal disease detection | Michael Snyder |
+| Persistent-signal-to-clinical-escalation | Larry Smarr |
+
+That framing is more defensible and more useful than pretending these nine are directly competing for one "healthiest" score.
+
 ## Next data gaps to close
 
 Priority extractions:
