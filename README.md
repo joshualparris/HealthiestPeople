@@ -54,6 +54,7 @@ Snyder and Smarr are deliberately included as **measurement lessons, not "health
 
 ## Research documents
 
+- [Product roadmap](ROADMAP.md) — UX, health-literacy, accessibility, charts, evidence and maintenance plan
 - [Metric-by-metric comparison](docs/comparison.md)
 - [Low-cost working-family playbook](docs/practical-playbook.md)
 - [Time/cost/family transferability matrix](docs/transferability.md)
