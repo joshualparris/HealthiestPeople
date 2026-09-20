@@ -117,3 +117,72 @@ date,marker,value,unit,source_context,notes
 2026-02-04,Deamidated gliadin IgG,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
 2026-02-04,Tissue transglutaminase IgA,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
 2026-02-04,Tissue transglutaminase IgG,<1,U/mL,Douglass Hanly Moir pathology via Google Drive,Coeliac serology
+2023-06-08,Sodium,141,mmol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Potassium,3.9,mmol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Chloride,105,mmol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Bicarbonate,29,mmol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Urea,6.2,mmol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Creatinine,81,umol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,eGFR,>90,mL/min/1.73m2,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Bilirubin,15,umol/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,ALT,35,U/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,AST,19,U/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,ALP,65,U/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,GGT,26,U/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Total protein,67,g/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Albumin,39,g/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Globulin,28,g/L,Dorevitch original pathology via private Google Drive,General biochemistry
+2023-06-08,Haemoglobin,150,g/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,RBC,4.80,x10^12/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Haematocrit,0.44,L/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,MCV,91,fL,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,MCH,31,pg,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,MCHC,344,g/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,RDW,12.7,percent,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,WBC,6.3,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Neutrophils,3.3,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Lymphocytes,2.4,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Monocytes,0.4,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Eosinophils,0.1,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Basophils,0.1,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,Platelets,229,x10^9/L,Dorevitch original pathology via private Google Drive,FBC
+2023-06-08,ESR,2,mm/hr,Dorevitch original pathology via private Google Drive,Westergren
+2023-06-08,CRP,<1,mg/L,Dorevitch original pathology via private Google Drive,Serum CRP
+2023-06-08,Fasting glucose,4.0,mmol/L,Dorevitch original pathology via private Google Drive,12:24 fasting specimen
+2023-06-08,Total cholesterol,5.3,mmol/L,Dorevitch original pathology via private Google Drive,Fasting lipids
+2023-06-08,Triglycerides,1.1,mmol/L,Dorevitch original pathology via private Google Drive,Fasting lipids
+2023-06-08,HDL-C,1.6,mmol/L,Dorevitch original pathology via private Google Drive,Fasting lipids
+2023-06-08,LDL-C,3.2,mmol/L,Dorevitch original pathology via private Google Drive,Fasting lipids
+2023-06-08,Non-HDL cholesterol,3.7,mmol/L,Dorevitch original pathology via private Google Drive,Fasting lipids
+2023-06-08,Cholesterol/HDL ratio,3.3,ratio,Dorevitch original pathology via private Google Drive,Fasting lipids
+2024-03-19,Haemoglobin,154,g/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,RBC,5.11,x10^12/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Haematocrit,0.47,L/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,MCV,91,fL,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,MCH,30.1,pg,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,MCHC,331,g/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,RDW,13.2,percent,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,WBC,8.7,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Neutrophils,5.2,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Lymphocytes,2.9,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Monocytes,0.4,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Eosinophils,<0.1,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Basophils,<0.1,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Platelets,259,x10^9/L,Australian Clinical Labs cardiology bundle via private Google Drive,FBC
+2024-03-19,Sodium,140,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Potassium,3.6,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Chloride,102,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Bicarbonate,26,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Urea,7.0,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Creatinine,93,umol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,eGFR,>90,mL/min/1.73m2,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Total protein,69,g/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Albumin,40,g/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Globulin,29,g/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,ALP,60,U/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Bilirubin,14,umol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,GGT,23,U/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,AST,30,U/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,ALT,32,U/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
+2024-03-19,Random glucose,5.7,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Collection type not stated
+2024-03-19,TSH,1.31,mIU/L,Australian Clinical Labs cardiology bundle via private Google Drive,Thyroid
