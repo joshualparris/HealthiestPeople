@@ -31,6 +31,23 @@ This roadmap treats the product through several roles at once:
 
 ---
 
+## Progress update — first implementation tranche
+
+Implemented in the first roadmap pass:
+
+- unified multi-page navigation on the homepage
+- mobile burger navigation styling and accessible focus states
+- shorter dashboard-style homepage with weekly anchors
+- skip-to-content links across the site
+- expandable “what this means for me” interpretation on personal headline metrics
+- exact home blood-pressure and waist-measurement instructions with Australian sources
+- corrected the BP tracking plan so it no longer implies an arbitrary three-month medical requirement
+- exact Strength A / Strength B instructions on the Plan page
+- clearer Australian vegetable/protein target explanations
+- plain-English glossary and inline health-term explanations
+
+---
+
 # Phase 1 — Make it effortless to understand and navigate
 
 **Priority: now**
@@ -38,26 +55,26 @@ This roadmap treats the product through several roles at once:
 ### Information architecture
 - [x] Separate pages for Plan, People, Charts, Resources and Evidence.
 - [x] Mobile burger menu on secondary pages.
-- [ ] Make the homepage use the same global navigation.
-- [ ] Reduce the homepage's role from “everything” to **daily dashboard + clear routes into deeper pages**.
-- [ ] Add an “Explore” panel showing where to go for Plan / People / Charts / Resources / Evidence.
+- [x] Make the homepage use the same global navigation.
+- [x] Reduce the homepage's role from “everything” to **daily dashboard + clear routes into deeper pages**.
+- [x] Add an “Explore” panel showing where to go for Plan / People / Charts / Resources / Evidence.
 - [ ] Add consistent current-page highlighting and page-level tabs where helpful.
 
 ### Health literacy
 - [x] Plain-English glossary.
 - [x] Inline jargon explanations.
-- [ ] Every personal metric should answer:
+- [x] Headline personal metrics now answer:
   - **What is this?**
   - **Why do I care?**
   - **What does this result tell me — and what does it not tell me?**
   - **What, if anything, should I do next?**
 - [ ] Replace unexplained abbreviations wherever possible on first use.
 - [ ] Explain units such as mmol/L, bpm and ms beside the first relevant value.
-- [ ] Add “How to do this” instructions to measurements such as home blood pressure and waist circumference.
+- [x] Add “How to do this” instructions to measurements such as home blood pressure and waist circumference.
 
 ### Accessibility
-- [ ] Add skip-to-content links.
-- [ ] Strong visible keyboard focus.
+- [x] Add skip-to-content links.
+- [x] Strong visible keyboard focus.
 - [ ] Ensure interactive elements have clear accessible names/states.
 - [ ] Review colour contrast and text size.
 - [ ] Ensure charts have meaningful text alternatives.
@@ -82,10 +99,10 @@ This roadmap treats the product through several roles at once:
   - skip for now
 
 ### Practical instructions
-- [ ] Strength A / Strength B should list exact exercises, sets, reps and rest.
+- [x] Strength A / Strength B list exact exercises, sets/reps and practical effort guidance.
 - [ ] “Conversational pace” should include a simple talk-test explanation.
 - [ ] Measurements should include preparation and technique.
-- [ ] Nutrition targets should include ordinary-food examples rather than just gram targets.
+- [x] Nutrition targets include ordinary-food explanations rather than only gram targets.
 
 ### Progress without gamification pressure
 - [ ] Weekly review: “What happened?” rather than streaks or points.
