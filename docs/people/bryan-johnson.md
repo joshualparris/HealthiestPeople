@@ -24,6 +24,44 @@ Bryan Johnson is one of the broadest publicly documented modern N-of-1 health ca
 | Diagnosed disease | **Autoimmune gastritis**, biopsy-confirmed after persistent low ferritin prompted investigation | Diagnosed May 2026; reported Jul 2026 | B — independently reported with clinical-expert discussion |
 | Diagnosed disease | History of autoimmune thyroid disease / hypothyroidism | Publicly reported | B/C |
 
+## April 2025 bloodwork: exact metabolic and lipid values
+
+A public April 2025 bloodwork discussion gives a more useful set of exact values than the later percentile-based summaries.
+
+Johnson reported:
+
+| Marker | Reported result | Context |
+|---|---:|---|
+| Fasting glucose | **103 mg/dL** | Single fasting draw; Johnson interpreted it in context of other glucose markers |
+| HbA1c | **5.0%** | Laboratory value |
+| Fasting insulin | **2.8 µIU/mL** | Low fasting insulin |
+| LP-IR score | **<25** | Lipoprotein insulin-resistance score |
+| ~3-day CGM average glucose | **94 mg/dL** | Short continuous-glucose window |
+| ApoB | **52 mg/dL** | After addition of Repatha |
+| ApoA1 | **141.5 mg/dL** | First-party reported |
+| HDL-C | **53 mg/dL** | First-party reported |
+| ApoB/ApoA1 ratio | **0.36** | Derived from reported values |
+| Ferritin | **20 ng/mL** | Johnson described it as low and increased iron supplementation |
+
+Evidence grade: **C — first-party published bloodwork discussion**.
+
+### Why the medication context matters
+
+Johnson explicitly attributed his lower LDL-C/ApoB/LDL-P to adding **evolocumab (Repatha, a PCSK9 inhibitor)** after previously using ezetimibe.
+
+Therefore, these lipid values are evidence of a low measured atherogenic-particle burden at that point, but **not evidence that his food/supplement/exercise protocol alone produced it**.
+
+Similarly, his use of **empagliflozin (Jardiance)** affects glucose handling and urinary glucose, which complicates interpretation of metabolic markers as a pure lifestyle experiment.
+
+### Ferritin and the later autoimmune-gastritis diagnosis
+
+The April 2025 ferritin of **20 ng/mL** is important in hindsight.
+
+In 2026 Johnson disclosed biopsy-confirmed autoimmune gastritis after persistent low ferritin prompted further investigation. This does not prove that the April 2025 value was caused by autoimmune gastritis, but it provides a dated point in the iron-status timeline preceding diagnosis.
+
+Source:
+- Bryan Johnson public bloodwork thread (archived): https://threadreaderapp.com/thread/1912215143846723703.html
+
 ## 2026 protocol details: time, diet and prescriptions
 
 Johnson's January 2026 protocol gives a clearer picture of the resources and structure behind the headline biomarkers.
