@@ -186,3 +186,18 @@ date,marker,value,unit,source_context,notes
 2024-03-19,ALT,32,U/L,Australian Clinical Labs cardiology bundle via private Google Drive,Chemistry
 2024-03-19,Random glucose,5.7,mmol/L,Australian Clinical Labs cardiology bundle via private Google Drive,Collection type not stated
 2024-03-19,TSH,1.31,mIU/L,Australian Clinical Labs cardiology bundle via private Google Drive,Thyroid
+2024-12-11,Haemoglobin,149,g/L,Bendigo Health original FBC via private Google Drive,ED shortness of breath/chest tightness workup
+2024-12-11,RBC,4.95,x10^12/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Haematocrit,0.44,L/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,MCV,89,fL,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,MCH,30.1,pg,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,MCHC,338,g/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,RDW,13.0,percent,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,WBC,7.9,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Neutrophils,5.1,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Lymphocytes,2.1,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Monocytes,0.6,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Eosinophils,<0.1,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Basophils,<0.1,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2024-12-11,Platelets,215,x10^9/L,Bendigo Health original FBC via private Google Drive,FBC
+2026-06-02,NT-proBNP,<50,ng/L,Douglass Hanly Moir original pathology via private Google Drive,Requested for palpitations; lab reference <450 for age <50
