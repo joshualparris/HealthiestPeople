@@ -12,6 +12,7 @@
     "josh-plan-evidence.md": "plan-evidence.html",
     "source-policy.md": "source-policy.html",
     "joshua-parris-full-health-archive.md": "health-archive.html",
+    "healthy-countries.md": "healthy-countries.html",
     "blue-zones.md": "blue-zones.html"
   };
 
