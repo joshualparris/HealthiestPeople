@@ -1,6 +1,6 @@
 # HealthiestPeople
 
-A source-first research project studying **nine unusually well-documented people** and translating the useful parts of their health, physiology and self-tracking into ordinary life.
+A source-first research project studying **nine unusually well-documented public case studies plus one real-world working-parent baseline** and translating the useful parts of their health, physiology and self-tracking into ordinary life.
 
 ## Website
 
@@ -8,7 +8,7 @@ The repository now includes a dependency-free website designed for a busy workin
 
 - a practical plan that changes with the day of the week
 - a "minimum viable health" fallback for chaotic days
-- a rotating daily lesson from one of the nine people
+- a rotating daily lesson from the project profiles
 - evidence-aware "copy this / don't copy blindly" guidance
 - a curated podcast and talk library for hearing the case-study subjects explain their routines and reasoning
 - low-cost principles that work around full-time work, children, bills and limited time
@@ -24,6 +24,11 @@ The same static site is prepared for **GitHub Pages** and **Vercel**.
 - GitHub Pages settings: https://github.com/joshualparris/HealthiestPeople/settings/pages
 
 ## People in the project
+
+### Real-world comparison baseline
+
+- [Joshua Parris](docs/people/joshua-parris.md) — ordinary working-parent baseline using standard pathology, wearables and home exercise; sensitive diagnoses/medications intentionally excluded
+
 
 ### Health / physiology exemplars and high-value case studies
 
@@ -60,7 +65,7 @@ This project asks three separate questions:
 2. What does their measurement strategy teach us, even when they are not disease-free?
 3. Which parts are realistically transferable to an ordinary middle-class adult who works five days a week, has children, bills, stress, limited time, and no private medical team?
 
-The project does **not** claim these are literally the nine healthiest humans alive. Public datasets are incomplete, collected at different ages and dates, and often use different methods.
+The project does **not** claim the public case studies are literally the healthiest humans alive. Public datasets are incomplete, collected at different ages and dates, and often use different methods.
 
 ## Evidence rules
 
@@ -86,7 +91,7 @@ For each person, separate:
 
 - `index.html` — homepage and daily dashboard
 - `styles.css` — responsive design
-- `site-data.js` — nine-person evidence-aware lesson dataset, curated listening library and weekly routine
+- `site-data.js` — evidence-aware case-study + working-parent lesson dataset, curated listening library and weekly routine
 - `app.js` — Sydney-time daily rotation and filters
 - `vercel.json` — Vercel static-site configuration
 - `.github/workflows/pages.yml` — keeps the `gh-pages` publishing branch current
