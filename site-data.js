@@ -310,6 +310,126 @@ window.JOSH_PLAN = {
 
 window.HEALTH_GLOSSARY = [
   {
+    match: ["biomarker"],
+    term: "Biomarker",
+    meaning: "A measurable sign in the body, such as a blood-test result, heart-rate value or scan finding. It can give useful information without being a diagnosis by itself."
+  },
+  {
+    match: ["longitudinal"],
+    term: "Longitudinal",
+    meaning: "Measured repeatedly over time. A longitudinal trend is usually more useful than one isolated reading."
+  },
+  {
+    match: ["wearable", "Fitbit"],
+    term: "Wearable data",
+    meaning: "Measurements estimated by a device worn on the body, such as a Fitbit. They are useful for trends but are not the same as clinical-grade measurements."
+  },
+  {
+    match: ["cardiovascular"],
+    term: "Cardiovascular",
+    meaning: "Anything relating to the heart and blood vessels."
+  },
+  {
+    match: ["metabolic"],
+    term: "Metabolic",
+    meaning: "Relating to how the body uses and stores energy, including glucose, insulin and blood fats."
+  },
+  {
+    match: ["aerobic"],
+    term: "Aerobic fitness",
+    meaning: "Your body's ability to sustain activity using oxygen — things such as brisk walking, running, cycling and swimming."
+  },
+  {
+    match: ["interval-style", "interval training", "interval"],
+    term: "Intervals",
+    meaning: "Repeated harder efforts separated by easier recovery periods. Ultimate Frisbee naturally behaves a bit like this because you alternate sprints with lower-intensity movement."
+  },
+  {
+    match: ["body composition"],
+    term: "Body composition",
+    meaning: "How body weight is divided into things such as fat mass, muscle/lean mass and bone rather than looking only at total kilograms."
+  },
+  {
+    match: ["N-of-1"],
+    term: "N-of-1",
+    meaning: "A self-experiment involving one person. It can tell you what happened to that individual, but it cannot prove the same thing will happen to everyone."
+  },
+  {
+    match: ["multi-omics", "omics"],
+    term: "Multi-omics",
+    meaning: "Research that measures several biological layers at once — for example genes, RNA, proteins and metabolites. Powerful for research, but far beyond what most people need for ordinary health care."
+  },
+  {
+    match: ["DNA methylation", "DNA-methylation"],
+    term: "DNA methylation",
+    meaning: "Chemical marks on DNA that can change with age and environment. Some biological-age tests use these patterns; they do not change the DNA sequence itself."
+  },
+  {
+    match: ["telomere"],
+    term: "Telomeres",
+    meaning: "Protective end-caps on chromosomes. Telomere length is studied in ageing, but a single telomere test is not a reliable personal lifespan forecast."
+  },
+  {
+    match: ["autoimmune"],
+    term: "Autoimmune",
+    meaning: "A condition in which the immune system mistakenly attacks part of the body's own tissue."
+  },
+  {
+    match: ["lipid", "lipids"],
+    term: "Lipids",
+    meaning: "Fats and fat-like substances in the blood, including cholesterol and triglycerides."
+  },
+  {
+    match: ["glucose"],
+    term: "Glucose",
+    meaning: "The main sugar circulating in your blood and an important fuel source for the body."
+  },
+  {
+    match: ["Mediterranean-ish"],
+    term: "Mediterranean-style eating",
+    meaning: "A flexible pattern centred on vegetables, fruit, legumes, wholegrains, nuts, olive oil and other minimally processed foods, with protein sources that suit the person. 'Ish' means the plan is practical rather than rigid."
+  },
+  {
+    match: ["bpm"],
+    term: "bpm",
+    meaning: "Beats per minute — the unit used for heart rate."
+  },
+  {
+    match: [" mmol/L"],
+    term: "mmol/L",
+    meaning: "Millimoles per litre — a common Australian laboratory unit for substances such as glucose and cholesterol."
+  },
+  {
+    match: [" mg/L"],
+    term: "mg/L",
+    meaning: "Milligrams per litre — a concentration unit used for some blood-test results."
+  },
+  {
+    match: [" nmol/L"],
+    term: "nmol/L",
+    meaning: "Nanomoles per litre — a concentration unit used for some blood tests such as vitamin D."
+  },
+  {
+    match: [" µg/L"],
+    term: "µg/L",
+    meaning: "Micrograms per litre — a concentration unit used for some blood tests such as ferritin."
+  },
+  {
+    match: [" mIU/L"],
+    term: "mIU/L",
+    meaning: "Milli-international units per litre — a laboratory unit often used for hormones such as TSH."
+  },
+  {
+    match: [" µmol/L"],
+    term: "µmol/L",
+    meaning: "Micromoles per litre — a concentration unit used for blood tests such as creatinine."
+  },
+  {
+    match: [" ms"],
+    term: "ms",
+    meaning: "Milliseconds. HRV is often reported in milliseconds because it measures tiny timing differences between heartbeats."
+  },
+  {
     match: ["home-BP", "home blood pressure", "blood-pressure", "blood pressure"],
     term: "Blood pressure (BP)",
     meaning: "The force of blood against your artery walls. A reading has two numbers: the top number is pressure while the heart squeezes; the bottom is pressure while it relaxes."
