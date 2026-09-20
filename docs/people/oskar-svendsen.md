@@ -48,6 +48,31 @@ The same paper reported an improvement of up to **20.9% in power output at a blo
 
 That matters because VO2max is not the whole of endurance performance. Sustainable fraction of VO2max, exercise economy, threshold power, skill, psychology and race craft also influence results.
 
+## Repeated laboratory lactate-threshold performance
+
+The peer-reviewed case study reports eight repeated test visits using the same sequence and laboratory approach.
+
+Across the eight visits, **power at a blood lactate concentration of 4 mmol/L** was:
+
+**354 → 359 → 381 → 377 → 428 → 405 → 402 → 368 W**
+
+Relative to body mass:
+
+**4.7 → 4.9 → 5.1 → 5.0 → 5.6 → 5.1 → 5.1 → 4.6 W/kg**
+
+The maximum improvement from the first test was:
+
+- **+20.9%** in absolute power at 4 mmol/L
+- **+18.1%** in W/kg
+- fractional utilisation of VO2max at 4 mmol/L ranged **82–86%**
+
+The paper also reports eight anti-doping controls between autumn 2012 and summer 2014, all negative; haematocrit ranged **45.1–48.8%**, mean **47.0%**.
+
+These values make the case substantially richer than a single VO2max record: training improved the power he could produce at a standardised lactate threshold while VO2max was already extraordinarily high.
+
+Peer-reviewed source:
+- Rønnestad et al., *Journal of Applied Physiology*: https://doi.org/10.1152/japplphysiol.00798.2018
+
 ## Training exposure
 
 The peer-reviewed case study documented a steep increase in annual endurance-training volume:
