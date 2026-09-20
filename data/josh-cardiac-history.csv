@@ -1,0 +1,64 @@
+date,test,metric,value,unit,evidence_grade,source,notes
+2022-07-26,12-lead ECG,Rhythm,Sinus rhythm,qualitative,B,private clinical record transcribed to repo,Reported within normal limits
+2022-07-26,12-lead ECG,Heart rate,71,bpm,B,private clinical record transcribed to repo,
+2024-03-19,12-lead ECG,Rhythm,Sinus rhythm,qualitative,B,Australian Clinical Labs / cardiology bundle transcribed to repo,Reported within normal limits
+2024-03-19,12-lead ECG,Heart rate,81,bpm,B,Australian Clinical Labs / cardiology bundle transcribed to repo,
+2024-03-19,12-lead ECG,QRS duration,96,ms,B,Australian Clinical Labs / cardiology bundle transcribed to repo,
+2024-03-19,12-lead ECG,QT,378,ms,B,Australian Clinical Labs / cardiology bundle transcribed to repo,
+2024-03-19,12-lead ECG,QTc,414,ms,B,Australian Clinical Labs / cardiology bundle transcribed to repo,
+2024-03-21,Cardiology ECG,Rhythm,Normal sinus rhythm,qualitative,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Cardiology ECG,Heart rate,76,bpm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Cardiology ECG,PR interval,116,ms,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Cardiology ECG,QRS duration,84,ms,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Cardiology ECG,QT,382,ms,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Cardiology ECG,QTc,429,ms,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Height recorded,175,cm,B,Central Victorian Cardiology report transcribed to repo,Matches current canonical height
+2024-03-21,Echocardiogram,Weight recorded,85,kg,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,BMI recorded,27.8,kg/m2,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Heart rate,80,bpm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Biplane LVEF,69,percent,B,Central Victorian Cardiology report transcribed to repo,Normal LV systolic function
+2024-03-21,Echocardiogram,M-mode ejection fraction,67,percent,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LV end-diastolic diameter,49,mm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LV end-systolic diameter,30,mm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Septal thickness,9,mm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Inferolateral wall thickness,9,mm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LV mass,152,g,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LV mass index,74.9,g/m2,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LV EDV,130,mL,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LV ESV,40,mL,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Stroke volume,90,mL,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Cardiac output,7,L/min,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,TAPSE,2.4,cm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,LA volume index,26.6,mL/m2,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,RA volume index,17.2,mL/m2,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Average E/e',4.25,ratio,B,Central Victorian Cardiology report transcribed to repo,Normal diastolic-function summary in report
+2024-03-21,Echocardiogram,TR peak gradient,19,mmHg,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,Estimated RA pressure,3,mmHg,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,Echocardiogram,RVSP,22,mmHg,B,Central Victorian Cardiology report transcribed to repo,Derived/report value
+2024-03-21,Echocardiogram,Conclusion,Normal LV/RV function and no haemodynamically significant valve pathology,qualitative,B,Central Victorian Cardiology report transcribed to repo,Normal estimated pulmonary artery systolic pressure
+2024-03-21,23h24m Holter,Mean heart rate,76,bpm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,23h24m Holter,Maximum 1-min heart rate,125,bpm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,23h24m Holter,Minimum 1-min heart rate,53,bpm,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,23h24m Holter,Ventricular ectopy,Rare isolated unifocal,qualitative,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,23h24m Holter,Supraventricular ectopy,Nil,qualitative,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,23h24m Holter,Pauses >3 sec,0,count,B,Central Victorian Cardiology report transcribed to repo,
+2024-03-21,23h24m Holter,Symptom correlation,Sinus rhythm / sinus arrhythmia,qualitative,B,Central Victorian Cardiology report transcribed to repo,Palpitations and stronger beats did not show ectopy
+2024-12-11,Chest X-ray,Lungs and pleural recesses,Clear,qualitative,B,Bendigo Health imaging report transcribed to repo,No pneumothorax
+2024-12-11,Chest X-ray,Heart size and cardiomediastinal contour,Normal,qualitative,B,Bendigo Health imaging report transcribed to repo,
+2026-03-16,24h09m Holter,Recording duration,24.15,hours,B,Douglass Hanly Moir Holter report transcribed to repo,24:09:07 valid recording
+2026-03-16,24h09m Holter,Beats recorded,103221,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,Mean heart rate,71,bpm,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,Minimum heart rate,42,bpm,B,Douglass Hanly Moir Holter report transcribed to repo,At 06:04:27
+2026-03-16,24h09m Holter,Maximum heart rate,126,bpm,B,Douglass Hanly Moir Holter report transcribed to repo,At 17:03:30
+2026-03-16,24h09m Holter,Ventricular ectopic beats,4,count,B,Douglass Hanly Moir Holter report transcribed to repo,0.00%
+2026-03-16,24h09m Holter,Supraventricular ectopic beats,3,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,AFib detections,0,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,Atrial flutter detections,0,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,Ventricular tachycardia,0,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,PSVT,0,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,Significant pauses,0,count,B,Douglass Hanly Moir Holter report transcribed to repo,
+2026-03-16,24h09m Holter,Symptom correlation,No arrhythmia evident,qualitative,B,Douglass Hanly Moir Holter report transcribed to repo,Reported palpitations were not associated with arrhythmia
+2026-03-16,24h09m Holter,Recorded height,179,cm,B,Douglass Hanly Moir Holter report transcribed to repo,Monitor paperwork value; conflicts with canonical 175 cm and is not used for BMI
+2026-03-16,24h09m Holter,Recorded weight,84,kg,B,Douglass Hanly Moir Holter report transcribed to repo,Monitor paperwork value
+2026-07-31,Post-hospital/cardiology email,Josh's contemporaneous report,Hospital tests all good; cardiology leading theory stress; physically fine,qualitative,D,Gmail self-report,This is Josh's report of the clinician discussion and is not a cardiology report
+2026-06 to 2026-07,HeartBug / longer ambulatory monitoring,Final specialist report,not located,unknown,unknown,Drive/Gmail/past-chat audit,Monitoring occurred but final primary report has not been located; do not infer a normal result
