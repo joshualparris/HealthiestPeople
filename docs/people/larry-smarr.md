@@ -32,6 +32,29 @@ A Quantified Self account describes the earlier pattern: persistently abnormal C
 Source:
 - https://quantifiedself.com/blog/larry_smarr_croneshope_in_data/
 
+## Quantified inflammation timeline
+
+Smarr's public research talks and UC San Diego reporting make the scale of the abnormal signals unusually concrete.
+
+Reported values include:
+
+- C-reactive protein (CRP): peaks around **27× the healthy upper limit**
+- stool lactoferrin: roughly **124–125× the healthy upper limit**
+- one published talk gives the healthy lactoferrin upper limit as **<7.3 µg/mL**
+- at peak inflammation, one presentation reports **CRP ~30**
+- by 2011–2012, colonoscopy and MRI/CT imaging showed a diseased sigmoid-colon segment consistent with Crohn's disease
+- the disease later produced a sigmoid stricture; Smarr underwent **sigmoid colon resection in November 2016**
+
+These values are not "longevity optimisation" markers. They are disease signals.
+
+The chronology matters because Smarr did not stop at self-tracking. He moved from repeated abnormal biomarkers to specialist gastroenterology, colonoscopy, imaging and ultimately surgery.
+
+Sources:
+- UC San Diego CSE: https://cse.ucsd.edu/about/news/cse-professor-lecturer-team-uc-san-diego-health-bring-3d-visualization-abdomenal-surgery
+- UCSD/Smarr presentation transcript: https://www.slideshare.net/slideshow/uci-microbiome-workshopsept2013final/26544894
+- UC San Diego surgical-history summary: https://today.ucsd.edu/story/helmsley-charitable-trust-grants-uc-san-diego-4.7m-to-study-crohns-disease
+- Smarr CV: https://lsmarr.net/wp-content/uploads/2024/07/Smarr_CV_Aug_2023.final_.pdf
+
 ## Why this is useful
 
 Smarr's case makes three important points:
