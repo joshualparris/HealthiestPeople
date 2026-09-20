@@ -24,7 +24,7 @@ This file tracks **known gaps**. A missing value means "not yet verified/publicl
 - [ ] independently corroborated laboratory/imaging documents where publicly available
 
 ### Michael Lustgarten
-- [ ] Exact DOB
+- [x] Exact DOB — 27 January 1973, first-party Biomarker Optimizers profile
 - [ ] Height
 - [ ] Current weight/body composition
 - [ ] Current BP
