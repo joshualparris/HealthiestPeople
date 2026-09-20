@@ -40,6 +40,8 @@ jobs:
           test -f methodology.html
           test -f health-archive.html
           test -f plan-rationale.html
+          test -f plan-evidence.html
+          test -f source-policy.html
           test -f data.html
           test -f styles.css
           test -f site-data.js
@@ -81,6 +83,8 @@ jobs:
               "methodology.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/evidence-and-bias.md"'],
               "health-archive.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/people/joshua-parris-full-health-archive.md"'],
               "plan-rationale.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/josh-plan.md"'],
+              "plan-evidence.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/josh-plan-evidence.md"'],
+              "source-policy.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/source-policy.md"'],
               "data.html": ['styles.css', 'data-explorer.js', 'id="dataset-tabs"', 'id="data-search"'],
               "people/bryan-johnson.html": ['../styles.css', '../site-data.js', '../resources-data.js', '../profile-data.js', '../person-page.js', '../nav.js', 'data-person-id="bryan-johnson"'],
               "people/oskar-svendsen.html": ['../styles.css', '../profile-data.js', '../person-page.js', 'data-person-id="oskar-svendsen"'],
@@ -115,4 +119,89 @@ jobs:
           if bad:
               raise SystemExit("Raw research links found:\n" + "\n".join(bad))
           print("No public raw Markdown/CSV links")
+          PY
+
+
+      - name: Check internal links resolve
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          root = Path(".").resolve()
+          failures = []
+
+          def local_target(source_file, raw):
+              if not raw or raw.startswith(("#", "mailto:", "tel:", "javascript:", "data:")):
+                  return None
+              parts = urlsplit(raw)
+              if parts.scheme or parts.netloc:
+                  return None
+              path = parts.path
+              if not path:
+                  return None
+              if path.startswith("/HealthiestPeople/"):
+                  target = root / path.removeprefix("/HealthiestPeople/")
+              elif path.startswith("/"):
+                  return None
+              else:
+                  target = (source_file.parent / path).resolve()
+              return target
+
+          # Literal href/src links in every public HTML page.
+          attr = re.compile(r'(?:href|src)=["\']([^"\']+)["\']', re.I)
+          for page in root.rglob("*.html"):
+              text = page.read_text(errors="ignore")
+              for raw in attr.findall(text):
+                  target = local_target(page, raw)
+                  if target is None:
+                      continue
+                  try:
+                      target.relative_to(root)
+                  except ValueError:
+                      failures.append(f"{page.relative_to(root)} -> {raw} escapes repository root")
+                      continue
+                  if not target.exists():
+                      failures.append(f"{page.relative_to(root)} -> {raw} (missing {target.relative_to(root)})")
+
+          # data-doc-source files loaded by the Markdown renderer.
+          doc_source = re.compile(r'data-doc-source=["\']([^"\']+)["\']', re.I)
+          rendered_sources = []
+          for page in root.rglob("*.html"):
+              text = page.read_text(errors="ignore")
+              for raw in doc_source.findall(text):
+                  target = (page.parent / raw).resolve()
+                  if not target.exists():
+                      failures.append(f"{page.relative_to(root)} data-doc-source -> {raw}")
+                  else:
+                      rendered_sources.append(target)
+
+          # Ensure every local Markdown/CSV link in rendered documents is routed
+          # by doc-renderer.js to a real public target.
+          renderer = (root / "doc-renderer.js").read_text()
+          route_pairs = dict(re.findall(r'"([^"]+\.(?:md|csv))"\s*:\s*"([^"]+)"', renderer, re.I))
+          md_link = re.compile(r'\[[^\]]+\]\(([^)]+)\)')
+          for source in rendered_sources:
+              text = source.read_text(errors="ignore")
+              for raw in md_link.findall(text):
+                  if raw.startswith(("#", "mailto:", "tel:")) or re.match(r'^https?://', raw, re.I):
+                      continue
+                  clean = urlsplit(raw).path
+                  if not re.search(r'\.(?:md|csv)$', clean, re.I):
+                      continue
+                  key = Path(clean).name
+                  route = route_pairs.get(key)
+                  if not route:
+                      failures.append(f"{source.relative_to(root)} -> {raw} has no doc-renderer route")
+                      continue
+                  route_path = urlsplit(route).path
+                  target = root / route_path
+                  if not target.exists():
+                      failures.append(f"{source.relative_to(root)} -> {raw} routes to missing {route_path}")
+
+          if failures:
+              raise SystemExit("Broken internal links:\n" + "\n".join(sorted(set(failures))))
+
+          print("All internal page, asset and rendered-document links resolve")
           PY
