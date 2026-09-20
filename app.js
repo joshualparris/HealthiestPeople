@@ -149,8 +149,43 @@
       <div class="plan-day"><b>${day}</b><span>${primary}</span>${secondary ? `<em>${secondary}</em>` : ""}${explanationMarkup(primary + " " + secondary)}</div>
     `).join("");
 
+    const homeWeek = document.getElementById("home-week");
+    if (homeWeek) {
+      const anchors = joshPlan.week.filter(([,primary]) => !primary.startsWith("No required")).map(([day,primary,secondary]) => `
+        <div class="home-week-row"><b>${day}</b><span>${primary}</span>${secondary ? `<small>${secondary}</small>` : ""}</div>
+      `).join("");
+      homeWeek.innerHTML = anchors;
+    }
+
+    const workouts = document.getElementById("plan-workouts");
+    if (workouts && joshPlan.workouts) {
+      workouts.innerHTML = joshPlan.workouts.map(workout => `
+        <article class="workout-card">
+          <div class="workout-head">
+            <div><span class="tag">${workout.when}</span><h3>${workout.name}</h3></div>
+            <strong>${workout.rounds}</strong>
+          </div>
+          <ol class="workout-list">
+            ${workout.exercises.map(([name,dose]) => `<li><span>${name}</span><b>${dose}</b></li>`).join("")}
+          </ol>
+          <p class="workout-note">${workout.note}</p>
+          ${explanationMarkup(workout.note)}
+        </article>
+      `).join("");
+    }
+
     const nutrition = document.getElementById("plan-nutrition");
     if (nutrition) nutrition.innerHTML = joshPlan.nutrition.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
+
+    const nutritionHelp = document.getElementById("plan-nutrition-help");
+    if (nutritionHelp && joshPlan.nutritionHelp) {
+      nutritionHelp.innerHTML = joshPlan.nutritionHelp.map(item => `
+        <details class="help-card">
+          <summary>${item.title}</summary>
+          <p>${item.text}</p>
+        </details>
+      `).join("");
+    }
 
     const track = document.getElementById("plan-track");
     if (track) track.innerHTML = joshPlan.track.map(x => `<li><span>${x}</span>${explanationMarkup(x)}</li>`).join("");
