@@ -113,6 +113,17 @@ Implemented in the first roadmap pass:
 
 ---
 
+## Progress update — research coverage and profile depth
+
+Implemented in the latest pass:
+
+- dedicated detail pages for all ten people, with measurements, charts, evidence context, lessons, media and source libraries
+- live Research Coverage dashboard driven by the repository gap matrix, data-access audit and research backlog
+- all six CSV datasets exposed through the Data Explorer
+- generic readable routes for research Markdown so useful repo documents do not have to open as raw `.md`
+- site-wide internal-link validation that fails CI when local pages/assets or rendered-document routes are missing
+- mobile-safe chart/profile layouts and clearer case-study navigation
+
 ## Progress update — personal trends and diagrams
 
 Implemented in the second roadmap pass:
@@ -192,7 +203,7 @@ Each metric should show:
 
 **Priority: medium**
 
-- [ ] Person detail pages rather than only summary cards.
+- [x] Person detail pages rather than only summary cards.
 - [ ] Compare by domain: sleep / cardio / strength / metabolic / measurement strategy.
 - [ ] Filter by:
   - evidence strength
@@ -271,7 +282,7 @@ Each metric should show:
 **Ongoing**
 
 - [x] Automated static validation.
-- [ ] Broken-link checker.
+- [x] Broken-link checker.
 - [ ] Source freshness checker.
 - [ ] Dataset-schema validation.
 - [ ] Flag claims that have no date or evidence grade.
