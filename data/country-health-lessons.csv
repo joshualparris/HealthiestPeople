@@ -1,0 +1,30 @@
+country,metric,value,unit,year,source_url,notes
+Switzerland,Life expectancy,84.3,years,2023/2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/switzerland_7139bf0d-en.html,OECD Health Statistics 2025
+Switzerland,Preventable mortality,80,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/switzerland_7139bf0d-en.html,
+Switzerland,Treatable mortality,34,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/switzerland_7139bf0d-en.html,
+Switzerland,Insufficient physical activity,22,percent adults,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/switzerland_7139bf0d-en.html,
+Switzerland,Self-reported obesity,12,percent age 15+,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/switzerland_7139bf0d-en.html,
+Japan,Life expectancy,84.1,years,2023/2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/japan_319bfc39-en.html,
+Japan,Preventable mortality,86,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/japan_319bfc39-en.html,
+Japan,Treatable mortality,49,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/japan_319bfc39-en.html,
+Japan,Insufficient physical activity,51,percent adults,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/japan_319bfc39-en.html,
+Japan,Daily smoking,15.7,percent age 15+,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/japan_319bfc39-en.html,
+Spain,Life expectancy,84.0,years,2023/2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/spain_d37fc9b6-en.html,
+Spain,Preventable mortality,92,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/spain_d37fc9b6-en.html,
+Spain,Treatable mortality,50,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/spain_d37fc9b6-en.html,
+Spain,Insufficient physical activity,25,percent adults,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/spain_d37fc9b6-en.html,
+Spain,Self-reported obesity,15,percent age 15+,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/spain_d37fc9b6-en.html,
+Singapore,Resident life expectancy,83.5,years,2024,https://www.moh.gov.sg/others/resources-and-statistics/population-and-vital-statistics/,Singapore residents; methodology differs from OECD values
+Singapore,Male health-adjusted life expectancy,72.8,years,2023,https://www.moh.gov.sg/others/resources-and-statistics/population-and-vital-statistics/,GBD 2023 method
+Singapore,Female health-adjusted life expectancy,75.4,years,2023,https://www.moh.gov.sg/others/resources-and-statistics/population-and-vital-statistics/,GBD 2023 method
+Korea,Life expectancy,83.5,years,2023/2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/korea_40b1d2b4-en.html,
+Korea,Treatable mortality,45,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/korea_40b1d2b4-en.html,
+Korea,Insufficient physical activity,61,percent adults,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/korea_40b1d2b4-en.html,
+Korea,Self-reported obesity,5,percent age 15+,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/korea_40b1d2b4-en.html,
+Australia,Life expectancy,83.0,years,2023/2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/australia_7cad4f74-en.html,
+Australia,Preventable mortality,99,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/australia_7cad4f74-en.html,
+Australia,Treatable mortality,47,per 100000,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/australia_7cad4f74-en.html,
+Australia,Daily smoking,8.5,percent age 15+,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/australia_7cad4f74-en.html,
+Australia,Insufficient physical activity,28,percent adults,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/australia_7cad4f74-en.html,
+Australia,Self-reported obesity,25,percent age 15+,2025 OECD,https://www.oecd.org/en/publications/health-at-a-glance-2025_15a55280-en/australia_7cad4f74-en.html,
+Iceland,Life expectancy,82.8,years,2024,https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/country-health-profile-2025-country-notes_7e72146d/iceland_405be6b9/1f7c97a2-en.pdf,OECD country health profile
