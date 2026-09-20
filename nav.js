@@ -11,7 +11,8 @@
     "josh-morning-routine.md": "morning.html",
     "josh-plan-evidence.md": "plan-evidence.html",
     "source-policy.md": "source-policy.html",
-    "joshua-parris-full-health-archive.md": "health-archive.html"
+    "joshua-parris-full-health-archive.md": "health-archive.html",
+    "blue-zones.md": "blue-zones.html"
   };
 
   function prettyInternalUrl(href) {
@@ -95,6 +96,7 @@
       label: "Learn",
       items: [
         ["principles.html", "Principles", "primary"],
+        ["blue-zones.html", "Blue Zones", "primary"],
         ["resources.html", "Resources", "primary"],
         ["evidence.html", "Evidence Hub", "primary"]
       ]
