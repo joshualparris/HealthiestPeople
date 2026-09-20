@@ -2,7 +2,7 @@
 
 A source-first research project studying **nine unusually well-documented people** and translating the useful parts of their health, physiology and self-tracking into ordinary life.
 
-## Live site
+## Website
 
 The repository now includes a dependency-free website designed for a busy working parent. It provides:
 
@@ -13,7 +13,15 @@ The repository now includes a dependency-free website designed for a busy workin
 - a curated podcast and talk library for hearing the case-study subjects explain their routines and reasoning
 - low-cost principles that work around full-time work, children, bills and limited time
 
-The same static site is configured for **GitHub Pages** and **Vercel**.
+The same static site is prepared for **GitHub Pages** and **Vercel**.
+
+### Deployment status
+
+- **Source + CI:** ready; static validation is green.
+- **GitHub Pages:** the `gh-pages` branch is maintained automatically by GitHub Actions. GitHub still requires the repository owner to enable Pages once in **Settings → Pages → Deploy from a branch → `gh-pages` / root**.
+- **Vercel:** `vercel.json` and a self-contained `standalone.html` bundle are included. Import this repository as a static project; no build command or environment variables are required.
+- Vercel import: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjoshualparris%2FHealthiestPeople
+- GitHub Pages settings: https://github.com/joshualparris/HealthiestPeople/settings/pages
 
 ## People in the project
 
@@ -80,7 +88,9 @@ For each person, separate:
 - `site-data.js` — nine-person evidence-aware lesson dataset, curated listening library and weekly routine
 - `app.js` — Sydney-time daily rotation and filters
 - `vercel.json` — Vercel static-site configuration
-- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
+- `.github/workflows/pages.yml` — keeps the `gh-pages` publishing branch current
+- `.github/workflows/validate.yml` — checks JavaScript syntax and page wiring on every push
+- `standalone.html` — portable self-contained copy of the current site
 
 No framework, database, tracking script or paid API is required.
 
