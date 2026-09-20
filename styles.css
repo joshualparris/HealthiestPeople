@@ -1488,3 +1488,65 @@ body{max-width:100%;overflow-x:hidden}
   .help-card { padding: 14px !important; }
   .brand { font-size: 1rem !important; }
 }
+
+
+/* Morning routine page */
+.morning-hero{background:linear-gradient(180deg,#f7f8f3 0%,#eef3ed 100%);border-bottom:1px solid var(--line)}
+.morning-constraint{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:18px;font-size:1.05rem}
+.morning-constraint b{padding:8px 12px;border-radius:999px;background:var(--dark);color:#fff}
+.morning-constraint span{color:var(--muted)}
+.morning-timeline{display:grid;gap:10px}
+.morning-timeline article{
+  display:grid;
+  grid-template-columns:92px minmax(0,1fr);
+  gap:18px;
+  align-items:start;
+  padding:18px 20px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:#fff;
+}
+.morning-timeline time{
+  display:grid;
+  place-items:center;
+  min-height:44px;
+  padding:8px 10px;
+  border-radius:12px;
+  background:var(--sage);
+  color:var(--green);
+  font-weight:900;
+}
+.morning-timeline h3{margin:2px 0 6px}
+.morning-timeline p{margin:0;color:var(--muted)}
+.morning-timeline .morning-key{border-color:var(--sage-2);background:#f7fbf8}
+.morning-timeline .morning-leave{background:var(--dark);color:#fff;border-color:var(--dark)}
+.morning-timeline .morning-leave p{color:#cbd9d1}
+.morning-timeline .morning-leave time{background:#1f3b31;color:#fff}
+.morning-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.morning-evidence-grid .panel{display:flex;flex-direction:column}
+.morning-evidence-grid .panel p{color:var(--muted)}
+.source-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:14px}
+.source-links a{
+  display:inline-flex;
+  padding:8px 10px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--green);
+  text-decoration:none;
+  font-size:.78rem;
+  font-weight:850;
+  background:#fff;
+}
+.morning-bottom-line{max-width:900px;padding:28px;border-radius:26px;background:var(--dark);color:#fff}
+.morning-bottom-line .eyebrow{color:#9fc0ad}
+.morning-bottom-line h2{font-size:clamp(2rem,5vw,3.5rem)}
+.morning-bottom-line p:last-child{color:#c7d5cd;margin-bottom:0}
+
+@media(max-width:760px){
+  .morning-evidence-grid{grid-template-columns:1fr}
+  .morning-timeline article{grid-template-columns:1fr;gap:10px;padding:15px}
+  .morning-timeline time{width:max-content;min-width:70px}
+  .morning-constraint{font-size:.92rem}
+  .source-links a{width:100%;justify-content:center;text-align:center}
+  .morning-bottom-line{padding:20px}
+}
