@@ -27,7 +27,12 @@ The same static site is prepared for **GitHub Pages** and **Vercel**.
 
 ### Real-world comparison baseline
 
-- [Joshua Parris](docs/people/joshua-parris.md) — ordinary working-parent baseline using standard pathology, wearables and home exercise; sensitive diagnoses/medications intentionally excluded
+- [Joshua Parris](docs/people/joshua-parris.md) — real-world working-parent baseline with a detailed longitudinal Health Connect / Fitbit / Withings / pathology archive
+  - [Full Joshua health archive](docs/people/joshua-parris-full-health-archive.md)
+  - [Weekly wearable history](data/josh-weekly-wearable-history.csv)
+  - [Lab history](data/josh-labs-history.csv)
+  - [Body composition / BMI history](data/josh-body-composition-history.csv)
+  - [Monday frisbee history](data/josh-frisbee-history.csv)
 
 
 ### Health / physiology exemplars and high-value case studies
