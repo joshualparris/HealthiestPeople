@@ -99,6 +99,10 @@ Compare Joshua only with **Joshua's previous time**, not Oskar Svendsen.
 
 Current data are much better than the earlier site suggested.
 
+Evidence and source audit for every major recommendation:
+- [Evidence behind the Josh Plan](josh-plan-evidence.md)
+- [Source and recommendation policy](source-policy.md)
+
 Recent six Google Health weeks averaged about **8 h 01 min restful sleep/night**.
 
 Health Connect's August analysis also found:
@@ -116,10 +120,10 @@ Exact anchor:
 ## Food
 
 Daily targets:
-- **85 g protein**
-- **30 g fibre**
-- **375 g vegetables minimum**
-- **2 serves fruit**
+- **85 g protein — personal practical target**, not the Australian RDI; the RDI for men 31–50 is 64 g/day
+- **30 g fibre — Australian Adequate Intake for adult men**
+- **6 vegetable/legume serves/day ≈ 450 g — Australian target for men 19–50**
+- **2 serves fruit/day — Australian target**
 - water as default drink
 - maintain body weight around the high-70-kg range rather than deliberately cutting further without a reason
 
@@ -188,9 +192,10 @@ Review **monthly**, not compulsively every morning.
 - one simple strength benchmark:
   - maximum good-form incline push-ups stopping before form failure
 
-### Every 3 months
+### Blood pressure baseline
 
-- one **7-day home BP block** if a validated upper-arm cuff is available
+- complete **one proper 7-day home BP block** using a validated upper-arm cuff if available
+- repeat later if your clinician recommends it, readings materially change, or there is another clear reason — **not simply because three months passed**
 
 ### Pathology
 
@@ -254,6 +259,17 @@ Priority order:
 6. everything else
 
 A missed optional session does not need to be repaid with a huge workout.
+
+## Evidence status of exact targets
+
+- **Two strength days/week:** official Australian guideline target + systematic-review support.
+- **Monday Frisbee / Saturday parkrun:** personalised ways to accumulate activity and preserve adherence; the evidence supports physical activity/team sport broadly, not a unique medical effect of these brands/events.
+- **≥7 h 45 min recent sleep goal:** personal maintenance target inside Australia's official 7–9 h range.
+- **85 g protein:** personal practical target (~1.1 g/kg at 77.4 kg), above the Australian 64 g/day RDI but below higher intakes studied for maximal resistance-training adaptation.
+- **450 g vegetables / 6 serves:** Australian recommendation for men aged 19–50.
+- **30 g fibre:** Australian Adequate Intake for adult men.
+
+See [Evidence behind the Josh Plan](josh-plan-evidence.md) for official and peer-reviewed sources.
 
 ## Data archive
 
