@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1f1a">
+  <meta name="description" content="Live research coverage for HealthiestPeople: what data is available, limited or still missing across each case study.">
+  <title>Research Coverage — HealthiestPeople</title>
+  <link rel="stylesheet" href="styles.css?v=20260921-coverage13">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="HealthiestPeople home"><span class="brand-mark">HP</span><span>HealthiestPeople</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"></nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">What the repository knows — and what it does not</p>
+      <h1>Research coverage</h1>
+      <p class="lede">This page turns the repository's gap matrix, public-data audit and research backlog into something you can actually browse. Missing data stays visible rather than being silently filled with guesses.</p>
+      <div class="page-tabs">
+        <a class="active" href="#coverage">Coverage</a>
+        <a href="#backlog">Backlog</a>
+        <a href="#access">Public data access</a>
+        <a href="#research-docs">Research docs</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="coverage" class="section">
+    <div class="wrap">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Live from gap-matrix.md</p>
+          <h2>How complete is each profile?</h2>
+          <p class="section-intro">Green means a domain has usable public/source data. Amber means it is partial, summary-only, gated or otherwise limited. Grey means it has not been located or remains a genuine gap.</p>
+        </div>
+      </div>
+      <div id="coverage-summary" class="coverage-summary"></div>
+      <div id="coverage-grid" class="coverage-grid" aria-live="polite"><div class="doc-loading">Loading research coverage…</div></div>
+    </div>
+  </section>
+
+  <section id="backlog" class="section section-tint">
+    <div class="wrap">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Live from research-backlog.md</p>
+          <h2>What still needs researching?</h2>
+          <p class="section-intro">The backlog is intentionally visible. A missing value is a research task, not permission to infer or invent it.</p>
+        </div>
+      </div>
+      <div id="backlog-summary" class="coverage-summary"></div>
+      <div id="backlog-grid" class="backlog-grid"></div>
+    </div>
+  </section>
+
+  <section id="access" class="section">
+    <div class="wrap">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Public-data audit</p>
+          <h2>How open is the underlying data?</h2>
+          <p class="section-intro">Some people publish raw tables; others publish screenshots, summaries or research results with controlled underlying data. That affects what this project can verify.</p>
+        </div>
+      </div>
+      <div id="access-grid" class="access-grid"></div>
+    </div>
+  </section>
+
+  <section id="research-docs" class="section section-tint">
+    <div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">Repository material</p><h2>Read the underlying research operations</h2><p class="section-intro">These files were useful in GitHub but easy to miss from the website. They now have readable routes.</p></div></div>
+      <div class="explore-grid">
+        <a class="explore-card" href="document.html?doc=gap-matrix"><span>Coverage</span><h3>Comprehensive gap matrix</h3><p>Domain-by-domain record of what is open, partial, withheld or not yet located.</p></a>
+        <a class="explore-card" href="document.html?doc=data-access-audit"><span>Access</span><h3>Public data access audit</h3><p>What is genuinely open versus visual-only, gated, controlled or summarised.</p></a>
+        <a class="explore-card" href="document.html?doc=research-backlog"><span>Next work</span><h3>Research backlog</h3><p>Unresolved measurements, provenance checks and extraction priorities.</p></a>
+        <a class="explore-card" href="source-policy.html"><span>Method</span><h3>Source policy</h3><p>How evidence is selected, graded and translated into recommendations.</p></a>
+        <a class="explore-card" href="roadmap.html"><span>Product</span><h3>Website roadmap</h3><p>Usability, accessibility, visualisation and maintenance work still planned.</p></a>
+        <a class="explore-card" href="data.html"><span>Data</span><h3>Data Explorer</h3><p>All six structured CSV datasets already exposed through the website.</p></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap footer-grid"><div><b>HealthiestPeople</b><p>Source-first health research translated into ordinary life.</p></div><div><a href="data.html">Data Explorer</a><a href="evidence.html">Evidence</a><a href="roadmap.html">Roadmap</a></div></div></footer>
+<script src="coverage.js?v=20260921-coverage13"></script>
+<script src="nav.js?v=20260921-coverage13"></script>
+</body>
+</html>
