@@ -160,38 +160,38 @@ window.DAILY_FOUNDATIONS = {
     movement: "6–7 pm Ultimate Frisbee. This is already a meaningful interval-style cardiovascular session; do not add a second workout.",
     food: "Make lunch and dinner each contain a clear protein source plus at least two plant foods.",
     recovery: "Choose a consistent lights-out target tonight rather than trying to 'catch up' with optimisation.",
-    tiny: "Minimum day: 10-minute walk + 1 set each of squat, push and pull."
+    tiny: "If Frisbee does not happen: 10-minute walk + 1 easy set each of squat, push and pull. If Frisbee happens, it already covers today's formal training."
   },
   tuesday: {
     theme: "Strength + recover from Monday",
     movement: "8:05–8:25 pm Strength A. Keep the load submaximal and technique clean.",
     food: "Add fibre before adding supplements: oats, legumes, wholegrains, fruit, veg, nuts or seeds.",
     recovery: "Take 5 quiet minutes after work or before dinner with slow breathing, prayer or stillness.",
-    tiny: "Minimum day: three 5-minute walks, ideally after meals."
+    tiny: "Minimum day: complete Strength A; ordinary movement around the rest of the day is enough."
   },
   wednesday: {
     theme: "Mobility + useful data",
-    movement: "20-30 minutes easy cardio, then 5 minutes of mobility or balance.",
+    movement: "No required formal workout. Normal daily movement is enough; optional 5 minutes of mobility or balance if it feels good.",
     food: "Use the easiest healthy option available. Frozen veg, canned beans and simple protein still count.",
     recovery: "Check one trend only: sleep opportunity, resting heart rate, weight/waist if relevant, or training consistency.",
     tiny: "Minimum day: 10 minutes outside and no health-dashboard rabbit hole."
   },
   thursday: {
     theme: "Strength + function",
-    movement: "25 minutes full-body strength: squat, hinge, push, pull and carry.",
+    movement: "8:05–8:25 pm Strength B. Keep the load comfortable and technique clean.",
     food: "Make tonight's meal boringly repeatable rather than optimised: protein + vegetables + high-fibre carbohydrate.",
     recovery: "Leave margin before bed. A calmer last 30 minutes is more valuable than another gadget check.",
-    tiny: "Minimum day: 2 rounds of sit-to-stands, wall/bench push-ups and a loaded carry."
+    tiny: "Minimum day: do the two-round Strength B session, modifying any movement that clearly causes pain."
   },
   friday: {
     theme: "Recover without disappearing",
-    movement: "Take an easy 20-30 minute walk. Let the week end gently instead of forcing a heroic session.",
+    movement: "No required formal workout. An easy walk or family movement is optional if you feel like it.",
     food: "Enjoy dinner; just keep the basics visible — protein, plants, water, sensible portions.",
     recovery: "Protect connection. A health plan that regularly costs relationships is badly designed.",
     tiny: "Minimum day: 10 minutes walking with someone you care about."
   },
   saturday: {
-    theme: "Parrun + family aerobic base",
+    theme: "Parkrun + family aerobic base",
     movement: "8:00 am 5 km Dubbo parkrun/run-walk with Sylvie when attending. Most weeks keep it conversational.",
     food: "Prepare one thing that makes the coming week easier: chopped veg, cooked protein, oats, legumes or lunch components.",
     recovery: "Get daylight and let some movement be play rather than training.",
@@ -199,9 +199,9 @@ window.DAILY_FOUNDATIONS = {
   },
   sunday: {
     theme: "Reset, don't optimise",
-    movement: "20-30 minutes easy movement plus a few minutes of mobility.",
+    movement: "No required training. Family movement is enough; if Saturday parkrun was missed, the planned fallback is a 30-minute easy e-bike ride or walk at 4 pm.",
     food: "Decide on 2-3 easy meals for the week so tired-you has fewer decisions.",
-    recovery: "Look at the week ahead and schedule two strength sessions and two aerobic sessions before it fills up.",
+    recovery: "Look at the week ahead and protect Tuesday/Thursday strength, Monday Frisbee and Saturday parkrun before the calendar fills up.",
     tiny: "Minimum day: put the next two workouts in the calendar."
   }
 };
@@ -210,7 +210,7 @@ window.EVIDENCE_NOTE = "A = independent peer-reviewed/institutional measurement;
 
 
 window.JOSH_BASELINE = {
-  updated: "20 Sep 2026",
+  updated: "21 Sep 2026",
   privacy: "Joshua has explicitly asked for a detailed public longitudinal archive. Family members' private medical details remain excluded.",
   headline: [
     {
@@ -250,7 +250,7 @@ window.JOSH_BASELINE = {
     },
     {
       label: "Recent sleep", value: "8 h 01 m", note: "latest 6 Google Health weeks", source: "Google Health / Fitbit",
-      meaning: "This is the most encouraging recent change: average sleep opportunity is now around eight hours. Duration alone does not prove sleep quality, but it gives recovery a much better foundation.",
+      meaning: "This is the most encouraging recent change: the latest six weekly reports average about eight hours of wearable-estimated restful sleep. A wearable estimate is not the same as laboratory-measured sleep quality, but the trend is much better than the earlier short-sleep period.",
       action: "Protect the routine that produced this before adding more health interventions."
     },
     {
@@ -291,8 +291,8 @@ window.JOSH_BASELINE = {
     {
       title: "Home blood pressure — 7-day average",
       why: "Blood pressure moves around during the day. Repeated home readings give a more useful picture than one random reading.",
-      how: "Use a validated upper-arm monitor. For 7 days (minimum 5), measure at about the same time morning and evening. Sit quietly for 5 minutes first, feet flat, back and arm supported; take 2 readings 1 minute apart and record both. Avoid caffeine, smoking and vigorous exercise for 30 minutes beforehand.",
-      frequency: "The site's 'about every 3 months' repeat is a personal trend-tracking choice, not a medical guideline. Your GP's advice takes priority.",
+      how: "Use a validated upper-arm monitor with a cuff that fits. For 7 days (minimum 5), measure at about the same time morning and evening. Do the reading before eating, taking medication or vigorous exercise; avoid smoking and caffeine for 30 minutes beforehand. Sit quietly for 5 minutes first, feet flat, back and arm supported; take 2 readings 1 minute apart and record both.",
+      frequency: "There is no fixed three-month repeat rule in this plan. Establish one good home baseline, then repeat if your clinician recommends it, readings materially change, or another clear reason arises.",
       sourceLabel: "Heart Foundation Australia — home BP",
       sourceUrl: "https://www.heartfoundation.org.au/your-heart/blood-pressure-and-your-heart"
     },
