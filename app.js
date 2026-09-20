@@ -78,7 +78,7 @@
     document.getElementById("lesson-lens").textContent = person.lens;
     document.getElementById("lesson-text").textContent = person.lesson;
     const link = document.getElementById("lesson-link");
-    link.href = "#person-" + person.id;
+    link.href = "people.html#person-" + person.id;
   }
 
   function evidenceGroup(person) {
@@ -107,14 +107,16 @@
         <p class="mini-head">Don't copy blindly</p>
         <ul>${skipItems}</ul>
         <div class="person-sources">${sources}</div>
-        <a class="person-media-link" href="#resources">Watch & read ↓</a>
+        <a class="person-media-link" href="resources.html">Watch & read →</a>
       </article>
     `;
   }
 
   function renderPeople(filter = "all") {
+    const grid = document.getElementById("people-grid");
+    if (!grid) return;
     const visible = people.filter(p => filter === "all" || evidenceGroup(p) === filter);
-    document.getElementById("people-grid").innerHTML = visible.map(personCard).join("");
+    grid.innerHTML = visible.map(personCard).join("");
   }
 
 
@@ -288,6 +290,17 @@
     if (grid) grid.innerHTML = visible.map(resourceCard).join("");
   }
 
+  function renderGlossary() {
+    const grid = document.getElementById("glossary-grid");
+    if (!grid) return;
+    grid.innerHTML = glossary.map(item => `
+      <article class="glossary-card">
+        <h3>${item.term}</h3>
+        <p>${item.meaning}</p>
+      </article>
+    `).join("");
+  }
+
   function wireResourceFilters() {
     document.querySelectorAll(".resource-filter").forEach(button => {
       button.addEventListener("click", () => {
@@ -308,9 +321,10 @@
     });
   }
 
-  renderToday();
+  if (document.getElementById("today-title")) renderToday();
   renderJoshPlan();
   renderBaseline();
+  renderGlossary();
   renderPeople();
   renderPodcasts();
   renderResources();
