@@ -54,6 +54,12 @@ The same static site is prepared for **GitHub Pages** and **Vercel**.
 
 Snyder and Smarr are deliberately included as **measurement lessons, not "healthiest person" claims**. Being deeply measured and being disease-free are different things.
 
+## Country-level health lessons
+
+- [Healthy Countries](https://joshualparris.github.io/HealthiestPeople/healthy-countries.html) — evidence-aware lessons from Japan, Spain, Switzerland, Iceland, Singapore, South Korea and Australia
+- [Country research notes](https://joshualparris.github.io/HealthiestPeople/document.html?doc=healthy-countries) — official statistics, peer-reviewed evidence, caveats and Josh-specific translation
+- [Country metrics dataset](https://joshualparris.github.io/HealthiestPeople/data.html#countries)
+
 ## Research documents
 
 - [Product roadmap](https://joshualparris.github.io/HealthiestPeople/roadmap.html) — UX, health-literacy, accessibility, charts, evidence and maintenance plan
@@ -112,4 +118,4 @@ No framework, database, tracking script or paid API is required.
 
 This repository is educational research, not personalised medical advice. Association is not causation, exceptional individuals are not universal templates, and a biomarker that is unusual is not automatically desirable.
 
-_Last updated: 20 September 2026._
+_Last updated: 21 September 2026._
