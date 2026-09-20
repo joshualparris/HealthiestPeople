@@ -21,6 +21,8 @@ jobs:
           node --check app.js
           node --check nav.js
           node --check charts.js
+          node --check doc-renderer.js
+          node --check data-explorer.js
 
       - name: Check required site files
         run: |
@@ -30,12 +32,21 @@ jobs:
           test -f charts.html
           test -f resources.html
           test -f evidence.html
+          test -f playbook.html
+          test -f comparison.html
+          test -f transferability.html
+          test -f methodology.html
+          test -f health-archive.html
+          test -f plan-rationale.html
+          test -f data.html
           test -f styles.css
           test -f site-data.js
           test -f resources-data.js
           test -f app.js
           test -f nav.js
           test -f charts.js
+          test -f doc-renderer.js
+          test -f data-explorer.js
           test -f vercel.json
 
       - name: Check page wiring
@@ -50,6 +61,13 @@ jobs:
               "resources.html": ['styles.css', 'site-data.js', 'resources-data.js', 'app.js', 'nav.js', 'id="listen"', 'id="watch-read"'],
               "charts.html": ['styles.css', 'charts.js', 'nav.js', 'id="personal-charts"', 'id="public-charts"', 'id="diagrams"'],
               "evidence.html": ['styles.css', 'nav.js', 'id="grades"', 'id="rules"', 'id="research"'],
+              "playbook.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/practical-playbook.md"'],
+              "comparison.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/comparison.md"'],
+              "transferability.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/transferability.md"'],
+              "methodology.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/evidence-and-bias.md"'],
+              "health-archive.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/people/joshua-parris-full-health-archive.md"'],
+              "plan-rationale.html": ['styles.css', 'doc-renderer.js', 'data-doc-source="docs/josh-plan.md"'],
+              "data.html": ['styles.css', 'data-explorer.js', 'id="dataset-tabs"', 'id="data-search"'],
           }
 
           errors = []
@@ -63,4 +81,21 @@ jobs:
               raise SystemExit("Missing page wiring:\n" + "\n".join(errors))
 
           print("Multi-page static site wiring OK")
+          PY
+
+      - name: Reject public raw Markdown or CSV links
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          public = ["index.html","plan.html","people.html","charts.html","resources.html","evidence.html"]
+          bad = []
+          pattern = re.compile(r'href=["\'\']([^"\'\']+\.(?:md|csv)(?:#[^"\'\']*)?)["\'\']', re.I)
+          for filename in public:
+              text = Path(filename).read_text()
+              for href in pattern.findall(text):
+                  bad.append(f"{filename}: {href}")
+          if bad:
+              raise SystemExit("Raw research links found:\n" + "\n".join(bad))
+          print("No public raw Markdown/CSV links")
           PY
